@@ -93,15 +93,12 @@ const Images = () => {
 const Home = () => {
     return (
         <div className="flex flex-col gap-36">
-            <section className="lg:grid lg:grid-cols-12 lg:mb-10">
+            <section className="lg:grid lg:grid-cols-12">
                 <div className="col-start-2 col-span-5">
                     <Title1 />
                     <Title2 />
                 </div>
                 <Images />
-            </section>
-            <section className=""> {/*patrocinadores*/}
-                <p>testx</p>
             </section>
         </div>
     );

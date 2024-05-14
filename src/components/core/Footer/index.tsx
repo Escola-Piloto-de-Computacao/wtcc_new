@@ -4,11 +4,11 @@ import { HiOutlineMail } from 'react-icons/hi';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#04081D] text-white mt-12 lg:mt-36">
+        <footer className="bg-[#04081D] text-white mt-5">
             <div className="flex flex-col col-span-2 lg:grid lg:grid-cols-6 py-12 h-full mx-10 pb-14 items-center">
                 <div className="lg:col-span-2 hidden lg:flex h-40 pt-3">
                     <a href="https://escolapilotodecomputacao.com.br" target="_blank">
-                        <img src="logom1.svg" alt="" />
+                        <img src="/logom1.svg" alt="Logo da EPC" />
                     </a>
                 </div>
                 <div className="lg:col-span-2 flex flex-col text-white justify-center gap-5 pb-14 lg:pb-0">
@@ -26,7 +26,7 @@ const Footer = () => {
                 </div>
                 <div className="lg:col-span-2 flex items-center flex-col justify-center gap-2">
                     <h3 className="text-xl">Localização</h3>
-                    <img src="/localizacao.svg" alt="" />
+                    <img src="/localizacao.svg" alt="Localização" />
                     <p className="ml-7">Av. Francisco Mota, 572 - Bairro Costa e Silva, Mossoró RN | CEP: 59.625-900, +55 84 3317-8200 CNPJ: 24.529.265/0001-40</p>
                 </div>
             </div>
