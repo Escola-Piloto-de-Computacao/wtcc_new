@@ -409,9 +409,11 @@ const CardMinicurso: React.FC<CardMinicursoProps> = ({ minicurso }) => {
                     <div className="flex justify-between">
                         <div className="flex flex-row gap-5">
                             {minicurso.tags?.map((tag) => (
-                                <div className="flex gap-1">
+                                <div
+                                    className="flex gap-1"
+                                    key={tag.index}
+                                >
                                     <Tag
-                                        key={tag.index}
                                         className={`flex gap-1 px-2 ${tag.color}`}
                                     >
                                         <LogoPicker label={tag.name} />
