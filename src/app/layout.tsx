@@ -17,7 +17,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
         <html lang="pt-br">
             <body className={inter.className}>
                 <Header />
-                <main className="mt-32 mx-12 lg:mx-0 h-[85vh]">
+                <main className="mt-32 mx-12 lg:mx-0">
                     {children}
                 </main>
                 <Footer />

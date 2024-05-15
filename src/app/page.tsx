@@ -54,7 +54,7 @@ const Title2 = () => {
 
 const Images = () => {
     return (
-        <div className="col-start-7 col-span-5 flex flex-col items-center justify-center lg:ml-24">
+        <div className="h-[85vh] col-start-7 col-span-5 flex flex-col items-center justify-center lg:ml-24">
             <div className="hidden lg:block bg-blue-200 rounded-xl w-[24%] h-3/6 mb-52 mr-60 absolute -z-10"></div>
             <div className="hidden lg:block bg-green-200 rounded-xl w-1/5 h-[53%] mb-72 ml-64 absolute -z-30"></div>
             <div className="hidden lg:grid col-span-1 lg:grid-rows-2 gap-3">
