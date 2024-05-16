@@ -88,7 +88,7 @@ const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
                         </Avatar>
                         <div className="flex flex-col">
                             <h3 className="text-lg ml-1">{minicourse.palestrantes[0].name}</h3>
-                            {minicourse.palestrantes[0].bio.length > 114 ? (
+                            {minicourse.palestrantes[0].bio.length > 114 && minicourse.palestrantes.length > 1 ? (
                                 <Tooltip title={minicourse.palestrantes[0].bio}>
                                     <p className="line-clamp-3 text-justify hyphens-auto">{minicourse.palestrantes[0].bio}</p>
                                 </Tooltip>

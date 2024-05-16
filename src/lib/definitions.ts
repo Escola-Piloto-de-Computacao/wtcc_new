@@ -33,3 +33,20 @@ export type Tag = {
     color: string;
     index: number;
 };
+
+export type Palestra = {
+    name: string;
+    description: string;
+    speaker: Palestrante;
+    img: string;
+};
+
+export type Question = {
+    key: number;
+    question: string;
+    answer: string;
+};
+
+export type Faq = {
+    questions: Question[];
+};
