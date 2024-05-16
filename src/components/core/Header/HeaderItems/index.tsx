@@ -19,16 +19,18 @@ import { JavascriptOriginal, GithubOriginal, LinuxOriginal, LaravelOriginal, Pyt
 const HeaderItems = () => {
     return (
         <NavigationMenu>
-            <NavigationMenuList className="md:space-x-5 lg:space-x-16">
+            <NavigationMenuList className="md:space-x-5 lg:space-x-16 text-lg">
                 <NavigationMenuItem>
                     <Link href="/" legacyBehavior passHref>
                         <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'text-md')}>
-                            /home
+                            home
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-md">/eventos</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="text-md">
+                        eventos
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[550px] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-3">
@@ -79,21 +81,21 @@ const HeaderItems = () => {
                 <NavigationMenuItem>
                     <Link href="/docs" legacyBehavior passHref>
                         <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'text-md')}>
-                            /cronograma
+                            cronograma
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <Link href="/docs" legacyBehavior passHref>
                         <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'text-md')}>
-                            /galeria
+                            galeria
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <Link href="/docs" legacyBehavior passHref>
                         <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'text-md')}>
-                            /faq
+                            faq
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>

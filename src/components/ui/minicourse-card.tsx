@@ -28,14 +28,22 @@ const MinicourseCardHeader = React.forwardRef<
 ));
 MinicourseCardHeader.displayName = "MinicourseCardHeader";
 
+type MinicourseCardImageProps = React.HTMLAttributes<HTMLImageElement> & {
+    src: string;
+    alt: string;
+};
 const MinicourseCardImage = React.forwardRef<
     HTMLImageElement,
-    React.HTMLAttributes<HTMLImageElement>
+    MinicourseCardImageProps
 >(({ className, ...props }, ref) => (
     <div
         ref={ref}
-        className={cn("w-36 rounded-lg py-5", className)}
+        className={cn("w-full h-56 rounded-lg py-5", className)}
         {...props}>
+        <img
+            className="w-full h-full object-cover rounded-lg"
+            {...props}
+        />
     </div>
 ));
 MinicourseCardImage.displayName = "MinicourseCardImage";

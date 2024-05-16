@@ -6,41 +6,16 @@ import { Button } from '@/components/ui/button';
 import { Tag } from '@/components/ui/tag';
 import { HiCursorClick } from "react-icons/hi";
 import { FrontEndLogo, InicianteLogo, WebLogo } from "@/components/ui/logos";
-
-type Minicurso = {
-    index: number;
-    title: string;
-    alternateTitle: string;
-    picture: string;
-    date: string;
-    tags?: {
-        name: string;
-        color: string;
-        index: number;
-    }[];
-    description: string;
-    prerequesites?: string[];
-    palestrantes: Palestrante[];
-};
-
-type Palestrante = {
-    name: string;
-    bio: string;
-    social?: {
-        github?: string;
-        instagram?: string;
-        email?: string;
-        linkedin?: string;
-    };
-    picture?: string;
-};
+import { Modal } from "antd";
+import { Minicurso } from "@/lib/definitions";
+import { ModalContent } from "@/components/core/Eventos/ModalContent";
 
 const minicursos: Minicurso[] = [
     {
         index: 0,
         title: "Desenvolvimento Web: HTML, CSS e JavaScript",
         alternateTitle: "Aprendendo HTML, CSS e JavaScript do básico e além",
-        picture: " @/public/frontend.jpg",
+        picture: "/imagens-minicursos/htmlcssjavascript.png",
         date: "05/06",
         tags: [
             {
@@ -49,19 +24,14 @@ const minicursos: Minicurso[] = [
                 index: 0
             },
             {
-                name: "linguagem",
-                color: "bg-red-300",
-                index: 1
-            },
-            {
                 name: "front-end",
                 color: "bg-green-300",
-                index: 2
+                index: 1
             },
             {
                 name: "web",
                 color: "bg-blue-300",
-                index: 3
+                index: 2
             }
         ],
         description: "Este curso tem como objetivo fornecer uma compreensão abrangente das linguagens fundamentais da web: HTML (HyperText Markup Language), CSS (Cascading Style Sheets) e JavaScript. Os participantes aprenderão a criar páginas web dinâmicas e responsivas, utilizando boas práticas de programação.",
@@ -90,7 +60,7 @@ const minicursos: Minicurso[] = [
         index: 1,
         title: "Pré-Cálculo Computacional",
         alternateTitle: "Fundamentos de Exatas na Computação",
-        picture: "https://avatars.githubusercontent.com/u/50432692?v=4",
+        picture: "/imagens-minicursos/pre-calc.jpg",
         date: "06/06",
         tags: [
             {
@@ -368,13 +338,13 @@ export default function Minicursos() {
                         onClick={() => { handleSelectedButtonChange("05/06") }}
                         variant="ghost"
                         className={`text-lg ${selectedButton === "05/06" ? "bg-gray-200" : ""}`}>
-                        30/05
+                        05/06
                     </Button>
                     <Button
                         onClick={() => { handleSelectedButtonChange("06/06") }}
                         variant="ghost"
                         className={`text-lg ${selectedButton === "06/06" ? "bg-gray-200" : ""}`}>
-                        31/05
+                        06/06
                     </Button>
                     <Button
                         onClick={() => { handleSelectedButtonChange("todos") }}
@@ -384,14 +354,36 @@ export default function Minicursos() {
                     </Button>
                 </div>
             </div>
-            <div className="grid grid-cols-3 mx-20 gap-16">
+            <div className="grid grid-cols-3 mx-20 gap-8">
                 {minicursos.map((minicurso) => {
+
+                    const [modalOpen, setModalOpen] = useState(false);
+                    const handleModalOpen = () => {
+                        setModalOpen(true);
+                    }
+
                     if (selectedButton === minicurso.date || selectedButton === "todos") {
                         return (
-                            <CardMinicurso
-                                key={minicurso.index}
-                                minicurso={minicurso}
-                            />
+                            <>
+                                <CardMinicurso
+                                    key={minicurso.index}
+                                    minicurso={minicurso}
+                                    onOpenModal={handleModalOpen}
+                                />
+                                <Modal
+                                    //title={minicurso.alternateTitle}
+                                    centered
+                                    open={modalOpen}
+                                    footer={null}
+                                    onCancel={() => setModalOpen(false)}
+                                    width={700}
+                                >
+                                    <div className="text-left text-base text-gray-600 mb-4">
+                                        {minicurso.alternateTitle}
+                                    </div>
+                                    <ModalContent minicourse={minicurso} />
+                                </Modal>
+                            </>
                         );
                     }
                 })}
@@ -400,22 +392,22 @@ export default function Minicursos() {
     );
 };
 
-interface CardMinicursoProps { minicurso: Minicurso; };
-const CardMinicurso: React.FC<CardMinicursoProps> = ({ minicurso }) => {
+interface CardMinicursoProps { minicurso: Minicurso; onOpenModal: () => void; };
+const CardMinicurso: React.FC<CardMinicursoProps> = ({ minicurso, onOpenModal }) => {
+
+    const handleClick = () => {
+        onOpenModal();
+    };
+
     return (
-        <div className="col-span-1">
+        <div className="col-span-1" onClick={handleClick}>
             <MinicourseCard>
                 <MinicourseCardHeader>
                     <div className="flex justify-between">
                         <div className="flex flex-row gap-5">
                             {minicurso.tags?.map((tag) => (
-                                <div
-                                    className="flex gap-1"
-                                    key={tag.index}
-                                >
-                                    <Tag
-                                        className={`flex gap-1 px-2 ${tag.color}`}
-                                    >
+                                <div className="flex gap-1" key={tag.index}>
+                                    <Tag className={`flex gap-1 px-2 ${tag.color}`}>
                                         <LogoPicker label={tag.name} />
                                         {tag.name}
                                     </Tag>
@@ -425,9 +417,7 @@ const CardMinicurso: React.FC<CardMinicursoProps> = ({ minicurso }) => {
                         <HiCursorClick />
                     </div>
                 </MinicourseCardHeader>
-                <MinicourseCardImage>
-                    <img src={minicurso.picture} alt="Foto do minicurso" />
-                </MinicourseCardImage>
+                <MinicourseCardImage src={minicurso.picture} alt={minicurso.title} />
                 <MinicourseCardTitle>
                     {minicurso.title}
                 </MinicourseCardTitle>
