@@ -17,11 +17,19 @@ export type Minicurso = {
 export type Palestrante = {
     name: string;
     bio: string;
-    social?: {
-        github?: string;
-        instagram?: string;
-        email?: string;
-        linkedin?: string;
-    };
+    social?: SocialMedia;
     picture?: string;
+};
+
+export type SocialMedia = {
+    github?: string;
+    instagram?: string;
+    email?: string;
+    linkedin?: string;
+};
+
+export type Tag = {
+    name: string;
+    color: string;
+    index: number;
 };
