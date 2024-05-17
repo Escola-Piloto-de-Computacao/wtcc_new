@@ -9,7 +9,7 @@ const FaqBox: React.FC<FaqBoxProps> = ({ questions }) => {
     const secondHalf = questions.questions.slice(half);
 
     return (
-        <div className="grid lg:grid-cols-2 gap-4 lg:gap-20 mt-8 lg:mt-16 mx-16">
+        <div className="grid lg:grid-cols-2 gap-4 lg:gap-20 mt-8 lg:mt-12 mx-16">
             <div className="space-y-10">
                 {firstHalf.map((question, index) => (
                     <Collapse
