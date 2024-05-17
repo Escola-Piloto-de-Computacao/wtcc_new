@@ -5,14 +5,14 @@ import Formulario from '@/components/core/Faq/Formulario';
 export default function Faq() {
     return (
         <div className="min-h-[90vh] flex flex-col">
-            <div className="h-[68vh]">
+            <div className="h-[64vh]">
                 <div className="text-center space-y-1">
                     <h1 className="text-3xl">FAQ</h1>
                     <h2 className="font-light">perguntas frequentes</h2>
                 </div>
                 <FaqBox questions={FAQuestions} />
             </div>
-            <div className="h-[70vh] text-center flex flex-col gap-8 items-center">
+            <div className="h-[95vh] text-center flex flex-col gap-8 items-center">
                 <div>
                     <h2 className="text-2xl">Envie sua pergunta!</h2>
                     <p>Ainda ficou com uma dúvida e quer descobrir a resposta?</p>

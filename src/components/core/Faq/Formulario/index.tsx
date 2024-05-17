@@ -39,13 +39,13 @@ const Fomulario = () => {
 
     return (
         <Form {...form} >
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
                 <FormField
                     control={form.control}
                     name="email"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>email</FormLabel>
+                            <FormLabel>Email</FormLabel>
                             <FormControl>
                                 <Input placeholder="seuemail@email.com" {...field} />
                             </FormControl>
@@ -60,7 +60,7 @@ const Fomulario = () => {
                     name="question"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>pergunta</FormLabel>
+                            <FormLabel>Pergunta</FormLabel>
                             <FormControl>
                                 <Textarea
                                     placeholder="Escreva sua pergunta aqui..."
@@ -73,6 +73,26 @@ const Fomulario = () => {
                             </FormDescription>
                         </FormItem>
                     )}
+                />
+                <FormField
+                    control={form.control}
+                    name="obs"
+                    render={({ field }) => (
+                        <FormItem>
+                            <FormLabel>Observações</FormLabel>
+                            <FormControl>
+                                <Textarea
+                                    placeholder="Escreva suas observações aqui..."
+                                    {...field}
+                                    style={{ resize: "none", height: "120px" }}
+                                />
+                            </FormControl>
+                            <FormDescription>
+                                <FormMessage />
+                            </FormDescription>
+                        </FormItem>
+                    )}
+
                 />
                 <Button type="submit">Enviar</Button>
             </form>
