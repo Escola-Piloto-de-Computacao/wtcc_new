@@ -3,6 +3,7 @@ export type Minicurso = {
     title: string;
     alternateTitle: string;
     picture: string;
+    alternatePicture?: string;
     date: string;
     tags?: {
         name: string;

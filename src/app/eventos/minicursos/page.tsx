@@ -58,7 +58,7 @@ export default function Minicursos() {
                     </Button>
                 </div>
             </div>
-            <div className="grid grid-cols-3 mx-20 gap-8">
+            <div className="grid grid-cols-3 mx-20 mb-16 gap-8">
                 {minicursos.map((minicurso) => {
 
                     const [modalOpen, setModalOpen] = useState(false);

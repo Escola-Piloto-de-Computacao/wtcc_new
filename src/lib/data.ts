@@ -6,7 +6,8 @@ const minicursos: Minicurso[] = [
         index: 0,
         title: "Desenvolvimento Web: HTML, CSS e JavaScript",
         alternateTitle: "Aprendendo HTML, CSS e JavaScript do básico e além",
-        picture: "/imagens-minicursos/htmlcssjavascript.png",
+        picture: "/imagens-minicursos/htmlcssjavascript2.jpg",
+        alternatePicture: "/imagens-minicursos/htmlcssjavascript.png",
         date: "05/06",
         tags: [
             {
@@ -52,6 +53,7 @@ const minicursos: Minicurso[] = [
         title: "Pré-Cálculo Computacional",
         alternateTitle: "Fundamentos de Exatas na Computação",
         picture: "/imagens-minicursos/pre-calc.jpg",
+        alternatePicture: "/imagens-minicursos/pre-calc2.jpg",
         date: "06/06",
         tags: [
             {
@@ -83,7 +85,8 @@ const minicursos: Minicurso[] = [
         index: 2,
         title: "Desenvolvimento Mobile com Flutter",
         alternateTitle: "Desenvolvimento para dispositivos móveis",
-        picture: "https://avatars.githubusercontent.com/u/50432692?v=4",
+        picture: "/imagens-minicursos/flutter.png",
+        alternatePicture: "/imagens-minicursos/flutter2.jpg",
         date: "05/06",
         tags: [
             {
@@ -129,7 +132,8 @@ const minicursos: Minicurso[] = [
         index: 3,
         title: "GameMaker Studio - Aprenda sobre a melhor engine de jogos 2D do mercado",
         alternateTitle: "Desenvolvimento de jogos com o motor gráfico GameMaker Studio",
-        picture: "https://avatars.githubusercontent.com/u/50432692?v=4",
+        picture: "/imagens-minicursos/gamemaker.jpg",
+        alternatePicture: "/imagens-minicursos/gamemaker2.jpg",
         date: "05/06",
         tags: [
             {
@@ -169,7 +173,8 @@ const minicursos: Minicurso[] = [
         index: 4,
         title: "Introdução ao Linux",
         alternateTitle: "Sistemas Operacionais baseados em Linux",
-        picture: "https://avatars.githubusercontent.com/u/50432692?v=4",
+        picture: "/imagens-minicursos/linux.jpg",
+        alternatePicture: "/imagens-minicursos/linux2.jpg",
         date: "06/06",
         tags: [
             {
@@ -199,7 +204,8 @@ const minicursos: Minicurso[] = [
         index: 5,
         title: "Introdução ao PHP com Laravel MVC",
         alternateTitle: "PHP com Laravel MVC e suas vantagens",
-        picture: "https://avatars.githubusercontent.com/u/50432692?v=4",
+        picture: "/imagens-minicursos/laravel.jpg",
+        alternatePicture: "/imagens-minicursos/laravel2.jpg",
         date: "06/06",
         tags: [
             {
@@ -236,7 +242,8 @@ const minicursos: Minicurso[] = [
         index: 6,
         title: "Introdução a automação em Python com PyAutoGUI",
         alternateTitle: "Automação em Python",
-        picture: "https://avatars.githubusercontent.com/u/50432692?v=4",
+        picture: "/imagens-minicursos/pyautogui.png",
+        alternatePicture: "/imagens-minicursos/pyautogui2.jpg",
         date: "05/06",
         tags: [
             {
@@ -268,7 +275,8 @@ const minicursos: Minicurso[] = [
         index: 7,
         title: "Introdução a robótica com Lego EV3",
         alternateTitle: "Conceitos iniciais de robótica e programação com Lego EV3 Scratch.",
-        picture: "https://avatars.githubusercontent.com/u/50432692?v=4",
+        picture: "/imagens-minicursos/lego.png",
+        alternatePicture: "/imagens-minicursos/lego2.png",
         date: "06/06",
         tags: [
             {
@@ -312,7 +320,8 @@ const minicursos: Minicurso[] = [
         index: 8,
         title: "Introdução a Linguagem R",
         alternateTitle: "Análise de dados com R",
-        picture: "https://avatars.githubusercontent.com/u/50432692?v=4",
+        picture: "/imagens-minicursos/r.png",
+        alternatePicture: "/imagens-minicursos/r2.jpg",
         date: "05/06",
         tags: [
             {
@@ -349,6 +358,46 @@ const minicursos: Minicurso[] = [
                 picture: "https://avatars.githubusercontent.com/u/50432692?v=4"
             }
         ]
+    },
+    {
+        index: 9,
+        title: "Introdução a React e TailwindCSS",
+        alternateTitle: "Desenvolvimento de interfaces web com React em typescript com TailwindCSS",
+        picture: "/imagens-minicursos/react.jpg",
+        alternatePicture: "/imagens-minicursos/react2.jpg",
+        date: "06/06",
+        tags: [
+            {
+                name: "framework",
+                color: "bg-blue-300",
+                index: 0
+            },
+            {
+                name: "front-end",
+                color: "bg-green-300",
+                index: 1
+            },
+            {
+                name: "web",
+                color: "bg-yellow-300",
+                index: 2
+            }
+        ],
+        description: "O minicurso de introdução ao React e TailwindCSS tem como objetivo apresentar os conceitos básicos de desenvolvimento de interfaces web com React em typescript e TailwindCSS. Serão abordados conceitos como componentização, estado, propriedades, hooks, estilização com TailwindCSS e consumo de APIs.",
+        prerequesites: [
+            "Conhecimento básico em programação",
+            "Conhecimento básico em HTML e CSS",
+            "Conhecimento básico em JavaScript (não obrigatório)"
+        ],
+        palestrantes: [
+            {
+                name: "Pedro Figueira Bôa-Viagem",
+                bio: "Estudante de Ciência da Computação e desenvolvedor front-end.",
+                social: {
+                    github: "https://github.com/PepeuFBV"
+                }
+            }
+        ],
     }
 ];
 
@@ -406,6 +455,6 @@ const FAQuestions: Faq = {
             answer: "Com certeza, após a realização da inscricão e participação no evento, suas horas serão contabilizadas no sistema. É possível também ganhar horas extras assistindo os minicursos!"
         }
     ]
-}
+};
 
 export { minicursos, palestra, FAQuestions }
