@@ -1,10 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import image1 from "../../public/home1.jpeg";
-import image2 from "../../public/home2.jpg";
-import image3 from "../../public/home3.jpg";
 
 const ClickHereArrow = () => {
     return (
@@ -17,9 +13,8 @@ const ClickHereArrow = () => {
 }
 
 const Button = () => {
-    {/* TODO reactivate button + change its link */ }
     return (
-        <div className="m-2 mt-12 lg:mt-0">
+        <div className="m-2 mt-12 lg:mt-0 flex justify-center">
             <button
                 className="font-bold text-white bg-green-600 rounded-2xl px-4 py-2 text-2xl cursor-not-allowed"
                 disabled
@@ -55,34 +50,22 @@ const Title2 = () => {
 const Images = () => {
     return (
         <div className="h-[85vh] col-start-7 col-span-5 flex flex-col items-center justify-center lg:ml-24">
-            <div className="hidden lg:block bg-blue-200 rounded-xl w-[24%] h-3/6 mb-52 mr-60 absolute -z-10"></div>
-            <div className="hidden lg:block bg-green-200 rounded-xl w-1/5 h-[53%] mb-72 ml-64 absolute -z-30"></div>
+            <div className="hidden lg:block bg-blue-200 rounded-xl w-[24%] h-3/6 mb-52 mr-60 absolute"></div>
+            <div className="hidden lg:block bg-green-200 rounded-xl w-1/5 h-[53%] mb-72 ml-64 absolute"></div>
             <div className="hidden lg:grid col-span-1 lg:grid-rows-2 gap-3">
-                <div className="">
-                    <Image
-                        src={image1}
-                        alt="Imagem de antigos WTCC's"
-                        style={{ borderRadius: "0.8rem" }}
-                    />
+                <div className="z-10">
+                    <img src="/home1.jpeg" alt="Imagem de antigos WTCC's" className="rounded-2xl" />
                 </div>
-                <div className="grid grid-cols-12 gap-2 justify-items-center">
+                <div className="grid grid-cols-12 gap-2 justify-items-center z-10">
                     <div className="col-span-5 h-36 object-cover">
-                        <Image
-                            src={image2}
-                            alt="Imagem de antigos WTCC's"
-                            style={{ borderRadius: "0.8rem" }}
-                        />
+                        <img src="/home2.jpg" alt="Imagem de antigos WTCC's" className="rounded-2xl" />
                     </div>
                     <div className="col-span-7 h-36 object-cover">
-                        <Image
-                            src={image3}
-                            alt="Imagem de antigos WTCC's"
-                            style={{ borderRadius: "0.8rem" }}
-                        />
+                        <img src="/home3.jpg" alt="Imagem de antigos WTCC's" className="rounded-2xl" />
                     </div>
                 </div>
             </div>
-            <div className="">
+            <div className="flex flex-col justify-center">
                 <Button />
                 <ClickHereArrow />
             </div>

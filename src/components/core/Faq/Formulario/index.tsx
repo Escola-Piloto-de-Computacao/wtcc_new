@@ -15,8 +15,8 @@ const schema = z.object({
     }),
     question: z.string().min(1, {
         message: 'A pergunta deve ter algum texto!'
-    }).max(3000, {
-        message: 'Limite de 3000 caracteres atingido!'
+    }).max(120, {
+        message: 'Limite de 120 caracteres atingido!'
     }),
     obs: z.string().optional(),
 });
