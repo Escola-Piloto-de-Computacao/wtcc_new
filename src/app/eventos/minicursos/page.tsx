@@ -5,6 +5,7 @@ import { MinicourseCard, MinicourseCardSubtitle, MinicourseCardHeader, Minicours
 import { Button } from '@/components/ui/button';
 import { Tag } from '@/components/ui/tag';
 import { HiCursorClick } from "react-icons/hi";
+import { BsInfoCircle } from "react-icons/bs";
 import { Modal } from "antd";
 import { Minicurso } from "@/lib/definitions";
 import { ModalContent } from "@/components/core/Eventos/ModalContent";
@@ -56,6 +57,13 @@ export default function Minicursos() {
                         className={`text-lg ${selectedButton === "todos" ? "bg-gray-200" : ""}`}>
                         todos
                     </Button>
+                </div>
+                <div className="md:hidden flex gap-1">
+                    <BsInfoCircle size={20} />
+                    <p className="text-center text-sm">Clique no minicurso para ver mais informações!</p>
+                    <div className="pt-[0.15rem]">
+                        <HiCursorClick size={15} />
+                    </div>
                 </div>
             </div>
             <div className="grid grid-cols-3 mx-20 mb-16 gap-8">
