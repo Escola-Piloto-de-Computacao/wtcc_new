@@ -402,8 +402,8 @@ const minicursos: Minicurso[] = [
 ];
 
 const palestranteSelecionado: Palestrante = {
-    name: "Ainda não há palestrante cadastrado",
-    bio: "Ainda não há palestrante cadastrado",
+    name: "Mikéas Azevedo",
+    bio: "Egresso do curso de Ciência da Computação da UFERSA, atualmente Software Engineer no iFood, com experiência em empresas como Mercado Livre e Invillia.",
     social: {
         github: "test"
     },
@@ -411,10 +411,11 @@ const palestranteSelecionado: Palestrante = {
 };
 
 const palestra: Palestra = {
-    name: "Ainda não há palestra cadastrada",
-    description: "Ainda não há palestra cadastrada",
+    name: "Perspectiva sobre o futuro do mercado de trabalho",
+    description: "Mikéias Azevedo, formado em Ciência da Computação pela UFERSA, é atualmente Software Engineer no iFood. Em sua apresentação, compartilhará de forma pessoal sua trajetória acadêmica e profissional, destacando os desafios e conquistas que marcaram sua carreira.",
+    descriptionCont: "Ele discutirá as competências essenciais para se destacar no competitivo mercado de tecnologia e oferecerá dicas práticas e valiosas para estudantes e profissionais que estão iniciando suas jornadas.",
     speaker: palestranteSelecionado,
-    img: "/palestra.jpeg"
+    img: "/palestra/mikeas2.jpg"
 };
 
 const FAQuestions: Faq = {

@@ -38,6 +38,7 @@ export type Tag = {
 export type Palestra = {
     name: string;
     description: string;
+    descriptionCont?: string;
     speaker: Palestrante;
     img: string;
 };
