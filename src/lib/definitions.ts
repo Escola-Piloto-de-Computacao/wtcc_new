@@ -51,3 +51,12 @@ export type Question = {
 export type Faq = {
     questions: Question[];
 };
+
+export type Atividade = {
+    index: number;
+    dia: number;
+    hora: string;
+    titulo: string;
+    descricao: string;
+    localizacao: string;
+}

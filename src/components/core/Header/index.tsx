@@ -23,8 +23,8 @@ export default function Header() {
 
     return (
         <header
-            className={`top-0 w-screen backdrop-filter backdrop-blur-lg bg-white/50 fixed z-50 trasition ease-in-out duration-500
-            ${animateHeader && "shadow-2xl"}`}
+            className={`top-0 w-screen backdrop-filter backdrop-blur-lg bg-white/50 fixed z-50 trasition ease-in-out duration-500 border-b border-gray-100
+            ${animateHeader && "shadow-2xl border-none"}`}
         >
             <ProgressBar />
             <div

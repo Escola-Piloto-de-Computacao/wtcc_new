@@ -1,0 +1,17 @@
+@keyframes highlighting {
+    0% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: rgba(45, 213, 255, 0.393);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+.animate-highlighter {
+    animation: highlighting 3s;
+}

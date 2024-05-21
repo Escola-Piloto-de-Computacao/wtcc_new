@@ -34,8 +34,8 @@ export default function Minicursos() {
         <div className="flex flex-col gap-10">
             <div className="col-span-1 flex flex-col place-self-center gap-3">
                 <div className="text-center">
-                    <h2 className="text-2xl">Minicursos</h2>
-                    <p className="text-sm">13:30</p>
+                    <h2 className="text-3xl">Minicursos</h2>
+                    <p className="text-md">13:30</p>
                 </div>
                 <div className="flex gap-10">
                     <Button
@@ -114,7 +114,7 @@ const CardMinicurso: React.FC<CardMinicursoProps> = ({ minicurso, onOpenModal })
                                 </div>
                             ))}
                         </div>
-                        <HiCursorClick />
+                        {/*<HiCursorClick />*/}
                     </div>
                 </MinicourseCardHeader>
                 <MinicourseCardImage src={minicurso.picture} alt={minicurso.title} />
@@ -134,32 +134,32 @@ const LogoPicker: React.FC<LogoPickerProps> = ({ label }) => {
     switch (label) {
         case "front-end":
             return (
-                <div className="pt-[0.3px]">
-                    <FrontEndIcon size={20} />
+                <div className="pt-[0.4px]">
+                    <FrontEndIcon size={19} />
                 </div>
             );
         case "web":
             return (
                 <div className="pt-[0.3px]">
-                    <WebIcon size={20} />
+                    <WebIcon size={19} />
                 </div>
             );
         case "iniciante":
             return (
                 <div className="pt-[0.3px]">
-                    <InicianteIcon size={20} />
+                    <InicianteIcon size={19} />
                 </div>
             );
         case "exatas":
             return (
                 <div className="pt-[0.3px]">
-                    <MathIcon size={20} />
+                    <MathIcon size={19} />
                 </div>
             );
         case "linguagem":
             return (
                 <div className="pt-[0.3px]">
-                    <LanguageIcon size={20} />
+                    <LanguageIcon size={19} />
                 </div>
             );
         case "framework":
@@ -171,49 +171,49 @@ const LogoPicker: React.FC<LogoPickerProps> = ({ label }) => {
         case "mobile":
             return (
                 <div className="pt-[0.3px]">
-                    <MobileIcon size={20} />
+                    <MobileIcon size={19} />
                 </div>
             );
         case "back-end":
             return (
                 <div className="pt-[0.3px]">
-                    <BackendIcon size={20} />
+                    <BackendIcon size={19} />
                 </div>
             );
         case "ferrementa":
             return (
                 <div className="pt-[0.3px]">
-                    <ToolIcon size={20} />
+                    <ToolIcon size={19} />
                 </div>
             );
         case "jogos":
             return (
                 <div className="pt-[0.3px] pr-[0.5px]">
-                    <GameIcon size={20} />
+                    <GameIcon size={19} />
                 </div>
             );
         case "sistemas operacionais":
             return (
                 <div className="pt-[0.3px]">
-                    <OSIcon size={20} />
+                    <OSIcon size={19} />
                 </div>
             );
         case "automação":
             return (
                 <div className="pt-[0.3px]">
-                    <AutomationIcon size={20} />
+                    <AutomationIcon size={19} />
                 </div>
             );
         case "robótica":
             return (
                 <div className="pt-[0.3px]">
-                    <RobotIcon size={20} />
+                    <RobotIcon size={19} />
                 </div>
             );
         case "análise de dados":
             return (
                 <div className="pt-[0.3px]">
-                    <MathIcon size={20} />
+                    <MathIcon size={19} />
                 </div>
             );
         default:

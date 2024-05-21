@@ -23,13 +23,13 @@ const HeaderItems = () => {
                 <NavigationMenuItem>
                     <Link href="/" legacyBehavior passHref>
                         <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'text-md')}>
-                            home
+                            Home
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <NavigationMenuTrigger className="text-md">
-                        eventos
+                        Eventos
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[550px] lg:grid-cols-[.75fr_1fr]">
@@ -81,21 +81,21 @@ const HeaderItems = () => {
                 <NavigationMenuItem>
                     <Link href="/cronograma" legacyBehavior passHref>
                         <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'text-md')}>
-                            cronograma
+                            Cronograma
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <Link href="/galeria" legacyBehavior passHref>
                         <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'text-md')}>
-                            galeria
+                            Galeria
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <Link href="/faq" legacyBehavior passHref>
                         <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'text-md')}>
-                            faq
+                            FAQ
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>

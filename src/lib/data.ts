@@ -1,5 +1,5 @@
 import React from 'react';
-import { Minicurso, Palestrante, Palestra, Faq } from '@/lib/definitions';
+import { Minicurso, Palestrante, Palestra, Faq, Atividade } from '@/lib/definitions';
 
 const minicursos: Minicurso[] = [
     {
@@ -457,4 +457,87 @@ const FAQuestions: Faq = {
     ]
 };
 
-export { minicursos, palestra, FAQuestions }
+const cronograma: Atividade[] = [
+    {
+        index: 0,
+        dia: 1,
+        hora: "08:00 - 10:00",
+        titulo: "Abertura Oficial do evento",
+        descricao: "Abertura do evento com a equipe organizadora academica e a diretoria do curso de Ciência da Computação.",
+        localizacao: "Auditório da PROEC"
+    },
+    {
+        index: 1,
+        dia: 1,
+        hora: "10:00 - 10:30",
+        titulo: "Coffee Break",
+        descricao: "",
+        localizacao: "Auditório da PROEC"
+    },
+    {
+        index: 2,
+        dia: 1,
+        hora: "10:30 - 12:00",
+        titulo: "Mostra Científica",
+        descricao: "Apresentação de trabalhos científicos realizados por alunos do curso de Ciência da Computação.",
+        localizacao: "Auditório da PROEC"
+    },
+    {
+        index: 3,
+        dia: 1,
+        hora: "14:00 - 18:00",
+        titulo: "Minicursos",
+        descricao: "Minicursos oferecidos por alunos e professores do curso de Ciência da Computação.",
+        localizacao: "Laboratórios do LCC"
+    },
+    {
+        index: 4,
+        dia: 2,
+        hora: "08:00 - 09:30",
+        titulo: "Palestra",
+        descricao: "Palestra com um convidado especial sobre o mercado de trabalho e a importância da Computação.",
+        localizacao: "Auditório da PROEC"
+    },
+    {
+        index: 5,
+        dia: 2,
+        hora: "09:30 - 10:00",
+        titulo: "Coffee Break",
+        descricao: "",
+        localizacao: "Auditório da PROEC"
+    },
+    {
+        index: 6,
+        dia: 2,
+        hora: "10:00 - 11:30",
+        titulo: "Mesa Redonda",
+        descricao: "Mesa redonda com professores e alunos da área de Computação.",
+        localizacao: "Auditório da PROEC"
+    },
+    {
+        index: 7,
+        dia: 2,
+        hora: "14:00 - 18:00",
+        titulo: "Minicursos",
+        descricao: "Minicursos oferecidos por alunos e professores do curso de Ciência da Computação.",
+        localizacao: "Laboratórios do LCC"
+    },
+    {
+        index: 8,
+        dia: 3,
+        hora: "08:00 - 11:00",
+        titulo: "Maratona de Programação",
+        descricao: "Competição de programação com alunos do curso de Ciência da Computação.",
+        localizacao: "Laboratórios do LCC"
+    },
+    {
+        index: 9,
+        dia: 3,
+        hora: "11:00 - 12:00",
+        titulo: "Encerramento do evento",
+        descricao: "Encerramento do evento com a equipe organizadora academica e a diretoria do curso de Ciência da Computação.",
+        localizacao: "Auditório da PROEC"
+    }
+]
+
+export { minicursos, palestra, FAQuestions, cronograma }
