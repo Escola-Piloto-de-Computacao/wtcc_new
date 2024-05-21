@@ -36,11 +36,11 @@ const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
                     <h3 className="text-lg font-semibold">Não há pré-requisitos</h3>
                 )}
             </div>
-            <div className="col-span-12 mt-7 flex justify-end mr-[7.5rem]">
+            <div className="col-span-12 w-full grid grid-cols-12 justify-center">
                 <Button
                     variant="default"
                     size="lg"
-                    className="bg-sky-400 hover:bg-sky-500"
+                    className="col-start-9 col-span-3 bg-sky-400 hover:bg-sky-500"
                 >
                     Inscreva-se
                 </Button>
@@ -58,7 +58,11 @@ const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
                                 <div className="flex flex-col">
                                     <h3 className="text-base ml-1 font-semibold">{minicourse.palestrantes[0].name}</h3>
                                     {minicourse.palestrantes[0].bio.length > 114 ? (
-                                        <Tooltip title={minicourse.palestrantes[0].bio}>
+                                        <Tooltip
+                                            title={minicourse.palestrantes[0].bio}
+                                            color='white'
+                                            overlayInnerStyle={{ color: 'black' }}
+                                        >
                                             <p className="line-clamp-3 text-justify hyphens-auto text-sm">{minicourse.palestrantes[0].bio}</p>
                                         </Tooltip>
                                     ) : (
@@ -75,7 +79,11 @@ const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
                                 <div className="flex flex-col">
                                     <h3 className="text-base ml-1 font-semibold">{minicourse.palestrantes[1].name}</h3>
                                     {minicourse.palestrantes[1].bio.length > 114 ? (
-                                        <Tooltip title={minicourse.palestrantes[1].bio} >
+                                        <Tooltip
+                                            title={minicourse.palestrantes[1].bio}
+                                            color='white'
+                                            overlayInnerStyle={{ color: 'black' }}
+                                        >
                                             <p className="line-clamp-3 text-justify hyphens-auto text-sm">{minicourse.palestrantes[1].bio}</p>
                                         </Tooltip>
                                     ) : (
@@ -102,7 +110,11 @@ const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
                             <div className="flex flex-col">
                                 <h3 className="text-base font-semibold ml-1">{minicourse.palestrantes[0].name}</h3>
                                 {minicourse.palestrantes[0].bio.length > 114 && minicourse.palestrantes.length > 1 ? (
-                                    <Tooltip title={minicourse.palestrantes[0].bio}>
+                                    <Tooltip
+                                        title={minicourse.palestrantes[0].bio}
+                                        color='white'
+                                        overlayInnerStyle={{ color: 'black' }}
+                                    >
                                         <p className="line-clamp-3 text-justify hyphens-auto">{minicourse.palestrantes[0].bio}</p>
                                     </Tooltip>
                                 ) : (
