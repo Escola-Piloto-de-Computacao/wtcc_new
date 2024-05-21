@@ -11,7 +11,7 @@ export default function Galeria() {
             return [150, 100];
         }
         else if (window.innerWidth < 1100) {
-            return [175, 116];
+            return [159, 100];
         }
         else {
             return [350, 240];
