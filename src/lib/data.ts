@@ -35,7 +35,7 @@ const minicursos: Minicurso[] = [
                     instagram: "https://www.instagram.com/artie.arauj0/",
                     email: "arthurfellype21@gmail.com",
                 },
-                picture: "https://avatars.githubusercontent.com/u/50432692?v=4"
+                picture: "/imagens-minicursos/arthurFelipe.jpeg"
             },
             {
                 name: "Wender Enzo de Oliveira",
@@ -44,7 +44,7 @@ const minicursos: Minicurso[] = [
                     instagram: "https://www.instagram.com/wenderenzo/",
                     email: "wenderenzo2014@outlook.com"
                 },
-                picture: "https://avatars.githubusercontent.com/u/50432692?v=4"
+                picture: "/imagens-minicursos/wenderEnzo.jpeg"
             }
         ],
     },
@@ -77,7 +77,7 @@ const minicursos: Minicurso[] = [
                     linkedin: "https://www.linkedin.com/in/andrade-paulo/",
                     instagram: "https://www.instagram.com/h.oluap/"
                 },
-                picture: "https://avatars.githubusercontent.com/u/50432692?v=4"
+                picture: "/imagens-minicursos/pauloHenrique.jpg"
             }
         ],
     },
@@ -196,7 +196,8 @@ const minicursos: Minicurso[] = [
                 social: {
                     github: "https://github.com/thiagohenriquefp",
                     linkedin: "https://linkedin.com/in/thiagohfpereira",
-                }
+                },
+                picture: "/imagens-minicursos/thiagoHenrique.jpeg"
             }
         ]
     },
@@ -234,7 +235,8 @@ const minicursos: Minicurso[] = [
                 bio: "Técnico em informática pelo IFPB, atualmente estudante de Ciência da computação na UFERSA, com experiência em C# ASP.NET MVC",
                 social: {
                     instagram: "https://www.instagram.com/lucaspadilha06"
-                }
+                },
+                picture: "/imagens-minicursos/lucasPadilha.png"
             }
         ]
     },
@@ -267,7 +269,8 @@ const minicursos: Minicurso[] = [
                 bio: "Estudante de Ciência da Computação do 5º período",
                 social: {
                     github: "https://github.com/FolkBlues7"
-                }
+                },
+                picture: "/imagens-minicursos/viniciusGabriel.jpg"
             }
         ]
     },
@@ -303,7 +306,8 @@ const minicursos: Minicurso[] = [
                     github: "https://github.com/G4ldin0",
                     instagram: "https://www.instagram.com/g4ld1n0_/",
                     linkedin: "www.linkedin.com/in/joão-lucas-0421481b0"
-                }
+                },
+                picture: "/imagens-minicursos/joaoLucas.jpeg"
             },
             {
                 name: "Sarah Heloysa Oliveira Tomaz",
@@ -312,7 +316,8 @@ const minicursos: Minicurso[] = [
                     github: "https://github.com/SarahTomaz",
                     linkedin: "https://www.linkedin.com/in/sarah-tomaz-3627952ab/",
                     instagram: "https://www.instagram.com/sarah.stho/"
-                }
+                },
+                picture: "/imagens-minicursos/sarahHeloysa.jpeg"
             }
         ]
     },
@@ -347,7 +352,7 @@ const minicursos: Minicurso[] = [
                 social: {
                     github: "https://github.com/joas-barros"
                 },
-                picture: "https://avatars.githubusercontent.com/u/50432692?v=4"
+                picture: "/imagens-minicursos/joasGabriel.jpg"
             },
             {
                 name: "Lucas Silva de Souza",
@@ -355,7 +360,7 @@ const minicursos: Minicurso[] = [
                 social: {
                     github: "https://github.com/Lucassilv7"
                 },
-                picture: "https://avatars.githubusercontent.com/u/50432692?v=4"
+                picture: "/imagens-minicursos/lucasSilva.png"
             }
         ]
     },
@@ -395,7 +400,8 @@ const minicursos: Minicurso[] = [
                 bio: "Estudante de Ciência da Computação e desenvolvedor front-end.",
                 social: {
                     github: "https://github.com/PepeuFBV"
-                }
+                },
+                picture: "/imagens-minicursos/pedroFigueira.png"
             }
         ],
     }
@@ -415,7 +421,7 @@ const palestra: Palestra = {
     description: "Mikéias Azevedo, formado em Ciência da Computação pela UFERSA, é atualmente Software Engineer no iFood. Em sua apresentação, compartilhará de forma pessoal sua trajetória acadêmica e profissional, destacando os desafios e conquistas que marcaram sua carreira.",
     descriptionCont: "Ele discutirá as competências essenciais para se destacar no competitivo mercado de tecnologia e oferecerá dicas práticas e valiosas para estudantes e profissionais que estão iniciando suas jornadas.",
     speaker: palestranteSelecionado,
-    img: "/palestra/mikeas2.jpg"
+    img: "/palestra/mikeas.jpg"
 };
 
 const FAQuestions: Faq = {
