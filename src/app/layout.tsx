@@ -7,6 +7,9 @@ import Footer from "../components/core/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+    icons: {
+        icon: "/favicon.ico",
+    },
     title: "IX WTCC",
     description: "Site oficial do WTCC",
 };
