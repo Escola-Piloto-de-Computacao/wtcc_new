@@ -59,4 +59,11 @@ export type Atividade = {
     titulo: string;
     descricao: string;
     localizacao: string;
-}
+};
+
+export type Imagem = {
+    index: number;
+    src: string;
+    descricao: string;
+    alt: string;
+};

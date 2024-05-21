@@ -1,5 +1,5 @@
 import React from 'react';
-import { Minicurso, Palestrante, Palestra, Faq, Atividade } from '@/lib/definitions';
+import { Minicurso, Palestrante, Palestra, Faq, Atividade, Imagem } from '@/lib/definitions';
 
 const minicursos: Minicurso[] = [
     {
@@ -538,6 +538,129 @@ const cronograma: Atividade[] = [
         descricao: "Encerramento do evento com a equipe organizadora academica e a diretoria do curso de Ciência da Computação.",
         localizacao: "Auditório da PROEC"
     }
-]
+];
 
-export { minicursos, palestra, FAQuestions, cronograma }
+const imagens: Imagem[] = [
+    {
+        index: 0,
+        src: "/imagens-galeria/1.jpeg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 1,
+        src: "/imagens-galeria/2.jpeg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 2,
+        src: "/imagens-galeria/3.jpeg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 3,
+        src: "/imagens-galeria/4.jpeg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 4,
+        src: "/imagens-galeria/5.jpeg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 5,
+        src: "/imagens-galeria/6.jpeg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 6,
+        src: "/imagens-galeria/7.jpeg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 7,
+        src: "/imagens-galeria/8.jpeg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 8,
+        src: "/imagens-galeria/9.jpeg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 9,
+        src: "/imagens-galeria/10.jpeg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 10,
+        src: "/imagens-galeria/11.jpeg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 11,
+        src: "/imagens-galeria/12.jpeg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 12,
+        src: "/imagens-galeria/19.jpg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 13,
+        src: "/imagens-galeria/35.jpg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 14,
+        src: "/imagens-galeria/36.jpg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 15,
+        src: "/imagens-galeria/38.jpg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 16,
+        src: "/imagens-galeria/39.jpg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 17,
+        src: "/imagens-galeria/40.jpg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 18,
+        src: "/imagens-galeria/41.jpg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 19,
+        src: "/imagens-galeria/42.jpg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    }
+];
+
+export { minicursos, palestra, FAQuestions, cronograma, imagens }
