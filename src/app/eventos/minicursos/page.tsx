@@ -78,15 +78,18 @@ export default function Minicursos() {
                             <>
                                 <CardMinicurso key={minicurso.index} minicurso={minicurso} onOpenModal={handleModalOpen} />
                                 <Modal
-                                    //title={minicurso.alternateTitle}
                                     centered
                                     open={minicurso.index === modalOpen}
                                     footer={null}
                                     onCancel={() => setModalOpen(-1)}
                                     width={930}
+                                    className=""
                                 >
-                                    <div className="text-left text-base text-gray-600 italic">
-                                        {minicurso.alternateTitle}
+                                    <div className="flex flex-col text-left text-base text-gray-600 italic">
+                                        <p className="font-semibold">{minicurso.date} às 14:00 - {minicurso.localizacao}</p>
+                                        <div className="">
+                                            {minicurso.alternateTitle}
+                                        </div>
                                     </div>
                                     <ModalContent minicourse={minicurso} />
                                 </Modal>

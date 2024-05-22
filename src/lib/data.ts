@@ -47,6 +47,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/wenderEnzo.jpeg"
             }
         ],
+        localizacao: "Lab x"
     },
     {
         index: 1,
@@ -80,6 +81,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/pauloHenrique.jpg"
             }
         ],
+        localizacao: "Lab x"
     },
     {
         index: 2,
@@ -127,6 +129,7 @@ const minicursos: Minicurso[] = [
                 }
             }
         ],
+        localizacao: "Lab x"
     },
     {
         index: 3,
@@ -167,7 +170,8 @@ const minicursos: Minicurso[] = [
                     instagram: "https://www.instagram.com/ryxnlock"
                 }
             }
-        ]
+        ],
+        localizacao: "Lab x"
     },
     {
         index: 4,
@@ -199,7 +203,8 @@ const minicursos: Minicurso[] = [
                 },
                 picture: "/imagens-minicursos/thiagoHenrique.jpeg"
             }
-        ]
+        ],
+        localizacao: "Lab x"
     },
     {
         index: 5,
@@ -238,7 +243,8 @@ const minicursos: Minicurso[] = [
                 },
                 picture: "/imagens-minicursos/lucasPadilha.png"
             }
-        ]
+        ],
+        localizacao: "Lab x"
     },
     {
         index: 6,
@@ -272,7 +278,8 @@ const minicursos: Minicurso[] = [
                 },
                 picture: "/imagens-minicursos/viniciusGabriel.jpg"
             }
-        ]
+        ],
+        localizacao: "Lab x"
     },
     {
         index: 7,
@@ -319,7 +326,8 @@ const minicursos: Minicurso[] = [
                 },
                 picture: "/imagens-minicursos/sarahHeloysa.jpeg"
             }
-        ]
+        ],
+        localizacao: "Lab x"
     },
     {
         index: 8,
@@ -362,7 +370,8 @@ const minicursos: Minicurso[] = [
                 },
                 picture: "/imagens-minicursos/lucasSilva.png"
             }
-        ]
+        ],
+        localizacao: "Lab x"
     },
     {
         index: 9,
@@ -404,6 +413,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/pedroFigueira.png"
             }
         ],
+        localizacao: "Lab x"
     }
 ];
 

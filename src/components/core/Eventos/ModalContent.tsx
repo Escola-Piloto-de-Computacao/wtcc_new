@@ -10,19 +10,19 @@ import { Button } from '@/components/ui/button';
 interface ModalContentProps { minicourse: Minicurso; };
 const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
     return (
-        <div className="w-full grid grid-cols-12 mb-3">
-            <div className="col-span-7 flex flex-col gap-4 mr-8">
+        <div className="w-full sm:grid sm:grid-cols-12 flex flex-col mb-3">
+            <div className="sm:col-span-7 flex flex-col gap-4 sm:mr-8">
                 <h1 className="text-3xl font-semibold">{minicourse.title}</h1>
                 <p className="ml-2 text-base tracking-wide text-justify hyphens-auto">{minicourse.description}</p>
             </div>
-            <div className="col-span-5 mt-10">
+            <div className="hidden sm:block sm:col-span-5 mt-10">
                 {minicourse.alternatePicture ? (
-                    <img src={minicourse.alternatePicture} alt={minicourse.title} className="w-full h-full rounded-md" />
+                    <img src={minicourse.alternatePicture} alt={minicourse.title} className="w-full h-full rounded-md object-cover" />
                 ) : (
-                    <img src={minicourse.picture} alt={minicourse.title} className="w-full h-60 rounded-md" />
+                    <img src={minicourse.picture} alt={minicourse.title} className="w-full h-60 rounded-md object-cover" />
                 )}
             </div>
-            <div className="col-span-12 mt-7">
+            <div className="sm:col-span-12 mt-4 sm:mt-7">
                 {minicourse.prerequesites && minicourse.prerequesites.length > 0 ? (
                     <>
                         <h3 className="text-lg font-semibold">Pré-requisitos:</h3>
@@ -33,23 +33,23 @@ const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
                         </ul>
                     </>
                 ) : (
-                    <h3 className="text-lg font-semibold">Não há pré-requisitos</h3>
+                    <h3 className="text-lg font-semibold text-center sm:text-left pb-6">Não há pré-requisitos</h3>
                 )}
             </div>
-            <div className="col-span-12 w-full grid grid-cols-12 justify-center">
+            <div className="sm:col-span-12 w-full sm:grid sm:grid-cols-12 flex justify-center">
                 <Button
                     variant="default"
                     size="lg"
-                    className="col-start-9 col-span-3 bg-sky-400 hover:bg-sky-500"
+                    className="sm:col-start-9 sm:col-span-3 bg-sky-400 hover:bg-sky-500 px-12 sm:px-0"
                 >
                     Inscreva-se
                 </Button>
             </div>
-            <div className="col-span-12 mx-3">
+            <div className="sm:col-span-12 mb-3 mt-5 sm:mx-3">
                 <div className="border-t border-gray-300 my-6"></div>
                 {minicourse.palestrantes.length > 1 ? (
-                    <div className="flex gap-12 font-mono tracking-tighter">
-                        <div className="flex flex-col w-1/2">
+                    <div className="flex sm:flex-row flex-col gap-12 font-mono tracking-tighter items-center sm:items-start">
+                        <div className="flex flex-col sm:w-1/2">
                             <div className="flex gap-4">
                                 <Avatar size="large">
                                     <AvatarImage src={minicourse.palestrantes[0].picture} alt={minicourse.palestrantes[0].name} />
@@ -74,7 +74,7 @@ const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
                                 <SocialMediaShowcase social={minicourse.palestrantes[0].social} />
                             </div>
                         </div>
-                        <div className="flex flex-col w-1/2">
+                        <div className="flex flex-col sm:w-1/2">
                             <div className="flex gap-4">
                                 <div className="flex flex-col">
                                     <h3 className="text-base ml-1 font-semibold">{minicourse.palestrantes[1].name}</h3>

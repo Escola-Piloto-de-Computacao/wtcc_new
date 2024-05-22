@@ -13,6 +13,7 @@ export type Minicurso = {
     description: string;
     prerequesites?: string[];
     palestrantes: Palestrante[];
+    localizacao: string;
 };
 
 export type Palestrante = {
