@@ -27,11 +27,11 @@ const Button = () => {
 
 const Title1 = () => {
     return (
-        <div className="mb-12 pr-10">
+        <div className="mb-12 lg:pr-10">
             <div className="text-3xl lg:text-4xl text-center lg:text-left font-thin rounded-md">
-                <h1 className="bg-yellow-300 pl-1 pr-2 inline font-semibold leading-0">Descubra o mundo da computação</h1>
+                <h1 className="bg-yellow-300 lg:pl-1 lg:pr-2 inline font-semibold leading-0">Descubra o mundo da computação</h1>
             </div>
-            <p className="mt-6 lg:mt-5 lg:w-11/12 lg:ml-4 lg:text-justify lg:indent-3 text-balance hyphens-auto break-words">O IX Workshop Técnico-Científico de Computação do RN tem como propósito despertar o interesse dos estudantes de graduação e pós-graduação em pesquisa científica na área de ciência da computação. Além disso, busca discutir temas relevantes para estudantes e profissionais, desenvolver habilidades não abordadas na faculdade, promover o aprendizado mútuo e introduzir os calouros ao curso. O evento proporciona um espaço de intercâmbio entre alunos de Ciência da Computação e cursos de tecnologia, exibindo trabalhos acadêmicos e pesquisas tecnológicas realizadas na universidade.</p>
+            <p className="mt-6 lg:mt-5 lg:w-11/12 lg:ml-4 text-justify lg:indent-3 text-balance hyphens-auto break-words">O IX Workshop Técnico-Científico de Computação do RN tem como propósito despertar o interesse dos estudantes de graduação e pós-graduação em pesquisa científica na área de ciência da computação. Além disso, busca discutir temas relevantes para estudantes e profissionais, desenvolver habilidades não abordadas na faculdade, promover o aprendizado mútuo e introduzir os calouros ao curso. O evento proporciona um espaço de intercâmbio entre alunos de Ciência da Computação e cursos de tecnologia, exibindo trabalhos acadêmicos e pesquisas tecnológicas realizadas na universidade.</p>
         </div>
     );
 }
@@ -39,17 +39,17 @@ const Title1 = () => {
 const Title2 = () => {
     return (
         <div>
-            <div className="text-3xl text-center lg:text-left rounded">
+            <div className="pt-3 lg:pt-0 text-3xl text-center lg:text-left rounded">
                 <h1 className="bg-yellow-300 pl-1 pr-2 inline">Despertando o conhecimento...</h1>
             </div>
-            <p className="mt-5 lg:ml-4 lg:text-justify lg:indent-4 text-balance hyphens-auto break-words"> Durante o evento, os participantes terão acesso a uma programação diversificada, incluindo cerimônia de abertura, palestras, mesas-redondas, minicursos, hackathon e maratona de programação. Além disso, ao participar dos minicursos, os alunos poderão obter <span className="bg-yellow-300">CERTIFICADOS</span>, enriquecendo seus currículos e ampliando suas habilidades na área. Não perca essa oportunidade de aprendizado e networking! 🚀🔍🎓</p>
+            <p className="mt-5 lg:ml-4 text-justify lg:indent-4 text-balance hyphens-auto break-words"> Durante o evento, os participantes terão acesso a uma programação diversificada, incluindo cerimônia de abertura, palestras, mesas-redondas, minicursos, hackathon e maratona de programação. Além disso, ao participar dos minicursos, os alunos poderão obter <span className="bg-yellow-300">CERTIFICADOS</span>, enriquecendo seus currículos e ampliando suas habilidades na área. Não perca essa oportunidade de aprendizado e networking! 🚀🔍🎓</p>
         </div>
     );
 }
 
 const Images = () => {
     return (
-        <div className="h-[85vh] col-start-7 col-span-5 flex flex-col items-center justify-center lg:ml-24">
+        <div className="lg:h-[85vh] py-4 lg:py-0 col-start-7 col-span-5 flex flex-col items-center justify-center lg:ml-24">
             <div className="hidden lg:block bg-blue-200 rounded-xl w-[24%] h-3/6 mb-52 mr-60 absolute"></div>
             <div className="hidden lg:block bg-green-200 rounded-xl w-1/5 h-[53%] mb-72 ml-64 absolute"></div>
             <div className="hidden lg:grid col-span-1 lg:grid-rows-2 gap-3">
@@ -73,7 +73,7 @@ const Images = () => {
     );
 }
 
-const Home = () => {
+export default function Home() {
     return (
         <div className="flex flex-col gap-36">
             <section className="lg:grid lg:grid-cols-12">
@@ -85,6 +85,4 @@ const Home = () => {
             </section>
         </div>
     );
-}
-
-export default Home;
+};
