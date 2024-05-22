@@ -421,7 +421,7 @@ const palestra: Palestra = {
     description: "Mikéias Azevedo, formado em Ciência da Computação pela UFERSA, é atualmente Software Engineer no iFood. Em sua apresentação, compartilhará de forma pessoal sua trajetória acadêmica e profissional, destacando os desafios e conquistas que marcaram sua carreira.",
     descriptionCont: "Ele discutirá as competências essenciais para se destacar no competitivo mercado de tecnologia e oferecerá dicas práticas e valiosas para estudantes e profissionais que estão iniciando suas jornadas.",
     speaker: palestranteSelecionado,
-    img: "/palestra/mikeas.jpg"
+    img: "/palestra/mikeas.png"
 };
 
 const FAQuestions: Faq = {
