@@ -160,7 +160,8 @@ const minicursos: Minicurso[] = [
                 bio: "Aspirante a game dev com experiência em alguns projetos.",
                 social: {
                     github: "https://github.com/vinicius-dantasso"
-                }
+                },
+                picture: "https://avatars.githubusercontent.com/u/88327585?v=4"
             },
             {
                 name: "Luiz Ryan Borges da Costa",
@@ -168,7 +169,8 @@ const minicursos: Minicurso[] = [
                 social: {
                     github: "https://github.com/lryanborges",
                     instagram: "https://www.instagram.com/ryxnlock"
-                }
+                },
+                picture: "/imagens-minicursos/luisRyan.png"
             }
         ],
         localizacao: "Lab x"
