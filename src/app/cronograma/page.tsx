@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { cronograma } from "@/lib/data";
-import ScheduleCard from "@/components/core/Schedule/ScheduleCard";
+import ScheduleCard from "@/components/core/Cronograma/ScheduleCard";
 import { Button } from "@/components/ui/button";
 
 export default function Cronograma() {
@@ -14,10 +14,10 @@ export default function Cronograma() {
     }
 
     return (
-        <section className="h-[81vh] flex flex-col gap-3">
+        <section className="lg:h-[85vh] flex flex-col gap-3 mb-24 lg:mb-0">
             <div className="text-center">
                 <h1 className="text-4xl">Cronograma</h1>
-                <h2 className="font-light">Descubra onde e quando estar</h2>
+                <h2 className="font-light">Programação completa</h2>
             </div>
             <div className="flex flex-col gap-16">
                 <Datas handleDayChange={handleDayChange} currentDay={currentDay} />

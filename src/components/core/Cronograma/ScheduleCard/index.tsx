@@ -17,15 +17,6 @@ const Loc = () => {
     );
 };
 
-const locPop = () => {
-    return (
-        <div>
-            <h1 className="text-md">Clique para ver no mapa!</h1>
-        </div>
-    );
-
-};
-
 interface ScheduleCardProps {
     atividade: Atividade;
     highLighted?: boolean;
@@ -33,20 +24,31 @@ interface ScheduleCardProps {
 const ScheduleCard: React.FC<ScheduleCardProps> = ({ atividade, highLighted }) => {
     return (
         <div className={`fade-in w-[75vw] ${highLighted ? 'animate-highlighter' : ''}`} >
-            <div className="w-full flex flex-col items-center gap-1 py-5 sm:flex-row border-2 sm:border-0 sm:border-b-2 border-black ">
+            <div className="w-full flex flex-col items-center gap-1 py-5 sm:flex-row border-1 sm:border-0 sm:border-b-2 border-black ">
                 <div className="w-full text-center sm:w-1/4">
                     <p className="text-base font-medium">{atividade.hora}</p>
                 </div>
-                <div className="flex flex-col items-center sm:items-start w-full sm:w-2/4 ">
+                <div className="flex flex-col items-center sm:items-start w-full sm:w-2/4 pb-2 sm:pb-0">
                     <h3 className="text-blue-400 text-lg font-medium">{atividade.titulo}</h3>
-                    <p className="lg:ml-3 text-sm text-left ">{atividade.descricao}</p>
+                    <p className="lg:ml-3 text-sm text-center sm:text-left px-1 sm:px-0">{atividade.descricao}</p>
                 </div>
-                <Popover content={locPop} placement='right' className="flex items-center sm:items-start align-middle cursor-pointer">
+                <Popover
+                    content={
+                        <div>
+                            <h1 className="text-md">Clique para ver no mapa!</h1>
+                        </div>
+                    }
+                    placement='right'
+                    className="hidden md:flex items-center sm:items-start align-middle cursor-pointer">
                     <div className="flex flex-row sm:w-1/4 justify-center">
                         <Loc />
-                        <p className="text-sm font-semibold">{atividade.localizacao}</p>
+                        <p className="ml-1 text-sm font-semibold">{atividade.localizacao}</p>
                     </div>
                 </Popover>
+                <div className="md:hidden flex flex-row sm:w-1/4 justify-center">
+                    <Loc />
+                    <p className="text-sm font-semibold">{atividade.localizacao}</p>
+                </div>
             </div>
         </div>
     );
