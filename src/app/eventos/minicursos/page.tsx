@@ -23,12 +23,17 @@ import {
     RobotIcon
 } from "@/components/ui/icons";
 import { minicursos } from "@/lib/data";
+import { number } from 'zod';
 
 export default function Minicursos() {
     const [selectedButton, setSelectedButton] = useState("todos");
-
     function handleSelectedButtonChange(button: string) {
         setSelectedButton(button);
+    }
+
+    const [modalOpen, setModalOpen] = useState(-1); //-1 for no open modals
+    function handleModalOpen(modalNum: number) {
+        setModalOpen(modalNum);
     }
 
     return (
@@ -68,12 +73,6 @@ export default function Minicursos() {
             </div>
             <div className="grid grid-cols-3 mx-20 mb-16 gap-8">
                 {minicursos.map((minicurso) => {
-
-                    const [modalOpen, setModalOpen] = useState(false);
-                    const handleModalOpen = () => {
-                        setModalOpen(true);
-                    }
-
                     if (selectedButton === minicurso.date || selectedButton === "todos") {
                         return (
                             <>
@@ -81,9 +80,9 @@ export default function Minicursos() {
                                 <Modal
                                     //title={minicurso.alternateTitle}
                                     centered
-                                    open={modalOpen}
+                                    open={minicurso.index === modalOpen}
                                     footer={null}
-                                    onCancel={() => setModalOpen(false)}
+                                    onCancel={() => setModalOpen(-1)}
                                     width={930}
                                 >
                                     <div className="text-left text-base text-gray-600 italic">
@@ -100,11 +99,11 @@ export default function Minicursos() {
     );
 };
 
-interface CardMinicursoProps { minicurso: Minicurso; onOpenModal: () => void; };
+interface CardMinicursoProps { minicurso: Minicurso; onOpenModal: (modalNum: number) => void; };
 const CardMinicurso: React.FC<CardMinicursoProps> = ({ minicurso, onOpenModal }) => {
 
     const handleClick = () => {
-        onOpenModal();
+        onOpenModal(minicurso.index);
     };
 
     return (
@@ -142,19 +141,19 @@ const LogoPicker: React.FC<LogoPickerProps> = ({ label }) => {
     switch (label) {
         case "front-end":
             return (
-                <div className="pt-[0.4px]">
+                <div className="pt-[0.5px]">
                     <FrontEndIcon size={19} />
                 </div>
             );
         case "web":
             return (
-                <div className="pt-[0.3px]">
+                <div className="pt-[0.4px]">
                     <WebIcon size={19} />
                 </div>
             );
         case "iniciante":
             return (
-                <div className="pt-[0.3px]">
+                <div className="pt-[0.4px]">
                     <InicianteIcon size={19} />
                 </div>
             );
@@ -166,7 +165,7 @@ const LogoPicker: React.FC<LogoPickerProps> = ({ label }) => {
             );
         case "linguagem":
             return (
-                <div className="pt-[0.3px]">
+                <div className="pt-[0.4px]">
                     <LanguageIcon size={19} />
                 </div>
             );
@@ -196,7 +195,7 @@ const LogoPicker: React.FC<LogoPickerProps> = ({ label }) => {
             );
         case "jogos":
             return (
-                <div className="pt-[0.3px] pr-[0.5px]">
+                <div className="pt-[0.4px] pr-[0.5px]">
                     <GameIcon size={19} />
                 </div>
             );
@@ -220,7 +219,7 @@ const LogoPicker: React.FC<LogoPickerProps> = ({ label }) => {
             );
         case "análise de dados":
             return (
-                <div className="pt-[0.3px]">
+                <div className="pt-[0.4px]">
                     <MathIcon size={19} />
                 </div>
             );

@@ -202,6 +202,7 @@ const GameIcon = React.forwardRef<
         <FaGamepad size={size} />
     </div>
 ));
+GameIcon.displayName = 'GameIcon';
 
 const OSIcon = React.forwardRef<
     HTMLDivElement,

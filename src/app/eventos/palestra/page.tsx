@@ -2,16 +2,17 @@ import { Avatar } from 'antd';
 import React from 'react';
 import { BsPersonFill } from "react-icons/bs";
 import { palestra } from '@/lib/data';
+import Image from 'next/image';
 
 export default function Palestra() {
     return (
         <div className="h-[79vh] grid grid-cols-12 gap-9 mt-40">
             <div className="col-start-2 col-span-5 rounded-xl">
-                <img
+                <Image
                     src={palestra.img}
                     alt={"Foto da palestra " + palestra.name}
-                    className="rounded-md h-[75vh] w-full object-cover"
-                />
+                    width={500} height={500}
+                    className="rounded-md h-[75vh] w-full object-cover" />
             </div>
             <div className="col-start-7 col-span-5 mt-4 flex flex-col gap-20">
                 <div className="flex flex-col gap-4">

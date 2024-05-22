@@ -19,16 +19,16 @@ import { JavascriptOriginal, GithubOriginal, LinuxOriginal, LaravelOriginal, Pyt
 const HeaderItems = () => {
     return (
         <NavigationMenu>
-            <NavigationMenuList className="md:space-x-5 lg:space-x-16 text-lg">
+            <NavigationMenuList className="space-x-0 md:space-x-5 lg:space-x-16 text-lg">
                 <NavigationMenuItem>
                     <Link href="/" legacyBehavior passHref>
-                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'text-md')}>
+                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'md:text-lg')}>
                             Home
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-md">
+                    <NavigationMenuTrigger className="md:text-lg">
                         Eventos
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -80,21 +80,21 @@ const HeaderItems = () => {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <Link href="/cronograma" legacyBehavior passHref>
-                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'text-md')}>
+                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'md:text-lg')}>
                             Cronograma
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <Link href="/galeria" legacyBehavior passHref>
-                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'text-md')}>
+                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'md:text-lg')}>
                             Galeria
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <Link href="/faq" legacyBehavior passHref>
-                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'text-md')}>
+                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'md:text-lg')}>
                             FAQ
                         </NavigationMenuLink>
                     </Link>

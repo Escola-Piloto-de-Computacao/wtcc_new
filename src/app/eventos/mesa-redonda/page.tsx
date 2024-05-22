@@ -1,4 +1,5 @@
 import { BsFillQuestionSquareFill, BsChatLeftDotsFill } from "react-icons/bs";
+import Image from "next/image";
 
 export default function MesaRedondaPage() {
     return (
@@ -11,7 +12,12 @@ export default function MesaRedondaPage() {
             </div>
             <div className="flex flex-col gap-4 mx-4 lg:mx-20">
                 <div className="flex ml-24 mr-16 p-7 gap-12">
-                    <img src="/Mesa1.png" alt="Mesa Redonda" className="col-span-3 h-[260px] object-cover rounded-md" />
+                    <Image
+                        src="/Mesa1.png"
+                        alt="Mesa Redonda"
+                        width={500}
+                        height={300}
+                        className="col-span-3 h-[260px] object-cover rounded-md" />
                     <div className="flex flex-col gap-4 justify-center">
                         <div className="flex items-center gap-3">
                             <BsFillQuestionSquareFill className="text-5xl text-primary" />
@@ -31,7 +37,12 @@ export default function MesaRedondaPage() {
                         <p className="col-span-5 flex flex-col items-center justify-center text-justify">
                             Além das apresentações e discussões, haverá sessões interativas onde os participantes poderão fazer perguntas, compartilhar experiências e colaborar em soluções inovadoras. Este é um momento único para ampliar seu conhecimento, construir uma rede de contatos e se preparar para as transformações que estão por vir no mundo do trabalho. Não perca esta oportunidade de se atualizar e se engajar em um diálogo produtivo sobre o futuro do mercado de trabalho. Junte-se a nós para explorar como podemos, juntos, moldar um futuro profissional mais dinâmico, inclusivo e sustentável.                    </p>
                     </div>
-                    <img src="/Mesa2.png" alt="Mesa Redonda" className="col-span-3 h-[260px] object-cover rounded-md" />
+                    <Image
+                        src="/Mesa2.png"
+                        alt="Mesa Redonda"
+                        width={500}
+                        height={300}
+                        className="col-span-3 h-[260px] object-cover rounded-md" />
                 </div>
             </div>
         </div>

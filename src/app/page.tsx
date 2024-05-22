@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React from "react";
 
@@ -27,7 +27,7 @@ const Button = () => {
 
 const Title1 = () => {
     return (
-        <div className="mb-12">
+        <div className="mb-12 pr-10">
             <div className="text-3xl lg:text-4xl text-center lg:text-left font-thin rounded-md">
                 <h1 className="bg-yellow-300 pl-1 pr-2 inline font-semibold leading-0">Descubra o mundo da computação</h1>
             </div>

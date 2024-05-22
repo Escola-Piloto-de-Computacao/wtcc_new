@@ -7,15 +7,15 @@ import { Pagination, Image } from 'antd';
 export default function Galeria() {
 
     const getPicturesSize = () => {
-        if (window.innerWidth < 768) {
-            return [150, 100];
-        }
-        else if (window.innerWidth < 1100) {
-            return [159, 100];
-        }
-        else {
-            return [350, 240];
-        }
+        //if (window.innerWidth < 768) {
+        //return [150, 100];
+        //}
+        //else if (window.innerWidth < 1100) {
+        //return [159, 100];
+        //}
+        //else {
+        return [350, 240];
+        //}
     };
     const picturesSize = getPicturesSize();
 
