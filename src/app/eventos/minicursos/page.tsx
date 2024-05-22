@@ -71,7 +71,7 @@ export default function Minicursos() {
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-3 mx-20 mb-16 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mx-20 mb-16 gap-8">
                 {minicursos.map((minicurso) => {
                     if (selectedButton === minicurso.date || selectedButton === "todos") {
                         return (
@@ -111,7 +111,7 @@ const CardMinicurso: React.FC<CardMinicursoProps> = ({ minicurso, onOpenModal })
             <MinicourseCard>
                 <MinicourseCardHeader>
                     <div className="flex justify-between">
-                        <div className="flex flex-row gap-5">
+                        <div className="flex flex-row flex-wrap gap-5">
                             {minicurso.tags?.map((tag) => (
                                 <div className="flex gap-1" key={tag.index}>
                                     <Tag className={`flex gap-1 px-2 ${tag.color}`}>
