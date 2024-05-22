@@ -3,21 +3,21 @@ import Image from "next/image";
 
 export default function MesaRedondaPage() {
     return (
-        <div className="h-[101vh] mt-30 flex flex-col items-center gap-6">
-            <div className="w-full flex flex-col items-center text-center">
-                <div className="lg:w-[19vw]">
+        <div className="flex flex-col items-center gap-6 mb-24 lg:mb-16">
+            <div className="w-full flex flex-col items-center text-center mb-1">
+                <div className="xsm:w-[66vw] sm:w-[45vw] md:w-[37vw] lg:w-[23vw] xl:w[19vw]">
                     <h1 className="w-full text-4xl font-light border-b-2 border-current pb-1">Mesa Redonda</h1>
                 </div>
                 <h2 className="pt-1">Perspectiva sobre o futuro do mercado de trabalho</h2>
             </div>
-            <div className="flex flex-col gap-4 mx-4 lg:mx-20">
-                <div className="flex ml-24 mr-16 p-7 gap-12">
+            <div className="flex flex-col gap-7 lg:gap-4 md:mx-4 lg:mx-0 xl:mx-20">
+                <div className="flex flex-col lg:flex-row lg:ml-20 xl:ml-10 2xl:ml-20 lg:mr-16 xl:mr-8 2xl:mr-16 lg:p-7 gap-12">
                     <Image
                         src="/Mesa1.png"
                         alt="Mesa Redonda"
                         width={500}
                         height={300}
-                        className="col-span-3 h-[260px] object-cover rounded-md" />
+                        className="hidden lg:block col-span-3 lg:w-full h-full lg:h-[260px] object-cover rounded-md" />
                     <div className="flex flex-col gap-4 justify-center">
                         <div className="flex items-center gap-3">
                             <BsFillQuestionSquareFill className="text-5xl text-primary" />
@@ -28,8 +28,8 @@ export default function MesaRedondaPage() {
                         </p>
                     </div>
                 </div>
-                <div className="flex mr-24 ml-16 p-7 gap-12">
-                    <div className="flex flex-col gap-4 justify-center items-end">
+                <div className="flex lg:mr-24 lg:ml-16 lg:p-7 gap-12">
+                    <div className="flex flex-col gap-2 lg:gap-4 justify-center items-end">
                         <div className="flex items-center gap-3">
                             <h3 className="pb-1 text-2xl font-light">O que esperar?</h3>
                             <BsChatLeftDotsFill className="text-5xl text-primary" />
@@ -42,7 +42,7 @@ export default function MesaRedondaPage() {
                         alt="Mesa Redonda"
                         width={500}
                         height={300}
-                        className="col-span-3 h-[260px] object-cover rounded-md" />
+                        className="hidden lg:block col-span-3 h-[260px] object-cover rounded-md" />
                 </div>
             </div>
         </div>
