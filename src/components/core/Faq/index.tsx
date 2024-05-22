@@ -3,7 +3,6 @@
 import * as React from 'react';
 import { Faq } from '@/lib/definitions';
 import { Collapse } from "antd";
-import { CaretRightOutlined } from '@ant-design/icons';
 
 const { Panel } = Collapse;
 
@@ -14,26 +13,33 @@ const FaqBox: React.FC<FaqBoxProps> = ({ questions }) => {
     const secondHalf = questions.questions.slice(half);
 
     return (
-        <div className="grid lg:grid-cols-2 gap-4 lg:gap-16 mt-8 lg:mt-12 mx-20">
-            <div className="space-y-10">
-                <Collapse accordion size="large" expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}>
-                    {firstHalf.map((question, index) => (
-                        <Panel header={question.question} key={question.key}>
-                            <p>{question.answer}</p>
-                        </Panel>
-                    ))}
-                </Collapse>
-            </div>
-            <div className="space-y-10">
+        <div className="lg:grid lg:grid-cols-2 gap-4 lg:gap-16 mt-8 lg:mt-12 mx-4 lg:mx-20">
+            <div className="hidden lg:block space-y-10">
                 <Collapse accordion size="large">
-                    {secondHalf.map((question, index) => (
+                    {firstHalf.map((question) => (
                         <Panel header={question.question} key={question.key}>
                             <p>{question.answer}</p>
                         </Panel>
                     ))}
                 </Collapse>
             </div>
-        </div>
+            <div className="hidden lg:block space-y-10">
+                <Collapse accordion size="large">
+                    {secondHalf.map((question) => (
+                        <Panel header={question.question} key={question.key}>
+                            <p>{question.answer}</p>
+                        </Panel>
+                    ))}
+                </Collapse>
+            </div>
+            <Collapse accordion size="large" className="lg:hidden">
+                {questions.questions.map((question) => (
+                    <Panel header={question.question} key={question.key}>
+                        <p>{question.answer}</p>
+                    </Panel>
+                ))}
+            </Collapse>
+        </div >
     );
 };
 
