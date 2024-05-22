@@ -19,7 +19,7 @@ import { JavascriptOriginal, GithubOriginal, LinuxOriginal, LaravelOriginal, Pyt
 const HeaderItems = () => {
     return (
         <NavigationMenu>
-            <NavigationMenuList className="space-x-0 md:space-x-5 lg:space-x-16 text-lg">
+            <NavigationMenuList className="space-x-0 md:space-x-5 lg:space-x-16 text-lg flex flex-wrap gap-1 md:gap-0 md:flex-row">
                 <NavigationMenuItem>
                     <Link href="/" legacyBehavior passHref>
                         <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group", 'md:text-lg')}>

@@ -26,7 +26,7 @@ export default function Header() {
         <header className={`top-0 w-screen backdrop-filter backdrop-blur-lg bg-white/50 fixed z-50 trasition ease-in-out duration-500 border-b border-gray-100 ${animateHeader && "shadow-2xl border-none"}`}>
             <ProgressBar />
             <div
-                className={`flex justify-between max-w-screen-xl py-5 lg:py-3 ${animateHeader && "py-6 lg:py-4"} mx-auto items-center px-3 lg:px-8 trasition ease-in-out duration-500`}>
+                className={`flex justify-between lg:max-w-screen-xl py-2 lg:py-3 ${animateHeader && "py-3 lg:py-4"} mx-auto items-center px-3 lg:px-8 trasition ease-in-out duration-500`}>
                 <div className={"hidden lg:flex items-center w-[15vh]"}>
                     <Link href="/" className="pr-8 flex items-center" >
                         <Logo />
