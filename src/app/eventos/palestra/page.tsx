@@ -16,7 +16,10 @@ export default function Palestra() {
             </div>
             <div className="col-start-7 col-span-5 mt-4 flex flex-col gap-20">
                 <div className="flex flex-col gap-4">
-                    <h2 className="text-3xl font-bold text-left font-poppings mr-16">{palestra.name}</h2>
+                    <div>
+                        <p className="text-base font-light">06/06 - 08:00</p>
+                        <h2 className="text-3xl font-bold text-left font-poppings mr-16">{palestra.name}</h2>
+                    </div>
                     <div className="ml-2 flex flex-col gap-2 text-justify indent-5">
                         <p className="">{palestra.description}</p>
                         <p className="">{palestra.descriptionCont}</p>
