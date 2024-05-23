@@ -13,7 +13,7 @@ export default function Faq() {
                 </div>
                 <FaqBox questions={FAQuestions} />
             </div>
-            <div className="lg:h-[96vh] text-center flex flex-col gap-8 items-center">
+            <div className="lg:h-[107vh] text-center flex flex-col gap-8 items-center">
                 <div>
                     <div className="flex items-center justify-center">
                         <h2 className="text-2xl">Envie sua pergunta!</h2>
@@ -23,7 +23,7 @@ export default function Faq() {
                     </div>
                     <p>Ainda ficou com uma dúvida e quer descobrir a resposta?</p>
                 </div>
-                <div className="mb-16 lg:mb-0 lg:w-[40vw] w-11/12 border-1 rounded-md px-5 pt-3 pb-5 shadow-lg bg-gray-100">
+                <div className="lg:mb-0 lg:w-[40vw] w-11/12 border-1 rounded-md px-5 pt-3 pb-5 shadow-lg bg-gray-100">
                     <Formulario />
                 </div>
             </div>

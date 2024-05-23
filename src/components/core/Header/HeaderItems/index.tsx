@@ -39,17 +39,13 @@ const HeaderItems = () => {
                                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                                         href="/eventos/minicursos"
                                     >
-                                        <div className="flex flex-col gap-3">
-                                            <div className="flex flex-row gap-5">
-                                                <JavascriptOriginal size="36" />
-                                                <GithubOriginal size="36" />
-                                                <LinuxOriginal size="36" />
-                                            </div>
-                                            <div className="flex flex-row gap-5">
-                                                <PythonOriginal size="36" />
-                                                <LaravelOriginal size="36" />
-                                                <ReactOriginal size="36" />
-                                            </div>
+                                        <div className="flex flex-row flex-wrap gap-3">
+                                            <JavascriptOriginal size="36" className="grow" />
+                                            <GithubOriginal size="36" className="grow" />
+                                            <LinuxOriginal size="36" className="grow" />
+                                            <PythonOriginal size="36" className="grow" />
+                                            <LaravelOriginal size="36" className="grow" />
+                                            <ReactOriginal size="36" className="grow" />
                                         </div>
                                         <div className="mb-2 mt-4 text-lg font-medium">
                                             /minicursos
