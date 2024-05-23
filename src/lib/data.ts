@@ -17,7 +17,7 @@ const minicursos: Minicurso[] = [
             },
             {
                 name: "front-end",
-                color: "bg-green-300",
+                color: "bg-indigo-300",
                 index: 1
             },
             {
@@ -64,7 +64,7 @@ const minicursos: Minicurso[] = [
             },
             {
                 name: "exatas",
-                color: "bg-red-300",
+                color: "bg-cyan-300",
                 index: 1
             }
         ],
@@ -98,7 +98,7 @@ const minicursos: Minicurso[] = [
             },
             {
                 name: "framework",
-                color: "bg-blue-300",
+                color: "bg-pink-300",
                 index: 1
             },
             {
@@ -190,7 +190,7 @@ const minicursos: Minicurso[] = [
             },
             {
                 name: "sistemas operacionais",
-                color: "bg-red-300",
+                color: "bg-rose-400",
                 index: 1
             }
         ],
@@ -228,7 +228,7 @@ const minicursos: Minicurso[] = [
             },
             {
                 name: "back-end",
-                color: "bg-yellow-300",
+                color: "bg-orange-300",
                 index: 2
             }
         ],
@@ -263,7 +263,7 @@ const minicursos: Minicurso[] = [
             },
             {
                 name: "automação",
-                color: "bg-yellow-300",
+                color: "bg-emerald-300",
                 index: 1
             }
         ],
@@ -298,7 +298,7 @@ const minicursos: Minicurso[] = [
             },
             {
                 name: "robótica",
-                color: "bg-red-300",
+                color: "bg-lime-300",
                 index: 1
             }
         ],
@@ -346,7 +346,7 @@ const minicursos: Minicurso[] = [
             },
             {
                 name: "análise de dados",
-                color: "bg-yellow-300",
+                color: "bg-fuchsia-300",
                 index: 1
             }
         ],
@@ -385,17 +385,17 @@ const minicursos: Minicurso[] = [
         tags: [
             {
                 name: "framework",
-                color: "bg-blue-300",
+                color: "bg-pink-300",
                 index: 0
             },
             {
                 name: "front-end",
-                color: "bg-green-300",
+                color: "bg-indigo-300",
                 index: 1
             },
             {
                 name: "web",
-                color: "bg-yellow-300",
+                color: "bg-blue-300",
                 index: 2
             }
         ],

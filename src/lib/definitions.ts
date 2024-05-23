@@ -5,11 +5,7 @@ export type Minicurso = {
     picture: string;
     alternatePicture?: string;
     date: string;
-    tags?: {
-        name: string;
-        color: string;
-        index: number;
-    }[];
+    tags?: Tag[];
     description: string;
     prerequesites?: string[];
     palestrantes: Palestrante[];
@@ -31,9 +27,9 @@ export type SocialMedia = {
 };
 
 export type Tag = {
+    index: number;
     name: string;
     color: string;
-    index: number;
 };
 
 export type Palestra = {
