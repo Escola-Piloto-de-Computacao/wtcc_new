@@ -1,5 +1,5 @@
 import React from 'react';
-import { Minicurso, Palestrante, Palestra, Faq, Atividade, Imagem } from '@/lib/definitions';
+import { Minicurso, Palestrante, Palestra, Faq, Atividade, Imagem, Patrocinador } from '@/lib/definitions';
 
 const minicursos: Minicurso[] = [
     {
@@ -682,4 +682,43 @@ const imagens: Imagem[] = [
     }
 ];
 
-export { minicursos, palestra, FAQuestions, cronograma, imagens }
+const patrocinadores: Patrocinador[] = [
+    {
+        index: 0,
+        nome: "CCEN",
+        alt: "Centro de Ciências Exatas e da Natureza",
+        imagem: "/imagens-patrocinadores/ccen.png",
+        link: "https://ccen.ufersa.edu.br/"
+
+    },
+    {
+        index: 1,
+        nome: "PROEC",
+        alt: "Pró-Reitoria de Extensão e Cultura",
+        imagem: "/imagens-patrocinadores/proec.png",
+        link: "https://proec.ufersa.edu.br/"
+    },
+    {
+        index: 2,
+        nome: "UFERSA",
+        alt: "Universidade Federal Rural do Semi-Árido",
+        imagem: "/imagens-patrocinadores/ufersa.png",
+        link: "https://ufersa.edu.br/"
+    },
+    {
+        index: 3,
+        nome: "PROGRAD",
+        alt: "Pró-Reitoria de Graduação",
+        imagem: "/imagens-patrocinadores/prograd.png",
+        link: "https://prograd.ufersa.edu.br/"
+    },
+    {
+        index: 4,
+        nome: "Computação Licenciatura",
+        alt: "Licenciatura Curso de Computação",
+        imagem: "/imagens-patrocinadores/compLicen.png",
+        link: "https://computacao.ufersa.edu.br/"
+    }
+];
+
+export { minicursos, palestra, FAQuestions, cronograma, imagens, patrocinadores }

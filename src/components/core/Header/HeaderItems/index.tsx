@@ -11,7 +11,7 @@ import {
     NavigationMenuTrigger,
     NavigationMenuViewport,
     navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+} from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { JavascriptOriginal, GithubOriginal, LinuxOriginal, LaravelOriginal, PythonOriginal, ReactOriginal } from 'devicons-react';

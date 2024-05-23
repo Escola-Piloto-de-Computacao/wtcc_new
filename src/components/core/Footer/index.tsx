@@ -7,7 +7,6 @@ import {
     EmailIcon,
     InstagramIcon
 } from 'next-share';
-import { Tooltip } from 'antd';
 
 const Footer = () => {
     return (

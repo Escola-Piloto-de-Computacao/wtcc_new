@@ -69,3 +69,11 @@ export type Imagem = {
     descricao: string;
     alt: string;
 };
+
+export type Patrocinador = {
+    index: number;
+    nome: string;
+    alt: string;
+    imagem: string;
+    link?: string;
+};

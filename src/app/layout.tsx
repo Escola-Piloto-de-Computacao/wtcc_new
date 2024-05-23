@@ -11,7 +11,7 @@ export const metadata: Metadata = {
         icon: "/favicon.ico",
     },
     title: "IX WTCC",
-    description: "Site oficial do WTCC",
+    description: "Site oficial do IX WTCC",
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
@@ -26,4 +26,4 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
             </body>
         </html>
     );
-}
+};
