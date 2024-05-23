@@ -78,9 +78,9 @@ const Images = () => {
 
 const MapArea = () => {
     return (
-        <div className="mt-7 col-span-12 grid grid-cols-6 mx-24 gap-10">
-            <div className="col-start-2 col-span-2 flex flex-col gap-2">
-                <div className="flex justify-end gap-2 mt-4">
+        <div className="col-span-12 lg:grid lg:grid-cols-6 lg:gap-10 flex flex-col lg:mx-24 mt-10 lg:mt-16">
+            <div className="col-start-2 col-span-2 flex flex-col gap-2 mb-6 lg:pb-0">
+                <div className="flex lg:justify-end justify-center gap-2 mt-4">
                     <FaMapLocationDot size={30} className="mt-[0.15rem]" />
                     <h1 className="text-3xl">Onde será o evento?</h1>
                 </div>
@@ -108,13 +108,13 @@ const TypeWriter = () => {
     }, []);
 
     return (
-        <h2 key={key} className="ml-3 my-2 relative w-[max-content] font-mono text-3xl before:absolute before:inset-0 before:animate-typewriter before:bg-gray-400 after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-black">Patrocinadores</h2>
+        <h2 key={key} className="text-center lg:text-left ml-3 my-2 relative w-[max-content] font-mono text-3xl before:absolute before:inset-0 before:animate-typewriter before:bg-gray-400 after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-black">Patrocinadores</h2>
     );
 };
 
 const Patrocinadores = () => {
     return (
-        <div className="mt-36 mb-16 col-span-12 flex flex-col mx-20 bg-gray-400 p-2 pb-6 rounded-lg">
+        <div className="mt-36 mb-16 col-span-12 flex flex-col mx-10 lg:mx-20 bg-gray-400 p-2 pb-6 rounded-lg">
             <TypeWriter />
             <div className="flex flex-wrap">
                 {patrocinadores.map((patrocinador) => (
