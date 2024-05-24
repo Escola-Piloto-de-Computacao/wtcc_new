@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Tooltip } from "antd";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
+import Image from "next/image";
 
 const ClickHereArrow = () => {
     return (
@@ -103,18 +104,39 @@ const Images = () => {
             <div className="hidden lg:block bg-green-200 rounded-xl w-1/5 h-[53%] mb-72 ml-64 absolute"></div>
             <div className="hidden lg:grid col-span-1 lg:grid-rows-2 gap-3">
                 <div className="z-10">
-                    <img src="/home1.jpeg" alt="Imagem de antigos WTCC's" className="rounded-2xl" />
+                    <Image
+                        src="/home1.jpeg"
+                        alt="Imagem de antigos WTCC's"
+                        width={400}
+                        height={400}
+                        className="w-auto h-auto rounded-2xl"
+                        loading="eager"
+                    />
                 </div>
                 <div className="grid grid-cols-12 gap-2 justify-items-center z-10">
                     <div className="col-span-5 h-36 object-cover">
-                        <img src="/home2.jpg" alt="Imagem de antigos WTCC's" className="rounded-2xl" />
+                        <Image
+                            src="/home2.jpg"
+                            alt="Imagem de antigos WTCC's"
+                            width={400}
+                            height={400}
+                            className="w-auto h-auto rounded-2xl"
+                            loading="eager"
+                        />
                     </div>
                     <div className="col-span-7 h-36 object-cover">
-                        <img src="/home3.jpg" alt="Imagem de antigos WTCC's" className="rounded-2xl" />
+                        <Image
+                            src="/home3.jpg"
+                            alt="Imagem de antigos WTCC's"
+                            width={400}
+                            height={400}
+                            className="w-auto h-auto rounded-2xl"
+                            loading="eager"
+                        />
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-center z-20">
                 <Button />
                 <ClickHereArrow />
             </div>
@@ -165,7 +187,14 @@ const Patrocinadores = () => {
             <div className="flex flex-wrap">
                 {patrocinadores.map((patrocinador) => (
                     <div key={patrocinador.index} className="flex justify-center items-center w-1/2 lg:w-1/5">
-                        <img src={patrocinador.imagem} alt={patrocinador.alt} className="w-3/4" />
+                        <Image
+                            src={patrocinador.imagem}
+                            alt={patrocinador.alt}
+                            width={200}
+                            height={200}
+                            className="w-3/4 h-auto"
+                            loading="lazy"
+                        />
                     </div>
                 ))}
             </div>
