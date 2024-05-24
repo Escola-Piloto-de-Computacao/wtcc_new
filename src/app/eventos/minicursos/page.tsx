@@ -23,7 +23,6 @@ import {
     RobotIcon
 } from "@/components/ui/icons";
 import { minicursos } from "@/lib/data";
-import { number } from 'zod';
 
 export default function Minicursos() {
     const [selectedButton, setSelectedButton] = useState("todos");

@@ -55,8 +55,8 @@ export const HeroHighlight = ({ children, className, containerClassName }: {
     );
 };
 
-type HighlightProps = { children: React.ReactNode; className?: string; animationTime?: number; };
-export const Highlight: React.FC<HighlightProps> = ({ children, className, animationTime }) => {
+type HighlightProps = { children: React.ReactNode; className?: string; animationTime?: number; phone?: boolean };
+export const Highlight: React.FC<HighlightProps> = ({ children, className, animationTime = 10, phone = false }) => {
     return (
         <motion.span
             initial={{
@@ -66,7 +66,7 @@ export const Highlight: React.FC<HighlightProps> = ({ children, className, anima
                 backgroundSize: "100% 100%",
             }}
             transition={{
-                duration: animationTime || 10,
+                duration: animationTime,
                 ease: "linear",
                 delay: 0,
             }}
@@ -77,7 +77,8 @@ export const Highlight: React.FC<HighlightProps> = ({ children, className, anima
             }}
             className={cn(
                 `relative inline-block pb-1 px-1 bg-gradient-to-r from-yellow-300 to-yellow-300 dark:from-yellow-500 dark:to-yellow-500`,
-                className
+                className,
+                phone ? "from-transparent to-transparent dark:from-transparent dark:to-transparent" : "",
             )}
         >
             {children}
