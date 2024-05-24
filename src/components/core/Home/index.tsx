@@ -53,7 +53,7 @@ const Title1 = () => {
                         className="lg:pl-1 lg:pr-2 font-semibold leading-0"
                     >
                         {" "}
-                        <Highlight className="text-black dark:text-white">
+                        <Highlight className="text-black dark:text-white" animationTime={2}>
                             Descubra o mundo da computação
                         </Highlight>
                     </motion.h1>
@@ -68,7 +68,28 @@ const Title2 = () => {
     return (
         <div>
             <div className="pt-3 lg:pt-0 text-3xl text-center lg:text-left rounded">
-                <h1 className="bg-yellow-300 pl-1 pr-2 inline">Despertando o conhecimento...</h1>
+                <HeroHighlight containerClassName="lg:justify-start">
+                    <motion.h1
+                        initial={{
+                            opacity: 0,
+                            y: 20,
+                        }}
+                        animate={{
+                            opacity: 1,
+                            y: [20, -5, 0],
+                        }}
+                        transition={{
+                            duration: 0.333,
+                            ease: [0.4, 0.0, 0.2, 1],
+                        }}
+                        className="pl-1 pr-2 inline"
+                    >
+                        {" "}
+                        <Highlight className="text-black dark:text-white" animationTime={2.5}>
+                            Despertando o conhecimento...
+                        </Highlight>
+                    </motion.h1>
+                </HeroHighlight>
             </div>
             <p className="mt-5 lg:ml-4 text-justify lg:indent-4 text-balance hyphens-auto break-words"> Durante o evento, os participantes terão acesso a uma programação diversificada, incluindo cerimônia de abertura, palestras, mesas-redondas, minicursos, hackathon e maratona de programação. Além disso, ao participar dos minicursos, os alunos poderão obter <Tooltip title="Ao se assistir o decorrer do evento, se ganhará horas complementares, assim como, ao assistir os minicursos oferecidos à tarde!" color='white' overlayInnerStyle={{ color: 'black', textAlign: 'justify' }}><span className="bg-yellow-300 cursor-help">CERTIFICADOS</span></Tooltip>, enriquecendo seus currículos e ampliando suas habilidades na área. Não perca essa oportunidade de aprendizado e networking! 🚀🔍🎓</p>
         </div>

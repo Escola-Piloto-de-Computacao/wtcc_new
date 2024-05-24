@@ -55,13 +55,8 @@ export const HeroHighlight = ({ children, className, containerClassName }: {
     );
 };
 
-export const Highlight = ({
-    children,
-    className,
-}: {
-    children: React.ReactNode;
-    className?: string;
-}) => {
+type HighlightProps = { children: React.ReactNode; className?: string; animationTime?: number; };
+export const Highlight: React.FC<HighlightProps> = ({ children, className, animationTime }) => {
     return (
         <motion.span
             initial={{
@@ -71,7 +66,7 @@ export const Highlight = ({
                 backgroundSize: "100% 100%",
             }}
             transition={{
-                duration: 2,
+                duration: animationTime || 10,
                 ease: "linear",
                 delay: 0,
             }}
