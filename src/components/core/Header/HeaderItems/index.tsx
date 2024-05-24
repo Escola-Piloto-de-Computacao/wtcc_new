@@ -40,12 +40,12 @@ const HeaderItems = () => {
                                         href="/eventos/minicursos"
                                     >
                                         <div className="flex flex-row flex-wrap gap-3">
-                                            <JavascriptOriginal size="36" className="grow" />
-                                            <GithubOriginal size="36" className="grow" />
-                                            <LinuxOriginal size="36" className="grow" />
-                                            <PythonOriginal size="36" className="grow" />
-                                            <LaravelOriginal size="36" className="grow" />
-                                            <ReactOriginal size="36" className="grow" />
+                                            <JavascriptOriginal size="36" className="grow max-h-[4vh]" />
+                                            <GithubOriginal size="36" className="grow max-h-[4vh]" />
+                                            <LinuxOriginal size="36" className="grow max-h-[4vh]" />
+                                            <PythonOriginal size="36" className="grow max-h-[4vh]" />
+                                            <LaravelOriginal size="36" className="grow max-h-[4vh]" />
+                                            <ReactOriginal size="36" className="grow max-h-[4vh]" />
                                         </div>
                                         <div className="mb-2 mt-4 text-lg font-medium">
                                             /minicursos
