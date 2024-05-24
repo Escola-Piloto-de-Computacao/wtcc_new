@@ -82,11 +82,11 @@ const Title2 = () => {
                             duration: 0.333,
                             ease: [0.4, 0.0, 0.2, 1],
                         }}
-                        className="pl-1 pr-2 inline"
+                        className="inline"
                     >
                         {" "}
                         <Highlight className="text-black dark:text-white" animationTime={2.5}>
-                            Despertando o conhecimento...
+                            Despertando o conhecimento
                         </Highlight>
                     </motion.h1>
                 </HeroHighlight>
