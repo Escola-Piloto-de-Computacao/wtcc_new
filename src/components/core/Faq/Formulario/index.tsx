@@ -94,7 +94,7 @@ const Fomulario = () => {
                     )}
 
                 />
-                <Button type="submit">Enviar</Button>
+                <Button type="submit" disabled>Enviar</Button>
             </form>
         </Form>
     );
