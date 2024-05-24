@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import Map from "@/components/core/Home/MapArea";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { patrocinadores } from "@/lib/data";
+import Link from "next/link";
+import { Tooltip } from "antd";
 
 const ClickHereArrow = () => {
     return (
@@ -45,7 +47,7 @@ const Title2 = () => {
             <div className="pt-3 lg:pt-0 text-3xl text-center lg:text-left rounded">
                 <h1 className="bg-yellow-300 pl-1 pr-2 inline">Despertando o conhecimento...</h1>
             </div>
-            <p className="mt-5 lg:ml-4 text-justify lg:indent-4 text-balance hyphens-auto break-words"> Durante o evento, os participantes terão acesso a uma programação diversificada, incluindo cerimônia de abertura, palestras, mesas-redondas, minicursos, hackathon e maratona de programação. Além disso, ao participar dos minicursos, os alunos poderão obter <span className="bg-yellow-300">CERTIFICADOS</span>, enriquecendo seus currículos e ampliando suas habilidades na área. Não perca essa oportunidade de aprendizado e networking! 🚀🔍🎓</p>
+            <p className="mt-5 lg:ml-4 text-justify lg:indent-4 text-balance hyphens-auto break-words"> Durante o evento, os participantes terão acesso a uma programação diversificada, incluindo cerimônia de abertura, palestras, mesas-redondas, minicursos, hackathon e maratona de programação. Além disso, ao participar dos minicursos, os alunos poderão obter <Tooltip title="Ao se assistir o decorrer do evento, se ganhará horas complementares, assim como, ao assistir os minicursos oferecidos à tarde!" color='white' overlayInnerStyle={{ color: 'black', textAlign: 'justify' }}><span className="bg-yellow-300 cursor-help">CERTIFICADOS</span></Tooltip>, enriquecendo seus currículos e ampliando suas habilidades na área. Não perca essa oportunidade de aprendizado e networking! 🚀🔍🎓</p>
         </div>
     );
 };
@@ -85,7 +87,7 @@ const MapArea = () => {
                     <h1 className="text-3xl">Onde será o evento?</h1>
                 </div>
                 <p className="text-justify indent-4">Veja no mapa a seguir onde ocorrerá o evento, assista aos minicursos nos Laboratórios do do prédio LCC, a palestra e abertura do evento no Auditório da PROEC.</p>
-                <p className="text-justify indent-4">Descubra onde ocorerrá cada parte do WTCC na página <span className="bg-yellow-300 px-1 italic">Cronograma</span>.</p>
+                <p className="text-justify indent-4">Descubra onde ocorerrá cada parte do WTCC na página <Link href="/cronograma"><span className="bg-yellow-300 px-1 italic">Cronograma</span></Link>.</p>
             </div>
             <div className="col-span-3 w-full h-[45vh]">
                 <Map />
@@ -108,7 +110,7 @@ const TypeWriter = () => {
     }, []);
 
     return (
-        <h2 key={key} className="text-center lg:text-left ml-3 my-2 relative w-[max-content] font-mono text-3xl before:absolute before:inset-0 before:animate-typewriter before:bg-gray-400 after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-black">Patrocinadores</h2>
+        <h2 key={key} className="text-center lg:text-left ml-3 my-2 relative w-[max-content] font-mono text-2xl lg:text-3xl before:absolute before:inset-0 before:animate-typewriter before:bg-gray-400 after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-black">Patrocinadores</h2>
     );
 };
 
