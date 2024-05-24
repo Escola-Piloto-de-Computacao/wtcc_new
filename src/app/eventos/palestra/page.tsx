@@ -1,19 +1,30 @@
-import { Avatar } from 'antd';
-import React from 'react';
-import { BsPersonFill } from "react-icons/bs";
+"use client";
+
+import React, { useEffect } from 'react';
+import { BsPersonFill } from 'react-icons/bs';
 import { palestra } from '@/lib/data';
 import Image from 'next/image';
+import { Skeleton } from '@/components/ui/skeleton';
 
 export default function Palestra() {
+    const [loading, setLoading] = React.useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 1000);
+    }, []);
+
     return (
         <div className="mb-20 lg:h-[79vh] flex flex-col gap-5 md:grid md:grid-cols-12 md:gap-9 lg:mt-36">
             <div className="md:col-start-1 lg:col-start-2 md:col-span-6 lg:col-span-5 rounded-xl">
-                <Image
-                    src={palestra.img}
-                    alt={"Foto da palestra " + palestra.name}
-                    width={500} height={600}
-                    className="rounded-md h-[35vh] sm:h-[60vh] md:h-[75vh] w-full object-cover object-center"
-                />
+                {loading ? <Skeleton className="h-[38vh] sm:h-[60vh] md:h-[75vh]" isImage /> :
+                    <Image
+                        src={palestra.img}
+                        alt={"Foto da palestra " + palestra.name}
+                        width={500} height={600}
+                        className="rounded-md h-[35vh] sm:h-[60vh] md:h-[75vh] w-full object-cover object-center"
+                    />}
             </div>
             <div className="md:col-start-7 md:col-span-6 lg:col-span-5 lg:mt-4 flex flex-col gap-8 lg:gap-12">
                 <div className="flex flex-col gap-4">
