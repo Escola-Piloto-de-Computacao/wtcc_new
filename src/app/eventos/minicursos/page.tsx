@@ -114,7 +114,7 @@ const CardMinicurso: React.FC<CardMinicursoProps> = ({ minicurso, onOpenModal })
             <MinicourseCard>
                 <MinicourseCardHeader>
                     <div className="flex justify-between">
-                        <div className="flex flex-row flex-wrap gap-5">
+                        <div className="flex flex-row flex-wrap gap-2">
                             {minicurso.tags?.map((tag) => (
                                 <div className="flex gap-1" key={tag.index}>
                                     <Tag className={`flex gap-1 px-2 ${tag.color}`}>
@@ -125,6 +125,7 @@ const CardMinicurso: React.FC<CardMinicursoProps> = ({ minicurso, onOpenModal })
                             ))}
                         </div>
                         {/*<HiCursorClick />*/}
+                        <p className="text-sm font-mono">{minicurso.localizacao}</p>
                     </div>
                 </MinicourseCardHeader>
                 <MinicourseCardImage src={minicurso.picture} alt={minicurso.title} />
