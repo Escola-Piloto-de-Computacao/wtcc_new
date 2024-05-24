@@ -6,6 +6,8 @@ import { FaMapLocationDot } from "react-icons/fa6";
 import { patrocinadores } from "@/lib/data";
 import Link from "next/link";
 import { Tooltip } from "antd";
+import { motion } from "framer-motion";
+import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 
 const ClickHereArrow = () => {
     return (
@@ -34,7 +36,28 @@ const Title1 = () => {
     return (
         <div className="mb-12 lg:pr-10">
             <div className="text-3xl lg:text-4xl text-center lg:text-left font-thin rounded-md">
-                <h1 className="bg-yellow-300 lg:pl-1 lg:pr-2 inline font-semibold leading-0">Descubra o mundo da computação</h1>
+                <HeroHighlight>
+                    <motion.h1
+                        initial={{
+                            opacity: 0,
+                            y: 20,
+                        }}
+                        animate={{
+                            opacity: 1,
+                            y: [20, -5, 0],
+                        }}
+                        transition={{
+                            duration: 0.5,
+                            ease: [0.4, 0.0, 0.2, 1],
+                        }}
+                        className="lg:pl-1 lg:pr-2 font-semibold leading-0"
+                    >
+                        {" "}
+                        <Highlight className="text-black dark:text-white">
+                            Descubra o mundo da computação
+                        </Highlight>
+                    </motion.h1>
+                </HeroHighlight>
             </div>
             <p className="mt-6 lg:mt-5 lg:w-11/12 lg:ml-4 text-justify lg:indent-3 text-balance hyphens-auto break-words">O IX Workshop Técnico-Científico de Computação do RN tem como propósito despertar o interesse dos estudantes de graduação e pós-graduação em pesquisa científica na área de ciência da computação. Além disso, busca discutir temas relevantes para estudantes e profissionais, desenvolver habilidades não abordadas na faculdade, promover o aprendizado mútuo e introduzir os calouros ao curso. O evento proporciona um espaço de intercâmbio entre alunos de Ciência da Computação e cursos de tecnologia, exibindo trabalhos acadêmicos e pesquisas tecnológicas realizadas na universidade.</p>
         </div>
