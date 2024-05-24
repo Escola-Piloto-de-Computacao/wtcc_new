@@ -6,7 +6,7 @@ export default function Maratona() {
     return (
         <div className="pb-8 mx-0 md:mx-16 lg:mx-24 xl:mx-36 flex flex-col xl:flex-row gap-6 justify-center">
             <div className="order-last xl:order-1">
-                <h1 className="text-4xl font-bold text-center">Maratona de Programação</h1>
+                <h1 className="text-4xl font-bold text-center font-mono">Maratona de Programação</h1>
                 <Tabs defaultValue='Preparação' className="mt-4">
                     <TabsList className="flex gap-4">
                         <TabsTrigger value='Preparação'>Preparação</TabsTrigger>
