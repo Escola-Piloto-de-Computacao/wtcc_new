@@ -138,7 +138,7 @@ const Images = () => {
 
 const MapArea = () => {
     return (
-        <div className="col-span-12 lg:grid lg:grid-cols-6 lg:gap-10 flex flex-col lg:mx-24 mt-10 lg:mt-16">
+        <div className="col-span-12 lg:grid lg:grid-cols-6 lg:gap-10 flex flex-col lg:mx-24 pt-10 lg:pt-16" id="mapa">
             <div className="col-start-2 col-span-2 flex flex-col gap-2 mb-6 lg:pb-0">
                 <div className="flex lg:justify-end justify-center gap-2 mt-4">
                     <FaMapLocationDot size={30} className="mt-[0.15rem]" />
@@ -195,6 +195,18 @@ const Patrocinadores = () => {
 };
 
 const MainArea = () => {
+
+    useEffect(() => {
+        if (window.location.hash === '#mapa') {
+            const scrollMarkElement = document.getElementById('mapa');
+            if (scrollMarkElement) {
+                const offsetTop = scrollMarkElement.offsetTop;
+                const offset = 210;
+                window.scrollTo({ top: offsetTop - offset, behavior: 'smooth' });
+            }
+        }
+    }, []);
+
     return (
         <section className="lg:grid lg:grid-cols-12">
             <div className="col-start-2 col-span-5">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { cronograma } from "@/lib/data";
 import ScheduleCard from "@/components/core/Cronograma/ScheduleCard";
 import { Button } from "@/components/ui/button";
@@ -11,7 +11,7 @@ export default function Cronograma() {
 
     function handleDayChange(day: number) {
         setCurrentDay(day);
-    }
+    };
 
     return (
         <section className="lg:h-[85vh] flex flex-col gap-3 mb-24 lg:mb-0">

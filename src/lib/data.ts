@@ -1,5 +1,6 @@
 import React from 'react';
 import { Minicurso, Palestrante, Palestra, Faq, Atividade, Imagem, Patrocinador } from '@/lib/definitions';
+import { Author } from 'next/dist/lib/metadata/types/metadata-types';
 
 const minicursos: Minicurso[] = [
     {

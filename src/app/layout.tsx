@@ -11,7 +11,10 @@ export const metadata: Metadata = {
         icon: "/favicon.ico",
     },
     title: "IX WTCC",
-    description: "Site oficial do IX WTCC",
+    description: "Site oficial do IX WTCC, evento anual organizado pelo curso de Ciência da Computação da UFERSA.",
+    authors: { name: "EPC", url: "https://escolapilotodecomputacao.com.br" },
+    keywords: ["IX WTCC", "UFERSA", "Ciência da Computação", "Computação", "Tecnologia", "Evento", "Workshop", "Tecnologia da Informação", "IX Workshop de Tecnologia da Computação e Computação"],
+
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
