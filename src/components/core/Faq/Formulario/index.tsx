@@ -4,10 +4,15 @@ import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormControl, Form, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Toaster } from "@/components/ui/toaster";
 
+import { collection, addDoc, query, where, getDocs } from "firebase/firestore";
+import { firestore } from "@/lib/utils";
+import { toast } from "@/components/ui/use-toast";
 
 const schema = z.object({
     email: z.string().email({
@@ -32,9 +37,48 @@ const Fomulario = () => {
         }
     });
 
-    function onSubmit(data: z.infer<typeof schema>) {
-        console.log(data);
-        //TODO enviar para o servidor (api)
+    async function onSubmit(data: z.infer<typeof schema>) {
+        try {
+            const faqCollection = collection(firestore, "faq");
+            const emailQuery = query(faqCollection, where("email", "==", data.email));
+            const querySnapshot = await getDocs(emailQuery);
+
+            if (querySnapshot.size >= 3) {
+                toast({
+                    title: "Erro",
+                    description: "Você já enviou muitas perguntas! Espere um pouco antes de enviar mais.",
+                    variant: "destructive",
+                    duration: 5250,
+                });
+                return;
+            };
+
+            const docRef = await addDoc(faqCollection, {
+                email: data.email,
+                question: data.question,
+                obs: data.obs
+            });
+
+            toast({
+                title: "Pergunta enviada",
+                description: "Sua pergunta foi enviada com sucesso! Espere um email com a resposta.",
+                duration: 5250,
+            });
+
+            form.reset({
+                email: '',
+                question: '',
+                obs: ''
+            });
+
+        } catch (e) {
+            toast({
+                title: "Erro",
+                description: "Ocorreu um erro ao enviar sua pergunta.",
+                variant: "destructive",
+                duration: 5250,
+            });
+        };
     };
 
     return (
@@ -94,7 +138,7 @@ const Fomulario = () => {
                     )}
 
                 />
-                <Button type="submit" disabled>Enviar</Button>
+                <Button type="submit">Enviar</Button>
             </form>
         </Form>
     );

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "../components/core/Header";
 import Footer from "../components/core/Footer";
+import { Toaster } from "../components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
                 <main className="mt-32 mx-7 lg:mx-0">
                     {children}
                 </main>
+                <Toaster />
                 <Footer />
             </body>
         </html>

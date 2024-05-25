@@ -4,7 +4,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 
 export default function Maratona() {
     return (
-        <div className="pb-8 mx-0 md:mx-16 lg:mx-24 xl:mx-36 flex flex-col xl:flex-row gap-6 justify-center">
+        <div className="pb-24 lg:mb-16 mx-0 md:mx-16 lg:mx-24 xl:mx-36 flex flex-col xl:flex-row gap-6 justify-center">
             <div className="order-last xl:order-1">
                 <h1 className="text-4xl font-bold text-center font-mono">Maratona de Programação</h1>
                 <Tabs defaultValue='Preparação' className="mt-4">
@@ -24,7 +24,7 @@ export default function Maratona() {
                     </TabsContent>
                 </Tabs>
             </div>
-            <div className="hidden xl:block order-1 xl:order-last w-[28vw]">
+            <div className="ml-24 hidden xl:block order-1 xl:order-last w-[28vw]">
                 <Image
                     src="/maratona.png"
                     alt="Maratona de Programação"
