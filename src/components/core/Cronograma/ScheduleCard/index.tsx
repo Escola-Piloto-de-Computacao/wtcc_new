@@ -31,7 +31,7 @@ const ScheduleCard: React.FC<ScheduleCardProps> = ({ atividade }) => {
                         placement='right'
                         className="md:flex items-center">
                         <div className="flex flex-row w-auto h-auto justify-center gap-[0.1rem]">
-                            <MapPinIcon size={15} className="pt-[0.15rem] md:pt-1" />
+                            <MapPinIcon size={15} className="pt-[0.15rem]" />
                             <p className="ml-1 text-sm font-semibold">{atividade.localizacao}</p>
                         </div>
                     </Popover>
