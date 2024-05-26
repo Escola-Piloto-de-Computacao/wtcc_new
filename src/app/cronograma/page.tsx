@@ -14,7 +14,7 @@ export default function Cronograma() {
     };
 
     return (
-        <section className="lg:h-[85vh] flex flex-col gap-3 mb-24 lg:mb-0">
+        <section className="flex flex-col gap-3 mb-24">
             <div className="text-center">
                 <h1 className="text-4xl">Cronograma</h1>
                 <h2 className="font-light">Programação completa</h2>
