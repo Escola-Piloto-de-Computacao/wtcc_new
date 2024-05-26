@@ -5,15 +5,15 @@ import { IoIosArrowRoundDown } from "react-icons/io";
 
 export default function Faq() {
     return (
-        <div className="flex flex-col">
-            <div className="mb-16 lg:mb-0 lg:h-[77vh] xl:h-[71vh] 2xl:h-[64vh]">
+        <div className="mb-20 flex flex-col">
+            <div className="mb-36">
                 <div className="text-center space-y-1">
                     <h1 className="text-4xl">FAQ</h1>
                     <h2 className="font-light">perguntas frequentes</h2>
                 </div>
                 <FaqBox questions={FAQuestions} />
             </div>
-            <div className="lg:h-[107vh] text-center flex flex-col gap-8 items-center">
+            <div className="absolute xsm:top-[67rem] sm:top-[52rem] md:top-[48rem] lg:top-[45rem] xl:top-[38rem] text-center flex flex-col gap-8 self-center items-center">
                 <div>
                     <div className="flex items-center justify-center">
                         <h2 className="text-2xl">Envie sua pergunta!</h2>
@@ -27,6 +27,7 @@ export default function Faq() {
                     <Formulario />
                 </div>
             </div>
+            <div className="h-[50rem] sm:h-[38rem] lg:h-[40rem]"></div>
         </div>
     );
 };
