@@ -1,6 +1,5 @@
 import React from 'react';
-import { Minicurso, Palestrante, Palestra, Faq, Atividade, Imagem, Patrocinador } from '@/lib/definitions';
-import { Author } from 'next/dist/lib/metadata/types/metadata-types';
+import { Minicurso, Palestrante, Palestra, Faq, Atividade, Imagem, Patrocinador, Commands } from '@/lib/definitions';
 
 const minicursos: Minicurso[] = [
     {
@@ -483,7 +482,7 @@ const cronograma: Atividade[] = [
         dia: 1,
         hora: "08:00 - 10:00",
         titulo: "Abertura Oficial do evento",
-        descricao: "Abertura do evento com a equipe organizadora academica e a diretoria do curso de Ciência da Computação.",
+        descricao: "Abertura do evento com a equipe organizadora academica e a diretoria do curso de Ciência da Computação. Assim como laçamento do tema do Hackathon.",
         localizacao: "Auditório da PROEC"
     },
     {
@@ -552,6 +551,14 @@ const cronograma: Atividade[] = [
     },
     {
         index: 9,
+        dia: 3,
+        hora: "08:00 - 11:00",
+        titulo: "Hackathon",
+        descricao: "Competição de programação com alunos do curso de Ciência da Computação.",
+        localizacao: "Auditório da PROEC"
+    },
+    {
+        index: 10,
         dia: 3,
         hora: "11:00 - 12:00",
         titulo: "Encerramento do evento",
@@ -722,7 +729,7 @@ const patrocinadores: Patrocinador[] = [
     }
 ];
 
-const maratonaTerminalCommands = {
+const maratonaTerminalCommands: Commands = {
     echo: {
         description: 'Echo a passed string.',
         usage: 'echo <string>',
