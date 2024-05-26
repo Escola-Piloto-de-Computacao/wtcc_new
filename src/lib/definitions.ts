@@ -73,3 +73,11 @@ export type Patrocinador = {
     imagem: string;
     link?: string;
 };
+
+export type Commands = {
+    [key: string]: {
+        description: string;
+        usage?: string;
+        fn: (...args: string[]) => string;
+    };
+};

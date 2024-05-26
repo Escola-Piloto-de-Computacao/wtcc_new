@@ -722,4 +722,21 @@ const patrocinadores: Patrocinador[] = [
     }
 ];
 
-export { minicursos, palestra, FAQuestions, cronograma, imagens, patrocinadores }
+const maratonaTerminalCommands = {
+    echo: {
+        description: 'Echo a passed string.',
+        usage: 'echo <string>',
+        fn: (...args: string[]) => args.join(' ')
+    },
+    ls: {
+        description: 'List files in the current directory.',
+        fn: () => 'file1 file2 file3'
+    },
+    cd: {
+        description: 'Change directory.',
+        usage: 'cd <directory>',
+        fn: (directory: string) => `Changed directory to ${directory}`
+    },
+};
+
+export { maratonaTerminalCommands, minicursos, palestra, FAQuestions, cronograma, imagens, patrocinadores }
