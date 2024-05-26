@@ -59,9 +59,9 @@ const HeaderItems = () => {
                             <ListItem href="/eventos/palestra" title="/palestra">
                                 Ministrada por ex-aluno da Ufersa sobre o mercado de trabalho.
                             </ListItem>
-                            <ListItem href="/eventos/maratona-de-programacao" title="/maratona_de_programação">
+                            {/*<ListItem href="/eventos/maratona-de-programacao" title="/maratona_de_programação">
                                 Competição de programação para alunos de todos os niveis.
-                            </ListItem>
+                            </ListItem>*/}
                             {/*<ListItem href="/eventos/mostra-cientifica" title="/mostra_científica">
                                 Apresentação de trabalhos científicos desenvolvidos no departamento.
                             </ListItem>*/}
