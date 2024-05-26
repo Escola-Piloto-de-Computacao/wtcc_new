@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Palestra() {
     return (
-        <div className="mb-20 lg:h-[79vh] flex flex-col gap-5 md:grid md:grid-cols-12 md:gap-9 lg:mt-36">
+        <div className="mb-20 flex flex-col gap-5 md:grid md:grid-cols-12 md:gap-9 lg:mt-36">
             <div className="md:col-start-1 lg:col-start-2 md:col-span-6 lg:col-span-5 rounded-xl">
                 <Image
                     src={palestra.img}
