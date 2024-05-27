@@ -583,7 +583,7 @@ const imagens: Imagem[] = [
     },
     {
         index: 2,
-        src: "/imagens-galeria/3.jpeg",
+        src: "/imagens-galeria/43.jpg",
         descricao: "Imagem de WTCC passados",
         alt: "Imagem de WTCC's passados"
     },
@@ -613,7 +613,7 @@ const imagens: Imagem[] = [
     },
     {
         index: 7,
-        src: "/imagens-galeria/8.jpeg",
+        src: "/imagens-galeria/44.jpg",
         descricao: "Imagem de WTCC passados",
         alt: "Imagem de WTCC's passados"
     },
@@ -625,15 +625,15 @@ const imagens: Imagem[] = [
     },
     {
         index: 9,
-        src: "/imagens-galeria/10.jpeg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        src: "/imagens-galeria/45.jpg",
+        descricao: "Imagem da equipe de professores no WTCC",
+        alt: "Imagem da equipe de professores no WTCC"
     },
     {
         index: 10,
         src: "/imagens-galeria/11.jpeg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        descricao: "Imagem da equipe de professores no WTCC",
+        alt: "Imagem da equipe de professores no WTCC"
     },
     {
         index: 11,
@@ -667,7 +667,7 @@ const imagens: Imagem[] = [
     },
     {
         index: 16,
-        src: "/imagens-galeria/39.jpg",
+        src: "/imagens-galeria/46.jpg",
         descricao: "Imagem de WTCC passados",
         alt: "Imagem de WTCC's passados"
     },
@@ -686,6 +686,30 @@ const imagens: Imagem[] = [
     {
         index: 19,
         src: "/imagens-galeria/42.jpg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 20,
+        src: "/imagens-galeria/47.jpg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 21,
+        src: "/imagens-galeria/48.jpg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 22,
+        src: "/imagens-galeria/49.jpg",
+        descricao: "Imagem de WTCC passados",
+        alt: "Imagem de WTCC's passados"
+    },
+    {
+        index: 23,
+        src: "/imagens-galeria/50.jpg",
         descricao: "Imagem de WTCC passados",
         alt: "Imagem de WTCC's passados"
     }

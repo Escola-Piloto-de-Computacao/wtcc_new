@@ -30,7 +30,7 @@ export default function Galeria() {
                     onChange={handlePageChange}
                 />
             </div>
-            <div className="flex flex-row flex-wrap gap-5 px-24 justify-center">
+            <div className="flex flex-row flex-wrap gap-5 px-12 justify-center">
                 <Image.PreviewGroup>
                     {currentImages.map((image) => (
                         <div key={image.index} className="col-span-6 md:col-span-4">
