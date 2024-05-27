@@ -785,7 +785,7 @@ const patrocinadores: Patrocinador[] = [
         nome: "Computação Licenciatura",
         alt: "Licenciatura Curso de Computação",
         imagem: "/imagens-patrocinadores/compLicen.png",
-        link: "https://computacao.ufersa.edu.br/"
+        link: "https://cc.ufersa.edu.br/"
     }
 ];
 
