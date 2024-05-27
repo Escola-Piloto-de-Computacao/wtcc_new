@@ -8,7 +8,7 @@ import { HiCursorClick } from "react-icons/hi";
 import { BsInfoCircle } from "react-icons/bs";
 import { Modal } from "antd";
 import { Minicurso } from "@/lib/definitions";
-import { ModalContent } from "@/components/core/Eventos/ModalContent";
+import ModalContent from "@/components/core/Eventos/ModalContent";
 import {
     BackendIcon,
     FrontEndIcon,

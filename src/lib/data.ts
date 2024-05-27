@@ -85,10 +85,10 @@ const minicursos: Minicurso[] = [
     },
     {
         index: 2,
-        title: "Desenvolvimento Mobile com Flutter",
-        alternateTitle: "Desenvolvimento para dispositivos móveis",
+        title: "Criação de Aplicativos com Flutter",
+        alternateTitle: "Desenvolvimento de Aplicações Móveis e Responsivas com Flutter",
         picture: "/imagens-minicursos/flutter.png",
-        alternatePicture: "/imagens-minicursos/flutter2.jpg",
+        alternatePicture: "/imagens-minicursos/flutter2.png",
         date: "05/06",
         tags: [
             {
@@ -107,9 +107,11 @@ const minicursos: Minicurso[] = [
                 index: 2
             }
         ],
-        description: "Neste minicurso, os participantes aprenderão a desenvolver aplicativos móveis com Flutter, um framework multiplataforma de código aberto criado pelo Google. O Flutter permite o desenvolvimento de aplicativos para Android e iOS a partir de um único código base, facilitando a criação de interfaces de usuário bonitas e responsivas.",
+        description: "O minicurso \"Desenvolvimento com Dart e Flutter\" é uma imersão completa nas tecnologias Dart e Flutter, essenciais para o desenvolvimento de aplicativos móveis modernos e responsivos. Em quatro horas de conteúdo dinâmico, os participantes serão guiados desde os fundamentos básicos de programação em Dart até técnicas avançadas de desenvolvimento de interfaces com Flutter. Com uma abordagem prática e teórica, os alunos aprenderão a criar aplicativos completos e eficientes, explorando widgets básicos e avançados, gerenciamento de estado, arquitetura do Flutter e melhores práticas de desenvolvimento. Ao final do curso, os participantes estarão aptos a desenvolverem suas próprias aplicações móveis de forma ágil e eficaz, utilizando todo o potencial oferecido por Dart e Flutter.",
         prerequesites: [
-            "Programação Orientada a Objetos"
+            "Conhecimento básico em programação",
+            "Familiaridade com o ambiente de desenvolvimento Visual Studio Code",
+            "Programação Orientada a Objetos (não obrigatório)"
         ],
         palestrantes: [
             {
@@ -129,6 +131,14 @@ const minicursos: Minicurso[] = [
                     instagram: "https://www.instagram.com/lucassf2k/"
                 },
                 picture: "/imagens-minicursos/lucasVinicius.png"
+            },
+            {
+                name: "Nicholas Vinicius Araújo Pinheiro",
+                bio: "Desenvolvedor de software com foco em soluções tecnológicas. Responsável pelo desenvolvimento mobile com Flutter na Dunnas.",
+                social: {
+                    instagram: "https://www.instagram.com/nicholasvinicius_/"
+                },
+                picture: "/imagens-minicursos/nicholasVinicius.png"
             }
         ],
         localizacao: ""
