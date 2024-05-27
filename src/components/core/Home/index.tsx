@@ -1,26 +1,29 @@
-"use client";
+'use client';
 
-import React, { useEffect, useState } from "react";
-import Map from "@/components/core/Home/MapArea";
-import { FaMapLocationDot } from "react-icons/fa6";
-import { patrocinadores } from "@/lib/data";
-import Link from "next/link";
-import { Tooltip } from "antd";
-import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
-import Image from "next/image";
-import { ClickHereArrow } from "@/components/ui/icons";
-import { HiCursorClick } from "react-icons/hi";
+import React, { useEffect, useState } from 'react';
+import Map from '@/components/core/Home/MapArea';
+import { FaMapLocationDot } from 'react-icons/fa6';
+import { patrocinadores } from '@/lib/data';
+import Link from 'next/link';
+import { Tooltip } from 'antd';
+import { motion } from 'framer-motion';
+import { HeroHighlight, Highlight } from '@/components/ui/hero-highlight';
+import Image from 'next/image';
+import { ClickHereArrow } from '@/components/ui/icons';
+import { HiCursorClick } from 'react-icons/hi';
+import { Popover } from 'antd'
 
 const Button = () => {
     return (
         <div className="m-2 mt-12 lg:mt-0 flex justify-center">
-            <button
-                className="font-bold text-white bg-green-600 rounded-2xl px-4 py-2 text-2xl cursor-not-allowed"
-                disabled
-                onClick={() => window.location.href = "https://www.google.com.br/?hl=pt-BR"}>
-                INSCREVA-SE!
-            </button>
+            <Popover content={<p className="text-center">Inscrições abrem em breve!</p>} trigger="hover">
+                <button
+                    className="font-bold text-white bg-green-600 rounded-2xl px-4 py-2 text-2xl cursor-not-allowed"
+                    disabled
+                    onClick={() => window.location.href = "https://www.google.com.br/?hl=pt-BR"}>
+                    INSCREVA-SE!
+                </button>
+            </Popover>
         </div>
     );
 };
