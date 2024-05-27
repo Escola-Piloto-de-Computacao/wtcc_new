@@ -1,11 +1,11 @@
-import "./globals.css";
+import './globals.css';
 
-import Header from "../components/core/Header";
-import Footer from "../components/core/Footer";
+import Header from '@/components/core/Header';
+import Footer from '@/components/core/Footer';
 
-import { Toaster } from "../components/ui/toaster";
+import { Toaster } from '@/components/ui/toaster';
 
-import { Inter } from "next/font/google";
+import { Inter } from 'next/font/google';
 import { Fira_Code } from "next/font/google";
 const firaCode = Fira_Code({ subsets: ["latin"], variable: "--font-firacode" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     keywords: ["IX WTCC", "UFERSA", "Ciência da Computação", "Computação", "Tecnologia", "Evento", "Workshop", "Tecnologia da Informação", "IX Workshop de Tecnologia da Computação e Computação"],
 };
 
+import { Analytics } from '@vercel/analytics/react';
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
     return (
@@ -29,6 +30,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
                 <Header />
                 <main className="mt-32 mx-7 lg:mx-0">
                     {children}
+                    <Analytics />
                 </main>
                 <Toaster />
                 <Footer />
