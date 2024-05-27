@@ -1,5 +1,5 @@
 import React from 'react';
-import { Minicurso, Palestrante, Palestra, Faq, Atividade, Imagem, Patrocinador, Commands } from '@/lib/definitions';
+import { Minicurso, Palestrante, Palestra, Faq, Atividade, Imagem, Patrocinador, Commands, TerminalFile } from '@/lib/definitions';
 
 const minicursos: Minicurso[] = [
     {
@@ -729,21 +729,27 @@ const patrocinadores: Patrocinador[] = [
     }
 ];
 
-const maratonaTerminalCommands: Commands = {
-    echo: {
-        description: 'Echo a passed string.',
-        usage: 'echo <string>',
-        fn: (...args: string[]) => args.join(' ')
+const terminalFiles: TerminalFile[] = [
+    {
+        name: "hackathon.txt",
+        content: "O hackathon é um evento que reúne a comunidade acadêmica para idealizar soluções tecnológicas para problemas reais. Durante o evento, os participantes trabalham em equipes para criar projetos inovadores, que são avaliados por uma banca de 3 jurados da equipe acadêmica. O hackathon é uma excelente oportunidade para os alunos aplicarem seus conhecimentos em programação e desenvolvimento de software, além de promover a integração entre os estudantes e professores do curso de Ciência da Computação. Ao final do evento, as equipes vencedoras são premiadas com premiações diversas e certificados de participação.",
+        address: "/"
     },
-    ls: {
-        description: 'List files in the current directory.',
-        fn: () => 'file1 file2 file3'
+    {
+        name: "fase1.txt",
+        content: "fazer texto sobre fase1",
+        address: "/"
     },
-    cd: {
-        description: 'Change directory.',
-        usage: 'cd <directory>',
-        fn: (directory: string) => `Changed directory to ${directory}`
+    {
+        name: "fase2.txt",
+        content: "fazer texto sobre fase2",
+        address: "/"
     },
-};
+    {
+        name: "fase3.txt",
+        content: "fazer texto sobre fase3",
+        address: "/"
+    }
+]
 
-export { maratonaTerminalCommands, minicursos, palestra, FAQuestions, cronograma, imagens, patrocinadores }
+export { terminalFiles, minicursos, palestra, FAQuestions, cronograma, imagens, patrocinadores }

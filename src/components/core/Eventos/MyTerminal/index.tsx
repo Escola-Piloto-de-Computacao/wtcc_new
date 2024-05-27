@@ -1,23 +1,77 @@
 "use client";
 
 import React, { Component } from 'react';
-import Terminal from 'react-console-emulator';
-import { maratonaTerminalCommands } from '@/lib/data';
-import { BsInfoCircle } from 'react-icons/bs';
 
-export default class MyTerminal extends Component {
+import Terminal from 'react-console-emulator';
+import { terminalFiles } from '@/lib/data';
+import { TerminalFile } from '@/lib/definitions';
+
+interface State {
+    currentDirectory: string;
+    files: TerminalFile[];
+};
+export default class MyTerminal extends Component<{}, State> {
+    screenHeight = window.innerHeight;
+
+    maratonaTerminalCommands = {
+        echo: {
+            description: 'Echo text back to the console',
+            usage: 'echo [text]',
+            fn: (...args: any[]) => {
+                return args.join(' ');
+            }
+        },
+        ls: {
+            description: 'List directory contents',
+            fn: () => {
+                const { currentDirectory, files } = this.state;
+                const filesInCurrentDirectory = files.filter(file => file.address === currentDirectory);
+                return filesInCurrentDirectory.map(file => file.name).join(' ');
+            }
+        },
+        pwd: {
+            description: 'Print the current working directory',
+            fn: () => {
+                const currentDirectory = `$${this.state.currentDirectory}`;
+                return currentDirectory;
+            }
+        },
+        cat: {
+            description: 'Concatenate files and print on the standard output',
+            usage: 'cat [file]',
+            fn: (fileName: string) => {
+                const { currentDirectory, files } = this.state;
+                const file = files.find(file => file.address === currentDirectory && file.name === fileName);
+                return file ? `\n${file.content}` : `cat: ${fileName}: No such file or directory`;
+            }
+        },
+        wget: {
+            description: 'Download files from the web',
+            usage: 'wget [file]',
+            fn: (fileName: string) => {
+
+                return `wget: ${fileName}: No such file or directory`;
+            }
+        },
+    };
+
+    constructor(props: any) {
+        super(props);
+        this.state = {
+            currentDirectory: '/',
+            files: terminalFiles,
+        };
+    };
+
     render() {
         return (
-            <div className="flex flex-col gap-2">
-                <Terminal
-                    commands={maratonaTerminalCommands}
-                    promptLabel={'~'}
-                />
-                <div className="flex gap-1">
-                    <BsInfoCircle size={15} />
-                    <p className="text-xs text-center">Clique na janela do terminal e digite <span className="italic">help</span> para ver os comandos disponíveis.</p>
-                </div>
-            </div>
+            <Terminal
+                commands={this.maratonaTerminalCommands}
+                promptLabel={'$'}
+                autoFocus
+                inputTextStyle={{ color: '#d6d6d6' }}
+                style={{ height: this.screenHeight * 0.55 }}
+            />
         );
     };
 };

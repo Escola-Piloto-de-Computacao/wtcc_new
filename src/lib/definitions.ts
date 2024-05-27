@@ -81,3 +81,9 @@ export type Commands = {
         fn: (...args: string[]) => string;
     };
 };
+
+export type TerminalFile = {
+    name: string;
+    content: string;
+    address: string;
+};
