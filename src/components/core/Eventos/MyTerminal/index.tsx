@@ -9,10 +9,9 @@ import { TerminalFile } from '@/lib/definitions';
 interface State {
     currentDirectory: string;
     files: TerminalFile[];
+    screenHeight: number;
 };
 export default class MyTerminal extends Component<{}, State> {
-    screenHeight = window.innerHeight;
-
     maratonaTerminalCommands = {
         echo: {
             description: 'Echo text back to the console',
@@ -60,8 +59,14 @@ export default class MyTerminal extends Component<{}, State> {
         this.state = {
             currentDirectory: '/',
             files: terminalFiles,
+            screenHeight: 1000
         };
     };
+
+    componentDidMount() {
+        // Set screenHeight state here, after the component has been mounted
+        this.setState({ screenHeight: window.innerHeight });
+    }
 
     render() {
         return (
@@ -70,7 +75,7 @@ export default class MyTerminal extends Component<{}, State> {
                 promptLabel={'$'}
                 autoFocus
                 inputTextStyle={{ color: '#d6d6d6' }}
-                style={{ height: this.screenHeight * 0.55 }}
+                style={{ height: this.state.screenHeight * 0.55 }}
             />
         );
     };
