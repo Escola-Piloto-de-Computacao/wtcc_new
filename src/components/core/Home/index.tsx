@@ -5,13 +5,12 @@ import Map from '@/components/core/Home/MapArea';
 import { FaMapLocationDot } from 'react-icons/fa6';
 import { patrocinadores } from '@/lib/data';
 import Link from 'next/link';
-import { Tooltip } from 'antd';
+import { Tooltip, Popover } from 'antd';
 import { motion } from 'framer-motion';
 import { HeroHighlight, Highlight } from '@/components/ui/hero-highlight';
 import Image from 'next/image';
 import { ClickHereArrow } from '@/components/ui/icons';
 import { HiCursorClick } from 'react-icons/hi';
-import { Popover } from 'antd'
 
 const Button = () => {
     return (
@@ -20,7 +19,7 @@ const Button = () => {
                 <button
                     className="font-bold text-white bg-green-600 rounded-2xl px-4 py-2 text-2xl cursor-not-allowed"
                     disabled
-                    onClick={() => window.location.href = "https://www.google.com.br/?hl=pt-BR"}>
+                    onClick={() => window.location.href = ""}>
                     INSCREVA-SE!
                 </button>
             </Popover>

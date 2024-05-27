@@ -1,7 +1,7 @@
 import React from 'react';
 import { Minicurso, SocialMedia } from '@/lib/definitions';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Tooltip } from 'antd';
+import { Popover, Tooltip } from 'antd';
 import { GithubIcon } from '@/components/ui/icons';
 import { FaLinkedin, FaInstagram } from 'react-icons/fa6';
 import { IoMail } from 'react-icons/io5';
@@ -37,13 +37,15 @@ const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
                 )}
             </div>
             <div className="sm:col-span-12 w-full sm:grid sm:grid-cols-12 flex justify-center">
-                <Button
-                    variant="default"
-                    size="lg"
-                    className="sm:col-start-9 sm:col-span-3 bg-sky-400 hover:bg-sky-500 px-12 sm:px-0"
-                >
-                    Inscreva-se
-                </Button>
+                <Popover content={<p className="text-center">Inscrições abrem em breve!</p>} trigger="hover">
+                    <Button
+                        variant="default"
+                        size="lg"
+                        className="sm:col-start-9 sm:col-span-3 bg-sky-400 hover:bg-sky-500 px-12 sm:px-0 text-lg cursor-not-allowed"
+                    >
+                        Inscrever-se
+                    </Button>
+                </Popover>
             </div>
             <div className="sm:col-span-12 mb-3 mt-5 sm:mx-3">
                 <div className="border-t border-gray-300 my-6"></div>
