@@ -208,7 +208,7 @@ const minicursos: Minicurso[] = [
         ],
         localizacao: "Lab x"
     },
-    {
+    /*{
         index: 5,
         title: "Introdução ao PHP com Laravel MVC",
         alternateTitle: "PHP com Laravel MVC e suas vantagens",
@@ -247,7 +247,7 @@ const minicursos: Minicurso[] = [
             }
         ],
         localizacao: "Lab x"
-    },
+    },*/
     {
         index: 6,
         title: "Introdução a automação em Python com PyAutoGUI",
@@ -319,14 +319,13 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/joaoLucas.jpeg"
             },
             {
-                name: "Sarah Heloysa Oliveira Tomaz",
-                bio: "Prof. Robótica e Maker, integrando IA e práticas de machine learning em seu ensino.",
+                name: "Brenno Kevyn Maia de Souza",
+                bio: "A melhor maneira de prever o futuro é inventá-lo.",
                 social: {
-                    github: "https://github.com/SarahTomaz",
-                    linkedin: "https://www.linkedin.com/in/sarah-tomaz-3627952ab/",
-                    instagram: "https://www.instagram.com/sarah.stho/"
+                    github: "https://github.com/BrennoKM",
+                    linkedin: "https://www.linkedin.com/in/brenno-kevyn?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 },
-                picture: "/imagens-minicursos/sarahHeloysa.jpeg"
+                picture: "/imagens-minicursos/brenoKevyn.jpg"
             }
         ],
         localizacao: "Lab x"
