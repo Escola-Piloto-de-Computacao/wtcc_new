@@ -15,7 +15,7 @@ export default function Maratona() {
                     </div>
                     <div className="flex gap-1">
                         <BsInfoCircle size={15} />
-                        <p className="text-xs text-center">Clique na janela do terminal e digite <span className="font-fira bg-[#212121] bg-transparent text-white px-[0.2rem] rounded-sm">help</span></p>
+                        <p className="text-xs text-center">Clique na janela do terminal e digite <span className="font-fira bg-[#212121] text-white px-[0.2rem] rounded-sm">help</span></p>
                     </div>
                 </div>
             </div>
