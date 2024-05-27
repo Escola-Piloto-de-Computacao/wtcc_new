@@ -118,7 +118,8 @@ const minicursos: Minicurso[] = [
                 social: {
                     github: "https://github.com/nickolas-silva",
                     instagram: "https://www.instagram.com/nickolas_emanuel_/"
-                }
+                },
+                picture: "/imagens-minicursos/nickolasEmanuel.png"
             },
             {
                 name: "Lucas Vinícius Fernandes da Silva",
@@ -126,7 +127,8 @@ const minicursos: Minicurso[] = [
                 social: {
                     github: "https://github.com/lucassf2k",
                     instagram: "https://www.instagram.com/lucassf2k/"
-                }
+                },
+                picture: "/imagens-minicursos/lucasVinicius.png"
             }
         ],
         localizacao: "Lab x"
