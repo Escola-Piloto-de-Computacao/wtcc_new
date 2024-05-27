@@ -6,6 +6,7 @@ export default function MesaRedondaPage() {
         <div className="flex flex-col items-center gap-6 mb-24 lg:mb-16">
             <div className="w-full flex flex-col items-center text-center mb-1">
                 <div className="xsm:w-[66vw] sm:w-[45vw] md:w-[37vw] lg:w-[23vw] xl:w[19vw]">
+                    <p className="text-base font-light">Auditório da PROEC - 06/06 - 10:30</p>
                     <h1 className="w-full text-4xl font-light border-b-2 border-current pb-1">Mesa Redonda</h1>
                 </div>
                 <h2 className="pt-1">Perspectiva sobre o futuro do mercado de trabalho</h2>

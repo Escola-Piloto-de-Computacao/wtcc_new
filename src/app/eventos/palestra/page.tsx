@@ -19,7 +19,7 @@ export default function Palestra() {
             <div className="md:col-start-7 md:col-span-6 lg:col-span-5 lg:mt-4 flex flex-col gap-8 lg:gap-12">
                 <div className="flex flex-col gap-4">
                     <div>
-                        <p className="text-base font-light">06/06 - 08:00</p>
+                        <p className="text-base font-light">Auditório da PROEC - 06/06 - 08:00</p>
                         <h2 className="text-2xl lg:text-3xl font-bold text-left font-poppings mr-5 lg:mr-16">{palestra.name}</h2>
                     </div>
                     <div className="ml-2 flex flex-col gap-2 text-justify indent-5">
