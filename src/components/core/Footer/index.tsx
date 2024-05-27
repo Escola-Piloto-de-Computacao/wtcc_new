@@ -7,7 +7,7 @@ import { EmailIcon, InstagramIcon } from 'next-share';
 const Footer = () => {
     return (
         <footer className="bg-[#04081D] text-white mt-5">
-            <div className="flex flex-col col-span-2 lg:grid lg:grid-cols-12 pt-3 lg:pt-12 h-full mx-10 pb-14 items-center md:gap-5 lg:gap-0">
+            <div className="flex flex-col col-span-2 lg:grid lg:grid-cols-12 pt-3 lg:pt-8 h-full mx-10 pb-14 items-center md:gap-5 lg:gap-0">
                 <div className="order-last lg:order-1 lg:col-span-3 hidden md:flex h-40 pt-0 lg:pt-3">
                     <a href="https://escolapilotodecomputacao.com.br" target="_blank">
                         <Image
