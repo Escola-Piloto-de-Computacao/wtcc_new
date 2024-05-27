@@ -2,11 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import {
-    EmailShareButton,
-    EmailIcon,
-    InstagramIcon
-} from 'next-share';
+import { EmailIcon, InstagramIcon } from 'next-share';
 
 const Footer = () => {
     return (
@@ -27,9 +23,9 @@ const Footer = () => {
                     <div className="flex flex-col items-center justify-center gap-3 lg:gap-6">
                         <h3 className="text-xl">Fale conosco!</h3>
                         <div className="flex items-center justify-center gap-12">
-                            <EmailShareButton url="escolapilotodecomputacao@gmail.com" subject="Contato">
+                            <a href="mailto:escolapilotodecomputacao@gmail.com" rel="noopener noreferrer">
                                 <EmailIcon size={60} round />
-                            </EmailShareButton>
+                            </a>
                             <a href="https://www.instagram.com/epc_ufersa/" target="_blank">
                                 <InstagramIcon size={60} round />
                             </a>
