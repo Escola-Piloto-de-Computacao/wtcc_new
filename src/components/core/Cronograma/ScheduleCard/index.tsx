@@ -22,14 +22,14 @@ const ScheduleCard: React.FC<ScheduleCardProps> = ({ atividade }) => {
                     {atividade.pageExists ? (
                         <Link href={`${atividade.page}`}>
                             <div className="flex gap-1">
-                                <h3 className="text-blue-400 text-lg font-medium">{atividade.titulo}</h3>
+                                <h3 className="text-blue-400 text-lg font-medium ml-4 sm:ml-0">{atividade.titulo}</h3>
                                 <HiCursorClick size={15} className="text-blue-400" />
                             </div>
                         </Link>
                     ) : (
                         <h3 className="text-blue-400 text-lg font-medium">{atividade.titulo}</h3>
                     )}
-                    <p className="lg:ml-3 text-sm text-center sm:text-left px-1 sm:px-0">{atividade.descricao}</p>
+                    <p className="md:ml-3 text-sm text-center sm:text-left px-1 sm:px-0">{atividade.descricao}</p>
                 </div>
                 <Link
                     href='/#mapa'

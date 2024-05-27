@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import { cronograma } from "@/lib/data";
 import ScheduleCard from "@/components/core/Cronograma/ScheduleCard";
 import { Button } from "@/components/ui/button";
+import { BsInfoCircle } from "react-icons/bs";
+import { HiCursorClick } from "react-icons/hi";
 
 export default function Cronograma() {
 
@@ -20,7 +22,16 @@ export default function Cronograma() {
                 <h2 className="font-light">Programação completa</h2>
             </div>
             <div className="flex flex-col gap-16">
-                <Datas handleDayChange={handleDayChange} currentDay={currentDay} />
+                <div className="flex flex-col gap-6">
+                    <Datas handleDayChange={handleDayChange} currentDay={currentDay} />
+                    <div className="md:hidden flex gap-1 justify-center">
+                        <BsInfoCircle size={20} />
+                        <p className="text-center text-sm">Clique nos eventos para mais informações!</p>
+                        <div className="pt-[0.15rem]">
+                            <HiCursorClick size={15} />
+                        </div>
+                    </div>
+                </div>
                 <div className="flex flex-col items-center">
                     {cronograma.map((atividade) => {
                         if (atividade.dia === currentDay) {
