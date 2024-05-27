@@ -50,7 +50,7 @@ export default class MyTerminal extends Component<{}, State> {
             usage: 'wget [file]',
             fn: (fileName: string) => {
 
-                return `wget: ${fileName}: No such file or directory`;
+                return `wget [${fileName}]: No such file or directory`;
             }
         },
     };
