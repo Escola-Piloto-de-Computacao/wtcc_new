@@ -10,8 +10,9 @@ export default function Palestra() {
                 <Image
                     src={palestra.img}
                     alt={"Foto da palestra " + palestra.name}
-                    width={500} height={600}
+                    width={3024} height={4032}
                     className="rounded-md h-[35vh] sm:h-[60vh] md:h-[75vh] w-full object-cover object-center"
+                    quality={90}
                     loading='eager'
                 />
             </div>

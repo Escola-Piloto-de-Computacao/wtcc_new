@@ -13,11 +13,14 @@ export default function MesaRedondaPage() {
             <div className="flex flex-col gap-7 lg:gap-10 md:mx-4 lg:mx-0 xl:mx-20">
                 <div className="flex flex-col lg:flex-row lg:ml-20 xl:ml-10 2xl:ml-20 lg:mr-16 xl:mr-8 2xl:mr-16 lg:p-7 gap-12 bg-slate-200 p-2 rounded-lg">
                     <Image
-                        src="/Mesa1.png"
+                        src="/mesa-redonda-1.jpg"
                         alt="Mesa Redonda"
-                        width={500}
-                        height={300}
-                        className="hidden lg:block col-span-3 lg:w-full h-full lg:h-[260px] object-cover rounded-md" />
+                        width={1199}
+                        height={900}
+                        className="hidden lg:block col-span-3 lg:w-full h-full lg:h-[260px] object-cover rounded-md"
+                        quality={100}
+                        loading='eager'
+                    />
                     <div className="flex flex-col gap-4 justify-center">
                         <div className="flex items-center gap-3">
                             <BsFillQuestionSquareFill className="text-5xl text-primary" />
@@ -38,11 +41,14 @@ export default function MesaRedondaPage() {
                             Além das apresentações e discussões, haverá sessões interativas onde os participantes poderão fazer perguntas, compartilhar experiências e colaborar em soluções inovadoras. Este é um momento único para ampliar seu conhecimento, construir uma rede de contatos e se preparar para as transformações que estão por vir no mundo do trabalho. Não perca esta oportunidade de se atualizar e se engajar em um diálogo produtivo sobre o futuro do mercado de trabalho. Junte-se a nós para explorar como podemos, juntos, moldar um futuro profissional mais dinâmico, inclusivo e sustentável.                    </p>
                     </div>
                     <Image
-                        src="/Mesa2.png"
+                        src="/mesa-redonda-2.png"
                         alt="Mesa Redonda"
                         width={500}
                         height={300}
-                        className="hidden lg:block col-span-3 h-[260px] object-cover rounded-md" />
+                        className="hidden lg:block col-span-3 h-[260px] object-cover rounded-md"
+                        quality={100}
+                        loading='eager'
+                    />
                 </div>
             </div>
         </div>

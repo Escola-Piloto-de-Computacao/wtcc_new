@@ -24,8 +24,10 @@ export default function Maratona() {
                     src="/maratona.png"
                     alt="Maratona de Programação"
                     width={1200}
-                    height={400}
+                    height={1600}
                     className="rounded-lg"
+                    quality={100}
+                    loading='eager'
                 />
             </div>
         </div>

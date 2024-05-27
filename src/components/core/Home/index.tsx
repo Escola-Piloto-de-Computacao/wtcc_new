@@ -99,12 +99,14 @@ const Images = () => {
             <div className="hidden lg:grid col-span-1 lg:grid-rows-2 gap-3">
                 <div className="z-10">
                     <Image
-                        src="/home1.jpeg"
+                        src="/home1.png"
                         alt="Imagem de antigos WTCC's"
-                        width={400}
-                        height={400}
+                        width={5473}
+                        height={2303}
+                        objectFit='cover'
                         className="w-auto h-auto rounded-2xl"
-                        loading="eager"
+                        quality={100}
+                        loading='eager'
                     />
                 </div>
                 <div className="grid grid-cols-12 gap-2 justify-items-center z-10">
@@ -112,9 +114,10 @@ const Images = () => {
                         <Image
                             src="/home2.jpg"
                             alt="Imagem de antigos WTCC's"
-                            width={400}
-                            height={400}
+                            width={1080}
+                            height={720}
                             className="w-auto h-auto rounded-2xl"
+                            quality={100}
                             loading="eager"
                         />
                     </div>
@@ -122,9 +125,10 @@ const Images = () => {
                         <Image
                             src="/home3.jpg"
                             alt="Imagem de antigos WTCC's"
-                            width={400}
-                            height={400}
+                            width={1080}
+                            height={500}
                             className="w-auto h-auto rounded-2xl"
+                            quality={100}
                             loading="eager"
                         />
                     </div>
