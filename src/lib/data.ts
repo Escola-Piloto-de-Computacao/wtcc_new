@@ -47,7 +47,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/wenderEnzo.jpeg"
             }
         ],
-        localizacao: "Lab x"
+        localizacao: ""
     },
     {
         index: 1,
@@ -81,7 +81,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/pauloHenrique.jpg"
             }
         ],
-        localizacao: "Lab x"
+        localizacao: ""
     },
     {
         index: 2,
@@ -131,7 +131,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/lucasVinicius.png"
             }
         ],
-        localizacao: "Lab x"
+        localizacao: ""
     },
     {
         index: 3,
@@ -175,7 +175,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/luisRyan.png"
             }
         ],
-        localizacao: "Lab x"
+        localizacao: ""
     },
     {
         index: 4,
@@ -208,48 +208,57 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/thiagoHenrique.jpeg"
             }
         ],
-        localizacao: "Lab x"
+        localizacao: ""
     },
-    /*{
+    {
         index: 5,
-        title: "Introdução ao PHP com Laravel MVC",
-        alternateTitle: "PHP com Laravel MVC e suas vantagens",
-        picture: "/imagens-minicursos/laravel.jpg",
-        alternatePicture: "/imagens-minicursos/laravel2.jpg",
+        title: "Introdução ao Python com Pandas",
+        alternateTitle: "Análise de Dados com Python e Pandas",
+        picture: "/imagens-minicursos/pandas.png",
+        alternatePicture: "/imagens-minicursos/pandas2.png",
         date: "06/06",
         tags: [
             {
-                name: "linguagem",
-                color: "bg-green-300",
+                name: "iniciante",
+                color: "bg-yellow-300",
                 index: 0
             },
             {
-                name: "framework",
-                color: "bg-blue-300",
+                name: "linguagem",
+                color: "bg-green-300",
                 index: 1
             },
             {
-                name: "back-end",
-                color: "bg-orange-300",
+                name: "análise de dados",
+                color: "bg-fuchsia-300",
                 index: 2
             }
         ],
         prerequesites: [
-            "Conhecimento básico em programação"
+            "Conhecimento básico em programação (não obrigatório)"
         ],
-        description: "Laravel é um framework desenvolvido para facilitar a escrita de aplicações e web services em PHP. Com foco na simplicidade e legibilidade do código, esse framework disponibiliza interfaces de fácil utilização para os principais componentes que implementam tarefas comuns à maioria dos back-ends, abstraindo a complexidade necessária para a criação de sistemas de rotas, autenticação de usuários, cache, persistência de dados. Neste Mini-curso lhe será apresentado a linguagem PHP e ao framework Laravel para assim despertar o interesse no tema.",
+        description: "Este minicurso tem como objetivo introduzir os participantes ao uso do Python para análise de dados utilizando a biblioteca Pandas. Os alunos aprenderão a manipular, processar e analisar conjuntos de dados reais, desenvolvendo habilidades práticas essenciais para qualquer cientista dados. Serão abordados conceitos fundamentais do Python, operações básicas e avançadas com Pandas, além de técnicas de visualização de dados. Este minicurso é ideal para aqueles que desejam iniciar na área de Data Science e melhorar suas habilidades em Python.",
         palestrantes: [
             {
-                name: "Lucas Henrique Martins Padilha",
-                bio: "Técnico em informática pelo IFPB, atualmente estudante de Ciência da computação na UFERSA, com experiência em C# ASP.NET MVC",
+                name: "Valentina Silva de Lacerda",
+                bio: "É estudante de Ciência da Computação com forte interesse em Data Science e Machine Learning. Possui experiência prática com análise de dados utilizando Python e é entusiasta de tecnologias open-source.",
                 social: {
-                    instagram: "https://www.instagram.com/lucaspadilha06"
+                    github: "https://github.com/valentinaslacerda",
                 },
-                picture: "/imagens-minicursos/lucasPadilha.png"
+                picture: "/imagens-minicursos/valentinaSilva.jpeg"
+            },
+            {
+                name: "Mateus Lanuce Lourenço Pereira",
+                bio: "Estudante de Ciência da Computação na Ufersa e atua como Pesquisador Junior no LAIS/UFRN, onde se dedica a projetos que impactam positivamente a saúde pública no Brasil. Tem habilidades avançadas em Javascript, Typescript, HTML5, CSS, React.js, Vue.js e Django Templates, com foco em acessibilidade e SEO.",
+                social: {
+                    github: "https://github.com/mateus-lanuce",
+                    linkedin: "https://www.linkedin.com/in/mateus-lanuce/"
+                },
+                picture: "/imagens-minicursos/mateusLanuce.jpg"
             }
         ],
-        localizacao: "Lab x"
-    },*/
+        localizacao: ""
+    },
     {
         index: 6,
         title: "Introdução a automação em Python com PyAutoGUI",
@@ -283,7 +292,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/viniciusGabriel.jpg"
             }
         ],
-        localizacao: "Lab x"
+        localizacao: ""
     },
     {
         index: 7,
@@ -330,7 +339,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/brenoKevyn.jpg"
             }
         ],
-        localizacao: "Lab x"
+        localizacao: ""
     },
     {
         index: 8,
@@ -374,7 +383,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/lucasSilva.png"
             }
         ],
-        localizacao: "Lab x"
+        localizacao: ""
     },
     {
         index: 9,
@@ -409,14 +418,22 @@ const minicursos: Minicurso[] = [
         palestrantes: [
             {
                 name: "Pedro Figueira Bôa-Viagem",
-                bio: "Estudante de Ciência da Computação e desenvolvedor front-end.",
+                bio: "Estudante do 5º período Ciência da Computação e desenvolvedor Front-End. Tenho desenvolvido com React, Next.js, TypeScript, TailwindCSS e Node.js. Atualmente bolsista da EPC e Diretor Presidente da Empresa Júnior de Computação da Ufersa, Lótus Tech.",
                 social: {
                     github: "https://github.com/PepeuFBV"
                 },
                 picture: "/imagens-minicursos/pedroFigueira.png"
+            },
+            {
+                name: "Lucas Gabriel",
+                bio: "Desenvolvedor web e mobile com 3 anos de experiência na área. Hoje trabalho diariamente com Nextjs (React), Flutter, Go e SQL. Estou sempre em dia com novas tecnologias e meios de inovar a área da programação.",
+                social: {
+                    github: "http://github.com/lucasmelodev1"
+                },
+                picture: "/imagens-minicursos/lucasGabriel.png"
             }
         ],
-        localizacao: "Lab x"
+        localizacao: ""
     }
 ];
 
