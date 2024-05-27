@@ -6,6 +6,7 @@ import './schedule.css';
 import { Atividade } from '@/lib/definitions';
 import { MapPinIcon } from '@/components/ui/icons';
 import Link from 'next/link';
+import { HiCursorClick } from 'react-icons/hi';
 
 interface ScheduleCardProps {
     atividade: Atividade;
@@ -18,7 +19,16 @@ const ScheduleCard: React.FC<ScheduleCardProps> = ({ atividade }) => {
                     <p className="text-base font-medium">{atividade.hora}</p>
                 </div>
                 <div className="flex flex-col items-center sm:items-start w-full sm:w-2/4 pb-2 sm:pb-0">
-                    <h3 className="text-blue-400 text-lg font-medium">{atividade.titulo}</h3>
+                    {atividade.pageExists ? (
+                        <Link href={`${atividade.page}`}>
+                            <div className="flex gap-1">
+                                <h3 className="text-blue-400 text-lg font-medium">{atividade.titulo}</h3>
+                                <HiCursorClick size={15} className="text-blue-400" />
+                            </div>
+                        </Link>
+                    ) : (
+                        <h3 className="text-blue-400 text-lg font-medium">{atividade.titulo}</h3>
+                    )}
                     <p className="lg:ml-3 text-sm text-center sm:text-left px-1 sm:px-0">{atividade.descricao}</p>
                 </div>
                 <Link

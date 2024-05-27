@@ -57,6 +57,8 @@ export type Atividade = {
     titulo: string;
     descricao: string;
     localizacao: string;
+    pageExists?: boolean;
+    page?: string;
 };
 
 export type Imagem = {

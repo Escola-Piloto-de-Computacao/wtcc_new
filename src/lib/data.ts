@@ -508,7 +508,9 @@ const cronograma: Atividade[] = [
         hora: "14:00 - 18:00",
         titulo: "Minicursos",
         descricao: "Minicursos oferecidos por alunos e professores do curso de Ciência da Computação.",
-        localizacao: "Laboratórios do LCC"
+        localizacao: "Laboratórios do LCC",
+        pageExists: true,
+        page: "/eventos/minicursos"
     },
     {
         index: 4,
@@ -516,7 +518,9 @@ const cronograma: Atividade[] = [
         hora: "08:00 - 09:30",
         titulo: "Palestra",
         descricao: "Palestra com um convidado especial sobre o mercado de trabalho e a importância da Computação.",
-        localizacao: "Auditório da PROEC"
+        localizacao: "Auditório da PROEC",
+        pageExists: true,
+        page: "/eventos/palestra"
     },
     {
         index: 5,
@@ -532,7 +536,9 @@ const cronograma: Atividade[] = [
         hora: "10:00 - 11:30",
         titulo: "Mesa Redonda",
         descricao: "Mesa redonda com professores e alunos da área de Computação.",
-        localizacao: "Auditório da PROEC"
+        localizacao: "Auditório da PROEC",
+        pageExists: true,
+        page: "/eventos/mesa-redonda"
     },
     {
         index: 7,
@@ -540,7 +546,9 @@ const cronograma: Atividade[] = [
         hora: "14:00 - 18:00",
         titulo: "Minicursos",
         descricao: "Minicursos oferecidos por alunos e professores do curso de Ciência da Computação.",
-        localizacao: "Laboratórios do LCC"
+        localizacao: "Laboratórios do LCC",
+        pageExists: true,
+        page: "/eventos/minicursos"
     },
     {
         index: 8,
