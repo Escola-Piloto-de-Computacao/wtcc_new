@@ -2,7 +2,7 @@ import React from 'react';
 import { Minicurso } from '@/lib/definitions';
 import { Popover } from 'antd';
 import { Button } from '@/components/ui/button';
-import Palestrantes from '@/components/core/Eventos/Palestrantes';
+import Palestrantes from '@/components/core/Eventos/ModalContent/Palestrantes';
 
 interface ModalContentProps { minicourse: Minicurso; };
 const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
