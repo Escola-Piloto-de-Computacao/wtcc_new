@@ -9,12 +9,11 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger,
-    NavigationMenuViewport,
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { JavascriptOriginal, GithubOriginal, LinuxOriginal, LaravelOriginal, PythonOriginal, ReactOriginal } from 'devicons-react';
+import { JavascriptOriginal, GithubOriginal, LinuxOriginal, PandasOriginal, PythonOriginal, ReactOriginal } from 'devicons-react';
 
 const HeaderItems = () => {
     return (
@@ -44,7 +43,7 @@ const HeaderItems = () => {
                                             <GithubOriginal size="36" className="grow max-h-[4vh]" />
                                             <LinuxOriginal size="36" className="grow max-h-[4vh]" />
                                             <PythonOriginal size="36" className="grow max-h-[4vh]" />
-                                            <LaravelOriginal size="36" className="grow max-h-[4vh]" />
+                                            <PandasOriginal size="36" className="grow max-h-[4vh]" />
                                             <ReactOriginal size="36" className="grow max-h-[4vh]" />
                                         </div>
                                         <div className="mb-2 mt-4 text-lg font-medium">
@@ -59,15 +58,15 @@ const HeaderItems = () => {
                             <ListItem href="/eventos/palestra" title="/palestra">
                                 Ministrada por ex-aluno da Ufersa sobre o mercado de trabalho.
                             </ListItem>
-                            {/*<ListItem href="/eventos/maratona-de-programacao" title="/maratona_de_programação">
+                            <ListItem href="/eventos/maratona-de-programacao" title="/maratona_de_programação">
                                 Competição de programação para alunos de todos os niveis.
-                            </ListItem>*/}
+                            </ListItem>
                             {/*<ListItem href="/eventos/mostra-cientifica" title="/mostra_científica">
                                 Apresentação de trabalhos científicos desenvolvidos no departamento.
                             </ListItem>*/}
-                            {/*<ListItem href="/eventos/hackathon" title="/hackaton">
+                            <ListItem href="/eventos/hackathon" title="/hackaton">
                                 Competição em grupo voltada a problem solvers.
-                            </ListItem>*/}
+                            </ListItem>
                             <ListItem href="/eventos/mesa-redonda" title="/mesa_redonda">
                                 Discussão sobre tema: <span className="italic">perspectiva sobre o futuro do mercado de trabalho</span>
                             </ListItem>
