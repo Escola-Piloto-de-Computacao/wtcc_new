@@ -23,6 +23,8 @@ import {
     RobotIcon
 } from "@/components/ui/icons";
 import { minicursos } from "@/lib/data";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import '@/app/eventos/minicursos/transitions.css';
 
 export default function Minicursos() {
     const [selectedButton, setSelectedButton] = useState("todos");
@@ -71,31 +73,38 @@ export default function Minicursos() {
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mx-20 mb-16 gap-8">
-                {minicursos.map((minicurso) => {
-                    if (selectedButton === minicurso.date || selectedButton === "todos") {
-                        return (
-                            <>
-                                <CardMinicurso key={minicurso.index} minicurso={minicurso} onOpenModal={handleModalOpen} />
-                                <Modal
-                                    centered
-                                    open={minicurso.index === modalOpen}
-                                    footer={null}
-                                    onCancel={() => setModalOpen(-1)}
-                                    width={930}
-                                    className=""
-                                >
-                                    <div className="flex flex-col text-left text-base text-gray-600 italic">
-                                        <p className="font-semibold">{minicurso.date} às 14:00 - {minicurso.localizacao}</p>
-                                        <div className="">
-                                            {minicurso.alternateTitle}
-                                        </div>
-                                    </div>
-                                    <ModalContent minicourse={minicurso} />
-                                </Modal>
-                            </>
-                        );
-                    }
-                })}
+                <TransitionGroup component={null}>
+                    {minicursos.map((minicurso) => {
+                        if (selectedButton === minicurso.date || selectedButton === "todos") {
+                            return (
+                                <CSSTransition
+                                    key={minicurso.index + selectedButton}
+                                    timeout={600}
+                                    classNames="item">
+                                    <>
+                                        <CardMinicurso key={minicurso.index} minicurso={minicurso} onOpenModal={handleModalOpen} />
+                                        <Modal
+                                            centered
+                                            open={minicurso.index === modalOpen}
+                                            footer={null}
+                                            onCancel={() => setModalOpen(-1)}
+                                            width={930}
+                                            className=""
+                                        >
+                                            <div className="flex flex-col text-left text-base text-gray-600 italic">
+                                                <p className="font-semibold">{minicurso.date} às 14:00 - {minicurso.localizacao}</p>
+                                                <div className="">
+                                                    {minicurso.alternateTitle}
+                                                </div>
+                                            </div>
+                                            <ModalContent minicourse={minicurso} />
+                                        </Modal>
+                                    </>
+                                </CSSTransition>
+                            );
+                        }
+                    })}
+                </TransitionGroup>
             </div>
         </div>
     );

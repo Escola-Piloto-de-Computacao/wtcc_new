@@ -8,7 +8,7 @@ const MinicourseCard = React.forwardRef<
     <div
         ref={ref}
         className={cn(
-            "w-full h-full rounded-lg border bg-card text-card-foreground shadow-sm p-5 cursor-pointer transition-transform transform hover:scale-105 duration-300 ease-in-out",
+            "w-full h-full rounded-lg border bg-card text-card-foreground shadow-sm p-5 cursor-pointer transition-transform transform hover:scale-105 duration-1000 ease-out",
             className
         )}
         {...props}
