@@ -744,7 +744,7 @@ const imagens: Imagem[] = [
     },
     {
         index: 23,
-        src: "/imagens-galeria/50.jpg",
+        src: "/imagens-galeria/51.jpg",
         descricao: "Imagem de WTCC passados",
         alt: "Imagem de WTCC's passados"
     }
