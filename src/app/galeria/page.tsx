@@ -3,12 +3,15 @@
 import { useState } from "react";
 import { imagens } from "@/lib/data";
 import { Pagination, Image } from 'antd';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Galeria() {
 
+    const isSmallScreen = useMediaQuery({ maxWidth: 793 });
+
     const [key, setKey] = useState(0);
     const [currentPage, setCurrentPage] = useState(1);
-    const imagesPerPage = 6;
+    const imagesPerPage = isSmallScreen ? 4 : 6;
 
     const indexOfLastImage = currentPage * imagesPerPage;
     const indexOfFirstImage = indexOfLastImage - imagesPerPage;
@@ -30,13 +33,13 @@ export default function Galeria() {
                     onChange={handlePageChange}
                 />
             </div>
-            <div className="flex flex-row flex-wrap gap-5 px-12 justify-center">
+            <div className="flex flex-row flex-wrap gap-5 px-0 lg:px-12 justify-center">
                 <Image.PreviewGroup>
                     {currentImages.map((image) => (
-                        <div key={image.index} className="col-span-6 md:col-span-4">
+                        <div key={image.index} className="">
                             <Image
-                                width={350}
-                                height={250}
+                                width={isSmallScreen ? 300 : 350}
+                                height={isSmallScreen ? 200 : 250}
                                 key={image.index + key}
                                 src={image.src}
                                 alt="Imagem de eventos passados"
