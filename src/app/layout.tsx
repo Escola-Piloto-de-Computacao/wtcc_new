@@ -26,11 +26,12 @@ import { Analytics } from '@vercel/analytics/react';
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
     return (
         <html lang="pt-br">
+            <Analytics />
             <body className={`${inter.variable} ${firaCode.variable}`}>
                 <Header />
                 <main className="mt-32 mx-7 lg:mx-0">
                     {children}
-                    <Analytics />
+
                 </main>
                 <Toaster />
                 <Footer />
