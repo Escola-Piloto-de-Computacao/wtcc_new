@@ -30,7 +30,7 @@ const minicursos: Minicurso[] = [
         palestrantes: [
             {
                 name: "Arthur Felipe Araujo",
-                bio: "Desenvolvedor web fullstack apaixonado por criar interfaces incríveis. Sendo o front-end minha especialidade, tenho uma experiência sólida em desenvolvimento de software.",
+                bio: "Desenvolvedor web fullstack apaixonado por criar interfaces incríveis. Sendo o front-end minha especialidade, tenho uma experiência sólida em desenvolvimento de software",
                 social: {
                     instagram: "https://www.instagram.com/artie.arauj0/",
                     email: "arthurfellype21@gmail.com",
@@ -39,7 +39,7 @@ const minicursos: Minicurso[] = [
             },
             {
                 name: "Wender Enzo de Oliveira",
-                bio: "Desenvolvedor web full stack, proativo e apaixonado por criar soluções inovadoras para desafios técnicos. Minha vasta experiência com React, Angular, Next.js, TypeScript, Python, Tailwind CSS, componentes estilizados, PostgreSQL, JavaScript, MySQL e Java me permitem resolver uma ampla gama de problemas projetos com habilidade e eficiência. Além disso, sou um defensor entusiasta do Next.js, que me permite construir aplicativos de página única (SPA) com ótimo desempenho e SEO aprimorado.",
+                bio: "Desenvolvedor web full stack, proativo e apaixonado por criar soluções inovadoras para desafios técnicos. Minha vasta experiência com React, Angular, Next.js, TypeScript, Python, Tailwind CSS, componentes estilizados, PostgreSQL, JavaScript, MySQL e Java me permitem resolver uma ampla gama de problemas projetos com habilidade e eficiência. Além disso, sou um defensor entusiasta do Next.js, que me permite construir aplicativos de página única (SPA) com ótimo desempenho e SEO aprimorado",
                 social: {
                     instagram: "https://www.instagram.com/wenderenzo/",
                     email: "wenderenzo2014@outlook.com"
@@ -72,7 +72,7 @@ const minicursos: Minicurso[] = [
         palestrantes: [
             {
                 name: "Paulo Henrique Almeida de Andrade",
-                bio: "Estudante de computação que adora fazer códigos, cálculos e aviões.",
+                bio: "Estudante de computação que adora fazer códigos, cálculos e aviões",
                 social: {
                     github: "https://github.com/andrade-paulo/",
                     linkedin: "https://www.linkedin.com/in/andrade-paulo/",
@@ -134,7 +134,7 @@ const minicursos: Minicurso[] = [
             },
             {
                 name: "Nicholas Vinicius Araújo Pinheiro",
-                bio: "Desenvolvedor de software com foco em soluções tecnológicas. Responsável pelo desenvolvimento mobile com Flutter na Dunnas.",
+                bio: "Desenvolvedor de software com foco em soluções tecnológicas. Responsável pelo desenvolvimento mobile com Flutter na Dunnas",
                 social: {
                     instagram: "https://www.instagram.com/nicholasvinicius_/"
                 },
@@ -169,7 +169,7 @@ const minicursos: Minicurso[] = [
         palestrantes: [
             {
                 name: "Vinícius Dantas de Sousa",
-                bio: "Aspirante a game dev com experiência em alguns projetos.",
+                bio: "Aspirante a game dev com experiência em alguns projetos",
                 social: {
                     github: "https://github.com/vinicius-dantasso"
                 },
@@ -210,7 +210,7 @@ const minicursos: Minicurso[] = [
         palestrantes: [
             {
                 name: "Thiago Henrique Fonseca Pereira",
-                bio: "Graduando do sétimo período, desenvolvedor fullstack e entusiasta de tecnologia. Inimigo número 1 do windows.",
+                bio: "Graduando do sétimo período, desenvolvedor fullstack e entusiasta de tecnologia. Inimigo número 1 do windows",
                 social: {
                     github: "https://github.com/thiagohenriquefp",
                     linkedin: "https://linkedin.com/in/thiagohfpereira",
@@ -251,7 +251,7 @@ const minicursos: Minicurso[] = [
         palestrantes: [
             {
                 name: "Valentina Silva de Lacerda",
-                bio: "É estudante de Ciência da Computação com forte interesse em Data Science e Machine Learning. Possui experiência prática com análise de dados utilizando Python e é entusiasta de tecnologias open-source.",
+                bio: "É estudante de Ciência da Computação com forte interesse em Data Science e Machine Learning. Possui experiência prática com análise de dados utilizando Python e é entusiasta de tecnologias open-source",
                 social: {
                     github: "https://github.com/valentinaslacerda",
                 },
@@ -259,7 +259,7 @@ const minicursos: Minicurso[] = [
             },
             {
                 name: "Mateus Lanuce Lourenço Pereira",
-                bio: "Estudante de Ciência da Computação na Ufersa e atua como Pesquisador Junior no LAIS/UFRN, onde se dedica a projetos que impactam positivamente a saúde pública no Brasil. Tem habilidades avançadas em Javascript, Typescript, HTML5, CSS, React.js, Vue.js e Django Templates, com foco em acessibilidade e SEO.",
+                bio: "Estudante de Ciência da Computação na Ufersa e atua como Pesquisador Junior no LAIS/UFRN, onde se dedica a projetos que impactam positivamente a saúde pública no Brasil. Tem habilidades avançadas em Javascript, Typescript, HTML5, CSS, React.js, Vue.js e Django Templates, com foco em acessibilidade e SEO",
                 social: {
                     github: "https://github.com/mateus-lanuce",
                     linkedin: "https://www.linkedin.com/in/mateus-lanuce/"
@@ -341,7 +341,7 @@ const minicursos: Minicurso[] = [
             },
             {
                 name: "Brenno Kevyn Maia de Souza",
-                bio: "A melhor maneira de prever o futuro é inventá-lo.",
+                bio: "A melhor maneira de prever o futuro é inventá-lo.=",
                 social: {
                     github: "https://github.com/BrennoKM",
                     linkedin: "https://www.linkedin.com/in/brenno-kevyn?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -428,7 +428,7 @@ const minicursos: Minicurso[] = [
         palestrantes: [
             {
                 name: "Pedro Figueira Bôa-Viagem",
-                bio: "Estudante do 5º período Ciência da Computação e desenvolvedor Front-End. Tenho desenvolvido com React, Next.js, TypeScript, TailwindCSS e Node.js. Atualmente bolsista da EPC e Diretor Presidente da Empresa Júnior de Computação da Ufersa, Lótus Tech.",
+                bio: "Estudante do 5º período Ciência da Computação e desenvolvedor Front-End. Tenho desenvolvido com React, Next.js, TypeScript, TailwindCSS e Node.js. Atualmente bolsista da EPC e Diretor Presidente da Empresa Júnior de Computação da Ufersa, Lótus Tech",
                 social: {
                     github: "https://github.com/PepeuFBV"
                 },
@@ -436,7 +436,7 @@ const minicursos: Minicurso[] = [
             },
             {
                 name: "Lucas Gabriel",
-                bio: "Desenvolvedor web e mobile com 3 anos de experiência na área. Hoje trabalho diariamente com Nextjs (React), Flutter, Go e SQL. Estou sempre em dia com novas tecnologias e meios de inovar a área da programação.",
+                bio: "Desenvolvedor web e mobile com 3 anos de experiência na área. Hoje trabalho diariamente com Nextjs (React), Flutter, Go e SQL. Estou sempre em dia com novas tecnologias e meios de inovar a área da programação",
                 social: {
                     github: "http://github.com/lucasmelodev1"
                 },
