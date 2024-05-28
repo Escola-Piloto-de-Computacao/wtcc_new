@@ -79,7 +79,7 @@ export default function Minicursos() {
                             return (
                                 <CSSTransition
                                     key={minicurso.index + selectedButton}
-                                    timeout={600}
+                                    timeout={300}
                                     classNames="item">
                                     <>
                                         <CardMinicurso key={minicurso.index} minicurso={minicurso} onOpenModal={handleModalOpen} />
