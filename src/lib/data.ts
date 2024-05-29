@@ -341,7 +341,7 @@ const minicursos: Minicurso[] = [
             },
             {
                 name: "Brenno Kevyn Maia de Souza",
-                bio: "A melhor maneira de prever o futuro é inventá-lo.=",
+                bio: "A melhor maneira de prever o futuro é inventá-lo",
                 social: {
                     github: "https://github.com/BrennoKM",
                     linkedin: "https://www.linkedin.com/in/brenno-kevyn?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"

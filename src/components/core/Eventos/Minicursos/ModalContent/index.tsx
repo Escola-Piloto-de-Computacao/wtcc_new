@@ -2,7 +2,7 @@ import React from 'react';
 import { Minicurso } from '@/lib/definitions';
 import { Popover } from 'antd';
 import { Button } from '@/components/ui/button';
-import Palestrantes from '@/components/core/Eventos/ModalContent/Palestrantes';
+import Palestrantes from '@/components/core/Eventos/Minicursos/ModalContent/Palestrante';
 import Image from 'next/image';
 
 interface ModalContentProps { minicourse: Minicurso; };
