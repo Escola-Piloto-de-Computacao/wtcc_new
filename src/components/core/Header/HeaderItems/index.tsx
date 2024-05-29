@@ -4,7 +4,6 @@ import React from "react";
 import {
     NavigationMenu,
     NavigationMenuContent,
-    NavigationMenuIndicator,
     NavigationMenuItem,
     NavigationMenuLink,
     NavigationMenuList,
@@ -13,7 +12,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { JavascriptOriginal, GithubOriginal, LinuxOriginal, PandasOriginal, PythonOriginal, ReactOriginal } from 'devicons-react';
+import { JavascriptOriginal, FlutterOriginal, LinuxOriginal, PandasOriginal, PythonOriginal, ReactOriginal } from 'devicons-react';
 
 const HeaderItems = () => {
     return (
@@ -40,7 +39,7 @@ const HeaderItems = () => {
                                     >
                                         <div className="flex flex-row flex-wrap gap-3">
                                             <JavascriptOriginal size="36" className="grow max-h-[4vh]" />
-                                            <GithubOriginal size="36" className="grow max-h-[4vh]" />
+                                            <FlutterOriginal size="36" className="grow max-h-[4vh]" />
                                             <LinuxOriginal size="36" className="grow max-h-[4vh]" />
                                             <PythonOriginal size="36" className="grow max-h-[4vh]" />
                                             <PandasOriginal size="36" className="grow max-h-[4vh]" />
