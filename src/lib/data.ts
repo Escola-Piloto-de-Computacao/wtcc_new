@@ -591,7 +591,7 @@ const cronograma: Atividade[] = [
         hora: "08:00 - 11:00",
         titulo: "Hackathon",
         descricao: "Competição de programação com alunos do curso de Ciência da Computação.",
-        localizacao: "Auditório da PROEC"
+        localizacao: "Sala do Multídia do LCC"
     },
     {
         index: 10,
