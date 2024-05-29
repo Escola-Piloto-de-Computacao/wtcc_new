@@ -510,7 +510,7 @@ const cronograma: Atividade[] = [
         dia: 1,
         hora: "08:00 - 10:00",
         titulo: "Abertura Oficial do evento",
-        descricao: "Abertura do evento com a equipe organizadora academica e a diretoria do curso de Ciência da Computação. Assim como laçamento do tema do Hackathon.",
+        descricao: "Abertura do evento com a equipe organizadora academica e a diretoria do curso de Ciência da Computação. Assim como lançamento do tema do Hackathon.",
         localizacao: "Auditório da PROEC"
     },
     {
