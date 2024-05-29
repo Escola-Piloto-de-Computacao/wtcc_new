@@ -10,7 +10,7 @@ export default function Palestra() {
                 <Image
                     src={palestra.img}
                     alt={"Foto da palestra " + palestra.name}
-                    width={3024} height={4032}
+                    width={1512} height={2016}
                     className="rounded-md h-[35vh] sm:h-[60vh] md:h-[75vh] w-full object-cover object-center"
                     quality={60}
                     loading='eager'
@@ -22,7 +22,7 @@ export default function Palestra() {
                         <p className="text-base font-light">Auditório da PROEC - 06/06 - 08:00</p>
                         <h2 className="text-2xl lg:text-3xl font-bold text-left font-poppings mr-5 lg:mr-16">{palestra.name}</h2>
                     </div>
-                    <div className="ml-2 flex flex-col gap-2 text-justify indent-5">
+                    <div className="lg:ml-2 flex flex-col gap-2 text-justify indent-5">
                         <p className="">{palestra.description}</p>
                         <p className="">{palestra.descriptionCont}</p>
                     </div>
