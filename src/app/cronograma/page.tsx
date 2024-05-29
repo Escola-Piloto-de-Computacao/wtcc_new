@@ -21,7 +21,7 @@ export default function Cronograma() {
                 <h1 className="text-4xl">Cronograma</h1>
                 <h2 className="font-light">Programação completa</h2>
             </div>
-            <div className="flex flex-col gap-16">
+            <div className={`flex flex-col gap-16 ${currentDay === 2 ? "mb-24" : "lg:mb-48"}`}>
                 <div className="flex flex-col gap-6">
                     <Datas handleDayChange={handleDayChange} currentDay={currentDay} />
                     <div className="md:hidden flex gap-1 justify-center">
