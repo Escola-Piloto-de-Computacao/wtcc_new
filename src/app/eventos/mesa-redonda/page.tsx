@@ -15,6 +15,11 @@ export default function MesaRedondaPage() {
         visible: { opacity: 1, x: 0 },
     };
 
+    const variants3 = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+    }
+
     return (
         <div className="flex flex-col items-center gap-6 mb-24 lg:mb-16">
             <div className="w-full flex flex-col items-center text-center mb-1">
@@ -25,8 +30,8 @@ export default function MesaRedondaPage() {
                 <h2 className="pt-1">Perspectiva sobre o futuro do mercado de trabalho</h2>
             </div>
             <div className="flex flex-col gap-7 lg:gap-10 md:mx-4 lg:mx-0 xl:mx-20">
-                <div className="flex flex-col lg:grid lg:grid-cols-12 lg:ml-20 xl:ml-10 2xl:ml-20 lg:mr-16 xl:mr-8 2xl:mr-16 lg:p-7 gap-12 lg:gap-6 bg-slate-200 p-2 rounded-lg lg:items-center">
-                    <div className="col-span-4 hidden lg:block">
+                <motion.div initial="hidden" animate="visible" variants={variants3} className="flex flex-col lg:grid lg:grid-cols-12 lg:ml-20 xl:ml-10 2xl:ml-20 lg:mr-16 xl:mr-8 2xl:mr-16 lg:p-7 gap-12 lg:gap-6 bg-slate-200 p-2 rounded-lg lg:items-center">
+                    <motion.div initial="hidden" animate="visible" variants={variants} className="col-span-4 hidden lg:block">
                         <Image
                             src="/mesa-redonda-1.jpg"
                             alt="Mesa Redonda"
@@ -36,7 +41,7 @@ export default function MesaRedondaPage() {
                             loading='lazy'
                             className="rounded-md"
                         />
-                    </div>
+                    </motion.div>
                     <div className="col-span-8 flex flex-col gap-4 justify-center pt-1 lg:pt-0">
                         <motion.div
                             className="flex items-center gap-3 pl-1 lg:pl-0"
@@ -59,8 +64,8 @@ export default function MesaRedondaPage() {
                         </motion.p>
 
                     </div>
-                </div>
-                <div className="flex lg:grid lg:grid-cols-12 lg:mr-24 lg:ml-16 lg:p-7 gap-12 lg:gap-6 bg-slate-200 p-2 rounded-lg lg:items-center">
+                </motion.div>
+                <motion.div initial="hidden" animate="visible" variants={variants3} className="flex lg:grid lg:grid-cols-12 lg:mr-24 lg:ml-16 lg:p-7 gap-12 lg:gap-6 bg-slate-200 p-2 rounded-lg lg:items-center">
                     <div className="flex flex-col gap-2 lg:gap-4 lg:col-span-9 justify-center items-end pt-1 lg:pt-0">
                         <motion.div
                             className="flex items-center gap-3 pr-1 lg:pr-0"
@@ -82,7 +87,7 @@ export default function MesaRedondaPage() {
                             Além das apresentações e discussões, haverá sessões interativas onde os participantes poderão fazer perguntas, compartilhar experiências e colaborar em soluções inovadoras. Este é um momento único para ampliar seu conhecimento, construir uma rede de contatos e se preparar para as transformações que estão por vir no mundo do trabalho. Não perca esta oportunidade de se atualizar e se engajar em um diálogo produtivo sobre o futuro do mercado de trabalho. Junte-se a nós para explorar como podemos, juntos, moldar um futuro profissional mais dinâmico, inclusivo e sustentável.
                         </motion.p>
                     </div>
-                    <div className="col-span-3 hidden lg:block">
+                    <motion.div initial="hidden" animate="visible" variants={variants2} className="col-span-3 hidden lg:block">
                         <Image
                             src="/mesa-redonda-2.png"
                             alt="Mesa Redonda"
@@ -92,8 +97,8 @@ export default function MesaRedondaPage() {
                             quality={100}
                             loading='lazy'
                         />
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
             </div>
         </div>
     );
