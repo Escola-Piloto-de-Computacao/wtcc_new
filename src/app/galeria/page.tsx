@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
-import { imagens } from "@/lib/data";
+import { useState } from 'react';
+import { imagens } from '@/lib/data';
 import { Pagination, Image } from 'antd';
 import { useMediaQuery } from 'react-responsive';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import '@/app/galeria/transitions.css';
 
 export default function Galeria() {
 
@@ -35,20 +37,27 @@ export default function Galeria() {
             </div>
             <div className="flex flex-row flex-wrap gap-5 px-0 lg:px-12 justify-center">
                 <Image.PreviewGroup>
-                    {currentImages.map((image) => (
-                        <div key={image.index} className="">
-                            <Image
-                                width={isSmallScreen ? 300 : 350}
-                                height={isSmallScreen ? 200 : 250}
-                                key={image.index + key}
-                                src={image.src}
-                                alt="Imagem de eventos passados"
-                                className="rounded-lg image-fade-in"
-                                loading="eager"
-                            />
-                            <p className="text-center text-xs sm:text-sm">{image.descricao}</p>
-                        </div>
-                    ))}
+                    <TransitionGroup component={null}>
+                        {currentImages.map((image) => (
+                            <CSSTransition
+                                key={image.index}
+                                timeout={1000}
+                                classNames="item">
+                                <div key={image.index}>
+                                    <Image
+                                        width={isSmallScreen ? 300 : 350}
+                                        height={isSmallScreen ? 200 : 250}
+                                        key={image.index + key}
+                                        src={image.src}
+                                        alt="Imagem de eventos passados"
+                                        className="rounded-lg image-fade-in"
+                                        loading="eager"
+                                    />
+                                    <p className="text-center text-xs sm:text-sm">{image.descricao}</p>
+                                </div>
+                            </CSSTransition>
+                        ))}
+                    </TransitionGroup>
                 </Image.PreviewGroup>
             </div>
         </div>

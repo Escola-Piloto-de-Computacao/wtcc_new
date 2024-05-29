@@ -31,7 +31,6 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
                 <Header />
                 <main className="mt-32 mx-7 lg:mx-0">
                     {children}
-
                 </main>
                 <Toaster />
                 <Footer />
