@@ -9,24 +9,18 @@ import { BsInfoCircle } from "react-icons/bs";
 import { Modal } from "antd";
 import { Minicurso } from "@/lib/definitions";
 import ModalContent from "@/components/core/Eventos/ModalContent";
-import {
-    BackendIcon,
-    FrontEndIcon,
-    InicianteIcon, WebIcon,
-    MathIcon,
-    LanguageIcon,
-    FrameworkIcon,
-    MobileIcon, ToolIcon,
-    GameIcon,
-    OSIcon,
-    AutomationIcon,
-    RobotIcon
-} from "@/components/ui/icons";
+import { motion } from "framer-motion";
 import { minicursos } from "@/lib/data";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
-import '@/app/eventos/minicursos/transitions.css';
+import LogoPicker from "@/components/core/Eventos/LogoPicker";
 
 export default function Minicursos() {
+
+    const variants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 },
+        hover: { scale: 1.05, time: 5 }
+    };
+
     const [selectedButton, setSelectedButton] = useState("todos");
     function handleSelectedButtonChange(button: string) {
         setSelectedButton(button);
@@ -73,38 +67,31 @@ export default function Minicursos() {
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mx-20 mb-16 gap-8">
-                <TransitionGroup component={null}>
-                    {minicursos.map((minicurso) => {
-                        if (selectedButton === minicurso.date || selectedButton === "todos") {
-                            return (
-                                <CSSTransition
-                                    key={minicurso.index + selectedButton}
-                                    timeout={300}
-                                    classNames="item">
-                                    <>
-                                        <CardMinicurso key={minicurso.index} minicurso={minicurso} onOpenModal={handleModalOpen} />
-                                        <Modal
-                                            centered
-                                            open={minicurso.index === modalOpen}
-                                            footer={null}
-                                            onCancel={() => setModalOpen(-1)}
-                                            width={930}
-                                            className=""
-                                        >
-                                            <div className="flex flex-col text-left text-base text-gray-600 italic">
-                                                <p className="font-semibold">{minicurso.date} às 14:00 - {minicurso.localizacao}</p>
-                                                <div className="">
-                                                    {minicurso.alternateTitle}
-                                                </div>
-                                            </div>
-                                            <ModalContent minicourse={minicurso} />
-                                        </Modal>
-                                    </>
-                                </CSSTransition>
-                            );
-                        }
-                    })}
-                </TransitionGroup>
+                {minicursos.map((minicurso) => {
+                    if (selectedButton === minicurso.date || selectedButton === "todos") {
+                        return (
+                            <motion.div key={minicurso.index + selectedButton} initial="hidden" animate="visible" whileHover="hover" variants={variants} >
+                                <CardMinicurso key={minicurso.index} minicurso={minicurso} onOpenModal={handleModalOpen} />
+                                <Modal
+                                    centered
+                                    open={minicurso.index === modalOpen}
+                                    footer={null}
+                                    onCancel={() => setModalOpen(-1)}
+                                    width={930}
+                                    className=""
+                                >
+                                    <div className="flex flex-col text-left text-base text-gray-600 italic">
+                                        <p className="font-semibold">{minicurso.date} às 14:00 - {minicurso.localizacao}</p>
+                                        <div className="">
+                                            {minicurso.alternateTitle}
+                                        </div>
+                                    </div>
+                                    <ModalContent minicourse={minicurso} />
+                                </Modal>
+                            </motion.div>
+                        );
+                    }
+                })}
             </div>
         </div>
     );
@@ -146,96 +133,4 @@ const CardMinicurso: React.FC<CardMinicursoProps> = ({ minicurso, onOpenModal })
             </MinicourseCard>
         </div>
     );
-};
-
-interface LogoPickerProps { label: string; };
-const LogoPicker: React.FC<LogoPickerProps> = ({ label }) => {
-    switch (label) {
-        case "front-end":
-            return (
-                <div className="pt-[0.5px]">
-                    <FrontEndIcon size={19} />
-                </div>
-            );
-        case "web":
-            return (
-                <div className="pt-[0.4px]">
-                    <WebIcon size={19} />
-                </div>
-            );
-        case "iniciante":
-            return (
-                <div className="pt-[0.4px]">
-                    <InicianteIcon size={19} />
-                </div>
-            );
-        case "exatas":
-            return (
-                <div className="pt-[0.3px]">
-                    <MathIcon size={19} />
-                </div>
-            );
-        case "linguagem":
-            return (
-                <div className="pt-[0.4px]">
-                    <LanguageIcon size={19} />
-                </div>
-            );
-        case "framework":
-            return (
-                <div className="pt-[0.5px]">
-                    <FrameworkIcon size={18} />
-                </div>
-            );
-        case "mobile":
-            return (
-                <div className="pt-[0.3px]">
-                    <MobileIcon size={19} />
-                </div>
-            );
-        case "back-end":
-            return (
-                <div className="pt-[0.3px]">
-                    <BackendIcon size={19} />
-                </div>
-            );
-        case "ferrementa":
-            return (
-                <div className="pt-[0.3px]">
-                    <ToolIcon size={19} />
-                </div>
-            );
-        case "jogos":
-            return (
-                <div className="pt-[0.4px] pr-[0.5px]">
-                    <GameIcon size={19} />
-                </div>
-            );
-        case "sistemas operacionais":
-            return (
-                <div className="pt-[0.3px]">
-                    <OSIcon size={19} />
-                </div>
-            );
-        case "automação":
-            return (
-                <div className="pt-[0.3px]">
-                    <AutomationIcon size={19} />
-                </div>
-            );
-        case "robótica":
-            return (
-                <div className="pt-[0.3px]">
-                    <RobotIcon size={19} />
-                </div>
-            );
-        case "análise de dados":
-            return (
-                <div className="pt-[0.4px]">
-                    <MathIcon size={19} />
-                </div>
-            );
-        default:
-            return null;
-    }
 };

@@ -3,6 +3,7 @@ import { Minicurso } from '@/lib/definitions';
 import { Popover } from 'antd';
 import { Button } from '@/components/ui/button';
 import Palestrantes from '@/components/core/Eventos/ModalContent/Palestrantes';
+import Image from 'next/image';
 
 interface ModalContentProps { minicourse: Minicurso; };
 const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
@@ -14,9 +15,9 @@ const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
             </div>
             <div className="hidden sm:block sm:col-span-5 mt-10">
                 {minicourse.alternatePicture ? (
-                    <img src={minicourse.alternatePicture} alt={minicourse.title} className="w-full h-full rounded-md object-cover" />
+                    <Image src={minicourse.alternatePicture} alt={minicourse.title} width={600} height={400} quality={80} loading='lazy' className="rounded-md object-cover" />
                 ) : (
-                    <img src={minicourse.picture} alt={minicourse.title} className="w-full h-60 rounded-md object-cover" />
+                    <Image src={minicourse.picture} alt={minicourse.title} width={600} height={400} quality={80} loading='lazy' className="rounded-md object-cover" />
                 )}
             </div>
             <div className="sm:col-span-12 mt-4 sm:mt-7">

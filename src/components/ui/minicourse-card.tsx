@@ -1,5 +1,6 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const MinicourseCard = React.forwardRef<
     HTMLDivElement,
@@ -40,10 +41,7 @@ const MinicourseCardImage = React.forwardRef<
         ref={ref}
         className={cn("w-full h-56 rounded-lg py-5", className)}
         {...props}>
-        <img
-            className="w-full h-full object-cover rounded-lg"
-            {...props}
-        />
+        <Image {...props} width={600} height={400} quality={80} loading='eager' className="w-full h-full rounded-md object-cover" />
     </div>
 ));
 MinicourseCardImage.displayName = "MinicourseCardImage";
