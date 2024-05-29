@@ -510,7 +510,7 @@ const cronograma: Atividade[] = [
         dia: 1,
         hora: "08:00 - 10:00",
         titulo: "Abertura Oficial do evento",
-        descricao: "Abertura do evento com a equipe organizadora academica e a diretoria do curso de Ciência da Computação. Assim como lançamento do tema do Hackathon.",
+        descricao: "Abertura do evento com a equipe organizadora academica, coordenção do curso, chefia do departamento, coordenação do mestrado e equipe da PROGRAD. Assim como lançamento do tema do Hackathon.",
         localizacao: "Auditório da PROEC"
     },
     {
@@ -583,7 +583,7 @@ const cronograma: Atividade[] = [
         hora: "08:00 - 11:00",
         titulo: "Maratona de Programação",
         descricao: "Competição de programação com alunos do curso de Ciência da Computação.",
-        localizacao: "Laboratórios do LCC"
+        localizacao: "Lab 4 - LCC"
     },
     {
         index: 9,
@@ -592,14 +592,6 @@ const cronograma: Atividade[] = [
         titulo: "Hackathon",
         descricao: "Competição de programação com alunos do curso de Ciência da Computação.",
         localizacao: "Sala do Multídia do LCC"
-    },
-    {
-        index: 10,
-        dia: 3,
-        hora: "11:00 - 12:00",
-        titulo: "Encerramento do evento",
-        descricao: "Encerramento do evento com a equipe organizadora academica e a diretoria do curso de Ciência da Computação.",
-        localizacao: "Auditório da PROEC"
     }
 ];
 
