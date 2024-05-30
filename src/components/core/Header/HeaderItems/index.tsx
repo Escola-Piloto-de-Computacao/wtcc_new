@@ -61,7 +61,7 @@ const HeaderItems = () => {
                                 Competição de programação para alunos de todos os niveis.
                             </ListItem>*/}
                             {/*<ListItem href="/eventos/mostra-cientifica" title="/mostra_científica">
-                                Apresentação de trabalhos científicos desenvolvidos no departamento.
+                                Apresentação de projetos desenvolvidos no departamento.
                             </ListItem>*/}
                             {/*<ListItem href="/eventos/hackathon" title="/hackaton">
                                 Competição em grupo voltada a problem solvers.

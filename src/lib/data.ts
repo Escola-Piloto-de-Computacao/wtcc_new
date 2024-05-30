@@ -510,7 +510,7 @@ const cronograma: Atividade[] = [
         dia: 1,
         hora: "08:00 - 10:00",
         titulo: "Abertura Oficial do evento",
-        descricao: "Abertura do evento com a equipe organizadora academica, coordenção do curso, chefia do departamento, coordenação do mestrado e equipe da PROGRAD. Assim como lançamento do tema do Hackathon.",
+        descricao: "Abertura do evento com a equipe organizadora acadêmica, a coordenção do curso, chefia do departamento, coordenação do mestrado e equipe da PROGRAD. Assim como a abertura e lançamento do Hackathon e Maratona de Programação.",
         localizacao: "Auditório da PROEC"
     },
     {
@@ -526,7 +526,7 @@ const cronograma: Atividade[] = [
         dia: 1,
         hora: "10:30 - 12:00",
         titulo: "Mostra Científica",
-        descricao: "Apresentação de trabalhos científicos realizados por alunos do curso de Ciência da Computação.",
+        descricao: "Apresentação de projetos realizados por alunos do curso de Ciência da Computação.",
         localizacao: "Auditório da PROEC"
     },
     {
@@ -534,7 +534,7 @@ const cronograma: Atividade[] = [
         dia: 1,
         hora: "14:00 - 18:00",
         titulo: "Minicursos",
-        descricao: "Minicursos oferecidos por alunos e professores do curso de Ciência da Computação.",
+        descricao: "Minicursos oferecidos por alunos e ex-alunos do curso de Ciência da Computação.",
         localizacao: "Laboratórios do LCC",
         pageExists: true,
         page: "/eventos/minicursos"
@@ -544,7 +544,7 @@ const cronograma: Atividade[] = [
         dia: 2,
         hora: "08:00 - 09:30",
         titulo: "Palestra",
-        descricao: "Palestra com um convidado especial sobre o mercado de trabalho e a importância da Computação.",
+        descricao: "Palestra com um convidado especial sobre o mercado de trabalho e a importância da área da Ciência da Computação.",
         localizacao: "Auditório da PROEC",
         pageExists: true,
         page: "/eventos/palestra"
@@ -562,7 +562,7 @@ const cronograma: Atividade[] = [
         dia: 2,
         hora: "10:00 - 11:30",
         titulo: "Mesa Redonda",
-        descricao: "Mesa redonda com professores e alunos da área de Computação.",
+        descricao: "Mesa redonda com profissionais, professores e alunos da área de Computação.",
         localizacao: "Auditório da PROEC",
         pageExists: true,
         page: "/eventos/mesa-redonda"
@@ -572,7 +572,7 @@ const cronograma: Atividade[] = [
         dia: 2,
         hora: "14:00 - 18:00",
         titulo: "Minicursos",
-        descricao: "Minicursos oferecidos por alunos e professores do curso de Ciência da Computação.",
+        descricao: "Minicursos oferecidos por alunos e ex-alunos do curso de Ciência da Computação.",
         localizacao: "Laboratórios do LCC",
         pageExists: true,
         page: "/eventos/minicursos"
@@ -590,7 +590,7 @@ const cronograma: Atividade[] = [
         dia: 3,
         hora: "08:00 - 11:00",
         titulo: "Hackathon",
-        descricao: "Competição de programação com alunos do curso de Ciência da Computação.",
+        descricao: "Competição de problem solving em grupo com alunos do curso de Ciência da Computação.",
         localizacao: "Sala do Multídia do LCC"
     }
 ];
