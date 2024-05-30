@@ -60,7 +60,7 @@ const Title1 = () => {
                     </motion.h1>
                 </HeroHighlight>
             </div>
-            <p className="mt-6 lg:mt-5 lg:w-11/12 lg:ml-4 text-justify lg:indent-3 text-balance hyphens-auto break-words">O IX Workshop Técnico-Científico de Computação do RN tem como propósito despertar o interesse dos estudantes de graduação e pós-graduação em pesquisa científica na área de ciência da computação. Além disso, busca discutir temas relevantes para estudantes e profissionais, desenvolver habilidades não abordadas na faculdade, promover o aprendizado mútuo e introduzir os calouros ao curso. O evento proporciona um espaço de intercâmbio entre alunos de Ciência da Computação e cursos de tecnologia, exibindo trabalhos acadêmicos e pesquisas tecnológicas realizadas na universidade.</p>
+            <p className="mt-6 lg:mt-5 lg:w-11/12 lg:ml-4 text-justify lg:indent-3 text-balance hyphens-auto break-words">O IX Workshop Técnico-Científico de Computação do RN tem como propósito despertar o interesse dos estudantes de graduação e pós-graduação em pesquisa científica na área de ciência da computação. Além disso, busca discutir temas relevantes para estudantes e profissionais, desenvolver habilidades não abordadas na faculdade, promover o aprendizado mútuo e introduzir os calouros ao curso. O evento proporciona um espaço de intercâmbio entre alunos de Ciência da Computação e cursos de tecnologia, exibindo trabalhos acadêmicos e pesquisas tecnológicas realizadas na universidade. No evento, será disponibilizado um momento para se conhecer os projetos do curso, ver a palestra de um ex-aluno atuante da área, ver minicursos diversos oferecidos por alunos e participar das competições Hackathon e da Maratona de Programação!</p>
         </div>
     );
 };
@@ -180,7 +180,7 @@ const MainArea = () => {
     }, []);
 
     return (
-        <section className="lg:mt-12 lg:grid lg:grid-cols-12">
+        <section className="lg:mt-3 lg:grid lg:grid-cols-12">
             <div className="col-start-2 col-span-5">
                 <Title1 />
                 <Title2 />
