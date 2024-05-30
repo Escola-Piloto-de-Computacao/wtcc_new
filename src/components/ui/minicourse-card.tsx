@@ -41,7 +41,7 @@ const MinicourseCardImage = React.forwardRef<
         ref={ref}
         className={cn("w-full h-56 rounded-lg py-5", className)}
         {...props}>
-        <Image {...props} width={600} height={400} quality={80} loading='eager' className="w-full h-full rounded-md object-cover" />
+        <Image {...props} width={600} height={400} quality={80} loading='eager' className="w-full h-full rounded-md object-cover" alt={props.alt} />
     </div>
 ));
 MinicourseCardImage.displayName = "MinicourseCardImage";

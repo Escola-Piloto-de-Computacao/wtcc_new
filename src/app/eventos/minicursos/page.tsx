@@ -18,13 +18,17 @@ export default function Minicursos() {
         hover: { scale: 1.05, time: 5 }
     };
 
-    const initialDay = localStorage.getItem('selectedButton')?.toString() || "todos";
+    const isBrowser = typeof window !== 'undefined';
+    const initialDay = isBrowser && localStorage.getItem('selectedButton') ? localStorage.getItem('selectedButton')?.toString() : "todos";
     const [selectedButton, setSelectedButton] = useState(initialDay);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
-        if (selectedButton) {
+        if (isBrowser && selectedButton) {
             localStorage.setItem('selectedButton', selectedButton);
         }
     }, [selectedButton]);
+
     function handleSelectedButtonChange(button: string) {
         setSelectedButton(button);
     }

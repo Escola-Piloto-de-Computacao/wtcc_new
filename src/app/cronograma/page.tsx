@@ -9,11 +9,15 @@ import { HiCursorClick } from "react-icons/hi";
 
 export default function Cronograma() {
 
-    const initialDay = localStorage.getItem('currentDay') ? Number(localStorage.getItem('currentDay')) : 1;
+    const isBrowser = typeof window !== 'undefined';
+    const initialDay = isBrowser && localStorage.getItem('currentDay') ? Number(localStorage.getItem('currentDay')) : 1;
     const [currentDay, setCurrentDay] = useState(initialDay);
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
-        localStorage.setItem('currentDay', currentDay.toString());
+        if (isBrowser) {
+            localStorage.setItem('currentDay', currentDay.toString());
+        }
     }, [currentDay]);
 
     function handleDayChange(day: number) {
