@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { cronograma } from "@/lib/data";
 import ScheduleCard from "@/components/core/Cronograma/ScheduleCard";
 import { Button } from "@/components/ui/button";
@@ -9,7 +9,12 @@ import { HiCursorClick } from "react-icons/hi";
 
 export default function Cronograma() {
 
-    const [currentDay, setCurrentDay] = useState(1);
+    const initialDay = localStorage.getItem('currentDay') ? Number(localStorage.getItem('currentDay')) : 1;
+    const [currentDay, setCurrentDay] = useState(initialDay);
+
+    useEffect(() => {
+        localStorage.setItem('currentDay', currentDay.toString());
+    }, [currentDay]);
 
     function handleDayChange(day: number) {
         setCurrentDay(day);
