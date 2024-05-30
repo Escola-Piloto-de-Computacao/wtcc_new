@@ -63,7 +63,7 @@ const LogoPicker: React.FC<LogoPickerProps> = ({ label }) => {
                     <BackendIcon size={19} />
                 </div>
             );
-        case "ferrementa":
+        case "ferramenta":
             return (
                 <div className="pt-[0.3px]">
                     <ToolIcon size={19} />

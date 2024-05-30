@@ -152,7 +152,7 @@ const minicursos: Minicurso[] = [
         date: "05/06",
         tags: [
             {
-                name: "ferrementa",
+                name: "ferramenta",
                 color: "bg-red-300",
                 index: 0
             },
@@ -441,6 +441,38 @@ const minicursos: Minicurso[] = [
                     github: "http://github.com/lucasmelodev1"
                 },
                 picture: "/imagens-minicursos/lucasGabriel.png"
+            }
+        ],
+        localizacao: ""
+    },
+    {
+        index: 10,
+        title: "Introdução a Git e Github",
+        alternateTitle: "Versionamento e colaboração de código com Git e Github",
+        picture: "/imagens-minicursos/github.png",
+        alternatePicture: "/imagens-minicursos/github2.png",
+        date: "06/06",
+        tags: [
+            {
+                name: "iniciante",
+                color: "bg-yellow-300",
+                index: 0
+            },
+            {
+                name: "ferramenta",
+                color: "bg-red-300",
+                index: 1
+            }
+        ],
+        description: "Neste minicurso, você será introduzido ao mundo do controle de versão utilizando Git e GitHub. Git é uma poderosa ferramenta de controle de versão distribuído, essencial para o desenvolvimento moderno de software, permitindo que desenvolvedores colaborem de forma eficaz, rastreiem alterações no código e revertam para versões anteriores se necessário. GitHub, por sua vez, é uma plataforma baseada na web que utiliza Git e facilita o gerenciamento de repositórios, colaboração em projetos de código aberto e integração contínua.",
+        palestrantes: [
+            {
+                name: "Clara Lopes",
+                bio: "Aluna do 3º período de Ciência da Computação",
+                social: {
+                    github: "https://github.com/ClaraLeticia"
+                },
+                picture: "https://avatars.githubusercontent.com/u/86624111?v=4"
             }
         ],
         localizacao: ""
