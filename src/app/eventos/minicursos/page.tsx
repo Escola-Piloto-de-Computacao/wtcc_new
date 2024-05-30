@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { HiCursorClick } from "react-icons/hi";
 import { BsInfoCircle } from "react-icons/bs";
@@ -18,7 +18,13 @@ export default function Minicursos() {
         hover: { scale: 1.05, time: 5 }
     };
 
-    const [selectedButton, setSelectedButton] = useState("todos");
+    const initialDay = localStorage.getItem('selectedButton')?.toString() || "todos";
+    const [selectedButton, setSelectedButton] = useState(initialDay);
+    useEffect(() => {
+        if (selectedButton) {
+            localStorage.setItem('selectedButton', selectedButton);
+        }
+    }, [selectedButton]);
     function handleSelectedButtonChange(button: string) {
         setSelectedButton(button);
     }
