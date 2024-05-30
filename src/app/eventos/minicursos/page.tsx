@@ -2,13 +2,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { HiCursorClick } from "react-icons/hi";
-import { BsInfoCircle } from "react-icons/bs";
 import { Modal } from "antd";
 import ModalContent from "@/components/core/Eventos/Minicursos/ModalContent";
 import { motion } from "framer-motion";
 import { minicursos } from "@/lib/data";
 import CardMinicurso from "@/components/core/Eventos/Minicursos/CardMinicurso";
+import ExtraInfoCard from '@/components/core/Eventos/Minicursos/ExtraInfoCard';
 
 export default function Minicursos() {
 
@@ -65,13 +64,7 @@ export default function Minicursos() {
                         todos
                     </Button>
                 </div>
-                <div className="md:hidden flex gap-1">
-                    <BsInfoCircle size={20} />
-                    <p className="text-center text-sm">Clique no minicurso para ver mais informações!</p>
-                    <div className="pt-[0.15rem]">
-                        <HiCursorClick size={15} />
-                    </div>
-                </div>
+                <ExtraInfoCard />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mx-20 mb-16 gap-8 h-full">
                 {minicursos.map((minicurso) => {
