@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import Patrocinadores from '@/components/core/Home/Patrocinadores';
-import { Title1, Title2, Images } from '@/components/core/Home/Titles';
+import { Titles, Images } from '@/components/core/Home/Titles';
 import MapArea from '@/components/core/Home/MapArea';
 
 const MainArea = () => {
@@ -20,10 +20,7 @@ const MainArea = () => {
 
     return (
         <section className="lg:mt-3 lg:grid lg:grid-cols-12">
-            <div className="col-start-2 col-span-5">
-                <Title1 />
-                <Title2 />
-            </div>
+            <Titles />
             <Images />
             <MapArea />
             <Patrocinadores />
