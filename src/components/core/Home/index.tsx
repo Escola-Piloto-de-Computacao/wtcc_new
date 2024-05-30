@@ -180,7 +180,7 @@ const MainArea = () => {
     }, []);
 
     return (
-        <section className="lg:grid lg:grid-cols-12">
+        <section className="lg:mt-12 lg:grid lg:grid-cols-12">
             <div className="col-start-2 col-span-5">
                 <Title1 />
                 <Title2 />

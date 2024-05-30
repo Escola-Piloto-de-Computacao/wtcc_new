@@ -1,5 +1,5 @@
-import React from "react";
-import MainArea from "@/components/core/Home";
+import React from 'react';
+import MainArea from '@/components/core/Home';
 
 export default function Home() {
     return (
