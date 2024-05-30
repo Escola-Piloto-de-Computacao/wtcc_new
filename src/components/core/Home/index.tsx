@@ -60,8 +60,8 @@ const Title1 = () => {
                     </motion.h1>
                 </HeroHighlight>
             </div>
-            <p className="mt-6 lg:mt-5 lg:w-11/12 lg:ml-4 text-justify lg:indent-3 text-balance hyphens-auto break-words">O IX Workshop Técnico-Científico de Computação do RN tem como propósito despertar o interesse dos estudantes de graduação e pós-graduação em pesquisa científica na área de ciência da computação. Além disso, busca discutir temas relevantes para estudantes e profissionais, desenvolver habilidades não abordadas na faculdade, promover o aprendizado mútuo e introduzir os calouros ao curso. O evento proporciona um espaço de intercâmbio entre alunos de Ciência da Computação e cursos de tecnologia, exibindo trabalhos acadêmicos e pesquisas tecnológicas realizadas na universidade. No evento, será disponibilizado um momento para se conhecer os projetos do curso, ver a palestra de um ex-aluno atuante da área, ver minicursos diversos oferecidos por alunos e participar das competições Hackathon e da Maratona de Programação!</p>
-        </div>
+            <p className="mt-6 lg:mt-5 lg:w-11/12 lg:ml-4 text-justify lg:indent-3 text-balance hyphens-auto break-words">O IX Workshop Técnico-Científico de Computação do RN tem como propósito despertar o interesse dos estudantes de graduação e pós-graduação em pesquisa científica na área de ciência da computação. Além disso, busca discutir temas relevantes para estudantes e profissionais, desenvolver habilidades não abordadas na faculdade, promover o aprendizado mútuo e introduzir os calouros ao curso. O evento proporciona um espaço de intercâmbio entre alunos de Ciência da Computação e cursos de tecnologia, exibindo trabalhos acadêmicos e pesquisas tecnológicas realizadas na universidade. No evento, será disponibilizado um momento para se conhecer os <Link href="/eventos/mostra-cientifica"><span className="italic">projetos<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span></Link> do curso, ver a <Link href="/eventos/palestra"><span className="italic">palestra<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span></Link> de um ex-aluno atuante da área, ver <Link href="/eventos/minicursos"><span className="italic">minicursos<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span></Link> diversos oferecidos por alunos e participar das competições <Link href="/eventos/hackathon"><span className="italic">Hackathon<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span></Link> e da <Link href="/eventos/maratona-de-programacao"><span className="italic">Maratona de Programação<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span></Link>!</p>
+        </div >
     );
 };
 
@@ -92,7 +92,7 @@ const Title2 = () => {
                     </motion.h1>
                 </HeroHighlight>
             </div>
-            <p className="mt-5 lg:ml-4 text-justify lg:indent-4 text-balance hyphens-auto break-words"> Durante o evento, os participantes terão acesso a uma programação diversificada, incluindo cerimônia de abertura, palestras, mesas-redondas, minicursos, hackathon e maratona de programação. Além disso, ao participar dos minicursos, os alunos poderão obter <Tooltip title="Ao se assistir o decorrer do evento, se ganhará horas complementares, assim como, ao assistir os minicursos oferecidos à tarde!" color='white' overlayInnerStyle={{ color: 'black', textAlign: 'justify' }}><span className="bg-yellow-300 cursor-help">CERTIFICADOS</span></Tooltip>, enriquecendo seus currículos e ampliando suas habilidades na área. Não perca essa oportunidade de aprendizado e networking! 🚀🔍🎓</p>
+            <p className="mt-5 lg:ml-4 text-justify lg:indent-4 text-balance hyphens-auto break-words"> Durante o evento, os participantes terão acesso a uma programação diversificada, incluindo cerimônia de abertura, palestras, mesas-redondas, minicursos, hackathon e maratona de programação. Além disso, ao participar dos minicursos, os alunos poderão obter <Tooltip title="Ao se assistir o decorrer do evento, se ganhará horas complementares, assim como, ao assistir os minicursos oferecidos à tarde!" color='white' overlayInnerStyle={{ color: 'black', textAlign: 'justify' }}><span className="bg-yellow-300 cursor-alias italic">CERTIFICADOS</span></Tooltip>, enriquecendo seus currículos e ampliando suas habilidades na área. Não perca essa oportunidade de aprendizado e networking! 🚀🔍🎓</p>
         </div>
     );
 };
@@ -157,7 +157,7 @@ const MapArea = () => {
                     <h1 className="text-3xl">Onde será o evento?</h1>
                 </div>
                 <p className="text-justify indent-4">Veja no mapa a seguir onde ocorrerá o evento, assista aos minicursos nos Laboratórios do do prédio LCC, a palestra e abertura do evento no Auditório da PROEC.</p>
-                <p className="text-justify indent-4">Descubra onde ocorerrá cada parte do WTCC na página <Link href="/cronograma"><span className="bg-yellow-300 px-1 italic">Cronograma<HiCursorClick className="inline-flex ml-1" /></span></Link>.</p>
+                <p className="text-justify indent-4">Descubra onde ocorerrá cada parte do WTCC na página <Link href="/cronograma"><span className="px-1 italic">Cronograma<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span></Link>.</p>
             </div>
             <div className="col-span-3 w-full h-[45vh]">
                 <Map />
