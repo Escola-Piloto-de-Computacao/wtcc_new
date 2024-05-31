@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { minicursos } from "@/lib/data";
 import CardMinicurso from "@/components/core/Eventos/Minicursos/CardMinicurso";
 import ExtraInfoCard from '@/components/core/Eventos/Minicursos/ExtraInfoCard';
+import CalouroInfoCard from '@/components/core/Eventos/Minicursos/CalouroInfoCard';
 
 export default function Minicursos() {
 
@@ -19,12 +20,14 @@ export default function Minicursos() {
 
     const isBrowser = typeof window !== 'undefined';
     const initialDay = isBrowser && localStorage.getItem('selectedButton') ? localStorage.getItem('selectedButton')?.toString() : "todos";
-    const [selectedButton, setSelectedButton] = useState(initialDay);
+    const [selectedButton, setSelectedButton] = useState<string | undefined>(initialDay);
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
-        if (isBrowser && selectedButton) {
-            localStorage.setItem('selectedButton', selectedButton);
+        if (isBrowser) {
+            if (selectedButton) {
+                localStorage.setItem('selectedButton', selectedButton);
+            }
         }
     }, [selectedButton]);
 
@@ -38,9 +41,10 @@ export default function Minicursos() {
     }
 
     return (
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10" >
             <div className="col-span-1 flex flex-col place-self-center gap-3">
                 <div className="text-center">
+                    <CalouroInfoCard className="" />
                     <h2 className="text-3xl">Minicursos</h2>
                     <p className="text-base font-light">Laboratórios do LCC - 13:30</p>
                 </div>
