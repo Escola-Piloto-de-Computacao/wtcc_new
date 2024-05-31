@@ -9,6 +9,8 @@ import { minicursos } from "@/lib/data";
 import CardMinicurso from "@/components/core/Eventos/Minicursos/CardMinicurso";
 import ExtraInfoCard from '@/components/core/Eventos/Minicursos/ExtraInfoCard';
 import CalouroInfoCard from '@/components/core/Eventos/Minicursos/CalouroInfoCard';
+import { useChangeDate } from '@/lib/context/store';
+import { set } from 'zod';
 
 export default function Minicursos() {
 
@@ -18,21 +20,15 @@ export default function Minicursos() {
         hover: { scale: 1.05, time: 5 }
     };
 
-    const isBrowser = typeof window !== 'undefined';
-    const initialDay = isBrowser && localStorage.getItem('selectedButton') ? localStorage.getItem('selectedButton')?.toString() : "todos";
-    const [selectedButton, setSelectedButton] = useState<string | undefined>(initialDay);
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const date = useChangeDate((state) => state.currentDate);
+    const changeDate = useChangeDate((state) => state.setCurrentDate);
+    const [hydrated, setHydrated] = useState(false);
     useEffect(() => {
-        if (isBrowser) {
-            if (selectedButton) {
-                localStorage.setItem('selectedButton', selectedButton);
-            }
-        }
-    }, [selectedButton]);
+        setHydrated(true);
+    });
 
     function handleSelectedButtonChange(button: string) {
-        setSelectedButton(button);
+        changeDate(button);
     }
 
     const [modalOpen, setModalOpen] = useState(-1); //-1 for no open modals
@@ -52,19 +48,19 @@ export default function Minicursos() {
                     <Button
                         onClick={() => { handleSelectedButtonChange("05/06") }}
                         variant="ghost"
-                        className={`text-lg ${selectedButton === "05/06" ? "bg-gray-200" : ""}`}>
+                        className={`text-lg ${date === "05/06" ? "bg-gray-200" : ""}`}>
                         05/06
                     </Button>
                     <Button
                         onClick={() => { handleSelectedButtonChange("06/06") }}
                         variant="ghost"
-                        className={`text-lg ${selectedButton === "06/06" ? "bg-gray-200" : ""}`}>
+                        className={`text-lg ${date === "06/06" ? "bg-gray-200" : ""}`}>
                         06/06
                     </Button>
                     <Button
                         onClick={() => { handleSelectedButtonChange("todos") }}
                         variant="ghost"
-                        className={`text-lg ${selectedButton === "todos" ? "bg-gray-200" : ""}`}>
+                        className={`text-lg ${date === "todos" ? "bg-gray-200" : ""}`}>
                         todos
                     </Button>
                 </div>
@@ -72,9 +68,9 @@ export default function Minicursos() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mx-20 mb-16 gap-8 h-full">
                 {minicursos.map((minicurso) => {
-                    if (selectedButton === minicurso.date || selectedButton === "todos") {
+                    if (date === minicurso.date || date === "todos") {
                         return (
-                            <motion.div key={minicurso.index + selectedButton} initial="hidden" animate="visible" whileHover="hover" variants={variants} className="h-full flex flex-col" >
+                            <motion.div key={minicurso.index + date} initial="hidden" animate="visible" whileHover="hover" variants={variants} className="h-full flex flex-col" >
                                 <CardMinicurso key={minicurso.index} minicurso={minicurso} onOpenModal={handleModalOpen} className="h-full" />
                                 <Modal
                                     centered

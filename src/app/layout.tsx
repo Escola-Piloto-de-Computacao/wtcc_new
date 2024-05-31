@@ -23,11 +23,14 @@ export const metadata: Metadata = {
 
 import { Analytics } from '@vercel/analytics/react';
 
+import Hydration from '@/lib/context/hydration';
+
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
     return (
         <html lang="pt-br">
             <Analytics />
             <body className={`${inter.variable} ${firaCode.variable}`}>
+                <Hydration />
                 <Header />
                 <main className="mt-32 mx-7 lg:mx-0">
                     {children}
