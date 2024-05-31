@@ -245,7 +245,7 @@ const minicursos: Minicurso[] = [
             }
         ],
         prerequesites: [
-            "Conhecimento básico em programação (não obrigatório)"
+            "Conhecimento básico em programação"
         ],
         description: "Este minicurso tem como objetivo introduzir os participantes ao uso do Python para análise de dados utilizando a biblioteca Pandas. Os alunos aprenderão a manipular, processar e analisar conjuntos de dados reais, desenvolvendo habilidades práticas essenciais para qualquer cientista dados. Serão abordados conceitos fundamentais do Python, operações básicas e avançadas com Pandas, além de técnicas de visualização de dados. Este minicurso é ideal para aqueles que desejam iniciar na área de Data Science e melhorar suas habilidades em Python.",
         palestrantes: [
@@ -777,11 +777,10 @@ const imagens: Imagem[] = [
 const patrocinadores: Patrocinador[] = [
     {
         index: 0,
-        nome: "CCEN",
-        alt: "Centro de Ciências Exatas e da Natureza",
-        imagem: "/imagens-patrocinadores/ccen.png",
-        link: "https://ccen.ufersa.edu.br/"
-
+        nome: "Cacim",
+        alt: "Cacim Laboratório",
+        imagem: "/imagens-patrocinadores/cacim.png",
+        link: "https://cacim.com.br"
     },
     {
         index: 1,
@@ -792,24 +791,39 @@ const patrocinadores: Patrocinador[] = [
     },
     {
         index: 2,
+        nome: "Solar Z",
+        alt: "Solar Z",
+        imagem: "/imagens-patrocinadores/solarz.png",
+        link: "https://solarz.com.br"
+    },
+    {
+        index: 3,
         nome: "UFERSA",
         alt: "Universidade Federal Rural do Semi-Árido",
         imagem: "/imagens-patrocinadores/ufersa.png",
         link: "https://ufersa.edu.br/"
     },
     {
-        index: 3,
+        index: 4,
         nome: "PROGRAD",
         alt: "Pró-Reitoria de Graduação",
         imagem: "/imagens-patrocinadores/prograd.png",
         link: "https://prograd.ufersa.edu.br/"
     },
     {
-        index: 4,
+        index: 5,
         nome: "Computação Licenciatura",
         alt: "Licenciatura Curso de Computação",
         imagem: "/imagens-patrocinadores/compLicen.png",
         link: "https://cc.ufersa.edu.br/"
+    },
+    {
+        index: 6,
+        nome: "CCEN",
+        alt: "Centro de Ciências Exatas e da Natureza",
+        imagem: "/imagens-patrocinadores/ccen.png",
+        link: "https://ccen.ufersa.edu.br/"
+
     }
 ];
 
