@@ -22,7 +22,7 @@ export default function Minicursos() {
     const [hydrated, setHydrated] = useState(false);
     useEffect(() => {
         setHydrated(true);
-    });
+    }, [setHydrated]);
 
     function handleSelectedButtonChange(button: string) {
         changeDate(button);

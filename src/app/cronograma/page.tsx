@@ -18,7 +18,7 @@ export default function Cronograma() {
         if (isBrowser) {
             localStorage.setItem('currentDay', currentDay.toString());
         }
-    }, [currentDay]);
+    }, [currentDay, isBrowser]);
 
     function handleDayChange(day: number) {
         setCurrentDay(day);
