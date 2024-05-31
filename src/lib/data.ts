@@ -306,7 +306,7 @@ const minicursos: Minicurso[] = [
     },
     {
         index: 7,
-        title: "Introdução a robótica com Lego EV3",
+        title: "Introdução a Robótica com Lego EV3",
         alternateTitle: "Conceitos iniciais de robótica e programação com Lego EV3 Scratch.",
         picture: "/imagens-minicursos/lego.png",
         alternatePicture: "/imagens-minicursos/lego2.png",

@@ -7,9 +7,6 @@ const ExtraInfoCard = () => {
         <div className="md:hidden flex gap-1">
             <BsInfoCircle size={20} />
             <p className="text-center text-sm">Clique no minicurso para ver mais informações!</p>
-            <div className="pt-[0.15rem]">
-                <HiCursorClick size={15} />
-            </div>
         </div>
     );
 };

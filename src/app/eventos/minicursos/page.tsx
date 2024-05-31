@@ -13,7 +13,6 @@ import CalouroInfoCard from '@/components/core/Eventos/Minicursos/CalouroInfoCar
 
 import { minicursos } from '@/lib/data';
 import { useChangeDate } from '@/lib/context/store';
-
 import { minicursosV } from '@/lib/motion-variants';
 
 export default function Minicursos() {
@@ -38,7 +37,6 @@ export default function Minicursos() {
         <div className="flex flex-col gap-10" >
             <div className="col-span-1 flex flex-col place-self-center gap-3">
                 <div className="text-center">
-                    <CalouroInfoCard className="" />
                     <h2 className="text-3xl">Minicursos</h2>
                     <p className="text-base font-light">Laboratórios do LCC - 13:30</p>
                 </div>
@@ -63,6 +61,7 @@ export default function Minicursos() {
                     </Button>
                 </div>
                 <ExtraInfoCard />
+                <CalouroInfoCard />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mx-20 mb-16 gap-8 h-full">
                 {minicursos.map((minicurso) => {
