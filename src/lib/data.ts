@@ -1,4 +1,4 @@
-import { Minicurso, Palestrante, Palestra, Faq, Atividade, Imagem, Patrocinador, Commands, TerminalFile } from '@/lib/definitions';
+import { Minicurso, Palestrante, Palestra, Faq, Atividade, Imagem, Patrocinador, TerminalFile } from '@/lib/definitions';
 
 const minicursos: Minicurso[] = [
     {
@@ -847,6 +847,6 @@ const terminalFiles: TerminalFile[] = [
         content: "fazer texto sobre fase3",
         address: "/"
     }
-]
+];
 
 export { terminalFiles, minicursos, palestra, FAQuestions, cronograma, imagens, patrocinadores }

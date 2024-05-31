@@ -1,3 +1,5 @@
+import React, { ReactNode } from "react";
+
 export type Minicurso = {
     index: number;
     title: string;
@@ -89,3 +91,11 @@ export type TerminalFile = {
     content: string;
     address: string;
 };
+
+export type Projeto = {
+    index: number;
+    title: string;
+    description?: string;
+    image?: string;
+    icon?: ReactNode;
+}
