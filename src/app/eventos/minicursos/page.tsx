@@ -1,24 +1,22 @@
-"use client";
+'use client';
 
 import React, { useState, useEffect } from 'react';
+
+import { Modal } from 'antd';
+import { motion } from 'framer-motion';
+
 import { Button } from '@/components/ui/button';
-import { Modal } from "antd";
-import ModalContent from "@/components/core/Eventos/Minicursos/ModalContent";
-import { motion } from "framer-motion";
-import { minicursos } from "@/lib/data";
-import CardMinicurso from "@/components/core/Eventos/Minicursos/CardMinicurso";
+import ModalContent from '@/components/core/Eventos/Minicursos/ModalContent';
+import CardMinicurso from '@/components/core/Eventos/Minicursos/CardMinicurso';
 import ExtraInfoCard from '@/components/core/Eventos/Minicursos/ExtraInfoCard';
 import CalouroInfoCard from '@/components/core/Eventos/Minicursos/CalouroInfoCard';
+
+import { minicursos } from '@/lib/data';
 import { useChangeDate } from '@/lib/context/store';
-import { set } from 'zod';
+
+import { minicursosV } from '@/lib/motion-variants';
 
 export default function Minicursos() {
-
-    const variants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0 },
-        hover: { scale: 1.05, time: 5 }
-    };
 
     const date = useChangeDate((state) => state.currentDate);
     const changeDate = useChangeDate((state) => state.setCurrentDate);
@@ -70,7 +68,7 @@ export default function Minicursos() {
                 {minicursos.map((minicurso) => {
                     if (date === minicurso.date || date === "todos") {
                         return (
-                            <motion.div key={minicurso.index + date} initial="hidden" animate="visible" whileHover="hover" variants={variants} className="h-full flex flex-col" >
+                            <motion.div key={minicurso.index + date} initial="hidden" animate="visible" whileHover="hover" variants={minicursosV} className="h-full flex flex-col" >
                                 <CardMinicurso key={minicurso.index} minicurso={minicurso} onOpenModal={handleModalOpen} className="h-full" />
                                 <Modal
                                     centered

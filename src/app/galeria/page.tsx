@@ -1,11 +1,13 @@
 "use client";
 
-import { useState } from 'react';
-import { imagens } from '@/lib/data';
-import { Pagination, Image } from 'antd';
-import { useMediaQuery } from 'react-responsive';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import React, { useState } from 'react';
 import '@/app/galeria/transitions.css';
+
+import { useMediaQuery } from 'react-responsive';
+import { Pagination, Image } from 'antd';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+
+import { imagens } from '@/lib/data';
 
 export default function Galeria() {
 
