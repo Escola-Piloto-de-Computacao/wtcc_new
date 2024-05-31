@@ -1,4 +1,3 @@
-import React from 'react';
 import { Minicurso, Palestrante, Palestra, Faq, Atividade, Imagem, Patrocinador, Commands, TerminalFile } from '@/lib/definitions';
 
 const minicursos: Minicurso[] = [
@@ -149,7 +148,7 @@ const minicursos: Minicurso[] = [
         alternateTitle: "Desenvolvimento de jogos com o motor gráfico GameMaker Studio",
         picture: "/imagens-minicursos/gamemaker.jpg",
         alternatePicture: "/imagens-minicursos/gamemaker2.jpg",
-        date: "05/06",
+        date: "06/06",
         tags: [
             {
                 name: "ferramenta",
@@ -451,7 +450,7 @@ const minicursos: Minicurso[] = [
         alternateTitle: "Versionamento e colaboração de código com Git e Github",
         picture: "/imagens-minicursos/github.png",
         alternatePicture: "/imagens-minicursos/github2.png",
-        date: "06/06",
+        date: "05/06",
         tags: [
             {
                 name: "iniciante",
