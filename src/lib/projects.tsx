@@ -9,21 +9,21 @@ const projetosCientificos: Projeto[] = [
         image: "/imagens-projetos/pegasus.png",
         icon: <IconPlaneDeparture size={17} />,
     },
-    {
+    /*{
         index: 1,
         title: "Projeto sobre Arbovíroses",
-        icon: <IconVirus />,
+        icon: <IconVirus size={17} />,
     },
     {
         index: 2,
         title: "Projeto de Lenardo",
-        icon: <IconClipboardData />,
+        icon: <IconClipboardData size={17} />,
     },
     {
         index: 3,
         title: "Desenvolvimento de Atlas Radiográfico Web da normalidade e de posicionamento em pequenos animais domésticos e silvestres",
-        icon: <IconPhotoScan />,
-    }
+        icon: <IconPhotoScan size={17} />,
+    }*/
 ];
 
 export { projetosCientificos };

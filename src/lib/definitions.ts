@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 export type Minicurso = {
     index: number;
@@ -98,4 +98,11 @@ export type Projeto = {
     description?: string;
     image?: string;
     icon?: ReactNode;
+};
+
+export type Step = {
+    index: number;
+    title: string;
+    image?: string;
+    content: ReactNode;
 }
