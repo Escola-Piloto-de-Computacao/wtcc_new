@@ -103,6 +103,7 @@ export type Projeto = {
 export type Step = {
     index: number;
     title: string;
-    image?: string;
-    content: ReactNode;
+    image: string;
+    imageDesc: string;
+    content?: ReactNode;
 }
