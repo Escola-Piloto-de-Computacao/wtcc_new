@@ -24,7 +24,7 @@ export default function InscreverSePage() {
     return (
         <div className="mb-12 flex flex-col gap-8">
             <div>
-                <motion.h1 initial="hidden" animate="visible" variants={uppV2} className="text-4xl font-light text-center">Inscrição</motion.h1>
+                <motion.h1 initial="hidden" animate="visible" variants={uppV2} className="text-4xl font-light text-center">Inscreva-se</motion.h1>
             </div>
             <div className="flex flex-col gap-4 items-center">
                 <motion.h3
@@ -56,9 +56,9 @@ export default function InscreverSePage() {
                             <p className="text-sm text-center">{steps[step].imageDesc}</p>
                         </div>
                     )}
-                    <div className={steps[step].image != "" ? "w-1/2" : "w-full"}>
+                    <motion.div key={step} initial="hidden" animate="visible" variants={uppV3} className={steps[step].image != "" ? "w-1/2" : "w-full"}>
                         {steps[step].content}
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
