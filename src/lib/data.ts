@@ -509,7 +509,7 @@ const FAQuestions: Faq = {
         {
             key: 1,
             question: "Os minicursos oferecidos cobram algum valor de inscrição?",
-            answer: "Não! Todos os mini-cursos são oferecidos gratuitamente por parte dos alunos e professores, basta apenas se inscrever para participar!"
+            answer: "Não! Todos os minicursos são oferecidos gratuitamente por parte dos alunos e ex-alunos, basta apenas se inscrever para participar! Vá em Eventos > Minicursos, escolha seu minicurso e faça sua inscrição!"
         },
         {
             key: 2,
@@ -519,12 +519,12 @@ const FAQuestions: Faq = {
         {
             key: 3,
             question: "É necessário algum tipo de conhecimento prévio para participar?",
-            answer: "Dependerá do minicurso, a maioria não requer conhecimento conhecimento prévio na área. Veja os pré-requesitos do minicurso na aba de MINICURSOS em Eventos!"
+            answer: "Dependerá do minicurso, a maioria não requer conhecimento conhecimento prévio na área. Veja os pré-requesitos do minicurso ao clicar no minicurso escolhido em Eventos > Minicursos!"
         },
         {
             key: 4,
             question: "No período do evento haverá aulas para os alunos de Computação?",
-            answer: "Não, as aulas que ocorrerem nos horários do evento serão suspensas para que todos possam participar dos mini-cursos."
+            answer: "Não, as aulas que ocorrerem nos horários do evento serão suspensas para que todos possam participar dos mini-cursos. Fique atento, pois alguns professores cobrarão a presença dos alunos no decorrer evento!"
         },
         {
             key: 5,
@@ -539,7 +539,7 @@ const FAQuestions: Faq = {
         {
             key: 7,
             question: "Eu ganho horas complementares participando do evento?",
-            answer: "Com certeza, após a realização da inscricão e participação no evento, suas horas serão contabilizadas no sistema. É possível também ganhar horas extras assistindo os minicursos!"
+            answer: "Com certeza, após a realização da inscricão e participação no evento, suas horas serão contabilizadas no sistema, sendo possivel baixar um certificado ao fim do WTCC. É possível também ganhar horas extras assistindo os minicursos e/ou outras partes do WTCC!"
         }
     ]
 };
