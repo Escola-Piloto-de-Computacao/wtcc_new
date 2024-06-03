@@ -42,7 +42,7 @@ const CalouroInfoCard: React.FC<CalouroInfoCardProps> = ({ className }) => {
                         </ul>
                     </div>
                     <div className="mt-2 mb-3 mr-5 flex flex-col gap-3 bg-slate-300 rounded-md p-2">
-                        <p>Recomendamos a todos os calouros que assistam aos minicursos de <span className="italic font-semibold">Git e Github</span> e <span className="italic font-semibold">Pré-Cálculo Computacional</span> devido a importância de ambos tanto na faculdade quanto no mercado de trabalho.</p>
+                        <p>Recomendamos a todos os calouros que assistam aos minicursos de <span className="italic font-semibold">Git e Github</span> e <span className="italic font-semibold">Pré-Cálculo Computacional</span> devido a importância de ambos tanto na faculdade quanto na formação de uma forte base para o mercado de trabalho.</p>
                         <p>Essas são apenas sugestões, fique a vontade para escolher os minicursos que mais lhe interessam!</p>
                     </div>
                 </div >
