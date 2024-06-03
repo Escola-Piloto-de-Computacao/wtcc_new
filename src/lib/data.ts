@@ -299,6 +299,15 @@ const minicursos: Minicurso[] = [
                     github: "https://github.com/FolkBlues7"
                 },
                 picture: "/imagens-minicursos/viniciusGabriel.jpg"
+            },
+            {
+                name: "Artur Segantini",
+                bio: "Entusiasta de worldbuilding e amante de programação orientada a objetos",
+                social: {
+                    github: "https://github.com/ARTSALT",
+                    instagram: "https://www.instagram.com/artur_sals/"
+                },
+                picture: "/imagens-minicursos/arturSegantini.png"
             }
         ],
         localizacao: ""
