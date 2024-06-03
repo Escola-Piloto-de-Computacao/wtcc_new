@@ -26,6 +26,7 @@ export default function MostraCientifica() {
                 <BentoGrid className="max-w-5xl mx-auto md:px-3 xl:px-0">
                     {projetosCientificos.map((projeto) => (
                         <BentoGridItem
+                            key={projeto.index}
                             projeto={projeto}
                             className={projeto.index === 1 || projeto.index === 2 ? "md:col-span-2" : ""}
                         />

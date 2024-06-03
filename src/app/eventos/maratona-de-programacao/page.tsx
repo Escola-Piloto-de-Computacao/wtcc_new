@@ -15,7 +15,11 @@ import { downV4 } from '@/lib/motion-variants';
 
 export default function Maratona() {
 
-    const [interactiveMode, setInteractiveMode] = useState(window.innerWidth > 768);
+    const [interactiveMode, setInteractiveMode] = useState(true);
+
+    if (typeof window !== 'undefined') {
+        setInteractiveMode(window.innerWidth > 768);
+    }
 
     return (
         <div className="pb-16 lg:mb-16 mx-0 md:mx-16 lg:mx-24 xl:mx-36 flex flex-col xl:grid xl:grid-cols-12 gap-8 justify-center">
