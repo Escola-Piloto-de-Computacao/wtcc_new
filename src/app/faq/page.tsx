@@ -1,7 +1,11 @@
-import { FAQuestions } from '@/lib/data';
+import React from 'react';
+
 import FaqBox from '@/components/core/Faq';
 import Formulario from '@/components/core/Faq/Formulario';
+
 import { IoIosArrowRoundDown } from "react-icons/io";
+
+import { FAQuestions } from '@/lib/data';
 
 export default function Faq() {
     return (

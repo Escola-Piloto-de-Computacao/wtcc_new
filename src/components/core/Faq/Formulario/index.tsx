@@ -1,18 +1,18 @@
-"use client";
+'use client';
 
-import { z } from "zod";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { FormControl, Form, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { z } from 'zod';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Toaster } from "@/components/ui/toaster";
+import { FormControl, Form, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { toast } from '@/components/ui/use-toast';
 
-import { collection, addDoc, query, where, getDocs } from "firebase/firestore";
-import { firestore } from "@/lib/utils";
-import { toast } from "@/components/ui/use-toast";
+import { collection, addDoc, query, where, getDocs } from 'firebase/firestore';
+
+import { firestore } from '@/lib/utils';
 
 const schema = z.object({
     email: z.string().email({
@@ -109,7 +109,7 @@ const Fomulario = () => {
                                 <Textarea
                                     placeholder="Escreva sua pergunta aqui..."
                                     {...field}
-                                    style={{ resize: "none", height: "200px" }}
+                                    style={{ resize: "none", height: "150px" }}
                                 />
                             </FormControl>
                             <FormDescription>
@@ -128,7 +128,7 @@ const Fomulario = () => {
                                 <Textarea
                                     placeholder="Escreva suas observações aqui..."
                                     {...field}
-                                    style={{ resize: "none", height: "120px" }}
+                                    style={{ resize: "none", height: "100px" }}
                                 />
                             </FormControl>
                             <FormDescription>
