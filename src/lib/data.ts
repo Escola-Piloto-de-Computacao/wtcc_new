@@ -427,7 +427,7 @@ const minicursos: Minicurso[] = [
                 index: 2
             }
         ],
-        description: "O minicurso de introdução ao React e TailwindCSS tem como objetivo apresentar os conceitos básicos de desenvolvimento de interfaces web com React em typescript e TailwindCSS. Serão abordados conceitos como componentização, estado, propriedades, hooks, estilização com TailwindCSS e consumo de APIs.",
+        description: "O minicurso de introdução ao React e TailwindCSS tem como objetivo apresentar os conceitos básicos de desenvolvimento de interfaces web com React em Typescript e TailwindCSS. Serão abordados conceitos como componentização, estado, props, hooks, e estilização com TailwindCSS. Ao final do minicurso, os participantes terão o conehcimento necessário para desenvolver aplicações web modernas e responsivas nas tecnologias mais utilizadas no mercado de trabalho atualmente.",
         prerequesites: [
             "Conhecimento básico em programação",
             "Conhecimento básico em HTML e CSS",
