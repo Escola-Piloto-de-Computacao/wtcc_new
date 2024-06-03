@@ -60,9 +60,9 @@ const HeaderItems = () => {
                             {/*<ListItem href="/eventos/maratona-de-programacao" title="/maratona_de_programação">
                                 Competição de programação para alunos de todos os niveis.
                             </ListItem>*/}
-                            <ListItem href="/eventos/mostra-cientifica" title="/mostra_científica">
+                            {/*<ListItem href="/eventos/mostra-cientifica" title="/mostra_científica">
                                 Apresentação de projetos desenvolvidos no departamento.
-                            </ListItem>
+                            </ListItem>*/}
                             {/*<ListItem href="/eventos/hackathon" title="/hackaton">
                                 Competição em grupo voltada a problem solvers.
                             </ListItem>*/}

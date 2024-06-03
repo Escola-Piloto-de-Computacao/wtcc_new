@@ -828,25 +828,10 @@ const patrocinadores: Patrocinador[] = [
 
 const terminalFiles: TerminalFile[] = [
     {
-        name: "hackathon.txt",
-        content: "O hackathon é um evento que reúne a comunidade acadêmica para idealizar soluções tecnológicas para problemas reais. Durante o evento, os participantes trabalham em equipes para criar projetos inovadores, que são avaliados por uma banca de 3 jurados da equipe acadêmica. O hackathon é uma excelente oportunidade para os alunos aplicarem seus conhecimentos em programação e desenvolvimento de software, além de promover a integração entre os estudantes e professores do curso de Ciência da Computação. Ao final do evento, as equipes vencedoras são premiadas com premiações diversas e certificados de participação.",
+        name: "maratona-de-programacao.txt",
+        content: "Maratona de programação é um evento que reúne programadores, que em equipes, para resolver problemas de código mais rapidamente possível. É uma excelente oportunidade para aprender novas habilidades, conhecer outros alunos, competir pela premiação e se divertir.",
         address: "/"
     },
-    {
-        name: "fase1.txt",
-        content: "fazer texto sobre fase1",
-        address: "/"
-    },
-    {
-        name: "fase2.txt",
-        content: "fazer texto sobre fase2",
-        address: "/"
-    },
-    {
-        name: "fase3.txt",
-        content: "fazer texto sobre fase3",
-        address: "/"
-    }
 ];
 
 export { terminalFiles, minicursos, palestra, FAQuestions, cronograma, imagens, patrocinadores }

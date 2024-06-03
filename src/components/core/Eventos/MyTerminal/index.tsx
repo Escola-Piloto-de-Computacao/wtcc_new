@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
 import React, { Component } from 'react';
 
 import Terminal from 'react-console-emulator';
+import { motion } from 'framer-motion';
+
 import { terminalFiles } from '@/lib/data';
+import { uppV2 } from '@/lib/motion-variants';
 import { TerminalFile } from '@/lib/definitions';
 
-interface State {
-    currentDirectory: string;
-    files: TerminalFile[];
-    screenHeight: number;
-};
+interface State { currentDirectory: string; files: TerminalFile[]; screenHeight: number; };
 export default class MyTerminal extends Component<{}, State> {
+
     maratonaTerminalCommands = {
         echo: {
             description: 'Echo text back to the console',
@@ -28,15 +28,8 @@ export default class MyTerminal extends Component<{}, State> {
                 return filesInCurrentDirectory.map(file => file.name).join(' ');
             }
         },
-        pwd: {
-            description: 'Print the current working directory',
-            fn: () => {
-                const currentDirectory = `$${this.state.currentDirectory}`;
-                return currentDirectory;
-            }
-        },
         cat: {
-            description: 'Concatenate files and print on the standard output',
+            description: 'Concatenate file and print on the standard output',
             usage: 'cat [file]',
             fn: (fileName: string) => {
                 const { currentDirectory, files } = this.state;
@@ -44,12 +37,22 @@ export default class MyTerminal extends Component<{}, State> {
                 return file ? `\n${file.content}` : `cat: ${fileName}: No such file or directory`;
             }
         },
-        wget: {
-            description: 'Download files from the web',
-            usage: 'wget [file]',
+        dwl: {
+            description: 'Download files from the terminal',
+            usage: 'dwl [file]',
             fn: (fileName: string) => {
-
-                return `wget [${fileName}]: No such file or directory`;
+                const file = terminalFiles.find(file => file.name === fileName);
+                if (file) {
+                    const element = document.createElement('a');
+                    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(file.content));
+                    element.setAttribute('download', file.name);
+                    element.style.display = 'none';
+                    document.body.appendChild(element);
+                    element.click();
+                    document.body.removeChild(element);
+                    return `dwl [${fileName}]: Downloaded`;
+                }
+                return `dwl [${fileName}]: No such file or directory`;
             }
         },
     };
@@ -63,20 +66,17 @@ export default class MyTerminal extends Component<{}, State> {
         };
     };
 
-    componentDidMount() {
-        // Set screenHeight state here, after the component has been mounted
-        this.setState({ screenHeight: window.innerHeight });
-    }
-
     render() {
         return (
-            <Terminal
-                commands={this.maratonaTerminalCommands}
-                promptLabel={'$'}
-                autoFocus
-                inputTextStyle={{ color: '#d6d6d6' }}
-                style={{ height: this.state.screenHeight * 0.55 }}
-            />
+            <motion.div initial="hidden" animate="visible" variants={uppV2}>
+                <Terminal
+                    commands={this.maratonaTerminalCommands}
+                    promptLabel={'$'}
+                    autoFocus
+                    inputTextStyle={{ color: '#d6d6d6' }}
+                    className="h-[55vh]"
+                />
+            </motion.div>
         );
     };
 };
