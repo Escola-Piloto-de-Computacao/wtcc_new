@@ -3,10 +3,10 @@
 import React, { useState } from 'react';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import { Image } from 'antd';
 
 import { steps } from '@/lib/steps';
-import { uppV2, uppV3, downV4, leftV, rightV2 } from '@/lib/motion-variants';
+import { uppV, uppV2, uppV3, leftV, rightV2 } from '@/lib/motion-variants';
 
 export default function InscreverSePage() {
 
@@ -49,16 +49,20 @@ export default function InscreverSePage() {
                         />
                     ))}
                 </div>
-                <div className="mt-7 flex gap-3">
-                    {steps[step].image != "" && (
-                        <div className="w-1/2">
-                            <Image src={steps[step].image} alt={steps[step].title} width={500} height={500} />
-                            <p className="text-sm text-center">{steps[step].imageDesc}</p>
-                        </div>
-                    )}
-                    <motion.div key={step} initial="hidden" animate="visible" variants={uppV3} className={steps[step].image != "" ? "w-1/2" : "w-full"}>
-                        {steps[step].content}
-                    </motion.div>
+                <div className="mt-7 w-full h-[28rem]">
+                    <div className="flex gap-3 bg-slate-200 rounded-md p-12 mx-16 h-96">
+                        {steps[step].image != "" && (
+                            <motion.div key={steps[step].image} initial="hidden" animate="visible" variants={uppV3} className="w-1/2 flex flex-col justify-center items-center">
+                                <div className="object-cover">
+                                    <Image src={steps[step].image} alt={steps[step].title} loading='eager' />
+                                </div>
+                                <p className="mt-1 text-xs text-center italic">{steps[step].imageDesc}</p>
+                            </motion.div>
+                        )}
+                        <motion.div key={step} initial="hidden" animate="visible" variants={uppV} className={steps[step].image != "" ? "w-1/2" : "w-full"}>
+                            {steps[step].content}
+                        </motion.div>
+                    </div>
                 </div>
             </div>
         </div>
