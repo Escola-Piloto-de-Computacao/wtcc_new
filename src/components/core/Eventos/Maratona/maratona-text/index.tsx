@@ -4,7 +4,6 @@ import React from 'react';
 
 import { motion } from 'framer-motion';
 
-import { terminalFiles } from '@/lib/data';
 import { uppV2 } from '@/lib/motion-variants';
 
 const MaratonaText = () => {
