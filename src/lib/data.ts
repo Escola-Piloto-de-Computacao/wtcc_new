@@ -29,7 +29,7 @@ const minicursos: Minicurso[] = [
         palestrantes: [
             {
                 name: "Arthur Felipe Araujo",
-                bio: "Desenvolvedor web fullstack apaixonado por criar interfaces incríveis. Sendo o front-end minha especialidade, tenho uma experiência sólida em desenvolvimento de software",
+                bio: "Sou o Arthur e, ao longo da minha trajetória profissional, fui melhorando minhas habilidades em linguagens de programação essenciais como JavaScript, TypeScript e Java. Além disso, possuo uma notável experiência em tecnologias tanto de front-end quanto de back-end, incluindo frameworks como React, Next.js, Angular e Spring",
                 social: {
                     instagram: "https://www.instagram.com/artie.arauj0/",
                     email: "arthurfellype21@gmail.com",
