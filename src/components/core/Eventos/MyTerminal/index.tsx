@@ -74,7 +74,7 @@ export default class MyTerminal extends Component<{}, State> {
                     promptLabel={'$'}
                     autoFocus
                     inputTextStyle={{ color: '#d6d6d6' }}
-                    className="h-[55vh]"
+                    className="h-96"
                 />
             </motion.div>
         );

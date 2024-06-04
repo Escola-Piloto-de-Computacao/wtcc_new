@@ -28,7 +28,7 @@ export default function Maratona() {
             <div className="order-last xl:order-1 col-span-7 flex flex-col gap-8">
                 <h1 className="text-4xl text-center font-mono">Maratona de Programação</h1>
                 <div className="flex flex-col gap-2 h-full">
-                    <div className="w-full h-full md:overflow-hidden">
+                    <div className="w-full md:overflow-hidden">
                         {interactiveMode ? <MyTerminal /> : <MaratonaText />}
                     </div>
                     <div className={`flex gap-1 w-full flex-col sm:flex-row ${interactiveMode ? 'justify-between' : 'justify-end'}`}>
