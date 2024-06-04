@@ -23,7 +23,7 @@ export default function Minicursos() {
     return (
         <div className="mb-12 flex flex-col gap-8">
             <div>
-                <motion.h1 initial="hidden" animate="visible" variants={uppV2} className="text-4xl font-light text-center">Inscreva-se</motion.h1>
+                <motion.h1 initial="hidden" animate="visible" variants={uppV2} className="text-4xl font-light text-center">Inscreva-se nos minicursos</motion.h1>
             </div>
             <div className="flex flex-col gap-4 items-center">
                 <motion.h3
