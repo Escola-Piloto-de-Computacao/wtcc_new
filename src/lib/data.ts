@@ -31,7 +31,7 @@ const minicursos: Minicurso[] = [
                 name: "Arthur Felipe Araujo",
                 bio: "Sou o Arthur e, ao longo da minha trajetória profissional, fui melhorando minhas habilidades em linguagens de programação essenciais como JavaScript, TypeScript e Java. Além disso, possuo uma notável experiência em tecnologias tanto de front-end quanto de back-end, incluindo frameworks como React, Next.js, Angular e Spring",
                 social: {
-                    instagram: "https://www.instagram.com/artie.arauj0/",
+                    instagram: "https://www.instagram.com/arthur_f18/",
                     email: "arthurfellype21@gmail.com",
                 },
                 picture: "/imagens-minicursos/arthurFelipe.jpeg"
