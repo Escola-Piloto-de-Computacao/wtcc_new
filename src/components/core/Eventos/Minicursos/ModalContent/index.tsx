@@ -1,9 +1,14 @@
 import React from 'react';
+
 import { Minicurso } from '@/lib/definitions';
-import { Popover } from 'antd';
+
 import { Button } from '@/components/ui/button';
+
 import Palestrantes from '@/components/core/Eventos/Minicursos/ModalContent/Palestrante';
+
+import { Popover } from 'antd';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface ModalContentProps { minicourse: Minicurso; };
 const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
@@ -35,15 +40,14 @@ const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
                 )}
             </div>
             <div className="sm:col-span-12 w-full sm:grid sm:grid-cols-12 flex justify-center">
-                <Popover content={<p className="text-center">Inscrições abrem em breve!</p>} trigger="hover">
+                <Link href="/inscrever-se/minicursos" legacyBehavior passHref>
                     <Button
                         variant="default"
                         size="lg"
-                        className="sm:col-start-9 sm:col-span-3 bg-sky-400 hover:bg-sky-500 px-12 sm:px-0 text-lg cursor-not-allowed"
-                    >
+                        className="text-center sm:col-start-9 sm:col-span-3 bg-sky-400 hover:bg-sky-500 px-12 sm:px-0 text-lg cursor-pointer">
                         Inscrever-se
                     </Button>
-                </Popover>
+                </Link>
             </div>
             <div className="sm:col-span-12 mb-3 mt-5 sm:mx-3">
                 <div className="border-t border-gray-300 my-6"></div>
