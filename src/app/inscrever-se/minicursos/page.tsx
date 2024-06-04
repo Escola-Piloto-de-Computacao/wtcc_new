@@ -49,16 +49,16 @@ export default function Minicursos() {
                     ))}
                 </div>
                 <div className="mt-7 w-full h-[70vh]">
-                    <div className="flex gap-3 bg-slate-200 rounded-md p-12 mx-16 h-[65vh]">
+                    <div className="flex flex-col md:flex-row gap-8 md:gap-3 bg-slate-200 rounded-md p-5 md:p-12 md:mx-16 h-[70vh] xsm:max-lg:items-center">
                         {steps[step].image != "" && (
-                            <motion.div key={steps[step].image} initial="hidden" animate="visible" variants={uppV3} className="w-1/2 flex flex-col justify-center items-center">
-                                <div className="object-cover">
+                            <motion.div key={steps[step].image} initial="hidden" animate="visible" variants={uppV3} className="md:w-1/2 flex flex-col justify-center items-center">
+                                <div className="md:object-cover">
                                     <Image src={steps[step].image} alt={steps[step].title} loading='eager' />
                                 </div>
                                 <p className="mt-1 text-xs text-center italic">{steps[step].imageDesc}</p>
                             </motion.div>
                         )}
-                        <motion.div key={step} initial="hidden" animate="visible" variants={uppV} className={steps[step].image != "" ? "w-1/2" : "w-full"}>
+                        <motion.div key={step} initial="hidden" animate="visible" variants={uppV} className={steps[step].image != "" ? "w-1/2 text-center md:text-left" : "w-full text-center md:text-left"}>
                             {steps[step].content}
                         </motion.div>
                     </div>
