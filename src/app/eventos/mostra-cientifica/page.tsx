@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import FlipWords from '@/components/ui/flip-words';
 import { BentoGrid, BentoGridItem } from '@/components/ui/bento-grid';
 
-import { uppV, appearV, downV3 } from '@/lib/motion-variants';
+import { uppV, appearV, uppV3, downV3 } from '@/lib/motion-variants';
 import { projetosCientificos } from '@/lib/projects';
 
 export default function MostraCientifica() {
@@ -25,11 +25,12 @@ export default function MostraCientifica() {
             <div>
                 <BentoGrid className="max-w-5xl mx-auto md:px-3 xl:px-0">
                     {projetosCientificos.map((projeto) => (
-                        <BentoGridItem
-                            key={projeto.index}
-                            projeto={projeto}
-                            className={projeto.index === 1 || projeto.index === 2 ? "md:col-span-2" : ""}
-                        />
+                        <motion.div initial="hidden" animate="visible" variants={uppV3} className={projeto.index === 1 || projeto.index === 2 ? "md:col-span-2" : ""}>
+                            <BentoGridItem
+                                key={projeto.index}
+                                projeto={projeto}
+                            />
+                        </motion.div>
                     ))}
                 </BentoGrid>
             </div>

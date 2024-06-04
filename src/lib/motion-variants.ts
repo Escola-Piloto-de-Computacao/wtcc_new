@@ -24,6 +24,11 @@ const appearV = {
     visible: { opacity: 1 }
 };
 
+const appearV2 = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { delay: 0.3 } }
+};
+
 const leftV = {
     hidden: { opacity: 0, x: -40 },
     visible: { opacity: 1, x: 0 }
@@ -79,4 +84,4 @@ const rightV2 = {
     visible: { opacity: 1, x: 0 }
 };
 
-export { minicursosV, cronogramaV, mesaLeftV, mesaRightV, appearV, leftV, uppV, downV, leftV2, downV2, rightV, downV3, uppV2, downV4, uppV3, rightV2 };
+export { minicursosV, cronogramaV, mesaLeftV, mesaRightV, appearV, appearV2, leftV, uppV, downV, leftV2, downV2, rightV, downV3, uppV2, downV4, uppV3, rightV2 };
