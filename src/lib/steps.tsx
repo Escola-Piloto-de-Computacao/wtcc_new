@@ -7,7 +7,7 @@ export const steps: Step[] = [
         image: "/imagens-inscrever-se/img1.jpg",
         imageDesc: "Dentro do site do SIGAA",
         content: (
-            <p>Para se inscrever, acesse o site do <a href="https://sigaa.ufersa.edu.br/sigaa/portais/discente/discente.jsf">SIGAA</a>, e faça login na sua conta. Em seguida vá até a aba de Extensão &gt; Inscrição Online em Ações de Extensão</p>
+            <p>Para se inscrever, acesse o site do <a href="https://sigaa.ufersa.edu.br/sigaa/portais/discente/discente.jsf">SIGAA</a>, e faça login na sua conta. Em seguida vá até a aba de Extensão &gt; Inscrição Online em Ações de Extensão.</p>
         )
     },
     {
@@ -25,7 +25,7 @@ export const steps: Step[] = [
         image: "/imagens-inscrever-se/img4.jpg",
         imageDesc: "Na página de inscrição",
         content: (
-            <p>Na página de inscrição, clique em "Inscrições abertas" e escolha o WTCC</p>
+            <p>Na página de inscrição, clique em &quot;Inscrições abertas&quot; e escolha o WTCC.</p>
         )
     },
     {
@@ -34,7 +34,7 @@ export const steps: Step[] = [
         image: "/imagens-inscrever-se/img5.jpg",
         imageDesc: "Na página do WTCC",
         content: (
-            <p>Na página de eventos, escolha o WTCC para se inscrever</p>
+            <p>Na página de eventos, escolha o WTCC para se inscrever.</p>
         )
     },
     {
@@ -56,7 +56,7 @@ export const steps: Step[] = [
         imageDesc: "Após o envio dos dados",
         content: (
             <div className="flex flex-col gap-2">
-                <p>Inscrição feita! Em breve a mesma será aprovada pelos organizadores</p>
+                <p>Inscrição feita! Em breve a mesma será aprovada pelos organizadores.</p>
             </div>
         )
     }
