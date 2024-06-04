@@ -59,7 +59,7 @@ export default function InscreverSePage() {
                                 <p className="mt-1 text-xs text-center italic">{steps[step].imageDesc}</p>
                             </motion.div>
                         )}
-                        <motion.div key={step} initial="hidden" animate="visible" variants={uppV} className={steps[step].image != "" ? "w-1/2 text-center md:text-left" : "w-full text-center md:text-left"}>
+                        <motion.div key={step} initial="hidden" animate="visible" variants={uppV} className={steps[step].image != "" ? "md:w-1/2 text-center md:text-left text-lg" : "w-full text-center md:text-left text-lg"}>
                             {steps[step].content}
                         </motion.div>
                     </div>

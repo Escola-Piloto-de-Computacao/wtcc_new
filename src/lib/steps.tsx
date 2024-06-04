@@ -1,4 +1,7 @@
 import { Step } from './definitions';
+import Link from 'next/link';
+
+import { HiCursorClick } from 'react-icons/hi';
 
 export const steps: Step[] = [
     {
@@ -44,7 +47,7 @@ export const steps: Step[] = [
         imageDesc: "Dentro do evento",
         content: (
             <div>
-                <p>Após escolher o evento do WTCC, crie um arquivo .txt com as informações solicitadas para enviar e ter sua inscrição aprovada.</p>
+                <p>Após escolher o evento do WTCC, crie um arquivo .txt com as informações solicitadas (seu nome, período atual e curso) para enviar e ter sua inscrição aprovada.</p>
                 <p>É crucial que envie essas informações para que suas horas sejam contabilizadas!</p>
             </div>
         )
@@ -55,8 +58,13 @@ export const steps: Step[] = [
         image: "/imagens-inscrever-se/img7.jpg",
         imageDesc: "Após o envio dos dados",
         content: (
-            <div className="flex flex-col gap-2">
-                <p>Inscrição feita! Em breve a mesma será aprovada pelos organizadores.</p>
+            <div className="h-full flex flex-col justify-between items-start">
+                <p>Inscrição feita! Em breve a mesma será aprovada pelos organizadores do evento!</p>
+                <div className="mt-7 md:mt-0 xs:max-md:w-full self-end">
+                    <Link href="/inscrever-se/minicursos" legacyBehavior passHref>
+                        <span className="italic cursor-pointer">Como me inscrevo nos minicursos?<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span>
+                    </Link>
+                </div>
             </div>
         )
     }

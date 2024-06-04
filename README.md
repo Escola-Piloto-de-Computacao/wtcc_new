@@ -1,10 +1,7 @@
 * TODO:
 
-- [ ] Finish maratona page
-- [ ] Finish hackathon page
-- [ ] Finish mostra page
 - [ ] Header buttons highlight animation on hover (green underline)
 - [ ] Better FAQ page design
 - [ ] Make skeleton for galeria page images
-- [ ] Re-add mostra-cientifica projects
-- [ ] Link inscrever-se page to buttons + finish inscrever-se page
+- [ ] Add arrow to inscrever-se page
+- [ ] Fix header click bug (clicking on the Eventos button should not do anything)
