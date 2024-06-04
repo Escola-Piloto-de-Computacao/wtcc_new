@@ -28,7 +28,7 @@ export const BentoGridItem = ({ className, projeto }: { className?: string; proj
             {projeto.image && <Image src={projeto.image} alt={projeto.title} width={300} height={200} quality={100} className="rounded-xl mx-auto" />}
             <div className="group-hover/bento:translate-x-2 transition duration-200">
                 {projeto.icon}
-                <div className="font-sans font-medium dark:text-neutral-200 mb-2 mt-2">
+                <div className="font-sans font-medium dark:text-neutral-200 mb-2">
                     {projeto.title}
                 </div>
                 <div className="font-sans font-normal text-xs dark:text-neutral-300">
