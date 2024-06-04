@@ -567,7 +567,9 @@ const cronograma: Atividade[] = [
         hora: "10:30 - 12:00",
         titulo: "Mostra Científica",
         descricao: "Apresentação de projetos realizados por alunos do curso de Ciência da Computação.",
-        localizacao: "Auditório da PROEC"
+        localizacao: "Auditório da PROEC",
+        pageExists: true,
+        page: "/eventos/mostra-cientifica"
     },
     {
         index: 3,
@@ -623,7 +625,9 @@ const cronograma: Atividade[] = [
         hora: "08:00 - 11:00",
         titulo: "Maratona de Programação",
         descricao: "Competição de programação com alunos do curso de Ciência da Computação.",
-        localizacao: "Lab 4 - LCC"
+        localizacao: "Lab 4 - LCC",
+        pageExists: true,
+        page: "/eventos/maratona-de-programacao"
     },
     {
         index: 9,
