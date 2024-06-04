@@ -64,11 +64,11 @@ const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
                     <div className="flex flex-col gap-4 items-center">
                         <h2 className="text-lg md:text-xl">Você já se inscreveu no evento?</h2>
                         <div className="flex flex-col md:flex-row gap-4">
-                            <Link href="/inscrever-se/minicursos" legacyBehavior passHref>
+                            <Link href="/inscrever-se/minicursos" legacyBehavior passHref className="w-8 md:w-20">
                                 <Button
                                     variant="default"
                                     size="lg"
-                                    className="w-8 md:w-16 text-center bg-sky-400 hover:bg-sky-500 px-12 sm:px-0 text-lg cursor-pointer">
+                                    className="text-center bg-sky-400 hover:bg-sky-500 px-12 sm:px-2 text-lg cursor-pointer">
                                     Sim
                                 </Button>
                             </Link>
@@ -76,7 +76,7 @@ const ModalContent: React.FC<ModalContentProps> = ({ minicourse }) => {
                                 <Button
                                     variant="default"
                                     size="lg"
-                                    className="w-8 md:w-16 text-center bg-sky-400 hover:bg-sky-500 px-12 sm:px-0 text-lg cursor-pointer">
+                                    className="text-center bg-sky-400 hover:bg-sky-500 px-12 sm:px-2 text-lg cursor-pointer">
                                     Não
                                 </Button>
                             </Link>

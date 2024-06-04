@@ -48,8 +48,8 @@ export default function Minicursos() {
                         />
                     ))}
                 </div>
-                <div className="mt-7 w-full h-[70vh]">
-                    <div className="flex flex-col md:flex-row gap-8 md:gap-3 bg-slate-200 rounded-md p-5 md:p-12 md:mx-16 h-[70vh] xsm:max-lg:items-center">
+                <div className="mt-7 w-full h-full md:h-[70vh]">
+                    <div className="flex flex-col md:flex-row gap-8 md:gap-3 bg-slate-200 rounded-md p-5 md:p-12 md:mx-16 md:h-[70vh] xsm:max-lg:items-center">
                         {steps[step].image != "" && (
                             <motion.div key={steps[step].image} initial="hidden" animate="visible" variants={uppV3} className="md:w-1/2 flex flex-col justify-center items-center">
                                 <div className="md:object-cover">
