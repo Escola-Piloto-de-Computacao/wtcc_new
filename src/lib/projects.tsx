@@ -1,6 +1,6 @@
 import { Projeto } from "@/lib/definitions";
 
-import { IconPlaneDeparture, IconVirus, IconClipboardData, IconPhotoScan } from "@tabler/icons-react";
+import { IconPlaneDeparture, IconVirus, IconPhotoScan } from "@tabler/icons-react";
 
 const projetosCientificos: Projeto[] = [
     {
