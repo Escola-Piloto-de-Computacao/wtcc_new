@@ -63,9 +63,9 @@ const HeaderItems = () => {
                             <ListItem href="/eventos/mostra-cientifica" title="/mostra_científica">
                                 Apresentação de projetos desenvolvidos no departamento.
                             </ListItem>
-                            {/*<ListItem href="/eventos/hackathon" title="/hackaton">
+                            <ListItem href="/eventos/hackathon" title="/hackaton">
                                 Competição em grupo voltada a problem solvers.
-                            </ListItem>*/}
+                            </ListItem>
                             <ListItem href="/eventos/mesa-redonda" title="/mesa_redonda">
                                 Discussão sobre tema: <span className="italic">perspectiva sobre o futuro do mercado de trabalho</span>
                             </ListItem>
