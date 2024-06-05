@@ -11,7 +11,7 @@ import { Switch } from '@/components/ui/switch';
 
 import { BsInfoCircle, BsCardText } from 'react-icons/bs';
 
-import { downV4, downV3 } from '@/lib/motion-variants';
+import { downV4, downV3, uppV3 } from '@/lib/motion-variants';
 import { Button } from 'antd';
 
 export default function Maratona() {
@@ -48,8 +48,13 @@ export default function Maratona() {
                         </motion.div>
                     </div>
                 </div>
-                <div className="w-1/2 md:w-1/3 mx-auto">
-                    <Button type="primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfNLma2Q_qFsypmcIUmi18MQXxWldoiobkFc3gPli4xJVBKTg/viewform?usp=sf_link" target="_blank" className="w-full text-sm md:text-base">Inscreva-se</Button>
+                <div className="flex flex-col gap-3">
+                    <motion.ul initial="hidden" animate="visible" variants={uppV3} className="list-disc">
+                        <li>Pré-requisitos: Programação de Computadores</li>
+                    </motion.ul>
+                    <div className="w-1/2 md:w-1/3 mx-auto">
+                        <Button type="primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfNLma2Q_qFsypmcIUmi18MQXxWldoiobkFc3gPli4xJVBKTg/viewform?usp=sf_link" target="_blank" className="w-full text-sm md:text-base">Inscreva-se</Button>
+                    </div>
                 </div>
             </div>
             <div className="hidden xl:flex w-[28vw] order-1 xl:order-last col-span-5 place-content-center justify-content-end">
