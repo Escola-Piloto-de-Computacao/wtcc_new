@@ -9,7 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { motion } from 'framer-motion';
 import { Button } from 'antd';
 
-import { downV, downV3 } from '@/lib/motion-variants';
+import { downV, downV3, appearV } from '@/lib/motion-variants';
 
 export default function Hackathon() {
     return (
@@ -27,7 +27,7 @@ export default function Hackathon() {
                 <motion.p initial="hidden" animate="visible" variants={downV3} className="italic text-sm text-center">Vencedores de eventos passados</motion.p>
             </div>
             <div className="w-full lg:w-[65.6%] flex flex-col items-center">
-                <h1 className="text-4xl text-center font-fira font-extralight">Hackathon</h1>
+                <motion.h1 initial="hidden" animate="visible" variants={appearV} className="text-4xl text-center font-fira font-extralight">Hackathon</motion.h1>
                 <Tabs defaultValue='O que é?' className="mt-4 w-full">
                     <TabsList className="flex gap-4 font-fira">
                         <TabsTrigger value='O que é?'>O que é?</TabsTrigger>
