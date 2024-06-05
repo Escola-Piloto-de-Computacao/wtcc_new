@@ -8,6 +8,8 @@ import Image from 'next/image';
 import { steps } from '@/lib/steps';
 import { uppV, uppV2, uppV3, leftV, rightV2 } from '@/lib/motion-variants';
 
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+
 export default function InscreverSePage() {
 
     const [step, setStep] = useState<number>(0);
@@ -21,12 +23,26 @@ export default function InscreverSePage() {
         setStep(newStep);
     };
 
+    const handleNextStep = () => {
+        if (step < steps.length - 1) {
+            setPreviousStep(step);
+            setStep(step + 1);
+        };
+    };
+
+    const handlePreviousStep = () => {
+        if (step > 0) {
+            setPreviousStep(step);
+            setStep(step - 1);
+        };
+    };
+
     return (
         <div className="mb-12 flex flex-col gap-8">
             <div>
                 <motion.h1 initial="hidden" animate="visible" variants={uppV2} className="text-4xl font-light text-center">Inscreva-se</motion.h1>
             </div>
-            <div className="flex flex-col gap-4 items-center">
+            <div className="flex flex-col gap-2 items-center">
                 <motion.h3
                     key={step}
                     initial="hidden"
@@ -36,7 +52,8 @@ export default function InscreverSePage() {
                 >
                     Passo {step + 1}: {steps[step].title}
                 </motion.h3>
-                <div className="flex max-w-xs gap-3">
+                <div className="flex max-w-sm gap-3 items-center">
+                    <FaArrowLeft size={25} className="text-2xl cursor-pointer" onClick={() => handlePreviousStep()} />
                     {steps.map((cStep) => (
                         <motion.button
                             initial="hidden"
@@ -48,6 +65,7 @@ export default function InscreverSePage() {
                             onClick={() => handleChangeStep(cStep.index)}
                         />
                     ))}
+                    <FaArrowRight size={25} className="text-2xl cursor-pointer" onClick={() => handleNextStep()} />
                 </div>
                 <div className="mt-7 w-full md:h-[70vh]">
                     <div className="flex flex-col md:flex-row gap-8 md:gap-3 bg-slate-200 rounded-md p-5 md:p-12 md:mx-16 md:h-[60vh] xsm:max-md:items-center">
