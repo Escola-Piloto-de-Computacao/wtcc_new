@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
+
 import Patrocinadores from '@/components/core/Home/Patrocinadores';
 import { Titles, Images } from '@/components/core/Home/Titles';
 import MapArea from '@/components/core/Home/MapArea';

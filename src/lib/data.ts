@@ -837,7 +837,20 @@ const patrocinadores: Patrocinador[] = [
         alt: "Centro de Ciências Exatas e da Natureza",
         imagem: "/imagens-patrocinadores/ccen.png",
         link: "https://ccen.ufersa.edu.br/"
-
+    },
+    {
+        index: 7,
+        nome: "Cimsal",
+        alt: "Cimsal",
+        imagem: "/imagens-patrocinadores/cimsal.png",
+        link: "https://cimsal.com.br"
+    },
+    {
+        index: 8,
+        nome: "Apreciatte",
+        alt: "Apreciatte",
+        imagem: "/imagens-patrocinadores/apreciatte.png",
+        link: "https://apreciatte.com.br"
     }
 ];
 
