@@ -635,7 +635,9 @@ const cronograma: Atividade[] = [
         hora: "08:00 - 11:00",
         titulo: "Hackathon",
         descricao: "Competição de problem solving em grupo com alunos do curso de Ciência da Computação.",
-        localizacao: "Sala do Multídia do LCC"
+        localizacao: "Sala do Multídia do LCC",
+        pageExists: true,
+        page: "/eventos/hackathon"
     }
 ];
 
