@@ -44,7 +44,7 @@ export default function Hackathon() {
                     </TabsContent>
                     <TabsContent value='Inscrição' className="mt-8 lg:mx-6 text-justify">
                         <motion.div initial="hidden" animate="visible" variants={downV} className="flex flex-col gap-4 indent-3">
-                            <p>A inscrição no evento deve ser realizada por grupos de 2-4 integrantes, todos sendo alunos do curso da Ciência da Computação. A inscrição é gratuita e deve ser feita através do formulário abaixo.</p>
+                            <p>A inscrição no evento deve ser realizada por <span className="bg-yellow-300 px-[0.15rem]">grupos de 2-4 integrantes</span>, todos sendo alunos do curso da Ciência da Computação. A inscrição é gratuita e deve ser feita através do formulário abaixo.</p>
                             <p>Os grupos devem se ler e se atentar ao regulamento do evento, também disponível abaixo:</p>
                             <div className="mt-2 flex gap-3 indent-0">
                                 <Button type="primary" className="w-full" href="/REGULAMENTO-HACKATHON-WTCC24.pdf" target="_blank">Regulamento</Button>
@@ -54,7 +54,7 @@ export default function Hackathon() {
                     </TabsContent>
                     <TabsContent value='Enviar produção' className="mt-8 lg:mx-6 text-justify">
                         <motion.div initial="hidden" animate="visible" variants={downV} className="flex flex-col items-center gap-4 indent-3">
-                            <p>Após as inscrições, os grupos devem desenvolver suas soluções para o desafio proposto e enviar a produção previamente para avaliação da banca de jurados. A produção deve ser enviada pelo grupo até a data estabelicida no regulamento. Abaixo está o formulário para o envio:</p>
+                            <p>Após as inscrições, os grupos devem desenvolver suas soluções para os desafio proposto e enviar a produção previamente para avaliação da banca de jurados. A produção deve ser enviada pelo grupo até a data estabelicida no regulamento. Abaixo está o formulário para o envio:</p>
                             <Button type="primary" className="mt-2 w-1/2 indent-0" href="https://forms.gle/2snQ3vQudrmy19Y96" target="_blank">Formulário de Envio</Button>
                         </motion.div>
                     </TabsContent>
