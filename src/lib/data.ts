@@ -875,7 +875,7 @@ const terminalFiles: TerminalFile[] = [
     },
     {
         name: "regras.txt",
-        content: "Para participar, se é necessário formar um grupo com 3 alunos, sem restrições de período! Ambas a premiação e a competição será no dia 07/06, das 8:00 às 11:00",
+        content: "Para participar, se é necessário formar um grupo com 3 alunos, sem restrições de período! Ambas a premiação e a competição será no dia 07/06, das 8:00 às 11:00. Não é necessário saber alguma linguagem de programação específica, espera-se que o grupo decida usar de uma linguagem das mais conhecidas (ex. java, c++).",
         address: "/"
     }
 ];
