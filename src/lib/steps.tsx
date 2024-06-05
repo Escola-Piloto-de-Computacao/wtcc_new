@@ -61,6 +61,13 @@ export const steps: Step[] = [
             <div className="h-full flex flex-col justify-between items-start">
                 <p>Inscrição feita! Em breve a mesma será aprovada pelos organizadores do evento!</p>
                 <div className="mt-7 md:mt-0 xs:max-md:w-full self-end">
+                    <div className="flex">
+                        <div className="bg-yellow-200 ml-auto px-2 rounded-md">
+                            <Link href="/faq" legacyBehavior passHref>
+                                <span className="italic cursor-pointer">Ainda tenho dúvidas!<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span>
+                            </Link>
+                        </div>
+                    </div>
                     <Link href="/inscrever-se/minicursos" legacyBehavior passHref>
                         <span className="italic cursor-pointer">Como me inscrevo nos minicursos?<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span>
                     </Link>

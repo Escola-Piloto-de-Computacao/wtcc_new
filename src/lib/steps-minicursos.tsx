@@ -27,9 +27,18 @@ export const steps: Step[] = [
         image: "/imagens-inscrever-se/minicursos/img2.png",
         imageDesc: "Selecionando o minicurso",
         content: (
-            <div className="flex flex-col gap-3">
-                <p>Escolha seu minicurso e inscreva-se! Fique atento a data do minicurso.</p>
-                <p>As datas, horários e localização oficial dos minicursos estão todas na página de <Link href="/eventos/minicursos" legacyBehavior passHref><span className="italic cursor-pointer">minicursos<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span></Link>!</p>
+            <div className="h-full flex flex-col justify-between gap-3">
+                <div>
+                    <p>Escolha seu minicurso e inscreva-se! Fique atento a data do minicurso.</p>
+                    <p>As datas, horários e localização oficial dos minicursos estão todas na página de <Link href="/eventos/minicursos" legacyBehavior passHref><span className="italic cursor-pointer">minicursos<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span></Link>!</p>
+                </div>
+                <div className="flex">
+                    <div className="bg-yellow-200 ml-auto px-2 rounded-md">
+                        <Link href="/faq" legacyBehavior passHref>
+                            <span className="italic cursor-pointer">Ainda tenho dúvidas!<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span>
+                        </Link>
+                    </div>
+                </div>
             </div>
         )
     }
