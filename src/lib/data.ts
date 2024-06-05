@@ -858,6 +858,12 @@ const patrocinadores: Patrocinador[] = [
         alt: "Uqvestir",
         imagem: "/imagens-patrocinadores/uqvestir2.png",
         link: "https://www.instagram.com/uqvestir/"
+    },
+    {
+        index: 10,
+        nome: "Sua sapataria",
+        alt: "Sua sapataria",
+        imagem: "/imagens-patrocinadores/suaSapataria.png",
     }
 ];
 
