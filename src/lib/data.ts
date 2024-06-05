@@ -46,7 +46,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/wenderEnzo.jpeg"
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 2"
     },
     {
         index: 1,
@@ -80,7 +80,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/pauloHenrique.jpg"
             }
         ],
-        localizacao: ""
+        localizacao: "Multimidia"
     },
     {
         index: 2,
@@ -140,7 +140,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/nicholasVinicius.png"
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 4"
     },
     {
         index: 3,
@@ -184,7 +184,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/luisRyan.png"
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 2"
     },
     {
         index: 4,
@@ -217,7 +217,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/thiagoHenrique.jpeg"
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 3"
     },
     {
         index: 5,
@@ -266,7 +266,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/mateusLanuce.jpg"
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 6"
     },
     {
         index: 6,
@@ -310,7 +310,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/arturSegantini.png"
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 5"
     },
     {
         index: 7,
@@ -357,7 +357,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/brenoKevyn.jpg"
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 4"
     },
     {
         index: 8,
@@ -401,7 +401,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/lucasSilva.png"
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 3"
     },
     {
         index: 9,
@@ -451,7 +451,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/lucasGabriel.png"
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 5"
     },
     {
         index: 10,
@@ -483,7 +483,7 @@ const minicursos: Minicurso[] = [
                 picture: "https://avatars.githubusercontent.com/u/86624111?v=4"
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 6"
     }
 ];
 
@@ -851,6 +851,13 @@ const patrocinadores: Patrocinador[] = [
         alt: "Apreciatte",
         imagem: "/imagens-patrocinadores/apreciatte.png",
         link: "https://apreciatte.com.br"
+    },
+    {
+        index: 9,
+        nome: "Uqvestir",
+        alt: "Uqvestir",
+        imagem: "/imagens-patrocinadores/uqvestir2.png",
+        link: "https://www.instagram.com/uqvestir/"
     }
 ];
 
