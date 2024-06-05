@@ -7,6 +7,7 @@ import { Image } from 'antd';
 
 import { steps } from '@/lib/steps-minicursos';
 import { uppV, uppV2, uppV3, leftV, rightV2 } from '@/lib/motion-variants';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 export default function Minicursos() {
     const [step, setStep] = useState<number>(0);
@@ -18,6 +19,20 @@ export default function Minicursos() {
         }
         setPreviousStep(step);
         setStep(newStep);
+    };
+
+    const handleNextStep = () => {
+        if (step < steps.length - 1) {
+            setPreviousStep(step);
+            setStep(step + 1);
+        };
+    };
+
+    const handlePreviousStep = () => {
+        if (step > 0) {
+            setPreviousStep(step);
+            setStep(step - 1);
+        };
     };
 
     return (
@@ -35,7 +50,8 @@ export default function Minicursos() {
                 >
                     Passo {step + 1}: {steps[step].title}
                 </motion.h3>
-                <div className="flex max-w-xs gap-3">
+                <div className="flex max-w-xs gap-3 items-center">
+                    <FaArrowLeft size={25} className="text-2xl cursor-pointer" onClick={() => handlePreviousStep()} />
                     {steps.map((cStep) => (
                         <motion.button
                             initial="hidden"
@@ -47,6 +63,7 @@ export default function Minicursos() {
                             onClick={() => handleChangeStep(cStep.index)}
                         />
                     ))}
+                    <FaArrowRight size={25} className="text-2xl cursor-pointer" onClick={() => handleNextStep()} />
                 </div>
                 <div className="mt-7 w-full h-full md:h-[70vh]">
                     <div className="flex flex-col md:flex-row gap-8 md:gap-3 bg-slate-200 rounded-md p-5 md:p-12 md:mx-16 md:h-[70vh] xsm:max-lg:items-center">

@@ -29,7 +29,7 @@ export const steps: Step[] = [
         content: (
             <div className="flex flex-col gap-3">
                 <p>Escolha seu minicurso e inscreva-se! Fique atento a data do minicurso.</p>
-                <p>As datas oficiais dos minicursos estão na página de <Link href="/eventos/minicursos" legacyBehavior passHref><span className="italic cursor-pointer">minicursos<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span></Link></p>
+                <p>As datas, horários e localização oficial dos minicursos estão todas na página de <Link href="/eventos/minicursos" legacyBehavior passHref><span className="italic cursor-pointer">minicursos<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span></Link>!</p>
             </div>
         )
     }
