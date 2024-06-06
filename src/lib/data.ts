@@ -645,146 +645,272 @@ const imagens: Imagem[] = [
     {
         index: 0,
         src: "/imagens-galeria/1.jpeg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
     },
     {
         index: 1,
         src: "/imagens-galeria/2.jpeg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
-    },
-    {
-        index: 2,
-        src: "/imagens-galeria/43.jpg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
     },
     {
         index: 3,
         src: "/imagens-galeria/4.jpeg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        descricao: "Coffee Break - WTCC's passados",
+        alt: "WTCC's passados"
     },
     {
         index: 4,
         src: "/imagens-galeria/5.jpeg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
     },
     {
         index: 5,
         src: "/imagens-galeria/6.jpeg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
     },
     {
         index: 6,
         src: "/imagens-galeria/7.jpeg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
     },
     {
         index: 7,
-        src: "/imagens-galeria/44.jpg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        src: "/imagens-galeria/8.jpeg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
     },
     {
         index: 8,
         src: "/imagens-galeria/9.jpeg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
     },
     {
         index: 9,
-        src: "/imagens-galeria/45.jpg",
-        descricao: "Imagem da equipe de professores no WTCC",
-        alt: "Imagem da equipe de professores no WTCC"
+        src: "/imagens-galeria/10.jpeg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
     },
     {
         index: 10,
         src: "/imagens-galeria/11.jpeg",
-        descricao: "Imagem da equipe de professores no WTCC",
-        alt: "Imagem da equipe de professores no WTCC"
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
     },
     {
         index: 11,
         src: "/imagens-galeria/12.jpeg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
     },
     {
         index: 12,
-        src: "/imagens-galeria/19.jpg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        src: "/imagens-galeria/13.jpeg",
+        descricao: "IX WTCC",
+        alt: "IX WTCC"
     },
     {
         index: 13,
-        src: "/imagens-galeria/35.jpg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        src: "/imagens-galeria/14.jpeg",
+        descricao: "IX WTCC",
+        alt: "IX WTCC"
     },
     {
         index: 14,
-        src: "/imagens-galeria/36.jpg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        src: "/imagens-galeria/15.jpeg",
+        descricao: "IX WTCC",
+        alt: "IX WTCC"
     },
     {
         index: 15,
-        src: "/imagens-galeria/38.jpg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        src: "/imagens-galeria/16.jpeg",
+        descricao: "IX WTCC",
+        alt: "IX WTCC"
     },
     {
         index: 16,
-        src: "/imagens-galeria/46.jpg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        src: "/imagens-galeria/17.jpeg",
+        descricao: "IX WTCC",
+        alt: "IX WTCC"
     },
     {
         index: 17,
-        src: "/imagens-galeria/40.jpg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        src: "/imagens-galeria/18.jpeg",
+        descricao: "Equipe de professores no IX WTCC",
+        alt: "Equipe de professores no IX WTCC"
     },
     {
         index: 18,
-        src: "/imagens-galeria/41.jpg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        src: "/imagens-galeria/19.jpg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
     },
     {
         index: 19,
-        src: "/imagens-galeria/42.jpg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        src: "/imagens-galeria/20.jpeg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
     },
     {
         index: 20,
-        src: "/imagens-galeria/47.jpg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        src: "/imagens-galeria/21.jpeg",
+        descricao: "IX WTCC",
+        alt: "IX WTCC"
     },
     {
         index: 21,
-        src: "/imagens-galeria/48.jpg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        src: "/imagens-galeria/22.jpeg",
+        descricao: "Minicurso de Flutter - IX WTCC",
+        alt: "Minicurso de Flutter - IX WTCC"
     },
     {
         index: 22,
-        src: "/imagens-galeria/49.jpg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        src: "/imagens-galeria/23.jpeg",
+        descricao: "Minicurso de Flutter - IX WTCC",
+        alt: "Minicurso de Flutter - IX WTCC"
     },
     {
         index: 23,
+        src: "/imagens-galeria/24.jpeg",
+        descricao: "Minicurso de HTML, CSS e Javascript - IX WTCC",
+        alt: "Minicurso de HTML, CSS e Javascript - IX WTCC"
+    },
+    {
+        index: 24,
+        src: "/imagens-galeria/25.jpeg",
+        descricao: "IX WTCC",
+        alt: "IX WTCC"
+    },
+    {
+        index: 25,
+        src: "/imagens-galeria/26.jpeg",
+        descricao: "Minicurso de R - IX WTCC",
+        alt: "Minicurso de R - IX WTCC"
+    },
+    {
+        index: 26,
+        src: "/imagens-galeria/27.jpeg",
+        descricao: "Minicurso de HTML, CSS e Javascript - IX WTCC",
+        alt: "Minicurso de HTML, CSS e Javascript - IX WTCC"
+    },
+    {
+        index: 27,
+        src: "/imagens-galeria/28.jpeg",
+        descricao: "Minicurso de Git e Github - IX WTCC",
+        alt: "Minicurso de Git e Github - IX WTCC"
+    },
+    {
+        index: 28,
+        src: "/imagens-galeria/29.jpeg",
+        descricao: "IX WTCC",
+        alt: "IX WTCC"
+    },
+    {
+        index: 29,
+        src: "/imagens-galeria/30.jpeg",
+        descricao: "Minicurso de Flutter - IX WTCC",
+        alt: "Minicurso de Flutter - IX WTCC"
+    },
+    {
+        index: 30,
+        src: "/imagens-galeria/35.jpg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
+    },
+    {
+        index: 31,
+        src: "/imagens-galeria/36.jpg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
+    },
+    {
+        index: 32,
+        src: "/imagens-galeria/37.jpeg",
+        descricao: "Minicurso de PyAutoGUI - IX WTCC",
+        alt: "Minicurso de PyAutoGUI - IX WTCC"
+    },
+    {
+        index: 33,
+        src: "/imagens-galeria/38.jpg",
+        descricao: "Minicurso de PyAutoGUI - IX WTCC",
+        alt: "Minicurso de PyAutoGUI - IX WTCC"
+    },
+    {
+        index: 34,
+        src: "/imagens-galeria/39.jpg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
+    },
+    {
+        index: 35,
+        src: "/imagens-galeria/40.jpg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
+    },
+    {
+        index: 36,
+        src: "/imagens-galeria/41.jpg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
+    },
+    {
+        index: 37,
+        src: "/imagens-galeria/42.jpg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
+    },
+    {
+        index: 38,
+        src: "/imagens-galeria/43.jpg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
+    },
+    {
+        index: 39,
+        src: "/imagens-galeria/44.jpg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
+    },
+    {
+        index: 40,
+        src: "/imagens-galeria/45.jpg",
+        descricao: "Equipe de professores nos WTCC's passados",
+        alt: "Equipe de professores nos WTCC's passados"
+    },
+    {
+        index: 41,
+        src: "/imagens-galeria/46.jpg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
+    },
+    {
+        index: 42,
+        src: "/imagens-galeria/47.jpg",
+        descricao: "Hackathon - VIII WTCC",
+        alt: "Hackathon - VIII WTCC"
+    },
+    {
+        index: 43,
+        src: "/imagens-galeria/48.jpg",
+        descricao: "Hackathon - VIII WTCC",
+        alt: "Hackathon - VIII WTCC"
+    },
+    {
+        index: 44,
+        src: "/imagens-galeria/49.jpg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
+    },
+    {
+        index: 45,
         src: "/imagens-galeria/51.jpg",
-        descricao: "Imagem de WTCC passados",
-        alt: "Imagem de WTCC's passados"
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
     }
 ];
 
