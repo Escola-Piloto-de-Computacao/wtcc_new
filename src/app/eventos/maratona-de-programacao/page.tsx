@@ -4,15 +4,17 @@ import React, { useState, useEffect } from 'react';
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 import MyTerminal from '@/components/core/Eventos/MyTerminal';
 import MaratonaText from '@/components/core/Eventos/Maratona/maratona-text';
 import { Switch } from '@/components/ui/switch';
+import { Button } from 'antd';
 
 import { BsInfoCircle, BsCardText } from 'react-icons/bs';
+import { HiCursorClick } from 'react-icons/hi';
 
 import { downV4, downV3, uppV3, appearV, leftV3 } from '@/lib/motion-variants';
-import { Button } from 'antd';
 
 export default function Maratona() {
 
@@ -55,9 +57,16 @@ export default function Maratona() {
                     <motion.ul initial="hidden" animate="visible" variants={uppV3} className="list-disc">
                         <li>Pré-requisitos: Programação de Computadores</li>
                     </motion.ul>
-                    <motion.div initial="hidden" animate="visible" variants={uppV3} className="w-1/2 md:w-1/3 mx-auto">
-                        <Button type="primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfNLma2Q_qFsypmcIUmi18MQXxWldoiobkFc3gPli4xJVBKTg/viewform?usp=sf_link" target="_blank" className="w-full text-sm md:text-base">Inscreva-se</Button>
-                    </motion.div>
+                    <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-between md:mx-2">
+                        <motion.div initial="hidden" animate="visible" variants={uppV3} className="w-1/2 md:w-1/3 mx-auto">
+                            <Button type="primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfNLma2Q_qFsypmcIUmi18MQXxWldoiobkFc3gPli4xJVBKTg/viewform?usp=sf_link" target="_blank" className="w-full text-sm md:text-base">Inscreva-se</Button>
+                        </motion.div>
+                        <div className="md:z-10 md:absolute bg-yellow-200 md:px-2 rounded-md w-[40%] md:w-auto mx-auto md:mx-0 text-center">
+                            <Link href="/faq" legacyBehavior passHref>
+                                <span className="italic cursor-pointer">Ainda tenho dúvidas!<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
             <motion.div initial="hidden" animate="visible" variants={leftV3} className="hidden xl:flex w-[28vw] order-1 xl:order-last col-span-5 place-content-center justify-content-end">
