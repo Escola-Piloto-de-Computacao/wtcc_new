@@ -49,6 +49,11 @@ const uppV3 = {
     visible: { opacity: 1, y: 0, transition: { delay: 0.2 } }
 };
 
+const uppV4 = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { delay: 0.6 } }
+};
+
 const downV = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0 }
@@ -79,6 +84,11 @@ const downV4 = {
     visible: { opacity: 1, y: 0, transition: { delay: 0.2 } }
 };
 
+const downV5 = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0, transition: { delay: 0.1 } }
+};
+
 const rightV = {
     hidden: { opacity: 0, x: 40 },
     visible: { opacity: 1, x: 0, transition: { delay: 0.25 } }
@@ -89,4 +99,4 @@ const rightV2 = {
     visible: { opacity: 1, x: 0 }
 };
 
-export { minicursosV, cronogramaV, mesaLeftV, mesaRightV, appearV, appearV2, leftV, uppV, downV, leftV2, downV2, rightV, downV3, uppV2, downV4, uppV3, rightV2, leftV3 };
+export { minicursosV, cronogramaV, mesaLeftV, mesaRightV, appearV, appearV2, leftV, uppV, downV, leftV2, downV2, rightV, downV3, uppV2, downV4, uppV3, rightV2, leftV3, downV5, uppV4 };

@@ -3,18 +3,17 @@
 import React from 'react';
 
 import Image from 'next/image';
-
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-
 import { motion } from 'framer-motion';
 import { Button } from 'antd';
 
-import { downV, downV3, appearV, uppV3 } from '@/lib/motion-variants';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+
+import { downV, downV3, appearV, uppV3, rightV, downV5, uppV4 } from '@/lib/motion-variants';
 
 export default function Hackathon() {
     return (
         <div className="pb-24 lg:pb-[9.16rem] xl:pb-24 lg:mb-16 mx-0 md:mx-16 lg:mx-24 xl:mx-36 flex flex-col xl:flex-row gap-6 justify-center xsm:max-md:items-center">
-            <div className="hidden xl:block w-1/3 h-1/2">
+            <motion.div initial="hidden" animate="visible" variants={rightV} className="hidden xl:block w-1/3 h-1/2">
                 <Image
                     src="/hackathon.jpg"
                     alt="Hackathon"
@@ -25,9 +24,9 @@ export default function Hackathon() {
                     loading='eager'
                 />
                 <motion.p initial="hidden" animate="visible" variants={downV3} className="italic text-sm text-center">Vencedores de eventos passados</motion.p>
-            </div>
-            <div className="w-full lg:w-[65.6%] flex flex-col items-center">
-                <motion.p initial="hidden" animate="visible" variants={uppV3} className="font-light text-sm italic">07/06 - Multimídia LCC</motion.p>
+            </motion.div>
+            <motion.div initial="hidden" animate="visible" variants={downV5} className="w-full lg:w-[65.6%] flex flex-col items-center">
+                <motion.p initial="hidden" animate="visible" variants={uppV4} className="font-light text-sm italic">07/06 - Multimídia LCC</motion.p>
                 <motion.h1 initial="hidden" animate="visible" variants={appearV} className="text-4xl text-center font-fira font-extralight">Hackathon</motion.h1>
                 <Tabs defaultValue='O que é?' className="mt-4 w-full">
                     <TabsList className="flex gap-4 font-fira">
@@ -60,7 +59,7 @@ export default function Hackathon() {
                         </motion.div>
                     </TabsContent>
                 </Tabs>
-            </div>
+            </motion.div>
         </div>
     );
 };
