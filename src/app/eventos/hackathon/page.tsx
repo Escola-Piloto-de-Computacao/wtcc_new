@@ -1,14 +1,17 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Button } from 'antd';
+import Link from 'next/link';
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-import { downV, downV3, appearV, uppV3, rightV, downV5, uppV4 } from '@/lib/motion-variants';
+import { HiCursorClick } from 'react-icons/hi';
+
+import { downV, downV3, appearV, rightV, downV5, uppV4 } from '@/lib/motion-variants';
 
 export default function Hackathon() {
     return (
@@ -59,6 +62,11 @@ export default function Hackathon() {
                         </motion.div>
                     </TabsContent>
                 </Tabs>
+                <motion.div initial="hidden" animate="visible" variants={downV} className="mt-4 bg-yellow-300 rounded-md px-1 cursor-pointer">
+                    <Link href="/faq" legacyBehavior passHref>
+                        <span className="italic cursor-pointer">Ainda tenho dúvidas!<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span>
+                    </Link>
+                </motion.div>
             </motion.div>
         </div>
     );
