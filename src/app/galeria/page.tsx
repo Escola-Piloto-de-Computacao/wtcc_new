@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '@/app/galeria/transitions.css';
 
 import { useMediaQuery } from 'react-responsive';
@@ -26,11 +26,32 @@ export default function Galeria() {
         setKey(prevKey => prevKey + 1);
     };
 
+    // Function to handle arrow key navigation
+    const handleArrowKey = (event: KeyboardEvent) => {
+        if (event.key === 'ArrowRight') {
+            setCurrentPage((prevPage) => Math.min(prevPage + 1, Math.ceil(imagens.length / imagesPerPage)));
+        } else if (event.key === 'ArrowLeft') {
+            setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+        }
+    };
+
+    // Add event listener for keyboard events when the component mounts
+    useEffect(() => {
+        window.addEventListener('keydown', handleArrowKey);
+
+        // Cleanup function to remove the event listener
+        return () => {
+            window.removeEventListener('keydown', handleArrowKey);
+        };
+    }, [imagesPerPage]); // Depend on imagesPerPage to adjust for screen size changes
+
+
     return (
         <div className="mb-20 flex flex-col items-center gap-3">
             <h1 className="text-center text-4xl">Galeria</h1>
             <div className="mb-2">
                 <Pagination
+                    current={currentPage}
                     defaultCurrent={1}
                     total={imagens.length}
                     pageSize={imagesPerPage}
