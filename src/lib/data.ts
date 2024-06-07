@@ -911,6 +911,36 @@ const imagens: Imagem[] = [
         src: "/imagens-galeria/51.jpg",
         descricao: "WTCC's passados",
         alt: "WTCC's passados"
+    },
+    {
+        index: 46,
+        src: "/imagens-galeria/31.jpg",
+        descricao: "Palestra - IX WTCC",
+        alt: "Palestra - IX WTCC"
+    },
+    {
+        index: 47,
+        src: "/imagens-galeria/32.jpg",
+        descricao: "Mesa Redonda - IX WTCC",
+        alt: "Mesa Redonda - IX WTCC"
+    },
+    {
+        index: 48,
+        src: "/imagens-galeria/33.jpeg",
+        descricao: "Minicurso de Pandas - IX WTCC",
+        alt: "Minicurso de Pandas - IX WTCC"
+    },
+    {
+        index: 49,
+        src: "/imagens-galeria/34.jpeg",
+        descricao: "Minicurso de Pré-Cálculo - IX WTCC",
+        alt: "Minicurso de Pré-Cálculo - IX WTCC"
+    },
+    {
+        index: 50,
+        src: "/imagens-galeria/52.jpg",
+        descricao: "Ministrantes com Professoras - WTCC's passados",
+        alt: "Ministrantes com Professoras - WTCC's passados"
     }
 ];
 

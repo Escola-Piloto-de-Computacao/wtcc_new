@@ -76,7 +76,7 @@ export default function Galeria() {
                                         className="rounded-lg image-fade-in"
                                         loading="eager"
                                     />
-                                    <p className="text-center text-xs sm:text-sm">{image.descricao}</p>
+                                    <p className="text-center text-xs sm:text-sm italic font-light">{image.descricao}</p>
                                 </div>
                             </CSSTransition>
                         ))}
