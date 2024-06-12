@@ -539,7 +539,12 @@ const FAQuestions: Faq = {
         {
             key: 7,
             question: "Eu ganho horas complementares participando do evento?",
-            answer: "Com certeza, após a realização da inscricão e participação no evento, suas horas serão contabilizadas no sistema, sendo possivel baixar um certificado ao fim do WTCC. É possível também ganhar horas extras assistindo os minicursos e/ou outras partes do WTCC!"
+            answer: "Sim, após a realização da inscricão e participação no evento, é possivel baixar um certificado ao fim do WTCC. É possível também ganhar horas extras assistindo os minicursos e/ou outras partes do WTCC! Baixe no site que você fez a inscrição!"
+        },
+        {
+            key: 8,
+            question: "Trabalho no horário do evento, posso participar?",
+            answer: "Claro! Fale com alguém da organização do evento e consiga um documento assinado que comprova a sua participação no evento, assim você poderá apresentar ao seu empregador e garantir suas horas complementares."
         }
     ]
 };
