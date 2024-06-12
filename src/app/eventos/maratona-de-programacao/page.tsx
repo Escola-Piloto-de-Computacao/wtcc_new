@@ -71,7 +71,7 @@ export default function Maratona() {
             </div>
             <motion.div initial="hidden" animate="visible" variants={leftV3} className="hidden xl:flex w-[28vw] order-1 xl:order-last col-span-5 place-content-center justify-content-end">
                 <Image
-                    src="/maratona.png"
+                    src="/maratona.jpg"
                     alt="Maratona de Programação"
                     width={1200}
                     height={1600}
