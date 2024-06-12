@@ -58,7 +58,7 @@ export default function Galeria() {
                     onChange={handlePageChange}
                 />
             </div>
-            <div className="flex flex-row flex-wrap gap-5 px-0 lg:px-12 justify-center">
+            <div className="flex flex-row flex-wrap gap-5 px-0 lg:px-16 justify-center">
                 <Image.PreviewGroup>
                     <TransitionGroup component={null}>
                         {currentImages.map((image) => (
@@ -70,7 +70,7 @@ export default function Galeria() {
                                     <Image
                                         width={isSmallScreen ? 300 : 350}
                                         height={isSmallScreen ? 200 : 250}
-                                        key={image.index + key}
+                                        key={image.index + key + imagesPerPage}
                                         src={image.src}
                                         alt="Imagem de eventos passados"
                                         className="rounded-lg image-fade-in"
