@@ -26,7 +26,7 @@ export default function Hackathon() {
                     quality={100}
                     loading='eager'
                 />
-                <motion.p initial="hidden" animate="visible" variants={downV3} className="italic text-sm text-center">Vencedores de eventos passados</motion.p>
+                <motion.p initial="hidden" animate="visible" variants={downV3} className="italic text-sm text-center">Apresentação dos vencedores do Hackathon do IX WTCC</motion.p>
             </motion.div>
             <motion.div initial="hidden" animate="visible" variants={downV5} className="w-full lg:w-[65.6%] flex flex-col items-center">
                 <motion.p initial="hidden" animate="visible" variants={uppV4} className="font-light text-sm italic">07/06 - Multimídia LCC</motion.p>
