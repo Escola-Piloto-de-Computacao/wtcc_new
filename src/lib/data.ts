@@ -939,8 +939,98 @@ const imagens: Imagem[] = [
     {
         index: 50,
         src: "/imagens-galeria/52.jpg",
-        descricao: "Ministrantes com Professoras - WTCC's passados",
-        alt: "Ministrantes com Professoras - WTCC's passados"
+        descricao: "Ministrantes com Professoras - IX WTCC",
+        alt: "Ministrantes com Professoras - IX WTCC"
+    },
+    {
+        index: 51,
+        src: "/imagens-galeria/53.jpg",
+        descricao: "Participantes da Mesa Rendonda com Professoras - IX WTCC",
+        alt: "Participantes da Mesa Rendonda com Professoras - IX WTCC"
+    },
+    {
+        index: 52,
+        src: "/imagens-galeria/54.jpg",
+        descricao: "Minicurso de Gamemaker Studio 2 - IX WTCC",
+        alt: "Minicurso de Gamemaker Studio 2 - IX WTCC"
+    },
+    {
+        index: 53,
+        src: "/imagens-galeria/55.jpg",
+        descricao: "Minicurso de Linux - IX WTCC",
+        alt: "Minicurso de Linux - IX WTCC"
+    },
+    {
+        index: 54,
+        src: "/imagens-galeria/56.jpg",
+        descricao: "Minicurso de Pandas - IX WTCC",
+        alt: "Minicurso de Pandas - IX WTCC"
+    },
+    {
+        index: 55,
+        src: "/imagens-galeria/57.jpg",
+        descricao: "Minicurso de React - IX WTCC",
+        alt: "Minicurso de React - IX WTCC"
+    },
+    {
+        index: 56,
+        src: "/imagens-galeria/58.jpg",
+        descricao: "Minicurso de Robótica - IX WTCC",
+        alt: "Minicurso de Robótica - IX WTCC"
+    },
+    {
+        index: 57,
+        src: "/imagens-galeria/59.jpg",
+        descricao: "Vencedores do Hackathon - IX WTCC",
+        alt: "Vencedores do Hackathon - IX WTCC"
+    },
+    {
+        index: 58,
+        src: "/imagens-galeria/60.jpg",
+        descricao: "Participantes do Hackathon - IX WTCC",
+        alt: "Participantes do Hackathon - IX WTCC"
+    },
+    {
+        index: 59,
+        src: "/imagens-galeria/61.jpg",
+        descricao: "Participantes do Hackathon - IX WTCC",
+        alt: "Participantes do Hackathon - IX WTCC"
+    },
+    {
+        index: 60,
+        src: "/imagens-galeria/62.jpg",
+        descricao: "Organização do Hackathon - IX WTCC",
+        alt: "Organização do Hackathon - IX WTCC"
+    },
+    {
+        index: 61,
+        src: "/imagens-galeria/63.jpg",
+        descricao: "Maratona de Programação - IX WTCC",
+        alt: "Maratona de Programação - IX WTCC"
+    },
+    {
+        index: 62,
+        src: "/imagens-galeria/64.jpg",
+        descricao: "Maratona de Programação - IX WTCC",
+        alt: "Maratona de Programação - IX WTCC"
+    },
+    {
+        index: 63,
+        src: "/imagens-galeria/65.jpg",
+        descricao: "Vencedores da Maratona de Programação - IX WTCC",
+        alt: "Vencedores da Maratona de Programação - IX WTCC"
+    },
+    {
+        index: 64,
+        src: "/imagens-galeria/66.jpg",
+        descricao: "Vencedores da Maratona de Programação - IX WTCC",
+        alt: "Vencedores da Maratona de Programação - IX WTCC"
+    },
+    {
+        index: 65,
+        src: "/imagens-galeria/67.jpg",
+        descricao: "Participantes da Maratona de Programação - IX WTCC",
+        alt: "Participantes da Maratona de Programação - IX WTCC"
     }
 ];
 
