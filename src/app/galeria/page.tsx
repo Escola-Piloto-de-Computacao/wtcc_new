@@ -56,6 +56,7 @@ export default function Galeria() {
                     total={imagens.length}
                     pageSize={imagesPerPage}
                     onChange={handlePageChange}
+                    showSizeChanger={false}
                 />
             </div>
             <div className="flex flex-row flex-wrap gap-5 px-0 lg:px-16 justify-center">
