@@ -716,38 +716,38 @@ const imagens: Imagem[] = [
     {
         index: 12,
         src: "/imagens-galeria/13.jpeg",
-        descricao: "IX WTCC",
-        alt: "IX WTCC"
+        descricao: "X WTCC",
+        alt: "X WTCC"
     },
     {
         index: 13,
         src: "/imagens-galeria/14.jpeg",
-        descricao: "IX WTCC",
-        alt: "IX WTCC"
+        descricao: "X WTCC",
+        alt: "X WTCC"
     },
     {
         index: 14,
         src: "/imagens-galeria/15.jpeg",
-        descricao: "IX WTCC",
-        alt: "IX WTCC"
+        descricao: "X WTCC",
+        alt: "X WTCC"
     },
     {
         index: 15,
         src: "/imagens-galeria/16.jpeg",
-        descricao: "IX WTCC",
-        alt: "IX WTCC"
+        descricao: "X WTCC",
+        alt: "X WTCC"
     },
     {
         index: 16,
         src: "/imagens-galeria/17.jpeg",
-        descricao: "IX WTCC",
-        alt: "IX WTCC"
+        descricao: "X WTCC",
+        alt: "X WTCC"
     },
     {
         index: 17,
         src: "/imagens-galeria/18.jpeg",
-        descricao: "Equipe de professores no IX WTCC",
-        alt: "Equipe de professores no IX WTCC"
+        descricao: "Equipe de professores no X WTCC",
+        alt: "Equipe de professores no X WTCC"
     },
     {
         index: 18,
@@ -764,62 +764,62 @@ const imagens: Imagem[] = [
     {
         index: 20,
         src: "/imagens-galeria/21.jpeg",
-        descricao: "IX WTCC",
-        alt: "IX WTCC"
+        descricao: "X WTCC",
+        alt: "X WTCC"
     },
     {
         index: 21,
         src: "/imagens-galeria/22.jpeg",
-        descricao: "Minicurso de Flutter - IX WTCC",
-        alt: "Minicurso de Flutter - IX WTCC"
+        descricao: "Minicurso de Flutter - X WTCC",
+        alt: "Minicurso de Flutter - X WTCC"
     },
     {
         index: 22,
         src: "/imagens-galeria/23.jpeg",
-        descricao: "Minicurso de Flutter - IX WTCC",
-        alt: "Minicurso de Flutter - IX WTCC"
+        descricao: "Minicurso de Flutter - X WTCC",
+        alt: "Minicurso de Flutter - X WTCC"
     },
     {
         index: 23,
         src: "/imagens-galeria/24.jpeg",
-        descricao: "Minicurso de HTML, CSS e Javascript - IX WTCC",
-        alt: "Minicurso de HTML, CSS e Javascript - IX WTCC"
+        descricao: "Minicurso de HTML, CSS e Javascript - X WTCC",
+        alt: "Minicurso de HTML, CSS e Javascript - X WTCC"
     },
     {
         index: 24,
         src: "/imagens-galeria/25.jpeg",
-        descricao: "IX WTCC",
-        alt: "IX WTCC"
+        descricao: "X WTCC",
+        alt: "X WTCC"
     },
     {
         index: 25,
         src: "/imagens-galeria/26.jpeg",
-        descricao: "Minicurso de R - IX WTCC",
-        alt: "Minicurso de R - IX WTCC"
+        descricao: "Minicurso de R - X WTCC",
+        alt: "Minicurso de R - X WTCC"
     },
     {
         index: 26,
         src: "/imagens-galeria/27.jpeg",
-        descricao: "Minicurso de HTML, CSS e Javascript - IX WTCC",
-        alt: "Minicurso de HTML, CSS e Javascript - IX WTCC"
+        descricao: "Minicurso de HTML, CSS e Javascript - X WTCC",
+        alt: "Minicurso de HTML, CSS e Javascript - X WTCC"
     },
     {
         index: 27,
         src: "/imagens-galeria/28.jpeg",
-        descricao: "Minicurso de Git e Github - IX WTCC",
-        alt: "Minicurso de Git e Github - IX WTCC"
+        descricao: "Minicurso de Git e Github - X WTCC",
+        alt: "Minicurso de Git e Github - X WTCC"
     },
     {
         index: 28,
         src: "/imagens-galeria/29.jpeg",
-        descricao: "IX WTCC",
-        alt: "IX WTCC"
+        descricao: "X WTCC",
+        alt: "X WTCC"
     },
     {
         index: 29,
         src: "/imagens-galeria/30.jpeg",
-        descricao: "Minicurso de Flutter - IX WTCC",
-        alt: "Minicurso de Flutter - IX WTCC"
+        descricao: "Minicurso de Flutter - X WTCC",
+        alt: "Minicurso de Flutter - X WTCC"
     },
     {
         index: 30,
@@ -836,14 +836,14 @@ const imagens: Imagem[] = [
     {
         index: 32,
         src: "/imagens-galeria/37.jpeg",
-        descricao: "Minicurso de PyAutoGUI - IX WTCC",
-        alt: "Minicurso de PyAutoGUI - IX WTCC"
+        descricao: "Minicurso de PyAutoGUI - X WTCC",
+        alt: "Minicurso de PyAutoGUI - X WTCC"
     },
     {
         index: 33,
         src: "/imagens-galeria/38.jpg",
-        descricao: "Minicurso de PyAutoGUI - IX WTCC",
-        alt: "Minicurso de PyAutoGUI - IX WTCC"
+        descricao: "Minicurso de PyAutoGUI - X WTCC",
+        alt: "Minicurso de PyAutoGUI - X WTCC"
     },
     {
         index: 34,
@@ -920,122 +920,122 @@ const imagens: Imagem[] = [
     {
         index: 46,
         src: "/imagens-galeria/31.jpg",
-        descricao: "Palestra - IX WTCC",
-        alt: "Palestra - IX WTCC"
+        descricao: "Palestra - X WTCC",
+        alt: "Palestra - X WTCC"
     },
     {
         index: 47,
         src: "/imagens-galeria/32.jpg",
-        descricao: "Mesa Redonda - IX WTCC",
-        alt: "Mesa Redonda - IX WTCC"
+        descricao: "Mesa Redonda - X WTCC",
+        alt: "Mesa Redonda - X WTCC"
     },
     {
         index: 48,
         src: "/imagens-galeria/33.jpeg",
-        descricao: "Minicurso de Pandas - IX WTCC",
-        alt: "Minicurso de Pandas - IX WTCC"
+        descricao: "Minicurso de Pandas - X WTCC",
+        alt: "Minicurso de Pandas - X WTCC"
     },
     {
         index: 49,
         src: "/imagens-galeria/34.jpeg",
-        descricao: "Minicurso de Pré-Cálculo - IX WTCC",
-        alt: "Minicurso de Pré-Cálculo - IX WTCC"
+        descricao: "Minicurso de Pré-Cálculo - X WTCC",
+        alt: "Minicurso de Pré-Cálculo - X WTCC"
     },
     {
         index: 50,
         src: "/imagens-galeria/52.jpg",
-        descricao: "Ministrantes com Professoras - IX WTCC",
-        alt: "Ministrantes com Professoras - IX WTCC"
+        descricao: "Ministrantes com Professoras - X WTCC",
+        alt: "Ministrantes com Professoras - X WTCC"
     },
     {
         index: 51,
         src: "/imagens-galeria/53.jpg",
-        descricao: "Participantes da Mesa Rendonda com Professoras - IX WTCC",
-        alt: "Participantes da Mesa Rendonda com Professoras - IX WTCC"
+        descricao: "Participantes da Mesa Rendonda com Professoras - X WTCC",
+        alt: "Participantes da Mesa Rendonda com Professoras - X WTCC"
     },
     {
         index: 52,
         src: "/imagens-galeria/54.jpg",
-        descricao: "Minicurso de Gamemaker Studio 2 - IX WTCC",
-        alt: "Minicurso de Gamemaker Studio 2 - IX WTCC"
+        descricao: "Minicurso de Gamemaker Studio 2 - X WTCC",
+        alt: "Minicurso de Gamemaker Studio 2 - X WTCC"
     },
     {
         index: 53,
         src: "/imagens-galeria/55.jpg",
-        descricao: "Minicurso de Linux - IX WTCC",
-        alt: "Minicurso de Linux - IX WTCC"
+        descricao: "Minicurso de Linux - X WTCC",
+        alt: "Minicurso de Linux - X WTCC"
     },
     {
         index: 54,
         src: "/imagens-galeria/56.jpg",
-        descricao: "Minicurso de Pandas - IX WTCC",
-        alt: "Minicurso de Pandas - IX WTCC"
+        descricao: "Minicurso de Pandas - X WTCC",
+        alt: "Minicurso de Pandas - X WTCC"
     },
     {
         index: 55,
         src: "/imagens-galeria/57.jpg",
-        descricao: "Minicurso de React - IX WTCC",
-        alt: "Minicurso de React - IX WTCC"
+        descricao: "Minicurso de React - X WTCC",
+        alt: "Minicurso de React - X WTCC"
     },
     {
         index: 56,
         src: "/imagens-galeria/58.jpg",
-        descricao: "Minicurso de Robótica - IX WTCC",
-        alt: "Minicurso de Robótica - IX WTCC"
+        descricao: "Minicurso de Robótica - X WTCC",
+        alt: "Minicurso de Robótica - X WTCC"
     },
     {
         index: 57,
         src: "/imagens-galeria/59.jpg",
-        descricao: "Vencedores do Hackathon - IX WTCC",
-        alt: "Vencedores do Hackathon - IX WTCC"
+        descricao: "Vencedores do Hackathon - X WTCC",
+        alt: "Vencedores do Hackathon - X WTCC"
     },
     {
         index: 58,
         src: "/imagens-galeria/60.jpg",
-        descricao: "Participantes do Hackathon - IX WTCC",
-        alt: "Participantes do Hackathon - IX WTCC"
+        descricao: "Participantes do Hackathon - X WTCC",
+        alt: "Participantes do Hackathon - X WTCC"
     },
     {
         index: 59,
         src: "/imagens-galeria/61.jpg",
-        descricao: "Participantes do Hackathon - IX WTCC",
-        alt: "Participantes do Hackathon - IX WTCC"
+        descricao: "Participantes do Hackathon - X WTCC",
+        alt: "Participantes do Hackathon - X WTCC"
     },
     {
         index: 60,
         src: "/imagens-galeria/62.jpg",
-        descricao: "Organização do Hackathon - IX WTCC",
-        alt: "Organização do Hackathon - IX WTCC"
+        descricao: "Organização do Hackathon - X WTCC",
+        alt: "Organização do Hackathon - X WTCC"
     },
     {
         index: 61,
         src: "/imagens-galeria/63.jpg",
-        descricao: "Maratona de Programação - IX WTCC",
-        alt: "Maratona de Programação - IX WTCC"
+        descricao: "Maratona de Programação - X WTCC",
+        alt: "Maratona de Programação - X WTCC"
     },
     {
         index: 62,
         src: "/imagens-galeria/64.jpg",
-        descricao: "Maratona de Programação - IX WTCC",
-        alt: "Maratona de Programação - IX WTCC"
+        descricao: "Maratona de Programação - X WTCC",
+        alt: "Maratona de Programação - X WTCC"
     },
     {
         index: 63,
         src: "/imagens-galeria/65.jpg",
-        descricao: "Vencedores da Maratona de Programação - IX WTCC",
-        alt: "Vencedores da Maratona de Programação - IX WTCC"
+        descricao: "Vencedores da Maratona de Programação - X WTCC",
+        alt: "Vencedores da Maratona de Programação - X WTCC"
     },
     {
         index: 64,
         src: "/imagens-galeria/66.jpg",
-        descricao: "Vencedores da Maratona de Programação - IX WTCC",
-        alt: "Vencedores da Maratona de Programação - IX WTCC"
+        descricao: "Vencedores da Maratona de Programação - X WTCC",
+        alt: "Vencedores da Maratona de Programação - X WTCC"
     },
     {
         index: 65,
         src: "/imagens-galeria/67.jpg",
-        descricao: "Participantes da Maratona de Programação - IX WTCC",
-        alt: "Participantes da Maratona de Programação - IX WTCC"
+        descricao: "Participantes da Maratona de Programação - X WTCC",
+        alt: "Participantes da Maratona de Programação - X WTCC"
     }
 ];
 
@@ -1056,10 +1056,10 @@ const patrocinadores: Patrocinador[] = [
     },
     {
         index: 2,
-        nome: "Solar Z",
-        alt: "Solar Z",
-        imagem: "/imagens-patrocinadores/solarz.png",
-        link: "https://solarz.com.br"
+        nome: "Massas Nordeste",
+        alt: "Massas Nordeste",
+        imagem: "/imagens-patrocinadores/massasNordeste.png",
+        link: "https://www.instagram.com/massasnordesteoficial/"
     },
     {
         index: 3,
@@ -1105,16 +1105,17 @@ const patrocinadores: Patrocinador[] = [
     },
     {
         index: 9,
-        nome: "Uqvestir",
-        alt: "Uqvestir",
-        imagem: "/imagens-patrocinadores/uqvestir2.png",
-        link: "https://www.instagram.com/uqvestir/"
+        nome: "Casa Dos Pneus",
+        alt: "Casa Dos Pneus",
+        imagem: "/imagens-patrocinadores/casaDosPneus.png",
+        link: "https://casadospneusmossoro.com.br/"
     },
     {
         index: 10,
-        nome: "Sua sapataria",
-        alt: "Sua sapataria",
-        imagem: "/imagens-patrocinadores/suaSapataria.png",
+        nome: "smar",
+        alt: "smar",
+        imagem: "/imagens-patrocinadores/smar.png",
+        link: "https://www.smar.com.br/pt"
     }
 ];
 
