@@ -59,7 +59,7 @@ export default function Hackathon() {
           variants={uppV4}
           className="font-light text-sm italic"
         >
-          07/06 - Multimídia LCC
+          25/04 - Multimídia LCC
         </motion.p>
         <motion.h1
           initial="hidden"

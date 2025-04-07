@@ -97,6 +97,11 @@ const minicursos: Minicurso[] = [
                 name: "ferramenta",
                 color: "bg-red-300",
                 index: 0
+            },
+            {
+                name: "Iniciante",
+                color: "bg-yellow-300",
+                index: 1
             }
         ],
         description: "Neste minicurso será ofertado aprendizado acerca da ferramenta Figma para criação de interfaces web e mobile. Iremos aprender a como utilizar a ferramenta, as boas práticas de uso, criação de telas de baixa e alta fidelidade, construir a interface de um site de streaming e a utilização da ferramenta no mercado de trabalho.",
@@ -202,9 +207,14 @@ const minicursos: Minicurso[] = [
         date: "24/04",
         tags: [
             {
+                name: "ferramenta",
+                color: "bg-red-300",
+                index: 0
+            },
+            {
                 name: "jogos",
                 color: "bg-purple-300",
-                index: 0
+                index: 1
             }
         ],
         prerequesites: [
@@ -300,8 +310,9 @@ const minicursos: Minicurso[] = [
 ];
 
 const palestranteSelecionado: Palestrante = {
-    name: "Mikéas Azevedo",
-    bio: "Egresso do curso de Ciência da Computação da UFERSA, atualmente Software Engineer no iFood, com experiência em empresas como Mercado Livre e Invillia.",
+    name: "Eduardo Guerra",
+    // TODO Traduzir e resumir
+    bio: "Eduardo Guerra is a Researcher at the Free University of Bozen-Bolzano, Italy. He worked for seven years at the Spacial Institute for Space Research (INPE) in Brazil, reaching the senior researcher level. Before that, he also acted as a teacher at the Instituto Tecnologico de Aeronáutica (ITA), which is known as one of the best engineering schools in the country. The focus of Eduardo Guerra’s research can be defined as “find better ways to develop software”, which includes patterns, programming approaches, and processes to be used by the development team. He considers the principles of Agile Software Development the core guidance of his research since they aim to improve software quality, optimize development time, and increase software adaptability. Test-driven development (TDD) was the core of several works that focused on test code refactoring, application of TDD for specific kinds of software, and teaching and evaluating the technique. Also, in the scope of programming techniques, metadata, and code annotations were the focus of several works that aimed to study them as an alternative to make the software more adaptable and improve the code quality.",
     social: {
         github: "test"
     },
@@ -309,11 +320,11 @@ const palestranteSelecionado: Palestrante = {
 };
 
 const palestra: Palestra = {
-    name: "Perspectiva sobre o futuro do mercado de trabalho",
-    description: "Mikéias Azevedo, formado em Ciência da Computação pela UFERSA, é atualmente Software Engineer no iFood. Em sua apresentação, compartilhará de forma pessoal sua trajetória acadêmica e profissional, destacando os desafios e conquistas que marcaram sua carreira.",
-    descriptionCont: "Ele discutirá as competências essenciais para se destacar no competitivo mercado de tecnologia e oferecerá dicas práticas e valiosas para estudantes e profissionais que estão iniciando suas jornadas.",
+    name: "O que os meus filmes favoritos me ensinaram sobre Agile",
+    description: "Uma famosa citação diz que \"a beleza está nos olhos de quem vê\", no entanto, talvez o mesmo possa ser dito sobre a mensagem. Nesta palestra divertida, momentos icônicos de filmes famosos da cultura pop são utilizados para desencadear discussões emocionantes sobre as armadilhas comuns do desenvolvimento de software ágil. Incluirá filmes clássicos dos anos 80, como De Volta para o Futuro e Indiana Jones, e outros mais recentes, como Os Vingadores e O Senhor dos Anéis. As cenas servem como ponto de partida para discutir temas importantes sobre desenvolvimento de software, como a cultura ágil, trabalho em equipe, aprendizado contínuo e abordagens para tomada de decisões técnicas.",
+    descriptionCont: "",
     speaker: palestranteSelecionado,
-    img: "/palestra/mikeas.png"
+    img: "/palestra/EduardoG.jpeg"
 };
 
 const FAQuestions: Faq = {
@@ -365,96 +376,182 @@ const cronograma: Atividade[] = [
     {
         index: 0,
         dia: 1,
-        hora: "08:00 - 10:00",
+        hora: "08:00 - 09:00",
         titulo: "Abertura Oficial do evento",
-        descricao: "Abertura do evento com a equipe organizadora acadêmica, a coordenção do curso, chefia do departamento, coordenação do mestrado e equipe da PROGRAD. Assim como a abertura e lançamento do Hackathon e Maratona de Programação.",
+        descricao: "Abertura do evento com a equipe organizadora acadêmica, a coordenção do curso, chefia do departamento, coordenação da graduação e pós-graduação do departamento de computação.",
         localizacao: "Auditório da PROEC"
     },
     {
         index: 1,
         dia: 1,
-        hora: "10:00 - 10:30",
-        titulo: "Coffee Break",
-        descricao: "",
+        hora: "09:00 - 09:15",
+        titulo: "Apresentação da Empresa Júnior de Computação",
+        descricao: "Apresentação da empresa júnior de computação, a Lotus Tech.",
         localizacao: "Auditório da PROEC"
     },
     {
         index: 2,
         dia: 1,
-        hora: "10:30 - 12:00",
-        titulo: "Mostra Científica",
-        descricao: "Apresentação de projetos realizados por alunos do curso de Ciência da Computação.",
-        localizacao: "Auditório da PROEC",
-        pageExists: true,
-        page: "/eventos/mostra-cientifica"
-    },
-    {
-        index: 3,
-        dia: 1,
-        hora: "14:00 - 18:00",
-        titulo: "Minicursos",
-        descricao: "Minicursos oferecidos por alunos e ex-alunos do curso de Ciência da Computação.",
-        localizacao: "Laboratórios do LCC",
-        pageExists: true,
-        page: "/eventos/minicursos"
-    },
-    {
-        index: 4,
-        dia: 2,
-        hora: "08:00 - 09:30",
-        titulo: "Palestra",
-        descricao: "Palestra com um convidado especial sobre o mercado de trabalho e a importância da área da Ciência da Computação.",
+        hora: "09:15 - 10:15",
+        titulo: "Palestra de Abertura",
+        descricao: "Um convidado especial trará uma palestra diferenciada sobre as metodologias ágeis, trazendo discussões emocionantes.",
         localizacao: "Auditório da PROEC",
         pageExists: true,
         page: "/eventos/palestra"
     },
     {
-        index: 5,
-        dia: 2,
-        hora: "09:30 - 10:00",
-        titulo: "Coffee Break",
+        index: 3,
+        dia: 1,
+        hora: "10:15 - 10:45",
+        titulo: "Coffee break",
         descricao: "",
         localizacao: "Auditório da PROEC"
     },
     {
-        index: 6,
-        dia: 2,
-        hora: "10:00 - 11:30",
-        titulo: "Mesa Redonda",
-        descricao: "Mesa redonda com profissionais, professores e alunos da área de Computação.",
+        index: 4,
+        dia: 1,
+        hora: "10:45 - 11:15",
+        titulo: "Startup - Uma proposta profissional no século XXI",
+        descricao: "Era da mudança x Mundaça de era, Mentalidade Fixa x Mentalidade Aberta, Velha Economia x Nova Economia, Empreendedor x Pesquisador, Emprego x Profissão, Empresário x Empresidiário, Empreendor x Empreende a Dor, Desafio só presta grande, Estudar, validar e fazer, E a IA? E Kiko?",
         localizacao: "Auditório da PROEC",
-        pageExists: true,
-        page: "/eventos/mesa-redonda"
-    },
-    {
-        index: 7,
-        dia: 2,
-        hora: "14:00 - 18:00",
-        titulo: "Minicursos",
-        descricao: "Minicursos oferecidos por alunos e ex-alunos do curso de Ciência da Computação.",
-        localizacao: "Laboratórios do LCC",
         pageExists: true,
         page: "/eventos/minicursos"
     },
     {
-        index: 8,
-        dia: 3,
-        hora: "08:00 - 11:00",
-        titulo: "Maratona de Programação",
-        descricao: "Competição de programação com alunos do curso de Ciência da Computação.",
-        localizacao: "Lab 4 - LCC",
+        index: 5,
+        dia: 1,
+        hora: "11:15 - 11:45",
+        titulo: "Apresentação do Hackaton e maratona de programação",
+        descricao: "Abertura das inscrições para o Hackathon e a Maratona de Programação, detalhando cada um dos eventos.",
+        localizacao: "Auditório da PROEC",
         pageExists: true,
-        page: "/eventos/maratona-de-programacao"
+        page: "/eventos/palestra"
+    },
+    {
+        index: 6,
+        dia: 1,
+        hora: "14:00 - 18:00",
+        titulo: "Minicursos",
+        descricao: "Minicursos oferecidos por alunos e professores do curso de Ciência da Computação.",
+        localizacao: "LCC - Laboratório de Ciência da Computação",
+        pageExists: true,
+        page: "/eventos/minicursos"
+    },
+    {
+        index: 7,
+        dia: 1,
+        hora: "16:00 - 16:20",
+        titulo: "Cofee Break",
+        descricao: "",
+        localizacao: "LCC - Laboratório de Ciência da Computação",
+    },
+    {
+        index: 8,
+        dia: 2,
+        hora: "08:00 - 09:00",
+        titulo: "Apresentação do PpgCC",
+        descricao: "Introdução do que é e como funciona o programa de pós-graduação de ciência da computação.",
+        localizacao: "Auditório da PROEC",
     },
     {
         index: 9,
-        dia: 3,
-        hora: "08:00 - 11:00",
-        titulo: "Hackathon",
-        descricao: "Competição de problem solving em grupo com alunos do curso de Ciência da Computação.",
-        localizacao: "Sala do Multídia do LCC",
+        dia: 2,
+        hora: "09:00 - 12:00",
+        titulo: "Apresentação de Trabalhos da Pós-Graduação",
+        descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da pós-graduação.",
+        localizacao: "Auditório da PROEC"
+    },
+    {
+        index: 10,
+        dia: 2,
+        hora: "10:30 - 10:45",
+        titulo: "Cofee Break",
+        descricao: "",
+        localizacao: "Auditório da PROEC"
+    },
+    {
+        index: 11,
+        dia: 2,
+        hora: "08:00 - 12:00",
+        titulo: "Maratona de Programação",
+        descricao: "Maratona de programação com alunos do curso de Ciência da Computação.",
+        localizacao: "LCC - Laboratório de Ciência da Computação",
         pageExists: true,
-        page: "/eventos/hackathon"
+        page: "/eventos/maratona-programacao"
+    },
+    {
+        index: 12,
+        dia: 2,
+        hora: "14:00 - 18:00",
+        titulo: "Minicursos",
+        descricao: "Minicursos oferecidos por alunos e professores do curso de Ciência da Computação.",
+        localizacao: "LCC - Laboratório de Ciência da Computação",
+        pageExists: true,
+        page: "/eventos/minicursos"
+    },
+    {
+        index: 13,
+        dia: 2,
+        hora: "16:00 - 16:20",
+        titulo: "Cofee Break",
+        descricao: "",
+        localizacao: "LCC - Laboratório de Ciência da Computação"
+    },
+    {
+        index: 14,
+        dia: 3,
+        hora: "08:00 - 09:00",
+        titulo: "Palestra de Ética",
+        descricao: "Palestra sobre a utilização ética e responsável da inteligência artificial generativa.",
+        localizacao: "Auditório da PROEC",
+    },
+    {
+        index: 15,
+        dia: 3,
+        hora: "09:00 - 09:15",
+        titulo: "Apresentação do Projeto de extensão",
+        descricao: "Apresentação do projeto de extensão, PegAzuls Aerodesign.",
+        localizacao: "Auditório da PROEC"
+    },
+    {
+        index: 16,
+        dia: 3,
+        hora: "09:15 - 12:00",
+        titulo: "Encontro dos discentes do PpgCC",
+        descricao: "",
+        localizacao: "Auditório da PROEC"
+    },
+    {
+        index: 17,
+        dia: 3,
+        hora: "09:15 - 12:00",
+        titulo: "Mostra Científica",
+        descricao: "Apresentação de trabalhos científicos dos alunos do curso de Ciência da Computação.",
+        localizacao: "Varanda do Prédio da Assecom"
+    },
+    {
+        index: 18,
+        dia: 3,
+        hora: "14:00 - 18:00",
+        titulo: "Apresentação de Soluções do Hackaton",
+        descricao: "Apresentação das soluções do hackaton e avaliação pela banca de jurados.",
+        localizacao: "LCC - Laboratório de Ciência da Computação",
+    },
+    {
+        index: 19,
+        dia: 3,
+        hora: "16:00 - 16:20",
+        titulo: "Cofee Break",
+        descricao: "",
+        localizacao: "LCC - Laboratório de Ciência da Computação"
+    },
+    {
+        index: 20,
+        dia: 3,
+        hora: "18:00",
+        titulo: "Anuncio dos resultados do Hackaton",
+        descricao: "Anuncio dos resultados do hackaton e premiação dos vencedores.",
+        localizacao: "LCC - Laboratório de Ciência da Computação"
     }
 ];
 
@@ -939,7 +1036,7 @@ const terminalFiles: TerminalFile[] = [
     },
     {
         name: "regras.txt",
-        content: "Para participar, se é necessário formar um grupo com 3 alunos, sem restrições de período! Ambas a premiação e a competição serão no dia 07/06, das 8:00 às 11:00, no Lab 4 do prédio do LCC. Não é necessário saber alguma linguagem de programação específica, espera-se que o grupo decida usar de uma linguagem das mais conhecidas (ex. java, c++).",
+        content: "Para participar, se é necessário formar um grupo com 3 alunos, sem restrições de período! Ambas a premiação e a competição serão no dia 25/04, das 8:00 às 11:00, no Lab 4 do prédio do LCC. Não é necessário saber alguma linguagem de programação específica, espera-se que o grupo decida usar de uma linguagem das mais conhecidas (ex. java, c++).",
         address: "/"
     }
 ];
