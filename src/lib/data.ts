@@ -3,11 +3,12 @@ import { Minicurso, Palestrante, Palestra, Faq, Atividade, Imagem, Patrocinador,
 const minicursos: Minicurso[] = [
     {
         index: 0,
-        title: "Desenvolvimento Web: HTML, CSS e JavaScript",
+        title: "Introdução ao Web Básico",
         alternateTitle: "Aprendendo HTML, CSS e JavaScript do básico e além",
+        // TODO Mudar as imagens
         picture: "/imagens-minicursos/htmlcssjavascript2.jpg",
         alternatePicture: "/imagens-minicursos/htmlcssjavascript.png",
-        date: "05/06",
+        date: "24/04",
         tags: [
             {
                 name: "iniciante",
@@ -25,130 +26,35 @@ const minicursos: Minicurso[] = [
                 index: 2
             }
         ],
-        description: "Este curso tem como objetivo fornecer uma compreensão abrangente das linguagens fundamentais da web: HTML (HyperText Markup Language), CSS (Cascading Style Sheets) e JavaScript. Os participantes aprenderão a criar páginas web dinâmicas e responsivas, utilizando boas práticas de programação.",
+        description: "Quer dominar a arte de criar sites incríveis? No nosso minicurso de HTML, CSS e JavaScript, você aprenderá os fundamentos essenciais para construir páginas web modernas, interativas e visualmente impactantes. Desde a estruturação do conteúdo com HTML, passando pelo design estilizado com CSS, até a adição de dinamismo e funcionalidades com JavaScript, este curso é a porta de entrada para o universo do desenvolvimento web! Venha transformar suas ideias em realidade digital!",
         palestrantes: [
             {
-                name: "Arthur Felipe Araujo",
-                bio: "Sou o Arthur e, ao longo da minha trajetória profissional, fui melhorando minhas habilidades em linguagens de programação essenciais como JavaScript, TypeScript e Java. Além disso, possuo uma notável experiência em tecnologias tanto de front-end quanto de back-end, incluindo frameworks como React, Next.js, Angular e Spring",
+                name: "Artur Segantini",
+                bio: "Entusiasta de worldbuilding e amante de programação orientada a objetos",
                 social: {
-                    instagram: "https://www.instagram.com/arthur_f18/",
-                    email: "arthurfellype21@gmail.com",
+                    github: "https://github.com/ARTSALT",
+                    instagram: "https://www.instagram.com/artur_sals/"
                 },
-                picture: "/imagens-minicursos/arthurFelipe.jpeg"
+                picture: "/imagens-minicursos/arturSegantini.png"
             },
             {
-                name: "Wender Enzo de Oliveira",
-                bio: "Desenvolvedor web full stack, proativo e apaixonado por criar soluções inovadoras para desafios técnicos. Minha vasta experiência com React, Angular, Next.js, TypeScript, Python, Tailwind CSS, componentes estilizados, PostgreSQL, JavaScript, MySQL e Java me permitem resolver uma ampla gama de problemas projetos com habilidade e eficiência. Além disso, sou um defensor entusiasta do Next.js, que me permite construir aplicativos de página única (SPA) com ótimo desempenho e SEO aprimorado",
+                name: "William Diniza",
+                bio: "Aluno do último período de Ciência da Computação, gosto de resolver problemas com soluções criativas.",
                 social: {
-                    instagram: "https://www.instagram.com/wenderenzo/",
-                    email: "wenderenzo2014@outlook.com"
+                    instagram: "https://www.instagram.com/william.praxedes/"
                 },
-                picture: "/imagens-minicursos/wenderEnzo.jpeg"
-            }
-        ],
-        localizacao: "Lab 2"
-    },
-    {
-        index: 1,
-        title: "Pré-Cálculo Computacional",
-        alternateTitle: "Fundamentos de Exatas na Computação",
-        picture: "/imagens-minicursos/pre-calc.jpg",
-        alternatePicture: "/imagens-minicursos/pre-calc2.jpg",
-        date: "06/06",
-        tags: [
-            {
-                name: "iniciante",
-                color: "bg-yellow-300",
-                index: 0
-            },
-            {
-                name: "exatas",
-                color: "bg-cyan-300",
-                index: 1
-            }
-        ],
-        description: "No minicurso será feita uma revisão e um aprofundamento, a partir de uma abordagem computacional, dos tópicos essenciais para o estudo do Cálculo. Dessa forma, os participantes podem se preparar e contextualizar seus conhecimento para as disciplinas introdutórias de exatas na computação.",
-        palestrantes: [
-            {
-                name: "Paulo Henrique Almeida de Andrade",
-                bio: "Estudante de computação que adora fazer códigos, cálculos e aviões",
-                social: {
-                    github: "https://github.com/andrade-paulo/",
-                    linkedin: "https://www.linkedin.com/in/andrade-paulo/",
-                    instagram: "https://www.instagram.com/h.oluap/"
-                },
-                picture: "/imagens-minicursos/pauloHenrique.jpg"
-            }
-        ],
-        localizacao: "Multimidia"
-    },
-    {
-        index: 2,
-        title: "Criação de Aplicativos com Flutter",
-        alternateTitle: "Desenvolvimento de Aplicações Móveis e Responsivas com Flutter",
-        picture: "/imagens-minicursos/flutter.png",
-        alternatePicture: "/imagens-minicursos/flutter2.png",
-        date: "05/06",
-        tags: [
-            {
-                name: "linguagem",
-                color: "bg-green-300",
-                index: 0
-            },
-            {
-                name: "framework",
-                color: "bg-pink-300",
-                index: 1
-            },
-            {
-                name: "mobile",
-                color: "bg-purple-300",
-                index: 2
-            }
-        ],
-        description: "O minicurso \"Desenvolvimento com Dart e Flutter\" é uma imersão completa nas tecnologias Dart e Flutter, essenciais para o desenvolvimento de aplicativos móveis modernos e responsivos. Em quatro horas de conteúdo dinâmico, os participantes serão guiados desde os fundamentos básicos de programação em Dart até técnicas avançadas de desenvolvimento de interfaces com Flutter. Com uma abordagem prática e teórica, os alunos aprenderão a criar aplicativos completos e eficientes, explorando widgets básicos e avançados, gerenciamento de estado, arquitetura do Flutter e melhores práticas de desenvolvimento. Ao final do curso, os participantes estarão aptos a desenvolverem suas próprias aplicações móveis de forma ágil e eficaz, utilizando todo o potencial oferecido por Dart e Flutter.",
-        prerequesites: [
-            "Conhecimento básico em programação",
-            "Familiaridade com o ambiente de desenvolvimento Visual Studio Code",
-            "Programação Orientada a Objetos (não obrigatório)"
-        ],
-        palestrantes: [
-            {
-                name: "Níckolas Emanuel de Oliveira",
-                bio: "Aluno do 6° Período de Ciência da Computação – Desenvolvedor Front-end Mobile",
-                social: {
-                    github: "https://github.com/nickolas-silva",
-                    instagram: "https://www.instagram.com/nickolas_emanuel_/"
-                },
-                picture: "/imagens-minicursos/nickolasEmanuel.png"
-            },
-            {
-                name: "Lucas Vinícius Fernandes da Silva",
-                bio: "Aluno do 6° Período de Ciência da Computação – Desenvolvedor Front-end e Back-end com Node",
-                social: {
-                    github: "https://github.com/lucassf2k",
-                    instagram: "https://www.instagram.com/lucassf2k/"
-                },
-                picture: "/imagens-minicursos/lucasVinicius.png"
-            },
-            {
-                name: "Nicholas Vinicius Araújo Pinheiro",
-                bio: "Desenvolvedor de software com foco em soluções tecnológicas. Responsável pelo desenvolvimento mobile com Flutter na Dunnas",
-                social: {
-                    instagram: "https://www.instagram.com/nicholasvinicius_/"
-                },
-                picture: "/imagens-minicursos/nicholasVinicius.png"
+                picture: "/imagens-minicursos/williamDiniz.jpeg"
             }
         ],
         localizacao: "Lab 4"
     },
     {
-        index: 3,
-        title: "GameMaker Studio - Aprenda sobre a melhor engine de jogos 2D do mercado",
-        alternateTitle: "Desenvolvimento de jogos com o motor gráfico GameMaker Studio",
-        picture: "/imagens-minicursos/gamemaker.jpg",
-        alternatePicture: "/imagens-minicursos/gamemaker2.jpg",
-        date: "06/06",
+        index: 1,
+        title: "Introdução ao Motor de Jogos Unity",
+        alternateTitle: "Introdução ao Motor de Jogos Unity",
+        picture: "/imagens-minicursos/unity.jpg",
+        alternatePicture: "/imagens-minicursos/unity2.png",
+        date: "23/04",
         tags: [
             {
                 name: "ferramenta",
@@ -161,255 +67,59 @@ const minicursos: Minicurso[] = [
                 index: 1
             }
         ],
-        description: "Você verá as bases de como criar jogos 2D na maior engine para tal, nela já foram criados muitos jogos conhecidos, como Undertale, Katana Zero, Hotline Miami, e muitos outros. Aqui você irá entender as principais funcionalidades da engine e faremos juntos um protótipo de um jogo no estilo plataforma.",
+        description: "A indústria de jogos digitais movimenta bilhões de dólares anualmente. Neste contexto, um dos principais motores utilizados no desenvolvimento de jogos é o Unity. Este minicurso abordará conceitos fundamentais do Unity. Construiremos um jogo 3D simples a partir do zero. Utilizando o ambiente gráfico do Unity, criaremos cenas e definiremos objetos que estarão presentes naquelas cenas. Além disso, construiremos scripts que estabelecerão como os objetos definidos irão se comportar dentro da cena da qual fazem parte. Trata-se de uma excelente oportunidade de aplicar os conhecimentos aprendidos durante um curso de programação.",
         prerequesites: [
-            "Conhecimento básico em programação"
+            "Conhecimento básico em programação",
+            "Programação Orientada a Objetos (não obrigatório)"
         ],
         palestrantes: [
             {
-                name: "Vinícius Dantas de Sousa",
-                bio: "Aspirante a game dev com experiência em alguns projetos",
+                // TODO mudar tudo
+                name: "Helcio Wagner da Silva",
+                bio: "",
                 social: {
-                    github: "https://github.com/vinicius-dantasso"
+
                 },
-                picture: "https://avatars.githubusercontent.com/u/88327585?v=4"
-            },
-            {
-                name: "Luiz Ryan Borges da Costa",
-                bio: "“Acho muito deselegante falar sobre si mesmo” – Hélcio Wagner",
-                social: {
-                    github: "https://github.com/lryanborges",
-                    instagram: "https://www.instagram.com/ryxnlock"
-                },
-                picture: "/imagens-minicursos/luisRyan.png"
+                picture: ""
             }
         ],
         localizacao: "Lab 2"
     },
     {
-        index: 4,
-        title: "Introdução ao Linux",
-        alternateTitle: "Sistemas Operacionais baseados em Linux",
-        picture: "/imagens-minicursos/linux.jpg",
-        alternatePicture: "/imagens-minicursos/linux2.jpg",
-        date: "06/06",
+        index: 2,
+        title: "Figma: Dos primeiros passos ao primeiro site.",
+        alternateTitle: "Primeiros Passos em Figma",
+        picture: "/imagens-minicursos/figma.png",
+        alternatePicture: "/imagens-minicursos/figma2.png",
+        date: "23/04",
         tags: [
             {
-                name: "iniciante",
-                color: "bg-yellow-300",
+                name: "ferramenta",
+                color: "bg-red-300",
                 index: 0
-            },
-            {
-                name: "sistemas operacionais",
-                color: "bg-rose-400",
-                index: 1
             }
         ],
-        description: "O presente curso visa, ensinar os componentes básicos de um sistema operacional, como processos e memória, além de focar em como sistemas linux operam sobre esses recursos de hardware e gerenciam recursos lógicos, como arquivos, diretórios, programas/processos. O curso também apresenta boas práticas ,gerais e de segurança, introduz a configuração de servidores e demonstra a importância dos SO’s.",
+        description: "Neste minicurso será ofertado aprendizado acerca da ferramenta Figma para criação de interfaces web e mobile. Iremos aprender a como utilizar a ferramenta, as boas práticas de uso, criação de telas de baixa e alta fidelidade, construir a interface de um site de streaming e a utilização da ferramenta no mercado de trabalho.",
         palestrantes: [
             {
-                name: "Thiago Henrique Fonseca Pereira",
-                bio: "Graduando do sétimo período, desenvolvedor fullstack e entusiasta de tecnologia. Inimigo número 1 do windows",
+                // TODO Mudar tudo
+                name: "Vinicius Salviano de Macedo",
+                bio: "",
                 social: {
-                    github: "https://github.com/thiagohenriquefp",
-                    linkedin: "https://linkedin.com/in/thiagohfpereira",
+                    
                 },
-                picture: "/imagens-minicursos/thiagoHenrique.jpeg"
-            }
-        ],
-        localizacao: "Lab 3"
-    },
-    {
-        index: 5,
-        title: "Introdução ao Python com Pandas",
-        alternateTitle: "Análise de Dados com Python e Pandas",
-        picture: "/imagens-minicursos/pandas.png",
-        alternatePicture: "/imagens-minicursos/pandas2.png",
-        date: "06/06",
-        tags: [
-            {
-                name: "iniciante",
-                color: "bg-yellow-300",
-                index: 0
-            },
-            {
-                name: "linguagem",
-                color: "bg-green-300",
-                index: 1
-            },
-            {
-                name: "análise de dados",
-                color: "bg-fuchsia-300",
-                index: 2
-            }
-        ],
-        prerequesites: [
-            "Conhecimento básico em programação"
-        ],
-        description: "Este minicurso tem como objetivo introduzir os participantes ao uso do Python para análise de dados utilizando a biblioteca Pandas. Os alunos aprenderão a manipular, processar e analisar conjuntos de dados reais, desenvolvendo habilidades práticas essenciais para qualquer cientista dados. Serão abordados conceitos fundamentais do Python, operações básicas e avançadas com Pandas, além de técnicas de visualização de dados. Este minicurso é ideal para aqueles que desejam iniciar na área de Data Science e melhorar suas habilidades em Python.",
-        palestrantes: [
-            {
-                name: "Valentina Silva de Lacerda",
-                bio: "É estudante de Ciência da Computação com forte interesse em Data Science e Machine Learning. Possui experiência prática com análise de dados utilizando Python e é entusiasta de tecnologias open-source",
-                social: {
-                    github: "https://github.com/valentinaslacerda",
-                },
-                picture: "/imagens-minicursos/valentinaSilva.jpeg"
-            },
-            {
-                name: "Mateus Lanuce Lourenço Pereira",
-                bio: "Estudante de Ciência da Computação na Ufersa e atua como Pesquisador Junior no LAIS/UFRN, onde se dedica a projetos que impactam positivamente a saúde pública no Brasil. Tem habilidades avançadas em Javascript, Typescript, HTML5, CSS, React.js, Vue.js e Django Templates, com foco em acessibilidade e SEO",
-                social: {
-                    github: "https://github.com/mateus-lanuce",
-                    linkedin: "https://www.linkedin.com/in/mateus-lanuce/"
-                },
-                picture: "/imagens-minicursos/mateusLanuce.jpg"
-            }
-        ],
-        localizacao: "Lab 6"
-    },
-    {
-        index: 6,
-        title: "Introdução a automação em Python com PyAutoGUI",
-        alternateTitle: "Automação em Python",
-        picture: "/imagens-minicursos/pyautogui.png",
-        alternatePicture: "/imagens-minicursos/pyautogui2.jpg",
-        date: "05/06",
-        tags: [
-            {
-                name: "linguagem",
-                color: "bg-green-300",
-                index: 0
-            },
-            {
-                name: "automação",
-                color: "bg-emerald-300",
-                index: 1
-            }
-        ],
-        prerequesites: [
-            "Noções básicas de lógica de programação"
-        ],
-        description: "Uma apresentação das principais funcionalidades da PyautoGUI, uma biblioteca de automação em Python capaz de procurar imagens, controlar inputs do mouse e teclado.",
-        palestrantes: [
-            {
-                name: "Vinícius Gabriel Lima de Oliveira",
-                bio: "Estudante de Ciência da Computação do 5º período",
-                social: {
-                    github: "https://github.com/FolkBlues7"
-                },
-                picture: "/imagens-minicursos/viniciusGabriel.jpg"
-            },
-            {
-                name: "Artur Segantini",
-                bio: "Entusiasta de worldbuilding e amante de programação orientada a objetos",
-                social: {
-                    github: "https://github.com/ARTSALT",
-                    instagram: "https://www.instagram.com/artur_sals/"
-                },
-                picture: "/imagens-minicursos/arturSegantini.png"
-            }
-        ],
-        localizacao: "Lab 5"
-    },
-    {
-        index: 7,
-        title: "Introdução a Robótica com Lego EV3",
-        alternateTitle: "Conceitos iniciais de robótica e programação com Lego EV3 Scratch.",
-        picture: "/imagens-minicursos/lego.png",
-        alternatePicture: "/imagens-minicursos/lego2.png",
-        date: "06/06",
-        tags: [
-            {
-                name: "iniciante",
-                color: "bg-yellow-300",
-                index: 0
-            },
-            {
-                name: "robótica",
-                color: "bg-lime-300",
-                index: 1
-            }
-        ],
-        prerequesites: [
-            "Noções básicas de programação (não obrigatório)",
-            "Noções básicas de lógica (não obrigatório)"
-        ],
-        description: "O objetivo do minicurso é oferecer uma base teórica simples sobre robótica, ao mesmo tempo que se oferecem desafios práticos de montagem e programação utilizando o kit de robótica educacional Lego Mindstorms EV3. Ao final do minicurso, o ouvinte aprenderá a usar o software de programação EV3 Classroom, assim como desenvolverá noções de montagem e lógica de programação.",
-        palestrantes: [
-            {
-                name: "João Lucas Galdino Duarte",
-                bio: "Sênior Lego Scratch",
-                social: {
-                    github: "https://github.com/G4ldin0",
-                    instagram: "https://www.instagram.com/g4ld1n0_/",
-                    linkedin: "www.linkedin.com/in/joão-lucas-0421481b0"
-                },
-                picture: "/imagens-minicursos/joaoLucas.jpeg"
-            },
-            {
-                name: "Brenno Kevyn Maia de Souza",
-                bio: "A melhor maneira de prever o futuro é inventá-lo",
-                social: {
-                    github: "https://github.com/BrennoKM",
-                    linkedin: "https://www.linkedin.com/in/brenno-kevyn?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                },
-                picture: "/imagens-minicursos/brenoKevyn.jpg"
+                picture: ""
             }
         ],
         localizacao: "Lab 4"
     },
     {
-        index: 8,
-        title: "Introdução a Linguagem R",
-        alternateTitle: "Análise de dados com R",
-        picture: "/imagens-minicursos/r.png",
-        alternatePicture: "/imagens-minicursos/r2.jpg",
-        date: "05/06",
-        tags: [
-            {
-                name: "linguagem",
-                color: "bg-green-300",
-                index: 0
-            },
-            {
-                name: "análise de dados",
-                color: "bg-fuchsia-300",
-                index: 1
-            }
-        ],
-        prerequesites: [
-            "Conhecimento básico em programação (não obrigatório)",
-            "Conhecimento básico em estatística (não obrigatório)"
-        ],
-        description: "O Minicurso de Introdução à Linguagem R é uma oportunidade empolgante de mergulhar no mundo da análise de dados e estatísticas usando uma das linguagens de programação mais poderosas e populares para ciência de dados.Este curso introdutório foi projetado para atender tanto a iniciantes quanto a pessoas com alguma experiência em programação. Durante o minicurso, os participantes irão aprender os fundamentos da linguagem R, incluindo estruturas de dados, operações básicas, manipulação de dados e visualização. Além disso, serão introduzidos aos pacotes e bibliotecas mais úteis para análise de dados, como o ggplot2 para visualização e o dplyr para manipulação de dados.",
-        palestrantes: [
-            {
-                name: "Joas Gabriel Barros de Sousa",
-                bio: "Aluno do 3º período de Ciência da Computação",
-                social: {
-                    github: "https://github.com/joas-barros"
-                },
-                picture: "/imagens-minicursos/joasGabriel.jpg"
-            },
-            {
-                name: "Lucas Silva de Souza",
-                bio: "Aluno do 3º período de Ciência da Computação",
-                social: {
-                    github: "https://github.com/Lucassilv7"
-                },
-                picture: "/imagens-minicursos/lucasSilva.png"
-            }
-        ],
-        localizacao: "Lab 3"
-    },
-    {
-        index: 9,
-        title: "Introdução a React e TailwindCSS",
-        alternateTitle: "Desenvolvimento de interfaces web com React em typescript com TailwindCSS",
-        picture: "/imagens-minicursos/react.jpg",
-        alternatePicture: "/imagens-minicursos/react2.jpg",
-        date: "06/06",
+        index: 3,
+        title: "Ruby on Rails na Prática: Construindo Aplicações Web do Zero",
+        alternateTitle: "Ruby on Rails na Prática: Construindo Aplicações Web do Zero",
+        picture: "/imagens-minicursos/rubyOnRails.png",
+        alternatePicture: "/imagens-minicursos/rubyOnRails2.jpg",
+        date: "23/04",
         tags: [
             {
                 name: "framework",
@@ -417,73 +127,175 @@ const minicursos: Minicurso[] = [
                 index: 0
             },
             {
-                name: "front-end",
-                color: "bg-indigo-300",
-                index: 1
-            },
-            {
                 name: "web",
                 color: "bg-blue-300",
-                index: 2
+                index: 1
             }
         ],
-        description: "O minicurso de introdução ao React e TailwindCSS tem como objetivo apresentar os conceitos básicos de desenvolvimento de interfaces web com React em Typescript e TailwindCSS. Serão abordados conceitos como componentização, estado, props, hooks, e estilização com TailwindCSS. Ao final do minicurso, os participantes terão o conehcimento necessário para desenvolver aplicações web modernas e responsivas nas tecnologias mais utilizadas no mercado de trabalho atualmente.",
+        description: "Quer aprender a desenvolver aplicações web modernas e produtivas? Neste minicurso introdutório, você será guiado pelos primeiros passos no Ruby on Rails, o framework que revolucionou o desenvolvimento web com sua abordagem ágil e elegante. Durante a aula, exploraremos desde os fundamentos básicos da linguagem Ruby até a construção de uma aplicação funcional utilizando Rails, passando por modelos, controladores, rotas e views. \nAlém disso, abordaremos conceitos essenciais como MVC (Model-View-Controller), migrações de banco de dados e CRUD (Create, Read, Update, Delete), garantindo que você saia do minicurso com um sólido conhecimento para dar continuidade no desenvolvimento de suas próprias aplicações. Se você busca uma introdução prática e objetiva ao Ruby on Rails, este é o minicurso ideal para você!",
         prerequesites: [
             "Conhecimento básico em programação",
-            "Conhecimento básico em HTML e CSS",
-            "Conhecimento básico em JavaScript (não obrigatório)"
+            "Noções de HTML e CSS",
+            "Experiência prévia com linguagem de programação (não obrigatório)"
         ],
         palestrantes: [
             {
-                name: "Pedro Figueira Bôa-Viagem",
-                bio: "Estudante do 5º período Ciência da Computação e desenvolvedor Front-End. Tenho desenvolvido com React, Next.js, TypeScript, TailwindCSS e Node.js. Atualmente bolsista da EPC e Diretor Presidente da Empresa Júnior de Computação da Ufersa, Lótus Tech",
+                //TODO Mudar tudo
+                name: "Cláudio Trindade",
+                bio: "",
                 social: {
-                    github: "https://github.com/PepeuFBV"
+
                 },
-                picture: "/imagens-minicursos/pedroFigueira.png"
-            },
-            {
-                name: "Lucas Gabriel",
-                bio: "Desenvolvedor web e mobile com 3 anos de experiência na área. Hoje trabalho diariamente com Nextjs (React), Flutter, Go e SQL. Estou sempre em dia com novas tecnologias e meios de inovar a área da programação",
-                social: {
-                    github: "http://github.com/lucasmelodev1"
-                },
-                picture: "/imagens-minicursos/lucasGabriel.png"
+                picture: ""
             }
         ],
-        localizacao: "Lab 5"
+        localizacao: "Lab 6"
     },
     {
-        index: 10,
-        title: "Introdução a Git e Github",
-        alternateTitle: "Versionamento e colaboração de código com Git e Github",
-        picture: "/imagens-minicursos/github.png",
-        alternatePicture: "/imagens-minicursos/github2.png",
-        date: "05/06",
+        index: 4,
+        title: "Programação em Kotlin",
+        alternateTitle: "Introdução a Kotlin",
+        picture: "/imagens-minicursos/kotlin.png",
+        alternatePicture: "/imagens-minicursos/kotlin2.png",
+        date: "23/04",
+        tags: [
+            {
+                name: "linguagem",
+                color: "bg-green-300",
+                index: 0
+            },
+            {
+                name: "iniciante",
+                color: "bg-yellow-300",
+                index: 1
+            }
+        ],
+        description: "Este mini curso introdutório aborda os fundamentos da linguagem Kotlin, destacando sua versatilidade e vantagens. Os participantes aprenderão a configurar o ambiente de desenvolvimento, manipular entrada e saída de dados, utilizar tipos básicos e operadores, além de implementar estruturas de controle, laços de repetição, arrays e funções. Ideal para quem deseja iniciar na programação com uma linguagem moderna e poderosa.", 
+        prerequesites: [
+            "Conhecimento básico em lógica de programação"
+        ],
+        palestrantes: [
+            {
+                name: "Paulo Henrique Lopes Silva",
+                bio: "",
+                social: {
+                },
+                picture: ""
+            },
+            {
+                //TODO Mudar tudo
+                name: "Breno Klywer Olegario de Moura",
+                bio: "",
+                social: {
+                },
+                picture: ""
+            }
+        ],
+        localizacao: "Lab 7"
+    },
+    {
+        index: 5,
+        title: "Introdução ao desenvolvimento de jogos com a Godot Engine 4s",
+        alternateTitle: "Criando Jogos na Godot Engine 4: Um Guia Para Iniciantes",
+        picture: "/imagens-minicursos/godot.jpg",
+        alternatePicture: "/imagens-minicursos/godot2.jpg",
+        date: "24/04",
+        tags: [
+            {
+                name: "jogos",
+                color: "bg-purple-300",
+                index: 0
+            }
+        ],
+        prerequesites: [
+            "Conhecimento básico em programação"
+        ],
+        description: "Neste mini curso daremos o pontapé inicial para o mundo dos jogos digitais com a Godot Engine, o motor de jogos open source mais poderoso do mercado. Abordaremos a interface, programação e conceitos de projeto como Orientação a Objetos e Composição de maneira prática, onde o aluno fará o desenvolvimento guiado do mini game Endless Runner “Filó: The Great Escapade” com o intuito de gerar familiaridade para que o mesmo possa usar tais conhecimentos para seus próprios jogos.",
+        palestrantes: [
+            {
+                // TODO Mudar tudo
+                name: "João Lucas Galdino Duarte",
+                bio: "",
+                social: {
+                },
+                picture: ""
+            },
+            {
+                // TODO Mudar tudo
+                name: "Wesley Felipe Xavier Rocha",
+                bio: "",
+                social: {
+                },
+                picture: ""
+            }
+        ],
+        localizacao: "Lab 2"
+    },
+    {
+        index: 6,
+        title: "Programação Paralela em Python",
+        alternateTitle: "Programação Paralela em Python",
+        picture: "/imagens-minicursos/python.jpg",
+        alternatePicture: "/imagens-minicursos/python2.jpg",
+        date: "24/04",
+        tags: [
+            {
+                name: "linguagem",
+                color: "bg-green-300",
+                index: 0
+            }
+        ],
+        description: "Este minicurso apresenta os fundamentos da programação paralela em Python, com foco no uso de threads para melhorar o desempenho de aplicações. Os participantes aprenderão a caracterizar e motivar o uso de threads, entender seu ciclo de vida e como a Python Virtual Machine (PVM) gerencia sua execução. Serão abordados tópicos como criação e destruição de threads, tipos de threads, concorrência, sincronização e técnicas de exclusão mútua para evitar condições de corrida.",
+        prerequesites: [
+            "Conhecimento básico em Python",
+            "Noções básicas de lógica de programação"
+        ],
+        palestrantes: [
+            {
+                //TODO Mudar tudo
+                name: "Paulo Henrique Lopes Silva",
+                bio: "",
+                social: {
+                },
+                picture: "/imagens-minicursos/viniciusGabriel.jpg"
+            },
+            {
+                //TODO Mudar tudo
+                name: "Afonso Simão de Góis Neto",
+                bio: "",
+                social: {
+                },
+                picture: "/imagens-minicursos/arturSegantini.png"
+            }
+        ],
+        localizacao: "Lab 7"
+    },
+    {
+        index: 7,
+        title: "Avaliação de Design de Interfaces",
+        alternateTitle: "Avaliação de Design de Interfaces",
+        picture: "/imagens-minicursos/ui.jpg",
+        alternatePicture: "/imagens-minicursos/ui2.jpg",
+        date: "24/04",
         tags: [
             {
                 name: "iniciante",
                 color: "bg-yellow-300",
                 index: 0
-            },
-            {
-                name: "ferramenta",
-                color: "bg-red-300",
-                index: 1
             }
         ],
-        description: "Neste minicurso, você será introduzido ao mundo do controle de versão utilizando Git e GitHub. Git é uma poderosa ferramenta de controle de versão distribuído, essencial para o desenvolvimento moderno de software, permitindo que desenvolvedores colaborem de forma eficaz, rastreiem alterações no código e revertam para versões anteriores se necessário. GitHub, por sua vez, é uma plataforma baseada na web que utiliza Git e facilita o gerenciamento de repositórios, colaboração em projetos de código aberto e integração contínua.",
+        description: "",
         palestrantes: [
             {
-                name: "Clara Lopes",
-                bio: "Aluna do 3º período de Ciência da Computação",
+                //TODO Mudar tudo
+                name: "Kátia Cilene da Silva Moura",
+                bio: "",
                 social: {
-                    github: "https://github.com/ClaraLeticia"
                 },
-                picture: "https://avatars.githubusercontent.com/u/86624111?v=4"
+                picture: "/imagens-minicursos/joaoLucas.jpeg"
             }
         ],
-        localizacao: "Lab 6"
+        localizacao: "Lab 4"
     }
 ];
 
