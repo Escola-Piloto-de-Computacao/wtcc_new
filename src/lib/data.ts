@@ -107,13 +107,13 @@ const minicursos: Minicurso[] = [
         description: "Neste minicurso será ofertado aprendizado acerca da ferramenta Figma para criação de interfaces web e mobile. Iremos aprender a como utilizar a ferramenta, as boas práticas de uso, criação de telas de baixa e alta fidelidade, construir a interface de um site de streaming e a utilização da ferramenta no mercado de trabalho.",
         palestrantes: [
             {
-                // TODO Mudar tudo
                 name: "Vinicius Salviano de Macedo",
-                bio: "",
+                bio: "Poder não é determinado por seu tamanho, mas pelo tamanho de seu coração e dos seus sonhos!",
                 social: {
-                    
+                    github: "https://github.com/ViniciusSalvian",
+                    instagram: "https://www.instagram.com/vini_salvian/"
                 },
-                picture: ""
+                picture: "/imagens-minicursos/vinicius.jpg"
             }
         ],
         localizacao: "Lab 4"
@@ -182,18 +182,17 @@ const minicursos: Minicurso[] = [
         palestrantes: [
             {
                 name: "Paulo Henrique Lopes Silva",
-                bio: "",
-                social: {
-                },
-                picture: ""
+                bio: "Professor do Departamento de Computação da UFERSA/Mossoró. Áreas de atuação: Desenvolvimento de Software, Sistemas Distribuídos e Segurança da Informação.",
+                social: {},
+                picture: "/imagens-minicursos/paulo.jpg"
             },
             {
-                //TODO Mudar tudo
                 name: "Breno Klywer Olegario de Moura",
-                bio: "",
+                bio: "Estudante de Computação apaixonado por clean code",
                 social: {
+                    github: "https://github.com/Brenokly"
                 },
-                picture: ""
+                picture: "/imagens-minicursos/breno.jpg"
             }
         ],
         localizacao: "Lab 7"
@@ -223,20 +222,23 @@ const minicursos: Minicurso[] = [
         description: "Neste mini curso daremos o pontapé inicial para o mundo dos jogos digitais com a Godot Engine, o motor de jogos open source mais poderoso do mercado. Abordaremos a interface, programação e conceitos de projeto como Orientação a Objetos e Composição de maneira prática, onde o aluno fará o desenvolvimento guiado do mini game Endless Runner “Filó: The Great Escapade” com o intuito de gerar familiaridade para que o mesmo possa usar tais conhecimentos para seus próprios jogos.",
         palestrantes: [
             {
-                // TODO Mudar tudo
                 name: "João Lucas Galdino Duarte",
-                bio: "",
+                bio: "Sênior Lego Scratch",
                 social: {
+                    github: "https://github.com/G4ldin0",
+                    instagram: "https://www.instagram.com/g4ld1n0_/",
+                    linkedin: "https://www.linkedin.com/in/jo%C3%A3o-lucas-0421481b0/"
                 },
-                picture: ""
+                picture: "/imagens-minicursos/joao.jpg"
             },
             {
-                // TODO Mudar tudo
                 name: "Wesley Felipe Xavier Rocha",
-                bio: "",
+                bio: "Acho que dá pra rodar DOOM aqui.",
                 social: {
+                    github: "https://github.com/X4vierWhes",
+                    instagram: "https://www.instagram.com/whesxavi?igsh=MXJib3FvNXZ0MmVzdA=="
                 },
-                picture: ""
+                picture: "/imagens-minicursos/wesley.jpeg"
             }
         ],
         localizacao: "Lab 2"
@@ -262,12 +264,11 @@ const minicursos: Minicurso[] = [
         ],
         palestrantes: [
             {
-                //TODO Mudar tudo
                 name: "Paulo Henrique Lopes Silva",
-                bio: "",
+                bio: "Professor do Departamento de Computação da UFERSA/Mossoró. Áreas de atuação: Desenvolvimento de Software, Sistemas Distribuídos e Segurança da Informação.",
                 social: {
                 },
-                picture: "/imagens-minicursos/viniciusGabriel.jpg"
+                picture: "/imagens-minicursos/paulo.jpg"
             },
             {
                 //TODO Mudar tudo
@@ -312,9 +313,8 @@ const minicursos: Minicurso[] = [
 const palestranteSelecionado: Palestrante = {
     name: "Eduardo Guerra",
     // TODO Traduzir e resumir
-    bio: "Eduardo Guerra is a Researcher at the Free University of Bozen-Bolzano, Italy. He worked for seven years at the Spacial Institute for Space Research (INPE) in Brazil, reaching the senior researcher level. Before that, he also acted as a teacher at the Instituto Tecnologico de Aeronáutica (ITA), which is known as one of the best engineering schools in the country. The focus of Eduardo Guerra’s research can be defined as “find better ways to develop software”, which includes patterns, programming approaches, and processes to be used by the development team. He considers the principles of Agile Software Development the core guidance of his research since they aim to improve software quality, optimize development time, and increase software adaptability. Test-driven development (TDD) was the core of several works that focused on test code refactoring, application of TDD for specific kinds of software, and teaching and evaluating the technique. Also, in the scope of programming techniques, metadata, and code annotations were the focus of several works that aimed to study them as an alternative to make the software more adaptable and improve the code quality.",
+    bio: "Eduardo Guerra é pesquisador na Universidade Livre de Bozen-Bolzano, na Itália. Durante sete anos, trabalhou no Instituto Nacional de Pesquisas Espaciais (INPE) no Brasil, onde alcançou o nível de pesquisador sênior. Antes disso, também atuou como professor no Instituto Tecnológico de Aeronáutica (ITA), reconhecido como uma das melhores escolas de engenharia do país. O foco da pesquisa de Eduardo Guerra pode ser descrito como a busca por formas mais eficientes de desenvolver software. Isso envolve padrões, abordagens de programação e processos voltados para otimizar o trabalho das equipes de desenvolvimento. Ele considera os princípios da metodologia ágil como a base de sua pesquisa, pois visam aprimorar a qualidade do software, reduzir o tempo de desenvolvimento e aumentar sua adaptabilidade. O desenvolvimento orientado a testes (TDD) foi o tema central de diversos de seus trabalhos, incluindo a refatoração de código de teste, a aplicação do TDD para tipos específicos de software e a análise do ensino e da avaliação dessa técnica. Além disso, em suas investigações sobre técnicas de programação, metadados e anotações de código foram estudados como alternativas para tornar o software mais adaptável e aprimorar a qualidade do código.",
     social: {
-        github: "test"
     },
     picture: ""
 };
@@ -351,7 +351,7 @@ const FAQuestions: Faq = {
         },
         {
             key: 5,
-            question: 'Onde fica o LCC - Laboratório de Ciência da Computação?',
+            question: 'Onde fica o LCC - Laboratório de Ciênca da Computação?',
             answer: 'O LCC está localizado no leste da UFERSA, próximo ao Expocenter.'
         },
         {
@@ -413,19 +413,17 @@ const cronograma: Atividade[] = [
         hora: "10:45 - 11:15",
         titulo: "Startup - Uma proposta profissional no século XXI",
         descricao: "Era da mudança x Mundaça de era, Mentalidade Fixa x Mentalidade Aberta, Velha Economia x Nova Economia, Empreendedor x Pesquisador, Emprego x Profissão, Empresário x Empresidiário, Empreendor x Empreende a Dor, Desafio só presta grande, Estudar, validar e fazer, E a IA? E Kiko?",
-        localizacao: "Auditório da PROEC",
-        pageExists: true,
-        page: "/eventos/minicursos"
+        localizacao: "Auditório da PROEC"
     },
     {
         index: 5,
         dia: 1,
         hora: "11:15 - 11:45",
-        titulo: "Apresentação do Hackaton e maratona de programação",
+        titulo: "Apresentação do Hackaton e Maratona de Programação",
         descricao: "Abertura das inscrições para o Hackathon e a Maratona de Programação, detalhando cada um dos eventos.",
         localizacao: "Auditório da PROEC",
         pageExists: true,
-        page: "/eventos/palestra"
+        page: "/eventos/hackaton"
     },
     {
         index: 6,
@@ -433,7 +431,7 @@ const cronograma: Atividade[] = [
         hora: "14:00 - 18:00",
         titulo: "Minicursos",
         descricao: "Minicursos oferecidos por alunos e professores do curso de Ciência da Computação.",
-        localizacao: "LCC - Laboratório de Ciência da Computação",
+        localizacao: "LCC",
         pageExists: true,
         page: "/eventos/minicursos"
     },
@@ -443,13 +441,13 @@ const cronograma: Atividade[] = [
         hora: "16:00 - 16:20",
         titulo: "Cofee Break",
         descricao: "",
-        localizacao: "LCC - Laboratório de Ciência da Computação",
+        localizacao: "LCC",
     },
     {
         index: 8,
         dia: 2,
         hora: "08:00 - 09:00",
-        titulo: "Apresentação do PpgCC",
+        titulo: "*Apresentação do PpgCC",
         descricao: "Introdução do que é e como funciona o programa de pós-graduação de ciência da computação.",
         localizacao: "Auditório da PROEC",
     },
@@ -473,9 +471,9 @@ const cronograma: Atividade[] = [
         index: 11,
         dia: 2,
         hora: "08:00 - 12:00",
-        titulo: "Maratona de Programação",
+        titulo: "*Maratona de Programação",
         descricao: "Maratona de programação com alunos do curso de Ciência da Computação.",
-        localizacao: "LCC - Laboratório de Ciência da Computação",
+        localizacao: "LCC",
         pageExists: true,
         page: "/eventos/maratona-programacao"
     },
@@ -485,7 +483,7 @@ const cronograma: Atividade[] = [
         hora: "14:00 - 18:00",
         titulo: "Minicursos",
         descricao: "Minicursos oferecidos por alunos e professores do curso de Ciência da Computação.",
-        localizacao: "LCC - Laboratório de Ciência da Computação",
+        localizacao: "LCC",
         pageExists: true,
         page: "/eventos/minicursos"
     },
@@ -495,7 +493,7 @@ const cronograma: Atividade[] = [
         hora: "16:00 - 16:20",
         titulo: "Cofee Break",
         descricao: "",
-        localizacao: "LCC - Laboratório de Ciência da Computação"
+        localizacao: "LCC"
     },
     {
         index: 14,
@@ -535,7 +533,7 @@ const cronograma: Atividade[] = [
         hora: "14:00 - 18:00",
         titulo: "Apresentação de Soluções do Hackaton",
         descricao: "Apresentação das soluções do hackaton e avaliação pela banca de jurados.",
-        localizacao: "LCC - Laboratório de Ciência da Computação",
+        localizacao: "LCC"
     },
     {
         index: 19,
@@ -543,7 +541,7 @@ const cronograma: Atividade[] = [
         hora: "16:00 - 16:20",
         titulo: "Cofee Break",
         descricao: "",
-        localizacao: "LCC - Laboratório de Ciência da Computação"
+        localizacao: "LCC"
     },
     {
         index: 20,
@@ -551,7 +549,7 @@ const cronograma: Atividade[] = [
         hora: "18:00",
         titulo: "Anuncio dos resultados do Hackaton",
         descricao: "Anuncio dos resultados do hackaton e premiação dos vencedores.",
-        localizacao: "LCC - Laboratório de Ciência da Computação"
+        localizacao: "LCC"
     }
 ];
 
