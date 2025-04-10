@@ -38,7 +38,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/arturSegantini.png"
             },
             {
-                name: "William Diniza",
+                name: "William Praxedes",
                 bio: "Aluno do último período de Ciência da Computação, gosto de resolver problemas com soluções criativas.",
                 social: {
                     instagram: "https://www.instagram.com/william.praxedes/"
