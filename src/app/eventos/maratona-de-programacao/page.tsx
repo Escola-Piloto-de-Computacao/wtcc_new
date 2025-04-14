@@ -30,7 +30,7 @@ export default function Maratona() {
         <div className="pb-16 lg:mb-16 mx-0 md:mx-16 lg:mx-24 xl:mx-36 flex flex-col xl:grid xl:grid-cols-12 gap-8 justify-center">
             <div className="order-last xl:order-1 col-span-7 flex flex-col gap-6">
                 <div className="flex flex-col items-center">
-                    <motion.p initial="hidden" animate="visible" variants={uppV3} className="italic font-light text-sm ">07/06 - Lab 4 LCC</motion.p>
+                    <motion.p initial="hidden" animate="visible" variants={uppV3} className="italic font-light text-sm ">25/04 - Lab 4 LCC</motion.p>
                     <motion.h1 initial="hidden" animate="visible" variants={appearV} className="text-4xl text-center font-mono mb-2">Maratona de Programação</motion.h1>
                 </div>
                 <div className="flex flex-col gap-2 h-full">

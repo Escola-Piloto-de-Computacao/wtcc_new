@@ -14,7 +14,7 @@ export default function MesaRedondaPage() {
         <div className="flex flex-col items-center gap-6 mb-24 lg:mb-16">
             <div className="w-full flex flex-col items-center text-center mb-1">
                 <div className="xsm:w-[66vw] sm:w-[45vw] md:w-[37vw] lg:w-[23vw] xl:w[19vw]">
-                    <motion.p initial="hidden" animate="visible" variants={uppV} className="text-base font-light">Auditório da PROEC - 06/06 - 10:30</motion.p>
+                    <motion.p initial="hidden" animate="visible" variants={uppV} className="text-base font-light">Auditório da PROEC - 24/04 - 10:30</motion.p>
                     <motion.h1 initial="hidden" animate="visible" variants={appearV} className="w-full text-4xl font-light border-b-2 border-current pb-1">Mesa Redonda</motion.h1>
                 </div>
                 <motion.h2 initial="hidden" animate="visible" variants={downV3} className="pt-1">Perspectiva sobre o futuro do mercado de trabalho</motion.h2>

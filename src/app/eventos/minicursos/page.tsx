@@ -42,16 +42,16 @@ export default function Minicursos() {
                 </div>
                 <div className="flex gap-10">
                     <Button
-                        onClick={() => { handleSelectedButtonChange("05/06") }}
+                        onClick={() => { handleSelectedButtonChange("23/04") }}
                         variant="ghost"
-                        className={`text-lg ${date === "05/06" ? "bg-gray-200" : ""}`}>
-                        05/06
+                        className={`text-lg ${date === "23/04" ? "bg-gray-200" : ""}`}>
+                        23/04
                     </Button>
                     <Button
-                        onClick={() => { handleSelectedButtonChange("06/06") }}
+                        onClick={() => { handleSelectedButtonChange("24/04") }}
                         variant="ghost"
-                        className={`text-lg ${date === "06/06" ? "bg-gray-200" : ""}`}>
-                        06/06
+                        className={`text-lg ${date === "24/04" ? "bg-gray-200" : ""}`}>
+                        24/04
                     </Button>
                     <Button
                         onClick={() => { handleSelectedButtonChange("todos") }}

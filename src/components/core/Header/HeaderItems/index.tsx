@@ -54,19 +54,19 @@ const HeaderItems = () => {
                                     </a>
                                 </NavigationMenuLink>
                             </li>
-                            <ListItem href="/eventos/palestra" title="/palestra">
+                            <ListItem href="/eventos/palestra" title="/palestra" className="hover:bg-[#FFA28D]">
                                 Ministrada por ex-aluno da Ufersa sobre o mercado de trabalho.
                             </ListItem>
-                            <ListItem href="/eventos/maratona-de-programacao" title="/maratona_de_programação">
+                            <ListItem href="/eventos/maratona-de-programacao" title="/maratona_de_programação" className="hover:bg-[#FFA28D]">
                                 Competição de programação para alunos de todos os niveis.
                             </ListItem>
-                            <ListItem href="/eventos/mostra-cientifica" title="/mostra_científica">
+                            <ListItem href="/eventos/mostra-cientifica" title="/mostra_científica" className="hover:bg-[#FFA28D]">
                                 Apresentação de projetos desenvolvidos no departamento.
                             </ListItem>
-                            <ListItem href="/eventos/hackathon" title="/hackathon">
+                            <ListItem href="/eventos/hackathon" title="/hackathon" className="hover:bg-[#FFA28D]">
                                 Competição em grupo voltada a problem solvers.
                             </ListItem>
-                            <ListItem href="/eventos/mesa-redonda" title="/mesa_redonda">
+                            <ListItem href="/eventos/mesa-redonda" title="/mesa_redonda" className="hover:bg-[#FFA28D]">
                                 Discussão sobre tema: <span className="italic">perspectiva sobre o futuro do mercado de trabalho</span>
                             </ListItem>
                         </ul>
