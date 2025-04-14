@@ -5,7 +5,6 @@ const minicursos: Minicurso[] = [
         index: 0,
         title: "Introdução ao Web Básico",
         alternateTitle: "Aprendendo HTML, CSS e JavaScript do básico e além",
-        // TODO Mudar as imagens
         picture: "/imagens-minicursos/htmlcssjavascript2.jpg",
         alternatePicture: "/imagens-minicursos/htmlcssjavascript.png",
         date: "24/04",
@@ -38,7 +37,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/arturSegantini.png"
             },
             {
-                name: "William Praxedes",
+                name: "William Diniz",
                 bio: "Aluno do último período de Ciência da Computação, gosto de resolver problemas com soluções criativas.",
                 social: {
                     instagram: "https://www.instagram.com/william.praxedes/"
@@ -145,13 +144,12 @@ const minicursos: Minicurso[] = [
         ],
         palestrantes: [
             {
-                //TODO Mudar tudo
                 name: "Cláudio Trindade",
-                bio: "",
+                bio: "Bacharel em Ciência da Computação pelo UFRN, Mestrando em Ciência da Computação pela UFERSA, Diretor Executivo de Tecnologia da Informação da Prefeitura Municipal de Mossoró e Sócio Diretor da Dunnas Tecnologia.",
                 social: {
-
+                    linkedin: "https://www.linkedin.com/in/cl%C3%A1udio-trindade-b52655117/"
                 },
-                picture: ""
+                picture: "/images-minicursos/claudio.jpeg"
             }
         ],
         localizacao: "Lab 6"
@@ -271,12 +269,12 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/paulo.jpg"
             },
             {
-                //TODO Mudar tudo
                 name: "Afonso Simão de Góis Neto",
-                bio: "",
+                bio: "O conhecimento não ocupa espaço, mas mexe com tudo ao redor",
                 social: {
+                    github: "https://github.com/Afonso017"
                 },
-                picture: "/imagens-minicursos/arturSegantini.png"
+                picture: "/imagens-minicursos/afonso.png"
             }
         ],
         localizacao: "Lab 7"
@@ -312,7 +310,6 @@ const minicursos: Minicurso[] = [
 
 const palestranteSelecionado: Palestrante = {
     name: "Eduardo Guerra",
-    // TODO Traduzir e resumir
     bio: "Eduardo Guerra é pesquisador na Universidade Livre de Bozen-Bolzano, na Itália. Durante sete anos, trabalhou no Instituto Nacional de Pesquisas Espaciais (INPE) no Brasil, onde alcançou o nível de pesquisador sênior. Antes disso, também atuou como professor no Instituto Tecnológico de Aeronáutica (ITA), reconhecido como uma das melhores escolas de engenharia do país. O foco da pesquisa de Eduardo Guerra pode ser descrito como a busca por formas mais eficientes de desenvolver software. Isso envolve padrões, abordagens de programação e processos voltados para otimizar o trabalho das equipes de desenvolvimento. Ele considera os princípios da metodologia ágil como a base de sua pesquisa, pois visam aprimorar a qualidade do software, reduzir o tempo de desenvolvimento e aumentar sua adaptabilidade. O desenvolvimento orientado a testes (TDD) foi o tema central de diversos de seus trabalhos, incluindo a refatoração de código de teste, a aplicação do TDD para tipos específicos de software e a análise do ensino e da avaliação dessa técnica. Além disso, em suas investigações sobre técnicas de programação, metadados e anotações de código foram estudados como alternativas para tornar o software mais adaptável e aprimorar a qualidade do código.",
     social: {
     },
