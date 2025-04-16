@@ -14,10 +14,10 @@ export default function MesaRedondaPage() {
         <div className="flex flex-col items-center gap-6 mb-24 lg:mb-16">
             <div className="w-full flex flex-col items-center text-center mb-1">
                 <div className="xsm:w-[66vw] sm:w-[45vw] md:w-[37vw] lg:w-[23vw] xl:w[19vw]">
-                    <motion.p initial="hidden" animate="visible" variants={uppV} className="text-base font-light">Auditório da PROEC - 24/04 - 10:30</motion.p>
+                    <motion.p initial="hidden" animate="visible" variants={uppV} className="text-base font-light">Não Acontecerá Esse Ano</motion.p>
                     <motion.h1 initial="hidden" animate="visible" variants={appearV} className="w-full text-4xl font-light border-b-2 border-current pb-1">Mesa Redonda</motion.h1>
                 </div>
-                <motion.h2 initial="hidden" animate="visible" variants={downV3} className="pt-1">Perspectiva sobre o futuro do mercado de trabalho</motion.h2>
+                <motion.h2 initial="hidden" animate="visible" variants={downV3} className="pt-1">Não Acontecerá Esse Ano</motion.h2>
             </div>
             <div className="flex flex-col gap-7 lg:gap-10 md:mx-4 lg:mx-0 xl:mx-20">
                 <motion.div initial="hidden" animate="visible" variants={appearV} className="flex flex-col lg:grid lg:grid-cols-12 lg:ml-20 xl:ml-10 2xl:ml-20 lg:mr-16 xl:mr-8 2xl:mr-16 lg:p-7 gap-12 lg:gap-6 bg-slate-200 p-2 rounded-lg lg:items-center">

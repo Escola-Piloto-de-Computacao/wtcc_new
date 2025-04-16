@@ -38,7 +38,7 @@ export default function Minicursos() {
             <div className="col-span-1 flex flex-col place-self-center gap-3">
                 <div className="text-center">
                     <h2 className="text-3xl">Minicursos</h2>
-                    <p className="text-base font-light">Laboratórios do LCC - 13:30</p>
+                    <p className="text-base font-light">Laboratórios do LCC - 14:00</p>
                 </div>
                 <div className="flex gap-10">
                     <Button

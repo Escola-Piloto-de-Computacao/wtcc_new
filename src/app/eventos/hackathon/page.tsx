@@ -59,7 +59,7 @@ export default function Hackathon() {
           variants={uppV4}
           className="font-light text-sm italic"
         >
-          25/04 - Multimídia LCC
+          Multimídia LCC - 25/04 - 14:00
         </motion.p>
         <motion.h1
           initial="hidden"
@@ -141,7 +141,7 @@ export default function Hackathon() {
                 <Button
                   type="primary"
                   className="w-full"
-                  href="/REGULAMENTO-HACKATHON-WTCC24.pdf"
+                  href="/Edital_X-Hackaton_2025.pdf"
                   target="_blank"
                 >
                   Regulamento
@@ -149,6 +149,7 @@ export default function Hackathon() {
                 <Button
                   type="primary"
                   className="w-full"
+                  // TODO Mudar formulário
                   href="https://forms.gle/wULc1rNUBbykYAXt5"
                   target="_blank"
                 >
@@ -177,6 +178,7 @@ export default function Hackathon() {
               <Button
                 type="primary"
                 className="mt-2 w-1/2 indent-0"
+                // TODO Mudar formulário
                 href="https://forms.gle/2snQ3vQudrmy19Y96"
                 target="_blank"
               >

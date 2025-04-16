@@ -28,8 +28,8 @@ const CalouroInfoCard: React.FC<CalouroInfoCardProps> = ({ className }) => {
                     <div className="flex flex-col gap-1">
                         <p>Devido a natureza do evento do evento do WTCC ser voltado aos calouros, a maioria dos minicursos tem viés introdutório, seguem algumas recomendações de minicursos aos calouros:</p>
                         <ul className="list-disc ml-10 flex flex-col gap-1">
-                            <li><span className="font-semibold">Dia 23</span>: <span className="italic">Figma</span>; <span className="italic">Kotlin</span></li>
-                            <li><span className="font-semibold">Dia 24</span>: <span className="italic">HTML, CSS e Javascript (Web Básico)</span>; <span className="italic">Avaliação de Design de Interfaces</span></li>
+                            <li><span className="font-semibold">Dia 23</span>: <span className="italic">HTML, CSS e Javascript (Web Básico)</span>; <span className="italic">Figma</span>; <span className="italic">Kotlin</span></li>
+                            <li><span className="font-semibold">Dia 24</span>: <span className="italic">Avaliação de Design de Interfaces</span></li>
                         </ul>
                     </div>
                     <div className="flex flex-col gap-1">

@@ -7,7 +7,7 @@ const minicursos: Minicurso[] = [
         alternateTitle: "Aprendendo HTML, CSS e JavaScript do básico e além",
         picture: "/imagens-minicursos/htmlcssjavascript2.jpg",
         alternatePicture: "/imagens-minicursos/htmlcssjavascript.png",
-        date: "24/04",
+        date: "23/04",
         tags: [
             {
                 name: "iniciante",
@@ -107,7 +107,7 @@ const minicursos: Minicurso[] = [
         palestrantes: [
             {
                 name: "Vinicius Salviano de Macedo",
-                bio: "Poder não é determinado por seu tamanho, mas pelo tamanho de seu coração e dos seus sonhos!",
+                bio: "Um quase ciêntista da computação, designer UI/UX na SolarZ e fisiculturista nas horas vagas",
                 social: {
                     github: "https://github.com/ViniciusSalvian",
                     instagram: "https://www.instagram.com/vini_salvian/"
@@ -123,7 +123,7 @@ const minicursos: Minicurso[] = [
         alternateTitle: "Ruby on Rails na Prática: Construindo Aplicações Web do Zero",
         picture: "/imagens-minicursos/rubyOnRails.png",
         alternatePicture: "/imagens-minicursos/rubyOnRails2.jpg",
-        date: "23/04",
+        date: "24/04",
         tags: [
             {
                 name: "framework",
@@ -293,7 +293,7 @@ const minicursos: Minicurso[] = [
                 index: 0
             }
         ],
-        description: "",
+        description: "O minicurso abordará interfaces e seus tipos. Ergonomia, usabilidade e a experiência do usuário no design de interfaces. Técnicas de inspeção, avaliação e testes de interfaces com o usuário.",
         palestrantes: [
             {
                 //TODO Mudar tudo
@@ -301,7 +301,7 @@ const minicursos: Minicurso[] = [
                 bio: "",
                 social: {
                 },
-                picture: "/imagens-minicursos/joaoLucas.jpeg"
+                picture: ""
             }
         ],
         localizacao: "Lab 4"
@@ -1031,7 +1031,7 @@ const terminalFiles: TerminalFile[] = [
     },
     {
         name: "regras.txt",
-        content: "Para participar, se é necessário formar um grupo com 3 alunos, sem restrições de período! Ambas a premiação e a competição serão no dia 25/04, das 8:00 às 11:00, no Lab 4 do prédio do LCC. Não é necessário saber alguma linguagem de programação específica, espera-se que o grupo decida usar de uma linguagem das mais conhecidas (ex. java, c++).",
+        content: "Para participar, se é necessário formar um grupo com 3 alunos, sem restrições de período! Ambas a premiação e a competição serão no dia 24/04, das 8:00 às 12:00, no Lab 4 do prédio do LCC. Não é necessário saber alguma linguagem de programação específica, espera-se que o grupo decida usar de uma linguagem das mais conhecidas (ex. java, c++).",
         address: "/"
     }
 ];
