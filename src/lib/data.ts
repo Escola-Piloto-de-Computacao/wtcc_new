@@ -946,10 +946,10 @@ const imagens: Imagem[] = [
 const patrocinadores: Patrocinador[] = [
     {
         index: 0,
-        nome: "Cacim",
-        alt: "Cacim Laboratório",
-        imagem: "/imagens-patrocinadores/cacim.png",
-        link: "https://cacim.com.br"
+        nome: "UFERSA",
+        alt: "Universidade Federal Rural do Semi-Árido",
+        imagem: "/imagens-patrocinadores/ufersa.png",
+        link: "https://ufersa.edu.br/"
     },
     {
         index: 1,
@@ -967,59 +967,101 @@ const patrocinadores: Patrocinador[] = [
     },
     {
         index: 3,
-        nome: "UFERSA",
-        alt: "Universidade Federal Rural do Semi-Árido",
-        imagem: "/imagens-patrocinadores/ufersa.png",
-        link: "https://ufersa.edu.br/"
-    },
-    {
-        index: 4,
-        nome: "PROGRAD",
-        alt: "Pró-Reitoria de Graduação",
-        imagem: "/imagens-patrocinadores/prograd.png",
-        link: "https://prograd.ufersa.edu.br/"
-    },
-    {
-        index: 5,
-        nome: "Computação Licenciatura",
-        alt: "Licenciatura Curso de Computação",
-        imagem: "/imagens-patrocinadores/compLicen.png",
-        link: "https://cc.ufersa.edu.br/"
-    },
-    {
-        index: 6,
-        nome: "CCEN",
-        alt: "Centro de Ciências Exatas e da Natureza",
-        imagem: "/imagens-patrocinadores/ccen.png",
-        link: "https://ccen.ufersa.edu.br/"
-    },
-    {
-        index: 7,
         nome: "Cimsal",
         alt: "Cimsal",
         imagem: "/imagens-patrocinadores/cimsal.png",
         link: "https://cimsal.com.br"
     },
     {
-        index: 8,
+        index: 4,
+        nome: "Cacim",
+        alt: "Cacim Laboratório",
+        imagem: "/imagens-patrocinadores/cacim.png",
+        link: "https://cacim.com.br"
+    },
+    {
+        index: 5,
+        nome: "CCEN",
+        alt: "Centro de Ciências Exatas e da Natureza",
+        imagem: "/imagens-patrocinadores/ccen.png",
+        link: "https://ccen.ufersa.edu.br/"
+    },
+    {
+        index: 6,
+        nome: "PROGRAD",
+        alt: "Pró-Reitoria de Graduação",
+        imagem: "/imagens-patrocinadores/prograd.png",
+        link: "https://prograd.ufersa.edu.br/"
+    },
+    {
+        index: 7,
         nome: "Apreciatte",
         alt: "Apreciatte",
         imagem: "/imagens-patrocinadores/apreciatte.png",
         link: "https://apreciatte.com.br"
     },
     {
-        index: 9,
+        index: 8,
         nome: "Casa Dos Pneus",
         alt: "Casa Dos Pneus",
         imagem: "/imagens-patrocinadores/casaDosPneus.png",
         link: "https://casadospneusmossoro.com.br/"
     },
     {
-        index: 10,
+        index: 9,
         nome: "smar",
         alt: "smar",
         imagem: "/imagens-patrocinadores/smar.png",
         link: "https://www.smar.com.br/pt"
+    },
+    {
+        index: 10,
+        nome: "uqvestir",
+        alt: "uqvestir",
+        imagem: "/imagens-patrocinadores/uqvestir.png",
+        link: "https://www.instagram.com/uqvestir?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    },
+    {
+        index: 11,
+        nome: "Sua_Sapataria",
+        alt: "Sua Sapataria",
+        imagem: "/imagens-patrocinadores/sapataria.png",
+        link: "https://www.instagram.com/suasapatariaa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    },
+    {
+        index: 12,
+        nome: "Beauty",
+        alt: "Beauty Isadora Maia",
+        imagem: "/imagens-patrocinadores/beauty.png",
+        link: "https://www.instagram.com/isadoramaiabeauty?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    },
+    {
+        index: 13,
+        nome: "Beachwear",
+        alt: "Morena Beachwear",
+        imagem: "/imagens-patrocinadores/beachwear.png",
+        link: "https://www.instagram.com/mmorenabeachwear_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    },
+    {
+        index: 14,
+        nome: "Nonato",
+        alt: "Nonato Atacarejo",
+        imagem: "/imagens-patrocinadores/nonato.png",
+        link: "https://www.nonatostore.com.br/loja"
+    },
+    {
+        index: 15,
+        nome: "JPatricio",
+        alt: "JPatricio Metais",
+        imagem: "/imagens-patrocinadores/jpatricio.png",
+        link: "https://jpatriciometais.com.br"
+    },
+    {
+        index: 16,
+        nome: "Idus",
+        alt: "Idus, Inteligência Industrial",
+        imagem: "/imagens-patrocinadores/idus.png",
+        link: "https://idus.com.br"
     }
 ];
 
