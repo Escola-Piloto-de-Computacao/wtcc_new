@@ -174,15 +174,6 @@ export default function Hackathon() {
                 grupo até a data estabelicida no regulamento. Abaixo está o
                 formulário para o envio:
               </p>
-              <Button
-                type="primary"
-                className="mt-2 w-1/2 indent-0"
-                // TODO Mudar formulário
-                href="https://forms.gle/2snQ3vQudrmy19Y96"
-                target="_blank"
-              >
-                Formulário de Envio
-              </Button>
             </motion.div>
           </TabsContent>
         </Tabs>
