@@ -127,7 +127,7 @@ export default function Hackathon() {
               <p>
                 A inscrição no evento deve ser realizada por{" "}
                 <span className="bg-yellow-300 px-[0.15rem]">
-                  grupos de 2-4 integrantes
+                  grupos de 3-5 integrantes
                 </span>
                 , todos sendo alunos do curso da Ciência da Computação. A
                 inscrição é gratuita e deve ser feita através do formulário
@@ -149,8 +149,7 @@ export default function Hackathon() {
                 <Button
                   type="primary"
                   className="w-full"
-                  // TODO Mudar formulário
-                  href="https://forms.gle/wULc1rNUBbykYAXt5"
+                  href="https://forms.gle/QW8fZBR56pWip2DHA"
                   target="_blank"
                 >
                   Formulário de Inscrição

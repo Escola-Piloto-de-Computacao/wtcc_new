@@ -59,7 +59,7 @@ export default function Maratona() {
                     </motion.ul>
                     <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-between md:mx-2">
                         <motion.div initial="hidden" animate="visible" variants={uppV3} className="w-1/2 md:w-1/3 mx-auto">
-                            <Button type="primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfNLma2Q_qFsypmcIUmi18MQXxWldoiobkFc3gPli4xJVBKTg/viewform?usp=sf_link" target="_blank" className="w-full text-sm md:text-base">Inscreva-se</Button>
+                            <Button type="primary" href="https://docs.google.com/forms/d/e/1FAIpQLScxk1-rJW5DlqQA_q4PKg3vyReqlW45AmzQzuESGqw_2ULKpA/viewform?usp=dialog" target="_blank" className="w-full text-sm md:text-base">Inscreva-se</Button>
                         </motion.div>
                         <div className="md:z-10 md:absolute bg-yellow-200 md:px-2 rounded-md w-[40%] md:w-auto mx-auto md:mx-0 text-center">
                             <Link href="/faq" legacyBehavior passHref>

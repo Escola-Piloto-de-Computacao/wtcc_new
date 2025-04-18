@@ -75,11 +75,10 @@ const minicursos: Minicurso[] = [
             {
                 // TODO mudar tudo
                 name: "Helcio Wagner da Silva",
-                bio: "",
+                bio: "Acho muito deselegante falar sobre si mesmo em tom exaltante",
                 social: {
-
                 },
-                picture: ""
+                picture: "/imagens-minicursos/helcio.jpg"
             }
         ],
         localizacao: "Lab 2"
@@ -149,7 +148,7 @@ const minicursos: Minicurso[] = [
                 social: {
                     linkedin: "https://www.linkedin.com/in/cl%C3%A1udio-trindade-b52655117/"
                 },
-                picture: "/images-minicursos/claudio.jpeg"
+                picture: "/imagens-minicursos/claudio.jpeg"
             }
         ],
         localizacao: "Lab 6"
@@ -301,7 +300,7 @@ const minicursos: Minicurso[] = [
                 bio: "",
                 social: {
                 },
-                picture: ""
+                picture: "/imagens-minicursos/katia.jpg"
             }
         ],
         localizacao: "Lab 4"

@@ -30,8 +30,8 @@ const HeaderItems = () => {
                         Eventos
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[550px] lg:grid-cols-[.75fr_1fr]">
-                            <li className="row-span-3">
+                        <div className="grid gap-3 p-6 md:w-[400px] lg:w-[550px] lg:grid-cols-2">
+                            <div className="pr-3">
                                 <NavigationMenuLink asChild>
                                     <a
                                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
@@ -53,23 +53,24 @@ const HeaderItems = () => {
                                         </p>
                                     </a>
                                 </NavigationMenuLink>
-                            </li>
-                            <ListItem href="/eventos/palestra" title="/palestra" className="hover:bg-[#FFA28D]">
-                                Ministrada por ex-aluno da Ufersa sobre o mercado de trabalho.
-                            </ListItem>
-                            <ListItem href="/eventos/maratona-de-programacao" title="/maratona_de_programação" className="hover:bg-[#FFA28D]">
-                                Competição de programação para alunos de todos os niveis.
-                            </ListItem>
-                            <ListItem href="/eventos/mostra-cientifica" title="/mostra_científica" className="hover:bg-[#FFA28D]">
-                                Apresentação de projetos desenvolvidos no departamento.
-                            </ListItem>
-                            <ListItem href="/eventos/hackathon" title="/hackathon" className="hover:bg-[#FFA28D]">
-                                Competição em grupo voltada a problem solvers.
-                            </ListItem>
-                            <ListItem href="/eventos/mesa-redonda" title="/mesa_redonda" className="hover:bg-[#FFA28D]">
-                                Discussão sobre tema: <span className="italic">perspectiva sobre o futuro do mercado de trabalho</span>
-                            </ListItem>
-                        </ul>
+                            </div>
+                            <div className="pl-3">
+                                <ul className="space-y-3">
+                                    <ListItem href="/eventos/palestra" title="/palestra" className="hover:bg-[#FFA28D]">
+                                        Ministrada por ex-aluno da Ufersa sobre o mercado de trabalho.
+                                    </ListItem>
+                                    <ListItem href="/eventos/maratona-de-programacao" title="/maratona_de_programação" className="hover:bg-[#FFA28D]">
+                                        Competição de programação para alunos de todos os niveis.
+                                    </ListItem>
+                                    <ListItem href="/eventos/mostra-cientifica" title="/mostra_científica" className="hover:bg-[#FFA28D]">
+                                        Apresentação de projetos desenvolvidos no departamento.
+                                    </ListItem>
+                                    <ListItem href="/eventos/hackathon" title="/hackathon" className="hover:bg-[#FFA28D]">
+                                        Competição em grupo voltada a problem solvers.
+                                    </ListItem>
+                                </ul>
+                            </div>
+                        </div>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
