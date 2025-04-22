@@ -1061,6 +1061,27 @@ const patrocinadores: Patrocinador[] = [
         alt: "Idus, Inteligência Industrial",
         imagem: "/imagens-patrocinadores/idus.png",
         link: "https://idus.com.br"
+    },
+    {
+        index: 17,
+        nome: "Marilux",
+        alt: "Marilux",
+        imagem: "/imagens-patrocinadores/marilux.png",
+        link: "https://www.marilux.com.br" 
+    },
+    {
+        index: 18,
+        nome: "Expofruit 2025",
+        alt: "Expofruit 2025",
+        imagem: "/imagens-patrocinadores/expofruit.png",
+        link: "https://www.expofruit.com.br"
+    },
+    {
+        index: 19,
+        nome: "COEX",
+        alt: "Comitê executivo de Horticultura dp RN",
+        imagem: "/imagens-patrocinadores/coex.png",
+        link: "https://www.coexrn.com.br"
     }
 ];
 
