@@ -563,6 +563,12 @@ const imagens: Imagem[] = [
         alt: "WTCC's passados"
     },
     {
+        index: 2,
+        src: "/imagens-galeria/3.jpeg",
+        descricao: "WTCC's passados",
+        alt: "WTCC's passados"
+    },
+    {
         index: 3,
         src: "/imagens-galeria/4.jpeg",
         descricao: "Coffee Break - WTCC's passados",
