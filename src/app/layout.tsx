@@ -62,7 +62,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${firaCode.variable}`}>
         <Hydration />
         <Header />
-        <main className="mt-32 mx-7 lg:mx-0">{children}</main>
+        <main className="m-0">{children}</main>
         <Toaster />
         <Footer />
       </body>

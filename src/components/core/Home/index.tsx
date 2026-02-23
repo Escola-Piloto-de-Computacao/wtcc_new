@@ -3,7 +3,8 @@
 import React, { useEffect } from 'react';
 
 import Patrocinadores from '@/components/core/Home/Patrocinadores';
-import { Titles, Images } from '@/components/core/Home/Titles';
+import {Text} from '@/components/core/Home/About';
+import Hero from '@/components/core/Home/Titles';
 import MapArea from '@/components/core/Home/MapArea';
 
 const MainArea = () => {
@@ -21,8 +22,8 @@ const MainArea = () => {
 
     return (
         <section className="lg:mt-3 lg:grid lg:grid-cols-12">
-            <Titles />
-            <Images />
+            <Hero/>
+            <Text/>
             <MapArea />
             <Patrocinadores />
         </section>
