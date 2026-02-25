@@ -51,7 +51,7 @@ export const Highlight: React.FC<HighlightProps> = ({
         delay: 0,
       }}
       className={cn(
-        `relative inline-block px-2 py-1 bg-yellow-300 dark:bg-yellow-500 rounded-md`,
+        `relative inline-block px-2 py-1 rounded-md`,
         className
       )}
     >

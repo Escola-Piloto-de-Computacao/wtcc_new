@@ -11,7 +11,7 @@ import { mesaRightV, mesaLeftV, appearV, uppV, downV3 } from '@/lib/motion-varia
 
 export default function MesaRedondaPage() {
     return (
-        <div className="flex flex-col items-center gap-6 mb-24 lg:mb-16">
+        <div className="pt-[125px] flex flex-col items-center gap-6 mb-24 lg:mb-16">
             <div className="w-full flex flex-col items-center text-center mb-1">
                 <div className="xsm:w-[66vw] sm:w-[45vw] md:w-[37vw] lg:w-[23vw] xl:w[19vw]">
                     <motion.p initial="hidden" animate="visible" variants={uppV} className="text-base font-light">Não Acontecerá Esse Ano</motion.p>

@@ -9,7 +9,7 @@ import { FAQuestions } from '@/lib/data';
 
 export default function Faq() {
     return (
-        <div className="mb-20 flex flex-col">
+        <div className="pt-[125px] px-5 mb-20 flex flex-col">
             <div className="mb-36">
                 <div className="text-center space-y-1">
                     <h1 className="text-4xl">FAQ</h1>

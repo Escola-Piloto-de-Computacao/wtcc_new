@@ -47,7 +47,7 @@ export default function Galeria() {
 
 
     return (
-        <div className="mb-20 flex flex-col items-center gap-3">
+        <div className="pt-[125px] mb-20 flex flex-col items-center gap-3">
             <h1 className="text-center text-4xl">Galeria</h1>
             <div className="mb-2">
                 <Pagination
