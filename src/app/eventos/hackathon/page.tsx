@@ -22,12 +22,12 @@ import {
 
 export default function Hackathon() {
   return (
-    <div className="pt-[125px] pb-24 lg:pb-[9.16rem] xl:pb-24 lg:mb-16 mx-5 md:mx-16 lg:mx-24 xl:mx-36 flex flex-col xl:flex-row gap-6 justify-center xsm:max-md:items-center">
+    <div className="pt-[125px] pb-24 lg:pb-[9.16rem] xl:pb-24 lg:mb-16 mx-5 md:mx-16 lg:mx-24 xl:mx-36 flex flex-col lg:flex-row justify-center xsm:max-md:items-center">
       <motion.div
         initial="hidden"
         animate="visible"
         variants={rightV}
-        className="hidden xl:block w-1/3 h-1/2"
+        className="hidden lg:block w-1/3 h-1/2"
       >
         <Image
           src="/hackathon.jpg"
