@@ -14,7 +14,7 @@ export default function MostraCientifica() {
     const words = ["projetos", "pesquisas", "inovações", "descobertas"];
 
     return (
-        <div className="mb-16 flex flex-col gap-8 text-center">
+        <div className="pt-[125px] px-10 mb-16 flex flex-col gap-8 text-center">
             <div className="w-full flex flex-col items-center text-center mb-1">
                 <div className="xsm:w-[66vw] sm:w-[45vw] md:w-[37vw] lg:w-[23vw] xl:w[19vw]">
                     <motion.p initial="hidden" animate="visible" variants={uppV} className="text-base font-light">Auditório da PROEC - 25/04 - 09:15</motion.p>

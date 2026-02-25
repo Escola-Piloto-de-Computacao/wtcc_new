@@ -27,7 +27,7 @@ export default function Maratona() {
     }, []);
 
     return (
-        <div className="pb-16 lg:mb-16 mx-0 md:mx-16 lg:mx-24 xl:mx-36 flex flex-col xl:grid xl:grid-cols-12 gap-8 justify-center">
+        <div className="pt-[125px] pb-16 lg:mb-16 mx-10 md:mx-16 lg:mx-24 xl:mx-36 flex flex-col xl:grid xl:grid-cols-12 gap-8 justify-center">
             <div className="order-last xl:order-1 col-span-7 flex flex-col gap-6">
                 <div className="flex flex-col items-center">
                     <motion.p initial="hidden" animate="visible" variants={uppV3} className="italic font-light text-sm ">24/04 - Lab 4 LCC</motion.p>
@@ -61,7 +61,7 @@ export default function Maratona() {
                         <motion.div initial="hidden" animate="visible" variants={uppV3} className="w-1/2 md:w-1/3 mx-auto">
                             <Button type="primary" href="https://docs.google.com/forms/d/e/1FAIpQLScxk1-rJW5DlqQA_q4PKg3vyReqlW45AmzQzuESGqw_2ULKpA/viewform?usp=dialog" target="_blank" className="w-full text-sm md:text-base">Inscreva-se</Button>
                         </motion.div>
-                        <div className="md:z-10 md:absolute bg-yellow-200 md:px-2 rounded-md w-[40%] md:w-auto mx-auto md:mx-0 text-center">
+                        <div className="md:z-10 md:absolute bg-[#B395CC] md:px-2 rounded-md w-[40%] md:w-auto mx-auto md:mx-0 text-center">
                             <Link href="/faq" legacyBehavior passHref>
                                 <span className="italic cursor-pointer">Ainda tenho dúvidas!<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span>
                             </Link>

@@ -25,7 +25,7 @@ export default function Cronograma() {
     };
 
     return (
-        <section className="flex flex-col gap-3 mb-24">
+        <section className="pt-[125px] px-10 mt-flex flex-col gap-3 mb-24">
             <div className="text-center">
                 <h1 className="text-4xl">Cronograma</h1>
                 <h2 className="font-light">Programação completa</h2>
@@ -59,13 +59,13 @@ interface DatasProps {
 }
 const Datas: React.FC<DatasProps> = ({ handleDayChange, currentDay }) => {
     return (
-        <ul className="flex gap-5 justify-center">
+        <ul className="flex gap-[1px] lg:gap-5 justify-center">
             <li>
                 <Button
                     onClick={() => handleDayChange(1)}
                     variant="ghost"
                     className={`text-lg ${currentDay === 1 ? "bg-gray-200" : ""}`}>
-                    18/03/2026
+                    18/03/26
                 </Button>
             </li>
             <li>
@@ -73,7 +73,7 @@ const Datas: React.FC<DatasProps> = ({ handleDayChange, currentDay }) => {
                     onClick={() => handleDayChange(2)}
                     variant="ghost"
                     className={`text-lg ${currentDay === 2 ? "bg-gray-200" : ""}`}>
-                    19/03/2026
+                    19/03/26
                 </Button>
             </li>
             <li>
@@ -81,7 +81,7 @@ const Datas: React.FC<DatasProps> = ({ handleDayChange, currentDay }) => {
                     onClick={() => handleDayChange(3)}
                     variant="ghost"
                     className={`text-lg ${currentDay === 3 ? "bg-gray-200" : ""}`}>
-                    20/03/2026
+                    20/03/26
                 </Button>
             </li>
         </ul>

@@ -34,7 +34,7 @@ export default function Minicursos() {
     }
 
     return (
-        <div className="flex flex-col gap-10" >
+        <div className="pt-[125px] px-5 flex flex-col gap-10" >
             <div className="col-span-1 flex flex-col place-self-center gap-3">
                 <div className="text-center">
                     <h2 className="text-3xl">Minicursos</h2>

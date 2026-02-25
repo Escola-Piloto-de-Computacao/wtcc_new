@@ -22,7 +22,7 @@ import {
 
 export default function Hackathon() {
   return (
-    <div className="pb-24 lg:pb-[9.16rem] xl:pb-24 lg:mb-16 mx-0 md:mx-16 lg:mx-24 xl:mx-36 flex flex-col xl:flex-row gap-6 justify-center xsm:max-md:items-center">
+    <div className="pt-[125px] pb-24 lg:pb-[9.16rem] xl:pb-24 lg:mb-16 mx-5 md:mx-16 lg:mx-24 xl:mx-36 flex flex-col xl:flex-row gap-6 justify-center xsm:max-md:items-center">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -126,7 +126,7 @@ export default function Hackathon() {
             >
               <p>
                 A inscrição no evento deve ser realizada por{" "}
-                <span className="bg-yellow-300 px-[0.15rem]">
+                <span className="bg-[#B395CC] px-[0.15rem]">
                   grupos de 3-5 integrantes
                 </span>
                 , todos sendo alunos do curso da Ciência da Computação. A
@@ -181,7 +181,7 @@ export default function Hackathon() {
           initial="hidden"
           animate="visible"
           variants={downV}
-          className="mt-4 bg-yellow-300 rounded-md px-1 cursor-pointer"
+          className="mt-4 bg-[#B395CC] rounded-md px-1 cursor-pointer"
         >
           <Link href="/faq" legacyBehavior passHref>
             <span className="italic cursor-pointer">
