@@ -13,9 +13,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   icons: {
-    icon: "/favicon.ico",
+    icon: "/Icon2026.svg",
   },
-  title: "X WTCC",
+  title: "XI WTCC",
   description:
     "Site oficial do X WTCC, evento anual organizado pelo curso de Ciência da Computação da UFERSA.",
   authors: { name: "EPC", url: "https://escolapilotodecomputacao.com.br" },
@@ -44,18 +44,18 @@ export default function RootLayout({
       <head>
         <link
           rel="icon"
-          type="image/png"
-          href="/favicon-96x96.png"
+          type="image/svg"
+          href="/Icon2026.svg"
           sizes="96x96"
         />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg" href="/Icon2026.svg" />
+        <link rel="shortcut icon" href="/Icon2026.svg" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href="/Icon2026.svg"
         />
-        <meta name="apple-mobile-web-app-title" content="X WTCC" />
+        <meta name="apple-mobile-web-app-title" content="XI WTCC" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <Analytics />

@@ -65,7 +65,7 @@ const Datas: React.FC<DatasProps> = ({ handleDayChange, currentDay }) => {
                     onClick={() => handleDayChange(1)}
                     variant="ghost"
                     className={`text-lg ${currentDay === 1 ? "bg-gray-200" : ""}`}>
-                    23/04
+                    18/03/2026
                 </Button>
             </li>
             <li>
@@ -73,7 +73,7 @@ const Datas: React.FC<DatasProps> = ({ handleDayChange, currentDay }) => {
                     onClick={() => handleDayChange(2)}
                     variant="ghost"
                     className={`text-lg ${currentDay === 2 ? "bg-gray-200" : ""}`}>
-                    24/04
+                    19/03/2026
                 </Button>
             </li>
             <li>
@@ -81,7 +81,7 @@ const Datas: React.FC<DatasProps> = ({ handleDayChange, currentDay }) => {
                     onClick={() => handleDayChange(3)}
                     variant="ghost"
                     className={`text-lg ${currentDay === 3 ? "bg-gray-200" : ""}`}>
-                    25/04
+                    20/03/2026
                 </Button>
             </li>
         </ul>
