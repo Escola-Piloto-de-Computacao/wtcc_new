@@ -11,9 +11,9 @@ import { ClickHereArrow } from "@/components/ui/icons";
 import Button from "@/components/core/Home/InscreverButton";
 
 
-const Title1 = () => {
+const Text1 = () => {
   return (
-    <div className="mb-12 lg:pr-10">
+    <div className="mb-12">
       <div className="text-3xl lg:text-4xl text-center lg:text-left font-thin rounded-md">
         <HeroHighlight>
           <motion.h1
@@ -31,13 +31,13 @@ const Title1 = () => {
             }}
             className="lg:pl-1 lg:pr-2 font-semibold leading-0"
           >
-            <Highlight className="text-black dark:text-black" animationTime={2}>
+            <Highlight className="text-[#542A78]" animationTime={2}>
               Descubra o mundo da computação
             </Highlight>
           </motion.h1>
         </HeroHighlight>
       </div>
-      <p className="mt-6 lg:mt-5 lg:w-11/12 lg:ml-4 text-justify lg:indent-3 text-balance hyphens-auto break-words">
+      <p className="mt-6 lg:mt-5 lg:ml-4 text-justify lg:indent-3 text-balance hyphens-auto break-words">
         O XI Workshop Técnico-Científico de Computação do RN tem como propósito
         despertar o interesse dos estudantes de graduação e pós-graduação em
         pesquisa científica na área de ciência da computação. Além disso, busca
@@ -103,7 +103,7 @@ const Title1 = () => {
   );
 };
 
-const Title2 = () => {
+const Text2 = () => {
   return (
     <div>
       <div className="pt-3 lg:pt-0 text-3xl text-center lg:text-left rounded">
@@ -125,7 +125,7 @@ const Title2 = () => {
           >
             {" "}
             <Highlight
-              className="text-black dark:text-black"
+              className="text-black"
               animationTime={2.5}
             >
               Despertando o conhecimento
@@ -144,7 +144,7 @@ const Title2 = () => {
           color="white"
           overlayInnerStyle={{ color: "black", textAlign: "justify" }}
         >
-          <span className="bg-yellow-300 cursor-alias italic">
+          <span className="bg-[#B395CC] cursor-alias italic">
             CERTIFICADOS
           </span>
         </Tooltip>
@@ -157,9 +157,9 @@ const Title2 = () => {
 
 const Text = () => {
   return (
-    <div className="block col-start-2 col-span-5">
-      <Title1 />
-      <Title2 />
+    <div className="block col-start-2 col-span-10 my-20 mx-10 lg:px-[40px]">
+      <Text1 />
+      <Text2 />
     </div>
   );
 };
