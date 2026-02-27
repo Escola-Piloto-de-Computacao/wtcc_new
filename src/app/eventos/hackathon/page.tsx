@@ -70,7 +70,7 @@ export default function Hackathon() {
           Hackathon
         </motion.h1>
         <Tabs defaultValue="O que é?" className="mt-4 w-full">
-          <TabsList className="flex gap-4 font-fira">
+          <TabsList className="flex gap-[1px] lg:gap-4 font-fira">
             <TabsTrigger value="O que é?">O que é?</TabsTrigger>
             <TabsTrigger value="Inscrição">Inscrição</TabsTrigger>
             <TabsTrigger value="Enviar produção">Enviar produção</TabsTrigger>

@@ -13,14 +13,14 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   icons: {
-    icon: "/Icon2026.svg",
+    icon: "/Icon2026.ico",
   },
   title: "XI WTCC",
   description:
-    "Site oficial do X WTCC, evento anual organizado pelo curso de Ciência da Computação da UFERSA.",
+    "Site oficial do XI WTCC, evento anual organizado pelo curso de Ciência da Computação da UFERSA.",
   authors: { name: "EPC", url: "https://escolapilotodecomputacao.com.br" },
   keywords: [
-    "X WTCC",
+    "XI WTCC",
     "UFERSA",
     "Ciência da Computação",
     "Computação",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "Evento",
     "Workshop",
     "Tecnologia da Informação",
-    "X Workshop de Tecnologia da Computação e Computação",
+    "XI Workshop de Tecnologia da Computação e Computação",
   ],
 };
 
