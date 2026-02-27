@@ -91,13 +91,25 @@ const Images = () => {
     return (
       <div className="col-start-6 col-span-5 grid">
         <Title />
-        <div className="flex inline-flex m-auto lg:m-0 lg:mr-auto z-20">
-          <Button />
-          <HiCursorClick 
-           className="pl-4 mt-[40px] lg:pl-0 lg:mt-0 lg:-ml-4 lg:-mb-20"
-           
-           size={40}/>
-        </div>
+        <motion.h1
+              initial={{
+                opacity: 0,
+                y: 20,
+              }}
+              animate={{
+                opacity: 1,
+                y: [20, -5, 0],
+              }}
+              transition={{
+                duration: 0.5,
+                ease: [0.4, 0.0, 0.2, 1],
+              }}
+              className="flex inline-flex m-auto lg:m-0 lg:mr-auto z-20">
+              <Button />
+              <HiCursorClick 
+              className="pl-4 mt-[40px] lg:pl-0 lg:mt-0 lg:-ml-4 lg:-mb-20"
+              size={40}/>
+            </motion.h1>
       </div>
     );
   };
