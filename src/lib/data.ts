@@ -3,204 +3,11 @@ import { Minicurso, Palestrante, Palestra, Faq, Atividade, Imagem, Patrocinador,
 const minicursos: Minicurso[] = [
     {
         index: 0,
-        title: "Introdução ao Web Básico",
-        alternateTitle: "Aprendendo HTML, CSS e JavaScript do básico e além",
-        picture: "/imagens-minicursos/htmlcssjavascript2.jpg",
-        alternatePicture: "/imagens-minicursos/htmlcssjavascript.png",
-        date: "23/04",
-        tags: [
-            {
-                name: "iniciante",
-                color: "bg-yellow-300",
-                index: 0
-            },
-            {
-                name: "front-end",
-                color: "bg-indigo-300",
-                index: 1
-            },
-            {
-                name: "web",
-                color: "bg-blue-300",
-                index: 2
-            }
-        ],
-        description: "Quer dominar a arte de criar sites incríveis? No nosso minicurso de HTML, CSS e JavaScript, você aprenderá os fundamentos essenciais para construir páginas web modernas, interativas e visualmente impactantes. Desde a estruturação do conteúdo com HTML, passando pelo design estilizado com CSS, até a adição de dinamismo e funcionalidades com JavaScript, este curso é a porta de entrada para o universo do desenvolvimento web! Venha transformar suas ideias em realidade digital!",
-        palestrantes: [
-            {
-                name: "Artur Segantini",
-                bio: "Entusiasta de worldbuilding e amante de programação orientada a objetos",
-                social: {
-                    github: "https://github.com/ARTSALT",
-                    instagram: "https://www.instagram.com/artur_sals/"
-                },
-                picture: "/imagens-minicursos/arturSegantini.png"
-            },
-            {
-                name: "William Diniz",
-                bio: "Aluno do último período de Ciência da Computação, gosto de resolver problemas com soluções criativas.",
-                social: {
-                    instagram: "https://www.instagram.com/william.praxedes/"
-                },
-                picture: "/imagens-minicursos/williamDiniz.jpeg"
-            }
-        ],
-        localizacao: "Lab 4"
-    },
-    {
-        index: 1,
-        title: "Introdução ao Motor de Jogos Unity",
-        alternateTitle: "Introdução ao Motor de Jogos Unity",
-        picture: "/imagens-minicursos/unity.jpg",
-        alternatePicture: "/imagens-minicursos/unity2.png",
-        date: "23/04",
-        tags: [
-            {
-                name: "ferramenta",
-                color: "bg-red-300",
-                index: 0
-            },
-            {
-                name: "jogos",
-                color: "bg-purple-300",
-                index: 1
-            }
-        ],
-        description: "A indústria de jogos digitais movimenta bilhões de dólares anualmente. Neste contexto, um dos principais motores utilizados no desenvolvimento de jogos é o Unity. Este minicurso abordará conceitos fundamentais do Unity. Construiremos um jogo 3D simples a partir do zero. Utilizando o ambiente gráfico do Unity, criaremos cenas e definiremos objetos que estarão presentes naquelas cenas. Além disso, construiremos scripts que estabelecerão como os objetos definidos irão se comportar dentro da cena da qual fazem parte. Trata-se de uma excelente oportunidade de aplicar os conhecimentos aprendidos durante um curso de programação.",
-        prerequesites: [
-            "Conhecimento básico em programação",
-            "Programação Orientada a Objetos (não obrigatório)"
-        ],
-        palestrantes: [
-            {
-                // TODO mudar tudo
-                name: "Helcio Wagner da Silva",
-                bio: "Acho muito deselegante falar sobre si mesmo em tom exaltante",
-                social: {
-                },
-                picture: "/imagens-minicursos/helcio.jpg"
-            }
-        ],
-        localizacao: "Lab 2"
-    },
-    {
-        index: 2,
-        title: "Figma: Dos primeiros passos ao primeiro site.",
-        alternateTitle: "Primeiros Passos em Figma",
-        picture: "/imagens-minicursos/figma.png",
-        alternatePicture: "/imagens-minicursos/figma2.png",
-        date: "23/04",
-        tags: [
-            {
-                name: "ferramenta",
-                color: "bg-red-300",
-                index: 0
-            },
-            {
-                name: "Iniciante",
-                color: "bg-yellow-300",
-                index: 1
-            }
-        ],
-        description: "Neste minicurso será ofertado aprendizado acerca da ferramenta Figma para criação de interfaces web e mobile. Iremos aprender a como utilizar a ferramenta, as boas práticas de uso, criação de telas de baixa e alta fidelidade, construir a interface de um site de streaming e a utilização da ferramenta no mercado de trabalho.",
-        palestrantes: [
-            {
-                name: "Vinicius Salviano de Macedo",
-                bio: "Um quase ciêntista da computação, designer UI/UX na SolarZ e fisiculturista nas horas vagas",
-                social: {
-                    github: "https://github.com/ViniciusSalvian",
-                    instagram: "https://www.instagram.com/vini_salvian/"
-                },
-                picture: "/imagens-minicursos/vinicius.jpg"
-            }
-        ],
-        localizacao: "Lab 4"
-    },
-    {
-        index: 3,
-        title: "Ruby on Rails na Prática: Construindo Aplicações Web do Zero",
-        alternateTitle: "Ruby on Rails na Prática: Construindo Aplicações Web do Zero",
-        picture: "/imagens-minicursos/rubyOnRails.png",
-        alternatePicture: "/imagens-minicursos/rubyOnRails2.jpg",
-        date: "24/04",
-        tags: [
-            {
-                name: "framework",
-                color: "bg-pink-300",
-                index: 0
-            },
-            {
-                name: "web",
-                color: "bg-blue-300",
-                index: 1
-            }
-        ],
-        description: "Quer aprender a desenvolver aplicações web modernas e produtivas? Neste minicurso introdutório, você será guiado pelos primeiros passos no Ruby on Rails, o framework que revolucionou o desenvolvimento web com sua abordagem ágil e elegante. Durante a aula, exploraremos desde os fundamentos básicos da linguagem Ruby até a construção de uma aplicação funcional utilizando Rails, passando por modelos, controladores, rotas e views. \nAlém disso, abordaremos conceitos essenciais como MVC (Model-View-Controller), migrações de banco de dados e CRUD (Create, Read, Update, Delete), garantindo que você saia do minicurso com um sólido conhecimento para dar continuidade no desenvolvimento de suas próprias aplicações. Se você busca uma introdução prática e objetiva ao Ruby on Rails, este é o minicurso ideal para você!",
-        prerequesites: [
-            "Conhecimento básico em programação",
-            "Noções de HTML e CSS",
-            "Experiência prévia com linguagem de programação (não obrigatório)"
-        ],
-        palestrantes: [
-            {
-                name: "Cláudio Trindade",
-                bio: "Bacharel em Ciência da Computação pelo UFRN, Mestrando em Ciência da Computação pela UFERSA, Diretor Executivo de Tecnologia da Informação da Prefeitura Municipal de Mossoró e Sócio Diretor da Dunnas Tecnologia.",
-                social: {
-                    linkedin: "https://www.linkedin.com/in/cl%C3%A1udio-trindade-b52655117/"
-                },
-                picture: "/imagens-minicursos/claudio.jpeg"
-            }
-        ],
-        localizacao: "Lab 6"
-    },
-    {
-        index: 4,
-        title: "Programação em Kotlin",
-        alternateTitle: "Introdução a Kotlin",
-        picture: "/imagens-minicursos/kotlin.png",
-        alternatePicture: "/imagens-minicursos/kotlin2.png",
-        date: "23/04",
-        tags: [
-            {
-                name: "linguagem",
-                color: "bg-green-300",
-                index: 0
-            },
-            {
-                name: "iniciante",
-                color: "bg-yellow-300",
-                index: 1
-            }
-        ],
-        description: "Este mini curso introdutório aborda os fundamentos da linguagem Kotlin, destacando sua versatilidade e vantagens. Os participantes aprenderão a configurar o ambiente de desenvolvimento, manipular entrada e saída de dados, utilizar tipos básicos e operadores, além de implementar estruturas de controle, laços de repetição, arrays e funções. Ideal para quem deseja iniciar na programação com uma linguagem moderna e poderosa.", 
-        prerequesites: [
-            "Conhecimento básico em lógica de programação"
-        ],
-        palestrantes: [
-            {
-                name: "Paulo Henrique Lopes Silva",
-                bio: "Professor do Departamento de Computação da UFERSA/Mossoró. Áreas de atuação: Desenvolvimento de Software, Sistemas Distribuídos e Segurança da Informação.",
-                social: {},
-                picture: "/imagens-minicursos/paulo.jpg"
-            },
-            {
-                name: "Breno Klywer Olegario de Moura",
-                bio: "Estudante de Computação apaixonado por clean code",
-                social: {
-                    github: "https://github.com/Brenokly"
-                },
-                picture: "/imagens-minicursos/breno.jpg"
-            }
-        ],
-        localizacao: "Lab 7"
-    },
-    {
-        index: 5,
-        title: "Introdução ao desenvolvimento de jogos com a Godot Engine 4s",
+        title: "Introdução ao desenvolvimento de jogos com a Godot 4",
         alternateTitle: "Criando Jogos na Godot Engine 4: Um Guia Para Iniciantes",
-        picture: "/imagens-minicursos/godot.jpg",
+        picture: "/imagens-minicursos/godot.png",
         alternatePicture: "/imagens-minicursos/godot2.jpg",
-        date: "24/04",
+        date: "18/03",
         tags: [
             {
                 name: "ferramenta",
@@ -216,7 +23,7 @@ const minicursos: Minicurso[] = [
         prerequesites: [
             "Conhecimento básico em programação"
         ],
-        description: "Neste mini curso daremos o pontapé inicial para o mundo dos jogos digitais com a Godot Engine, o motor de jogos open source mais poderoso do mercado. Abordaremos a interface, programação e conceitos de projeto como Orientação a Objetos e Composição de maneira prática, onde o aluno fará o desenvolvimento guiado do mini game Endless Runner “Filó: The Great Escapade” com o intuito de gerar familiaridade para que o mesmo possa usar tais conhecimentos para seus próprios jogos.",
+        description: "O objetivo deste minicurso é apresentar Godot Engine 4, mostrando suas vantagens, fluxo de trabalho, organização e outros detalhes a partir do criação de um protótipo de \"Filó: The great Escapade!\", um endless runner horizontal baseado no dino chrome. Ao final do minicurso os ouvintes desenvolverão noções de desenvolvimento e lógica para jogos 2D com o motor, sendo incentivado a procurar conhecer as demais facetas que o projeto tem a oferecer.",
         palestrantes: [
             {
                 name: "João Lucas Galdino Duarte",
@@ -241,23 +48,98 @@ const minicursos: Minicurso[] = [
         localizacao: "Lab 2"
     },
     {
-        index: 6,
-        title: "Programação Paralela em Python",
-        alternateTitle: "Programação Paralela em Python",
-        picture: "/imagens-minicursos/python.jpg",
-        alternatePicture: "/imagens-minicursos/python2.jpg",
-        date: "24/04",
+        index: 1,
+        title: "Introdução a Design System: Conceitos e Implementações",
+        alternateTitle: "Design System: Conceitos e Implementações",
+        picture: "/imagens-minicursos/design-system.png", //alterar
+        alternatePicture: "/imagens-minicursos/design-system.png",
+        date: "18/03",
         tags: [
             {
-                name: "linguagem",
+                name: "front-end",
+                color: "bg-indigo-300",
+                index: 1
+            },
+        ],
+        prerequesites: [
+            "Conhecimento básico em front-end ou design"
+        ],
+        description: "Esse minicurso busca trazer informações sobre o que é um design system, como criar um design do zero e boas práticas construtivas.",
+        palestrantes: [
+            {
+                name: "Vinícius Salviano",
+                bio: "-",
+                
+                picture: "/imagens-minicursos/joao.jpg" //mudar
+            },
+        ],
+        localizacao: "Lab 2"
+    },
+    {
+        index: 2,
+        title: "Criação de apps com Flutter",
+        alternateTitle: "Criação de apps com Flutter",
+        picture: "/imagens-minicursos/apps-flutter.png",
+        alternatePicture: "/imagens-minicursos/apps-flutter.png",
+        date: "18/03",
+        tags: [
+            {
+                name: "framework",
+                color: "bg-pink-300",
+                index: 0
+            },
+            {
+                name: "mobile",
+                color: "bg-orange-300",
+                index: 0
+            },
+        ],
+        description: "O objetivo deste minicurso é capacitar os participantes a compreender os fundamentos do desenvolvimento de aplicativos móveis utilizando o framework Flutter, explorando sua estrutura, principais widgets e o funcionamento da construção de interfaces multiplataforma. Ao final, os alunos serão capazes de desenvolver aplicações básicas, entendendo como processar dados e estruturar aplicações modernas para Android e iOS a partir de uma única base de código.",
+        prerequesites: [
+            "Conhcecimento dos conceitos básicos do framework"
+        ],
+        palestrantes: [
+            {
+                name: "Arthur Peixoto",
+                bio: "",
+                social: {
+                },
+                picture: "/imagens-minicursos/paulo.jpg"
+            },
+            {
+                name: "Nickolas Emanuel",
+                bio: "",
+                social: {
+                    
+                },
+                picture: "/imagens-minicursos/afonso.png"
+            }
+        ],
+        localizacao: "Lab 7"
+    },
+    {
+        index: 3,
+        title: "Introdução a testes automatizados com Cypress",
+        alternateTitle: "Introdução a testes automatizados com Cypress",
+        picture: "/imagens-minicursos/cypress.png",
+        alternatePicture: "/imagens-minicursos/cypress.png",
+        date: "19/03",
+        tags: [
+            {
+                name: "ferramenta",
                 color: "bg-green-300",
+                index: 0
+            },
+
+            {
+                name: "automação",
+                color: "bg-yellow-300",
                 index: 0
             }
         ],
-        description: "Este minicurso apresenta os fundamentos da programação paralela em Python, com foco no uso de threads para melhorar o desempenho de aplicações. Os participantes aprenderão a caracterizar e motivar o uso de threads, entender seu ciclo de vida e como a Python Virtual Machine (PVM) gerencia sua execução. Serão abordados tópicos como criação e destruição de threads, tipos de threads, concorrência, sincronização e técnicas de exclusão mútua para evitar condições de corrida.",
+        description: "Apresentar os fundamentos de testes automatizados utilizando o Cypress, capacitando os participantes a configurar o ambiente, escrever e executar testes end-to-end para aplicações web, além de compreender boas práticas para garantir qualidade e confiabilidade no desenvolvimento de software.",
         prerequesites: [
-            "Conhecimento básico em Python",
-            "Noções básicas de lógica de programação"
+            "Conhecimentos básicos em programação"
         ],
         palestrantes: [
             {
@@ -268,10 +150,126 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/paulo.jpg"
             },
             {
-                name: "Afonso Simão de Góis Neto",
-                bio: "O conhecimento não ocupa espaço, mas mexe com tudo ao redor",
+                name: "Brenno Kevyn",
+                bio: "",
                 social: {
-                    github: "https://github.com/Afonso017"
+                   
+                },
+                picture: "/imagens-minicursos/afonso.png"
+            }
+        ],
+        localizacao: "Lab 7"
+    },
+    {
+        index: 4,
+        title: "Introdução a API REST: Conceitos e Prática",
+        alternateTitle: "Introdução a API REST: Conceitos e Prática",
+        picture: "/imagens-minicursos/rest.png",
+        alternatePicture: "/imagens-minicursos/rest.png",
+        date: "19/03",
+        tags: [
+            {
+                name: "back-end",
+                color: "bg-red-300",
+                index: 0
+            },
+        ],
+        description: "O objetivo deste minicurso é capacitar o aluno a entender como funciona a comunicação entre sistemas modernos através do estilo arquitetural REST. Os participantes aprenderão os fundamentos do protocolo HTTP (verbos e status codes), a estrutura de dados JSON e como projetar endpoints eficientes, aplicando conceitos de POO para organizar a lógica do backend.",
+        prerequesites: [
+            "Conhecimentos básicos em Programação Orientada a Objetos (POO).",
+        ],
+        palestrantes: [
+            {
+                name: "João Sales",
+                bio: "",
+                social: {
+                   
+                },
+                picture: "/imagens-minicursos/afonso.png"
+            },
+            {
+                name: "Breno Klyver",
+                bio: "",
+                social: {
+                   
+                },
+                picture: "/imagens-minicursos/afonso.png"
+            },
+            {
+                name: "Breno Klyver",
+                bio: "",
+                social: {
+                   
+                },
+                picture: "/imagens-minicursos/afonso.png"
+            }
+        ],
+        localizacao: "Lab 7"
+    },
+    {
+        index: 5,
+        title: "Introdução ao desenvolvimento de agentes de IA com python e langchain",
+        alternateTitle: "Introdução ao desenvolvimento de agentes de IA com python e langchain",
+        picture: "/imagens-minicursos/ia-agente.png",
+        alternatePicture: "/imagens-minicursos/ia-agente.png",
+        date: "19/03",
+        tags: [
+            {
+                name: "linguagem",
+                color: "bg-green-300",
+                index: 0
+            },
+            
+        ],
+        description: "Este minicurso prático foca na arquitetura básica de agentes de IA utilizando Python e LangChain. O conteúdo aborda a integração de Modelos de Linguagem (LLMs) com recursos externos, demonstrando como uma aplicação pode ir além da simples geração de texto para tomar decisões e executar ações. Serão detalhados conceitos essenciais de engenharia de prompts, estruturação de cadeias lógicas (chains), fornecimento de ferramentas simples (tool calling básico) e a implementação de memória de curto prazo no contexto da conversa. O objetivo é construir, passo a passo, um projeto real de um agente funcional, desmistificando o funcionamento interno das IAs modernas e capacitando o aluno a criar seus primeiros sistemas autônomos de forma estruturada.",
+        prerequesites: [
+            "Python Intermediário",
+        ],
+        palestrantes: [
+            {
+                name: "Pablo Lucas",
+                bio: "",
+                social: {
+                   
+                },
+                picture: "/imagens-minicursos/afonso.png"
+            },
+            {
+                name: "Thiago Coelho",
+                bio: "",
+                social: {
+                   
+                },
+                picture: "/imagens-minicursos/afonso.png"
+            }
+        ],
+        localizacao: "Lab 7"
+    },
+    {
+        index: 6,
+        title: "Introdução a QA",
+        alternateTitle: "Introdução a QA",
+        picture: "/imagens-minicursos/qa.png",
+        alternatePicture: "/imagens-minicursos/qa.png",
+        date: "18/03",
+        
+        description: "Apresentar os fundamentos da qualidade de software, desde a atuação do QA em uma equipe ágil, criação de processos e técnicas de teste. Os estudantes serão capazes de entender as histórias, criar cenários de teste claros e realizar a priorização dos mesmos, como também realizar um bug report.",
+        prerequesites: [
+            "Metodologias Ágeis (Scrum/Kanban)"
+        ],
+        palestrantes: [
+            {
+                name: "Paulo Henrique Lopes Silva",
+                bio: "Professor do Departamento de Computação da UFERSA/Mossoró. Áreas de atuação: Desenvolvimento de Software, Sistemas Distribuídos e Segurança da Informação.",
+                social: {
+                },
+                picture: "/imagens-minicursos/paulo.jpg"
+            },
+            {
+                name: "Brenno Kevyn",
+                bio: "",
+                social: {
+                   
                 },
                 picture: "/imagens-minicursos/afonso.png"
             }
@@ -280,31 +278,29 @@ const minicursos: Minicurso[] = [
     },
     {
         index: 7,
-        title: "Avaliação de Design de Interfaces",
-        alternateTitle: "Avaliação de Design de Interfaces",
-        picture: "/imagens-minicursos/ui.jpg",
-        alternatePicture: "/imagens-minicursos/ui2.jpg",
-        date: "24/04",
+        title: "Introdução a Software Embarcado - Como piscar um LED da maneira difícil",
+        alternateTitle: "Introdução a Software Embarcado - Como piscar um LED da maneira difícil",
+        picture: "/imagens-minicursos/software-embarcados.png",
+        alternatePicture: "/imagens-minicursos/software-embarcados.png",
+        date: "19/03",
         tags: [
-            {
-                name: "iniciante",
-                color: "bg-yellow-300",
-                index: 0
-            }
         ],
-        description: "O minicurso abordará interfaces e seus tipos. Ergonomia, usabilidade e a experiência do usuário no design de interfaces. Técnicas de inspeção, avaliação e testes de interfaces com o usuário.",
+        description: "O minicurso visa ensinar os conceitos bases de software embarcado, como se dá o fluxo de um projeto embarcado, e apresentar de forma prática as principais ferramentas.",
+        prerequesites: [
+            "C/C++ básico",
+        ],
         palestrantes: [
             {
-                //TODO Mudar tudo
-                name: "Kátia Cilene da Silva Moura",
+                name: "Paulo Henrique",
                 bio: "",
                 social: {
+                   
                 },
-                picture: "/imagens-minicursos/katia.jpg"
+                picture: "/imagens-minicursos/afonso.png"
             }
         ],
-        localizacao: "Lab 4"
-    }
+        localizacao: "Lab 7"
+    },
 ];
 
 const palestranteSelecionado: Palestrante = {
@@ -965,130 +961,60 @@ const patrocinadores: Patrocinador[] = [
     },
     {
         index: 2,
-        nome: "Massas Nordeste",
-        alt: "Massas Nordeste",
-        imagem: "/imagens-patrocinadores/massasNordeste.png",
-        link: "https://www.instagram.com/massasnordesteoficial/"
-    },
-    {
-        index: 3,
-        nome: "Cimsal",
-        alt: "Cimsal",
-        imagem: "/imagens-patrocinadores/cimsal.png",
-        link: "https://cimsal.com.br"
-    },
-    {
-        index: 4,
         nome: "Cacim",
         alt: "Cacim Laboratório",
         imagem: "/imagens-patrocinadores/cacim.png",
         link: "https://cacim.com.br"
     },
     {
-        index: 5,
+        index: 3,
         nome: "CCEN",
         alt: "Centro de Ciências Exatas e da Natureza",
         imagem: "/imagens-patrocinadores/ccen.png",
         link: "https://ccen.ufersa.edu.br/"
     },
     {
-        index: 6,
+        index: 4,
         nome: "PROGRAD",
         alt: "Pró-Reitoria de Graduação",
         imagem: "/imagens-patrocinadores/prograd.png",
         link: "https://prograd.ufersa.edu.br/"
     },
     {
-        index: 7,
-        nome: "Apreciatte",
-        alt: "Apreciatte",
-        imagem: "/imagens-patrocinadores/apreciatte.png",
-        link: "https://apreciatte.com.br"
-    },
-    {
-        index: 8,
-        nome: "Casa Dos Pneus",
-        alt: "Casa Dos Pneus",
-        imagem: "/imagens-patrocinadores/casaDosPneus.png",
-        link: "https://casadospneusmossoro.com.br/"
-    },
-    {
-        index: 9,
+        index: 5,
         nome: "smar",
         alt: "smar",
         imagem: "/imagens-patrocinadores/smar.png",
         link: "https://www.smar.com.br/pt"
     },
     {
-        index: 10,
-        nome: "uqvestir",
-        alt: "uqvestir",
-        imagem: "/imagens-patrocinadores/uqvestir.png",
-        link: "https://www.instagram.com/uqvestir?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-    },
-    {
-        index: 11,
-        nome: "Sua_Sapataria",
-        alt: "Sua Sapataria",
-        imagem: "/imagens-patrocinadores/sapataria.png",
-        link: "https://www.instagram.com/suasapatariaa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-    },
-    {
-        index: 12,
-        nome: "Beauty",
-        alt: "Beauty Isadora Maia",
-        imagem: "/imagens-patrocinadores/beauty.png",
-        link: "https://www.instagram.com/isadoramaiabeauty?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-    },
-    {
-        index: 13,
-        nome: "Beachwear",
-        alt: "Morena Beachwear",
-        imagem: "/imagens-patrocinadores/beachwear.png",
-        link: "https://www.instagram.com/mmorenabeachwear_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-    },
-    {
-        index: 14,
-        nome: "Nonato",
-        alt: "Nonato Atacarejo",
-        imagem: "/imagens-patrocinadores/nonato.png",
-        link: "https://www.nonatostore.com.br/loja"
-    },
-    {
-        index: 15,
-        nome: "JPatricio",
-        alt: "JPatricio Metais",
-        imagem: "/imagens-patrocinadores/jpatricio.png",
-        link: "https://jpatriciometais.com.br"
-    },
-    {
-        index: 16,
+        index: 6,
         nome: "Idus",
         alt: "Idus, Inteligência Industrial",
         imagem: "/imagens-patrocinadores/idus.png",
         link: "https://idus.com.br"
     },
     {
-        index: 17,
-        nome: "Marilux",
-        alt: "Marilux",
-        imagem: "/imagens-patrocinadores/marilux.png",
-        link: "https://www.marilux.com.br" 
+        index: 7,
+        nome: "EDC",
+        alt: "EDC, Automação",
+        imagem: "/imagens-patrocinadores/edc.png",
+        link: ""
     },
     {
-        index: 18,
-        nome: "Expofruit 2025",
-        alt: "Expofruit 2025",
-        imagem: "/imagens-patrocinadores/expofruit.png",
-        link: "https://www.expofruit.com.br"
+        index: 8,
+        nome: "Sales",
+        alt: "Madereira Sales",
+        imagem: "/imagens-patrocinadores/madereira-salles.png",
+        link: "https://www.instagram.com/madeireirasales/"
     },
     {
-        index: 19,
-        nome: "COEX",
-        alt: "Comitê executivo de Horticultura dp RN",
-        imagem: "/imagens-patrocinadores/coex.png",
-        link: "https://www.coexrn.com.br"
-    }
+        index: 9,
+        nome: "Dunnastech",
+        alt: "Dunnastech",
+        imagem: "/imagens-patrocinadores/dunnas.png",
+        link: "https://www.dunnastecnologia.com.br/index.html"
+    },
 ];
 
 const terminalFiles: TerminalFile[] = [
