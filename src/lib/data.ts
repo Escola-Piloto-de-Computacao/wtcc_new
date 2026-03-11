@@ -1,4 +1,5 @@
 import { Minicurso, Palestrante, Palestra, Faq, Atividade, Imagem, Patrocinador, TerminalFile } from '@/lib/definitions';
+import { Linkedin } from 'lucide-react';
 
 const minicursos: Minicurso[] = [
     {
@@ -68,9 +69,13 @@ const minicursos: Minicurso[] = [
         palestrantes: [
             {
                 name: "Vinícius Salviano",
-                bio: "-",
-                
-                picture: "" //mudar
+                bio: "Cientista da computação pela UFERSA e UI/UX Designer na Solarz, atuo na construção de produtos digitais e na melhoria de produtos existentes, além de construção e manutenção de Design systems",
+                social: 
+                {
+                    linkedin: "https://www.linkedin.com/in/vinicius-salvimacedo"
+                },
+
+                picture: "/imagens-minicursos/vinicius.jpeg" 
             },
         ],
         localizacao: ""

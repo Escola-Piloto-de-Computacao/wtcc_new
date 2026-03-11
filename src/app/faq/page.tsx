@@ -10,14 +10,14 @@ import { FAQuestions } from '@/lib/data';
 export default function Faq() {
     return (
         <div className="pt-[125px] px-5 mb-20 flex flex-col">
-            <div className="mb-36">
+            <div className="mb-[80px]">
                 <div className="text-center space-y-1">
                     <h1 className="text-4xl">FAQ</h1>
                     <h2 className="font-light">perguntas frequentes</h2>
                 </div>
                 <FaqBox questions={FAQuestions} />
             </div>
-            <div className="absolute xsm:top-[67rem] sm:top-[52rem] md:top-[48rem] lg:top-[45rem] xl:top-[38rem] text-center flex flex-col gap-8 self-center items-center">
+            <div className=" text-center flex flex-col gap-8 self-center items-center">
                 <div>
                     <div className="flex items-center justify-center">
                         <h2 className="text-2xl">Envie sua pergunta!</h2>
