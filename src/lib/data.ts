@@ -45,7 +45,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/wesley.jpeg"
             }
         ],
-        localizacao: "Lab 2"
+        localizacao: ""
     },
     {
         index: 1,
@@ -70,10 +70,10 @@ const minicursos: Minicurso[] = [
                 name: "Vinícius Salviano",
                 bio: "-",
                 
-                picture: "/imagens-minicursos/joao.jpg" //mudar
+                picture: "" //mudar
             },
         ],
-        localizacao: "Lab 2"
+        localizacao: ""
     },
     {
         index: 2,
@@ -104,7 +104,7 @@ const minicursos: Minicurso[] = [
                 bio: "",
                 social: {
                 },
-                picture: "/imagens-minicursos/paulo.jpg"
+                picture: ""
             },
             {
                 name: "Nickolas Emanuel",
@@ -112,10 +112,10 @@ const minicursos: Minicurso[] = [
                 social: {
                     
                 },
-                picture: "/imagens-minicursos/afonso.png"
+                picture: ""
             }
         ],
-        localizacao: "Lab 7"
+        localizacao: ""
     },
     {
         index: 3,
@@ -143,11 +143,11 @@ const minicursos: Minicurso[] = [
         ],
         palestrantes: [
             {
-                name: "Paulo Henrique Lopes Silva",
-                bio: "Professor do Departamento de Computação da UFERSA/Mossoró. Áreas de atuação: Desenvolvimento de Software, Sistemas Distribuídos e Segurança da Informação.",
+                name: "Paulo Henrique",
+                bio: "",
                 social: {
                 },
-                picture: "/imagens-minicursos/paulo.jpg"
+                picture: ""
             },
             {
                 name: "Brenno Kevyn",
@@ -155,10 +155,10 @@ const minicursos: Minicurso[] = [
                 social: {
                    
                 },
-                picture: "/imagens-minicursos/afonso.png"
+                picture: ""
             }
         ],
-        localizacao: "Lab 7"
+        localizacao: ""
     },
     {
         index: 4,
@@ -185,7 +185,7 @@ const minicursos: Minicurso[] = [
                 social: {
                    
                 },
-                picture: "/imagens-minicursos/afonso.png"
+                picture: ""
             },
             {
                 name: "Breno Klyver",
@@ -193,18 +193,18 @@ const minicursos: Minicurso[] = [
                 social: {
                    
                 },
-                picture: "/imagens-minicursos/afonso.png"
+                picture: ""
             },
             {
-                name: "Breno Klyver",
+                name: "Rivaldo Freitas",
                 bio: "",
                 social: {
                    
                 },
-                picture: "/imagens-minicursos/afonso.png"
+                picture: ""
             }
         ],
-        localizacao: "Lab 7"
+        localizacao: ""
     },
     {
         index: 5,
@@ -232,7 +232,7 @@ const minicursos: Minicurso[] = [
                 social: {
                    
                 },
-                picture: "/imagens-minicursos/afonso.png"
+                picture: ""
             },
             {
                 name: "Thiago Coelho",
@@ -240,10 +240,10 @@ const minicursos: Minicurso[] = [
                 social: {
                    
                 },
-                picture: "/imagens-minicursos/afonso.png"
+                picture: ""
             }
         ],
-        localizacao: "Lab 7"
+        localizacao: ""
     },
     {
         index: 6,
@@ -259,11 +259,11 @@ const minicursos: Minicurso[] = [
         ],
         palestrantes: [
             {
-                name: "Paulo Henrique Lopes Silva",
-                bio: "Professor do Departamento de Computação da UFERSA/Mossoró. Áreas de atuação: Desenvolvimento de Software, Sistemas Distribuídos e Segurança da Informação.",
+                name: "Paulo Henrique",
+                bio: "",
                 social: {
                 },
-                picture: "/imagens-minicursos/paulo.jpg"
+                picture: ""
             },
             {
                 name: "Brenno Kevyn",
@@ -271,10 +271,10 @@ const minicursos: Minicurso[] = [
                 social: {
                    
                 },
-                picture: "/imagens-minicursos/afonso.png"
+                picture: ""
             }
         ],
-        localizacao: "Lab 7"
+        localizacao: ""
     },
     {
         index: 7,
@@ -296,10 +296,10 @@ const minicursos: Minicurso[] = [
                 social: {
                    
                 },
-                picture: "/imagens-minicursos/afonso.png"
+                picture: ""
             }
         ],
-        localizacao: "Lab 7"
+        localizacao: ""
     },
 ];
 
@@ -349,7 +349,7 @@ const FAQuestions: Faq = {
         {
             key: 6,
             question: 'Em qual local será sediado a abertura do evento?',
-            answer: 'A abertura será localizada no Auditório da PROEC.'
+            answer: 'A abertura será localizada no Auditório da Reitoria.'
         },
         {
             key: 7,
@@ -365,112 +365,135 @@ const FAQuestions: Faq = {
 };
 
 const cronograma: Atividade[] = [
+    //dia 01 -----------------------------------------------------------------------------------------------------------
     {
         index: 0,
         dia: 1,
-        hora: "08:00 - 09:00",
+        hora: "08:00 - 08:45",
         titulo: "Abertura Oficial do evento",
         descricao: "Abertura do evento com a equipe organizadora acadêmica, a coordenção do curso, chefia do departamento, coordenação da graduação e pós-graduação do departamento de computação.",
-        localizacao: "Auditório da PROEC"
+        localizacao: "Auditório da Reitoria"
     },
     {
         index: 1,
         dia: 1,
-        hora: "09:00 - 09:15",
+        hora: "08:45 - 09:00",
         titulo: "Apresentação da Empresa Júnior de Computação",
         descricao: "Apresentação da empresa júnior de computação, a Lotus Tech.",
-        localizacao: "Auditório da PROEC"
+        localizacao: "Auditório da Reitoria"
     },
     {
         index: 2,
         dia: 1,
-        hora: "09:15 - 10:15",
-        titulo: "Palestra de Abertura",
-        descricao: "Um convidado especial trará uma palestra diferenciada sobre as metodologias ágeis, trazendo discussões emocionantes.",
-        localizacao: "Auditório da PROEC",
-        pageExists: true,
-        page: "/eventos/palestra"
+        hora: "09:00 - 09:40",
+        titulo: "Apresentação do programa de suporte da Google",
+        descricao: "Product Google Experts: conheça o programa de suporte da Google",
+        localizacao: "Auditório da Reitoria"
     },
     {
         index: 3,
         dia: 1,
-        hora: "10:15 - 10:45",
-        titulo: "Coffee break",
-        descricao: "",
-        localizacao: "Auditório da PROEC"
+        hora: "09:40 - 10:00",
+        titulo: "Apresentação da equipe PegAzuls",
+        descricao: "Apresentação da equipe PegAzuls.",
+        localizacao: "Auditório da Reitoria"
     },
     {
         index: 4,
         dia: 1,
-        hora: "10:45 - 11:15",
-        titulo: "Startup - Uma proposta profissional no século XXI",
-        descricao: "Era da mudança x Mundaça de era, Mentalidade Fixa x Mentalidade Aberta, Velha Economia x Nova Economia, Empreendedor x Pesquisador, Emprego x Profissão, Empresário x Empresidiário, Empreendor x Empreende a Dor, Desafio só presta grande, Estudar, validar e fazer, E a IA? E Kiko?",
-        localizacao: "Auditório da PROEC"
+        hora: "10:00 - 10:30",
+        titulo: "Coffee break",
+        descricao: "",
+        localizacao: "Auditório da Reitoria"
     },
     {
         index: 5,
         dia: 1,
-        hora: "11:15 - 11:45",
-        titulo: "Apresentação do Hackaton e Maratona de Programação",
-        descricao: "Abertura das inscrições para o Hackathon e a Maratona de Programação, detalhando cada um dos eventos.",
-        localizacao: "Auditório da PROEC",
-        pageExists: true,
-        page: "/eventos/hackaton"
+        hora: "10:30 - 11:30",
+        titulo: "Palestra \"Do petróleo à informação: como a tecnologia impulsiona a indústria do óleo e gás\"",
+        descricao: "A palestra apresentará uma visão geral sobre a aplicação de tecnologia e sistemas digitais na indústria do petróleo, abordando os principais desafios ao longo de toda a cadeia produtiva, desde a perfuração e produção até os processos de monitoramento e fiscalização. ",
+        localizacao: "Auditório da Reitoria"
     },
     {
         index: 6,
         dia: 1,
-        hora: "14:00 - 18:00",
-        titulo: "Minicursos",
-        descricao: "Minicursos oferecidos por alunos e professores do curso de Ciência da Computação.",
-        localizacao: "LCC",
-        pageExists: true,
-        page: "/eventos/minicursos"
+        hora: "11:30 - 11:50",
+        titulo: "Depoimento de ex-alunos",
+        descricao: "Alunos que já concluiram o curso contam suas experiências",
+        localizacao: "Auditório da Reitoria"
     },
     {
         index: 7,
         dia: 1,
-        hora: "16:00 - 16:20",
-        titulo: "Cofee Break",
-        descricao: "",
-        localizacao: "LCC",
+        hora: "11:50 - 12:10",
+        titulo: "Apresentação da Maratona de Programação",
+        descricao: "Abertura das inscrições para a Maratona de Programação, detalhando o eventos.",
+        localizacao: "Auditório da Reitoria",
+        pageExists: true,
+        page: "/eventos/maratona-de-programacao"
     },
     {
         index: 8,
-        dia: 2,
-        hora: "08:00 - 09:00",
-        titulo: "*Apresentação do PpgCC",
-        descricao: "Introdução do que é e como funciona o programa de pós-graduação de ciência da computação.",
-        localizacao: "Auditório da PROEC",
+        dia: 1,
+        hora: "14:00 - 18:00",
+        titulo: "Minicursos",
+        descricao: "Minicursos oferecidos por alunos e professores do curso de Ciência da Computação.",
+        localizacao: "LCC",
+        pageExists: true,
+        page: "/eventos/minicursos"
     },
+
+    //dia 02 -----------------------------------------------------------------------------------------------------------
     {
         index: 9,
         dia: 2,
-        hora: "09:00 - 12:00",
-        titulo: "Apresentação de Trabalhos da Pós-Graduação",
-        descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da pós-graduação.",
-        localizacao: "Auditório da PROEC"
+        hora: "08:00 - 09:00",
+        titulo: "Apresentação do curso Ciência da computação",
+        descricao: "Apresentação do curso Ciência da computação para visitantes",
+        localizacao: "Reitoria"
     },
     {
         index: 10,
         dia: 2,
-        hora: "10:30 - 10:45",
-        titulo: "Cofee Break",
-        descricao: "",
-        localizacao: "Auditório da PROEC"
+        hora: "08:00 - 09:00",
+        titulo: "Apresentação de Trabalhos da Pós-Graduação",
+        descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da pós-graduação.",
+        localizacao: "Auditório da Reitoria"
     },
     {
         index: 11,
         dia: 2,
-        hora: "08:00 - 12:00",
-        titulo: "*Maratona de Programação",
-        descricao: "Maratona de programação com alunos do curso de Ciência da Computação.",
-        localizacao: "LCC",
-        pageExists: true,
-        page: "/eventos/maratona-programacao"
+        hora: "09:00 - 12:00",
+        titulo: "Mostra científica",
+        descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da graduação. ",
+        localizacao: "Varanda da ASSECOM"
     },
     {
         index: 12,
+        dia: 2,
+        hora: "09:00 - 10:00",
+        titulo: "Palestra \"Do Dado à Decisão: Pesquisa Operacional e Ciência de Dados nas Empresas\"",
+        descricao: "Nesta palestra será discutido como a integração entre Ciência de Dados e Pesquisa Operacional permite construir soluções analíticas capazes de apoiar decisões estratégicas e operacionais em empresas.",
+        localizacao: "Auditório da Reitoria"
+    },
+    {
+        index: 13,
+        dia: 2,
+        hora: "10:00 - 10:20",
+        titulo: "Cofee Break",
+        descricao: "",
+        localizacao: "Auditório da Reitoria"
+    },
+    {
+        index: 14,
+        dia: 2,
+        hora: "10:20 - 12:20",
+        titulo: "Apresentação de Trabalhos da Pós-Graduação",
+        descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da pós-graduação.",
+        localizacao: "Auditório da Reitoria"
+    },
+    {
+        index: 15,
         dia: 2,
         hora: "14:00 - 18:00",
         titulo: "Minicursos",
@@ -479,70 +502,35 @@ const cronograma: Atividade[] = [
         pageExists: true,
         page: "/eventos/minicursos"
     },
-    {
-        index: 13,
-        dia: 2,
-        hora: "16:00 - 16:20",
-        titulo: "Cofee Break",
-        descricao: "",
-        localizacao: "LCC"
-    },
-    {
-        index: 14,
-        dia: 3,
-        hora: "08:00 - 09:00",
-        titulo: "Palestra de Ética",
-        descricao: "Palestra sobre a utilização ética e responsável da inteligência artificial generativa.",
-        localizacao: "Auditório da PROEC",
-    },
-    {
-        index: 15,
-        dia: 3,
-        hora: "09:00 - 09:15",
-        titulo: "Apresentação do Projeto de extensão",
-        descricao: "Apresentação do projeto de extensão, PegAzuls Aerodesign.",
-        localizacao: "Auditório da PROEC"
-    },
+
+    //dia 03 -----------------------------------------------------------------------------------------------------------
     {
         index: 16,
         dia: 3,
-        hora: "09:15 - 12:00",
-        titulo: "Encontro dos discentes do PpgCC",
-        descricao: "",
-        localizacao: "Auditório da PROEC"
+        hora: "08:00 - 12:00",
+        titulo: "Maratona de Programação",
+        descricao: "Maratona de programação com alunos do curso de Ciência da Computação.",
+        localizacao: "LCC",
+        pageExists: true,
+        page: "/eventos/maratona-de-programacao"
     },
+   
     {
         index: 17,
         dia: 3,
-        hora: "09:15 - 12:00",
-        titulo: "Mostra Científica",
-        descricao: "Apresentação de trabalhos científicos dos alunos do curso de Ciência da Computação.",
-        localizacao: "Varanda do Prédio da Assecom"
+        hora: "09:00 - 10:00",
+        titulo: "Palestra \"Propriedade Intelectual\"",
+        descricao: "Palestra sobre Propriedade Intelectual.",
+        localizacao: "Auditório da Reitoria"
     },
     {
         index: 18,
         dia: 3,
-        hora: "14:00 - 18:00",
-        titulo: "Apresentação de Soluções do Hackaton",
-        descricao: "Apresentação das soluções do hackaton e avaliação pela banca de jurados.",
-        localizacao: "LCC"
+        hora: "10:00 - 11:00",
+        titulo: "Palestra \"Assistência estudantil na pós-graduação\"",
+        descricao: "Palestra sobre assistência estudantil na pós-graduação.",
+        localizacao: "Auditório da Reitoria"
     },
-    {
-        index: 19,
-        dia: 3,
-        hora: "16:00 - 16:20",
-        titulo: "Cofee Break",
-        descricao: "",
-        localizacao: "LCC"
-    },
-    {
-        index: 20,
-        dia: 3,
-        hora: "18:00",
-        titulo: "Anuncio dos resultados do Hackaton",
-        descricao: "Anuncio dos resultados do hackaton e premiação dos vencedores.",
-        localizacao: "LCC"
-    }
 ];
 
 const imagens: Imagem[] = [
