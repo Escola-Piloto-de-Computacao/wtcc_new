@@ -56,17 +56,11 @@ const HeaderItems = () => {
                             </div>
                             <div className="pl-3">
                                 <ul className="space-y-3">
-                                    <ListItem href="/eventos/palestra" title="/palestra" className="hover:bg-[#B395CC]">
-                                        Ministrada por ex-aluno da Ufersa sobre o mercado de trabalho.
-                                    </ListItem>
-                                    <ListItem href="/eventos/maratona-de-programacao" title="/maratona_de_programação" className="hover:bg-[#B395CC]">
+                                    <ListItem href="/eventos/maratona-de-programacao" title="/maratona_de_programação" className="hover:bg-[#B395CC] py-5">
                                         Competição de programação para alunos de todos os niveis.
                                     </ListItem>
-                                    <ListItem href="/eventos/mostra-cientifica" title="/mostra_científica" className="hover:bg-[#B395CC]">
+                                    <ListItem href="/eventos/mostra-cientifica" title="/mostra_científica" className="hover:bg-[#B395CC] py-5">
                                         Apresentação de projetos desenvolvidos no departamento.
-                                    </ListItem>
-                                    <ListItem href="/eventos/hackathon" title="/hackathon" className="hover:bg-[#B395CC]">
-                                        Competição em grupo voltada a problem solvers.
                                     </ListItem>
                                 </ul>
                             </div>

@@ -57,17 +57,7 @@ const Text1 = () => {
             />
           </span>
         </Link>{" "}
-        do curso, ver a{" "}
-        <Link href="/eventos/palestra">
-          <span className="italic">
-            palestra
-            <HiCursorClick
-              className="inline-flex ml-[0.2rem] mb-[0.5rem]"
-              size={10}
-            />
-          </span>
-        </Link>{" "}
-        de um ex-aluno atuante da área, ver{" "}
+        do curso, ver{" "}
         <Link href="/eventos/minicursos">
           <span className="italic">
             minicursos
@@ -77,17 +67,8 @@ const Text1 = () => {
             />
           </span>
         </Link>{" "}
-        diversos oferecidos por alunos e participar das competições{" "}
-        <Link href="/eventos/hackathon">
-          <span className="italic">
-            Hackathon
-            <HiCursorClick
-              className="inline-flex ml-[0.2rem] mb-[0.5rem]"
-              size={10}
-            />
-          </span>
-        </Link>{" "}
-        e da{" "}
+        diversos oferecidos por alunos e participar de competições{" "}
+        como a{" "}
         <Link href="/eventos/maratona-de-programacao">
           <span className="italic">
             Maratona de Programação
@@ -137,7 +118,7 @@ const Text2 = () => {
         {" "}
         Durante o evento, os participantes terão acesso a uma programação
         diversificada, incluindo cerimônia de abertura, palestras,
-        mesas-redondas, minicursos, hackathon e maratona de programação. Além
+        mesas-redondas, minicursos e maratona de programação. Além
         disso, ao participar dos minicursos, os alunos poderão obter{" "}
         <Tooltip
           title="Ao se assistir o decorrer do evento, se ganhará horas complementares, assim como, ao assistir os minicursos oferecidos à tarde!"
