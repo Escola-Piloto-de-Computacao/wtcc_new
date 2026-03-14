@@ -106,18 +106,20 @@ const minicursos: Minicurso[] = [
         palestrantes: [
             {
                 name: "Arthur Peixoto",
-                bio: "",
+                bio: "Ex-Jogador amador de fortnite, 2x semi finalista do interclasse da escola, desenvolvedor junior aprendiz de programação e loucamente apaixonado",
                 social: {
+                    instagram: "https://www.instagram.com/nickolas_emanuel_/",
+                    linkedin: "https://www.linkedin.com/in/n%C3%ADckolas-emanuel-02924b223/"
                 },
-                picture: ""
+                picture: "/imagens-minicursos/arthurPeixoto.jpg"
             },
             {
                 name: "Nickolas Emanuel",
-                bio: "",
+                bio: "Desenvolvedor Front-end Multiplataforma.",
                 social: {
                     
                 },
-                picture: ""
+                picture: "/imagens-minicursos/nikolasEmanuel.jpg"
             }
         ],
         localizacao: ""
@@ -148,19 +150,23 @@ const minicursos: Minicurso[] = [
         ],
         palestrantes: [
             {
-                name: "Paulo Henrique",
-                bio: "",
+                name: "Paulo Henrique Pereira",
+                bio: "Quality Assurance & Analista de Dados. Atuação com garantia e controle de qualidade de software em times ágeis.",
                 social: {
+                    github: "https://github.com/devphpaulo",
+                    linkedin: "https://www.linkedin.com/in/devphpaulo/"
                 },
-                picture: ""
+                picture: "/imagens-minicursos/ph-pereira.jpeg"
             },
             {
                 name: "Brenno Kevyn",
-                bio: "",
+                bio: "Quality Assurance & Cientista da Computação. Atuação em engenharia de software, sistemas distribuídos e qualidade.",
                 social: {
+                    github: "https://github.com/BrennoKM",
+                    linkedin: "https://www.linkedin.com/in/brenno-kevyn/"
                    
                 },
-                picture: ""
+                picture: "/imagens-minicursos/brenno-kevyn.jpeg" 
             }
         ],
         localizacao: ""
@@ -185,29 +191,22 @@ const minicursos: Minicurso[] = [
         ],
         palestrantes: [
             {
-                name: "João Sales",
-                bio: "",
+                name: "Breno Klywer",
+                bio: "Desenvolvedor Java e graduando em Ciência da Computação pela UFERSA. Focado em backend e em simplificar o que parece complexo no desenvolvimento de software.",
                 social: {
-                   
+                    github:"https://github.com/Brenokly"
                 },
-                picture: ""
-            },
-            {
-                name: "Breno Klyver",
-                bio: "",
-                social: {
-                   
-                },
-                picture: ""
+                picture: "/imagens-minicursos/breno-klywer.jpeg" 
             },
             {
                 name: "Rivaldo Freitas",
-                bio: "",
+                bio: "Desenvolvedor Full Stack e graduando em Ciência e Tecnologia na UFERSA, com interesse em Engenharia da Computação e desenvolvimento de software. Trabalho programando em diversas linguagens, atualmente com foco em Java, a linguagem que carrega o símbolo do que eu mais gosto: café.",
                 social: {
-                   
+                    github: "https://github.com/rivaldodev",
+                    linkedin: "https://linkedin.com/in/lrivsl"
                 },
-                picture: ""
-            }
+                picture: "/imagens-minicursos/rivaldo.jpeg"
+            },
         ],
         localizacao: ""
     },
@@ -233,19 +232,22 @@ const minicursos: Minicurso[] = [
         palestrantes: [
             {
                 name: "Pablo Lucas",
-                bio: "",
+                bio: "Estudante de Ciência da Computação • Dev na Dunnas Tecnologia. Transformando café em código e bugs em aprendizado",
                 social: {
+                    github: "https://github.com/Pablosxz"
                    
                 },
-                picture: ""
+                picture: "/imagens-minicursos/pablo.jpeg" 
             },
             {
                 name: "Thiago Coelho",
-                bio: "",
+                bio: "Desenvolvedor Fullstack graduando em Ciência da Computação.",
                 social: {
+                    github: "https://github.com/thiagocoelhoo",
+                    linkedin: "https://www.linkedin.com/in/thiago-coelho-2234b11ba/"
                    
                 },
-                picture: ""
+                picture: "/imagens-minicursos/thiago.jpeg"
             }
         ],
         localizacao: ""
@@ -264,19 +266,23 @@ const minicursos: Minicurso[] = [
         ],
         palestrantes: [
             {
-                name: "Paulo Henrique",
-                bio: "",
+                name: "Paulo Henrique Pereira",
+                bio: "Quality Assurance & Analista de Dados. Atuação com garantia e controle de qualidade de software em times ágeis.",
                 social: {
+                    github: "https://github.com/devphpaulo",
+                    linkedin: "https://www.linkedin.com/in/devphpaulo/"
                 },
-                picture: ""
+                picture: "/imagens-minicursos/ph-pereira.jpeg"
             },
             {
                 name: "Brenno Kevyn",
-                bio: "",
+                bio: "Quality Assurance & Cientista da Computação. Atuação em engenharia de software, sistemas distribuídos e qualidade.",
                 social: {
+                    github: "https://github.com/BrennoKM",
+                    linkedin: "https://www.linkedin.com/in/brenno-kevyn/"
                    
                 },
-                picture: ""
+                picture: "/imagens-minicursos/brenno-kevyn.jpeg" 
             }
         ],
         localizacao: ""
@@ -296,12 +302,13 @@ const minicursos: Minicurso[] = [
         ],
         palestrantes: [
             {
-                name: "Paulo Henrique",
+                name: "Paulo Henrique Andrade",
                 bio: "",
                 social: {
-                   
+                    github: "https://github.com/andrade-paulo",
+                    linkedin: "https://www.linkedin.com/in/andrade-paulo/"
                 },
-                picture: ""
+                picture: "/imagens-minicursos/ph-andrade.jpeg" 
             }
         ],
         localizacao: ""
@@ -954,10 +961,10 @@ const patrocinadores: Patrocinador[] = [
     },
     {
         index: 2,
-        nome: "Cacim",
-        alt: "Cacim Laboratório",
-        imagem: "/imagens-patrocinadores/cacim.png",
-        link: "https://cacim.com.br"
+        nome: "Proae",
+        alt: "Proae",
+        imagem: "/imagens-patrocinadores/proae.png",
+        link: "https://proae.ufersa.edu.br/sobre-a-proae/"
     },
     {
         index: 3,
@@ -992,7 +999,7 @@ const patrocinadores: Patrocinador[] = [
         nome: "EDC",
         alt: "EDC, Automação",
         imagem: "/imagens-patrocinadores/edc.png",
-        link: ""
+        link: "https://www.smar.com.br/pt"
     },
     {
         index: 8,
@@ -1008,6 +1015,27 @@ const patrocinadores: Patrocinador[] = [
         imagem: "/imagens-patrocinadores/dunnas.png",
         link: "https://www.dunnastecnologia.com.br/index.html"
     },
+    {
+        index: 10,
+        nome: "M.morena",
+        alt: "M.morena",
+        imagem: "/imagens-patrocinadores/morena.png",
+        link: "https://www.instagram.com/mmorenabeachwear_"
+    },
+    {
+        index: 11,
+        nome: "Cacim",
+        alt: "Cacim Laboratório",
+        imagem: "/imagens-patrocinadores/cacim.png",
+        link: "https://cacim.com.br"
+    },
+    {
+        index: 12,
+        nome: "La Passion",
+        alt: "La Passion",
+        imagem: "/imagens-patrocinadores/la-passion.png",
+        link: "https://www.instagram.com/lapassionlingerie/"
+    }
 ];
 
 const terminalFiles: TerminalFile[] = [

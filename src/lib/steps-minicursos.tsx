@@ -33,7 +33,7 @@ export const steps: Step[] = [
                     <p>As datas, horários e localização oficial dos minicursos estão todas na página de <Link href="/eventos/minicursos" legacyBehavior passHref><span className="italic cursor-pointer">minicursos<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span></Link>!</p>
                 </div>
                 <div className="flex">
-                    <div className="bg-yellow-200 ml-auto px-2 rounded-md">
+                    <div className="bg-purple-300 ml-auto px-2 rounded-md">
                         <Link href="/faq" legacyBehavior passHref>
                             <span className="italic cursor-pointer">Ainda tenho dúvidas!<HiCursorClick className="inline-flex ml-[0.2rem] mb-[0.5rem]" size={10} /></span>
                         </Link>
