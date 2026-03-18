@@ -1093,6 +1093,13 @@ const patrocinadores: Patrocinador[] = [
         imagem: "/imagens-patrocinadores/la-passion.png",
         link: "https://www.instagram.com/lapassionlingerie/"
     }
+    {
+        index: 13,
+        nome: "Três corações",
+        alt: "Três corações",
+        imagem: "/imagens-patrocinadores/3coracoes.png",
+        link: "https://https://www.cafe3coracoes.com.br/"
+    }
 ];
 
 const terminalFiles: TerminalFile[] = [
@@ -1106,6 +1113,7 @@ const terminalFiles: TerminalFile[] = [
         content: "Para participar, se é necessário formar um grupo com 3 alunos, sem restrições de período! Ambas a premiação e a competição serão no dia 24/04, das 8:00 às 12:00, no Lab 4 do prédio do LCC. Não é necessário saber alguma linguagem de programação específica, espera-se que o grupo decida usar de uma linguagem das mais conhecidas (ex. java, c++).",
         address: "/"
     }
+    
 ];
 
 export { terminalFiles, minicursos, palestra, FAQuestions, cronograma, imagens, patrocinadores }
