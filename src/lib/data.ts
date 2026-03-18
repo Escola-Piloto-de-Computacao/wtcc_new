@@ -28,7 +28,7 @@ const minicursos: Minicurso[] = [
         palestrantes: [
             {
                 name: "João Lucas Galdino Duarte",
-                bio: "Sênior Lego Scratch",
+                bio: "Sênior Lego Scratch, desenvolvendo jogos e pra sempre preso entre paginas de documentação ou ando meio desligado.",
                 social: {
                     github: "https://github.com/G4ldin0",
                     instagram: "https://www.instagram.com/g4ld1n0_/",
@@ -46,7 +46,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/wesley.jpeg"
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 7"
     },
     {
         index: 1,
@@ -78,7 +78,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/vinicius.jpeg" 
             },
         ],
-        localizacao: ""
+        localizacao: "Lab 6"
     },
     {
         index: 2,
@@ -122,7 +122,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/nikolasEmanuel.jpg"
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 2"
     },
     {
         index: 3,
@@ -169,7 +169,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/brenno-kevyn.jpeg" 
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 3"
     },
     {
         index: 4,
@@ -208,7 +208,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/rivaldo.jpeg"
             },
         ],
-        localizacao: ""
+        localizacao: "Lab 7"
     },
     {
         index: 5,
@@ -250,7 +250,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/thiago.jpeg"
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 4"
     },
     {
         index: 6,
@@ -285,7 +285,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/brenno-kevyn.jpeg" 
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 4"
     },
     {
         index: 7,
@@ -311,7 +311,7 @@ const minicursos: Minicurso[] = [
                 picture: "/imagens-minicursos/ph-andrade.jpeg" 
             }
         ],
-        localizacao: ""
+        localizacao: "Lab 6"
     },
 ];
 
@@ -397,17 +397,17 @@ const cronograma: Atividade[] = [
     {
         index: 2,
         dia: 1,
-        hora: "09:00 - 09:40",
-        titulo: "Apresentação do programa de suporte da Google",
-        descricao: "Product Google Experts: conheça o programa de suporte da Google",
+        hora: "09:00 - 09:15",
+        titulo: "Comunicado do Centro Acadêmico de Ciência da Computação",
+        descricao: "Comunicado do Centro Acadêmico de Ciência da Computação",
         localizacao: "Auditório da Reitoria"
     },
     {
         index: 3,
         dia: 1,
-        hora: "09:40 - 10:00",
-        titulo: "Apresentação da equipe PegAzuls",
-        descricao: "Apresentação da equipe PegAzuls.",
+        hora: "09:15 - 10:00",
+        titulo: "Apresentação do programa de suporte da Google",
+        descricao: "Product Google Experts: conheça o programa de suporte da Google",
         localizacao: "Auditório da Reitoria"
     },
     {
@@ -429,15 +429,15 @@ const cronograma: Atividade[] = [
     {
         index: 6,
         dia: 1,
-        hora: "11:30 - 11:50",
-        titulo: "Depoimento de ex-alunos",
-        descricao: "Alunos que já concluiram o curso contam suas experiências",
+        hora: "11:30 - 11:45",
+        titulo: "Apresentação da equipe PegAzuls",
+        descricao: "Apresentação da equipe PegAzuls.",
         localizacao: "Auditório da Reitoria"
     },
     {
         index: 7,
         dia: 1,
-        hora: "11:50 - 12:10",
+        hora: "11:45 - 12:00",
         titulo: "Apresentação da Maratona de Programação",
         descricao: "Abertura das inscrições para a Maratona de Programação, detalhando o eventos.",
         localizacao: "Auditório da Reitoria",
@@ -464,16 +464,8 @@ const cronograma: Atividade[] = [
         descricao: "Apresentação do curso Ciência da computação para visitantes",
         localizacao: "Reitoria"
     },
-    {
+        {
         index: 10,
-        dia: 2,
-        hora: "08:00 - 09:00",
-        titulo: "Apresentação de Trabalhos da Pós-Graduação",
-        descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da pós-graduação.",
-        localizacao: "Auditório da Reitoria"
-    },
-    {
-        index: 11,
         dia: 2,
         hora: "09:00 - 12:00",
         titulo: "Mostra científica",
@@ -481,7 +473,32 @@ const cronograma: Atividade[] = [
         localizacao: "Varanda da ASSECOM"
     },
     {
+        index: 11,
+        dia: 2,
+        hora: "08:00 - 08:20",
+        titulo: "SESSÃO TÉCNICA I: Análise de Redes de Ótimos Locais para Seleção de Metaheurísticas Baseadas na Topologia do Espaço de Busca.",
+        descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da pós-graduação.",
+        localizacao: "LCC - sala multimídia"
+    },
+    {
         index: 12,
+        dia: 2,
+        hora: "08:20 - 08:40",
+        titulo: "SESSÃO TÉCNICA I: Uso de Meta-heurística e Simulação Baseada em Agentes na Proposição de Redes de Transporte Público Coletivo Urbano por Ônibus.",
+        descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da pós-graduação.",
+        localizacao: "LCC - sala multimídia"
+    },
+    {
+        index: 13,
+        dia: 2,
+        hora: "08:40 - 09:00",
+        titulo: "SESSÃO TÉCNICA I: Otimização do problema dos K-Servos utilizando uma implementação híbrida do Q-Learning.",
+        descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da pós-graduação.",
+        localizacao: "LCC - sala multimídia"
+    },
+
+    {
+        index: 14,
         dia: 2,
         hora: "09:00 - 10:00",
         titulo: "Palestra \"Do Dado à Decisão: Pesquisa Operacional e Ciência de Dados nas Empresas\"",
@@ -489,23 +506,63 @@ const cronograma: Atividade[] = [
         localizacao: "Auditório da Reitoria"
     },
     {
-        index: 13,
+        index: 15,
         dia: 2,
-        hora: "10:00 - 10:20",
+        hora: "10:00 - 10:15",
         titulo: "Cofee Break",
         descricao: "",
         localizacao: "Auditório da Reitoria"
     },
     {
-        index: 14,
+        index: 16,
         dia: 2,
-        hora: "10:20 - 12:20",
-        titulo: "Apresentação de Trabalhos da Pós-Graduação",
+        hora: "10:15 - 10:35",
+        titulo: "SESSÃO TÉCNICA II: Proposta de framework para mitigar ataques adversariais em LLMs.",
         descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da pós-graduação.",
         localizacao: "Auditório da Reitoria"
     },
     {
-        index: 15,
+        index: 17,
+        dia: 2,
+        hora: "10:35 - 10:55",
+        titulo: "SESSÃO TÉCNICA II: Uso de Inteligência Artificial Generativa na Elicitação de Requisitos de Usabilidade: uma abordagem do método USARP.",
+        descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da pós-graduação.",
+        localizacao: "LCC - sala multimídia"
+    },
+    {
+        index: 18,
+        dia: 2,
+        hora: "10:55 - 11:15",
+        titulo: "SESSÃO TÉCNICA II: Processo de Revisão Sistemática da Literatura Apoiado por Inteligência Artificial.",
+        descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da pós-graduação.",
+        localizacao: "LCC - sala multimídia"
+    },
+    {
+        index: 19,
+        dia: 2,
+        hora: "11:15 - 11:35",
+        titulo: "SESSÃO TÉCNICA III: Sistema de Mapeamento do TDAH.",
+        descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da pós-graduação.",
+        localizacao: "LCC - sala multimídia"
+    },
+    {
+        index: 20,
+        dia: 2,
+        hora: "11:35 - 11:55",
+        titulo: "SESSÃO TÉCNICA III: Recursos Educacionais para o Ensino de Programação: mapeamento da literatura e das práticas docentes para a proposição de um repositório baseado em ontologia.",
+        descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da pós-graduação.",
+        localizacao: "LCC - sala multimídia"
+    },
+    {
+        index: 21,
+        dia: 2,
+        hora: "11:55 - 12:15",
+        titulo: "SESSÃO TÉCNICA III: Transformers.js para análise de sentimentos.",
+        descricao: "Sessão técnica de apresentação de trabalhos ciêntíficos da pós-graduação.",
+        localizacao: "LCC - sala multimídia"
+    },
+    {
+        index: 22,
         dia: 2,
         hora: "14:00 - 18:00",
         titulo: "Minicursos",
@@ -517,7 +574,7 @@ const cronograma: Atividade[] = [
 
     //dia 03 -----------------------------------------------------------------------------------------------------------
     {
-        index: 16,
+        index: 23,
         dia: 3,
         hora: "08:00 - 12:00",
         titulo: "Maratona de Programação",
@@ -528,7 +585,7 @@ const cronograma: Atividade[] = [
     },
    
     {
-        index: 17,
+        index: 24,
         dia: 3,
         hora: "09:00 - 10:00",
         titulo: "Palestra \"Propriedade Intelectual\"",
@@ -536,7 +593,7 @@ const cronograma: Atividade[] = [
         localizacao: "Auditório da Reitoria"
     },
     {
-        index: 18,
+        index: 25,
         dia: 3,
         hora: "10:00 - 11:00",
         titulo: "Palestra \"Assistência estudantil na pós-graduação\"",
