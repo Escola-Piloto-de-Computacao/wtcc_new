@@ -26,6 +26,7 @@ export type SocialMedia = {
     instagram?: string;
     email?: string;
     linkedin?: string;
+    
 };
 
 export type Tag = {
