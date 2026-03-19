@@ -1100,13 +1100,6 @@ const patrocinadores: Patrocinador[] = [
         imagem: "/imagens-patrocinadores/tres-coracoes.png",
         link: "https://https://www.cafe3coracoes.com.br/"
     }
-    {
-        index: 13,
-        nome: "Três corações",
-        alt: "Três corações",
-        imagem: "/imagens-patrocinadores/3coracoes.png",
-        link: "https://https://www.cafe3coracoes.com.br/"
-    }
 ];
 
 const terminalFiles: TerminalFile[] = [
