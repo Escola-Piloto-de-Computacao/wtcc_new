@@ -1092,6 +1092,13 @@ const patrocinadores: Patrocinador[] = [
         alt: "La Passion",
         imagem: "/imagens-patrocinadores/la-passion.png",
         link: "https://www.instagram.com/lapassionlingerie/"
+    },
+    {
+        index: 13,
+        nome: "Três corações",
+        alt: "Três corações",
+        imagem: "/imagens-patrocinadores/tres-coracoes.png",
+        link: "https://https://www.cafe3coracoes.com.br/"
     }
     {
         index: 13,
